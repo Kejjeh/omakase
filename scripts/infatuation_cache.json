@@ -1,0 +1,699 @@
+{
+  "Hatsuhana": {
+    "rating": 7.8,
+    "infatuation_name": "Hatsuhana",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/hatsuhana",
+    "slug_used": "hatsuhana"
+  },
+  "Akimori": {
+    "rating": null,
+    "not_found": true
+  },
+  "Gosuke": {
+    "rating": null,
+    "not_found": true
+  },
+  "Hoseki": {
+    "rating": null,
+    "not_found": true
+  },
+  "Inase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Kizuna Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Kun Tsuki Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Mari.ne Handroll": {
+    "rating": null,
+    "not_found": true
+  },
+  "Masuda Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Nare Sushi": {
+    "rating": null,
+    "not_found": true
+  },
+  "Omakase 33": {
+    "rating": null,
+    "not_found": true
+  },
+  "Shihou Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Shogun Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Beauu": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Kaito": {
+    "rating": 8.5,
+    "infatuation_name": "Sushi Kaito",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-kaito",
+    "slug_used": "sushi-kaito"
+  },
+  "Sushi Masu": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Yasuda": {
+    "rating": 8.1,
+    "infatuation_name": "Sushi Yasuda",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-yasuda",
+    "slug_used": "sushi-yasuda"
+  },
+  "Sushi You": {
+    "rating": 7.9,
+    "infatuation_name": "Sushi You",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-you",
+    "slug_used": "sushi-you"
+  },
+  "Trust Bae": {
+    "rating": 7.6,
+    "infatuation_name": "Trust Bae",
+    "url": "https://www.theinfatuation.com/new-york/reviews/trust-bae",
+    "slug_used": "trust-bae"
+  },
+  "Uka Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Uogashi": {
+    "rating": 8.4,
+    "infatuation_name": "Uogashi New York",
+    "url": "https://www.theinfatuation.com/new-york/reviews/uogashi",
+    "slug_used": "uogashi"
+  },
+  "Zama Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Chemistry Room": {
+    "rating": null,
+    "not_found": true
+  },
+  "Korami Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Mojo Omakase": {
+    "rating": 7.5,
+    "infatuation_name": "Mojo",
+    "url": "https://www.theinfatuation.com/new-york/reviews/mojo",
+    "slug": "mojo"
+  },
+  "Sushiichi": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Lab": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sendo": {
+    "rating": 7.8,
+    "infatuation_name": "Sendo",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sendo",
+    "slug": "sendo"
+  },
+  "Sushi Sasabune": {
+    "rating": null,
+    "not_found": true
+  },
+  "Omakase Sushi Dairo": {
+    "rating": null,
+    "not_found": true
+  },
+  "Tsumo": {
+    "rating": 7.4,
+    "infatuation_name": "Tsumo",
+    "url": "https://www.theinfatuation.com/new-york/reviews/tsumo",
+    "slug": "tsumo"
+  },
+  "One Bite Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "ROKI": {
+    "rating": null,
+    "not_found": true
+  },
+  "Shinn East": {
+    "rating": 7.8,
+    "infatuation_name": "Shinn East",
+    "url": "https://www.theinfatuation.com/new-york/reviews/shinn-east",
+    "slug": "shinn-east"
+  },
+  "Sushi Blossoms": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Suite 1001": {
+    "rating": null,
+    "not_found": true
+  },
+  "Tokyo Bar": {
+    "rating": null,
+    "not_found": true
+  },
+  "KazuNori": {
+    "rating": 7.8,
+    "infatuation_name": "KazuNori",
+    "url": "https://www.theinfatuation.com/new-york/reviews/kazunori",
+    "slug": "kazunori"
+  },
+  "Hasaki": {
+    "rating": null,
+    "not_found": true
+  },
+  "KAWA Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Kissaki": {
+    "rating": null,
+    "not_found": true
+  },
+  "Mayanoki": {
+    "rating": null,
+    "not_found": true
+  },
+  "Mido Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Moko": {
+    "rating": null,
+    "not_found": true
+  },
+  "Omakase by Teisui": {
+    "rating": null,
+    "not_found": true
+  },
+  "Robataya": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sanyuu West": {
+    "rating": 7.5,
+    "infatuation_name": "Sanyuu West",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sanyuu-west",
+    "slug": "sanyuu-west"
+  },
+  "Shinzo Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "SourAji": {
+    "rating": 7.9,
+    "infatuation_name": "SourAji",
+    "url": "https://www.theinfatuation.com/new-york/reviews/souraji",
+    "slug": "souraji"
+  },
+  "Sugarfish": {
+    "rating": 7.9,
+    "infatuation_name": "Sugarfish",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sugarfish",
+    "slug": "sugarfish"
+  },
+  "Sushi by Bou": {
+    "rating": 8.5,
+    "infatuation_name": "Sushi By Bou",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-by-bou",
+    "slug": "sushi-by-bou"
+  },
+  "Sushi by M": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Dojo": {
+    "rating": 7.9,
+    "infatuation_name": "Sushi Dojo",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-dojo",
+    "slug": "sushi-dojo"
+  },
+  "Sushi Seki": {
+    "rating": 7.9,
+    "infatuation_name": "Sushi Seki Upper East Side",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-seki",
+    "slug": "sushi-seki"
+  },
+  "Thirteen Water": {
+    "rating": 8.0,
+    "infatuation_name": "Thirteen Water",
+    "url": "https://www.theinfatuation.com/new-york/reviews/thirteen-water",
+    "slug": "thirteen-water"
+  },
+  "Domodomo": {
+    "rating": 7.8,
+    "infatuation_name": "Domodomo",
+    "url": "https://www.theinfatuation.com/new-york/reviews/domodomo",
+    "slug": "domodomo"
+  },
+  "Genki Omakase": {
+    "rating": 7.8,
+    "infatuation_name": "Genki Omakase",
+    "url": "https://www.theinfatuation.com/new-york/reviews/genki-omakase",
+    "slug": "genki-omakase"
+  },
+  "Kanoyama": {
+    "rating": null,
+    "not_found": true
+  },
+  "Kazumi Omakase": {
+    "rating": 8.0,
+    "infatuation_name": "Kazumi Omakase",
+    "url": "https://www.theinfatuation.com/new-york/reviews/kazumi-omakase",
+    "slug": "kazumi-omakase"
+  },
+  "Nozomi NYC": {
+    "rating": null,
+    "not_found": true
+  },
+  "Saishin": {
+    "rating": 8.0,
+    "infatuation_name": "Saishin",
+    "url": "https://www.theinfatuation.com/new-york/reviews/saishin",
+    "slug": "saishin"
+  },
+  "Shota Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Yashin": {
+    "rating": 7.9,
+    "infatuation_name": "Yashin Sushi",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-yashin",
+    "slug": "sushi-yashin"
+  },
+  "U Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Bondi Sushi": {
+    "rating": null,
+    "not_found": true,
+    "note": "matched guide page, not review"
+  },
+  "Douska": {
+    "rating": 8.0,
+    "infatuation_name": "Douska",
+    "url": "https://www.theinfatuation.com/new-york/reviews/douska",
+    "slug": "douska"
+  },
+  "Matsunori": {
+    "rating": 8.0,
+    "infatuation_name": "Matsunori",
+    "url": "https://www.theinfatuation.com/new-york/reviews/matsunori",
+    "slug": "matsunori"
+  },
+  "Mishik": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi 456": {
+    "rating": 8.1,
+    "infatuation_name": "Sushi 456",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-456",
+    "slug": "sushi-456"
+  },
+  "Sushi Hayashi": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Nakazawa": {
+    "rating": 8.1,
+    "infatuation_name": "Sushi Nakazawa",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-nakazawa",
+    "slug": "sushi-nakazawa"
+  },
+  "Sushi on Jones": {
+    "rating": 7.8,
+    "infatuation_name": "Sushi on Jones",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-on-jones",
+    "slug": "sushi-on-jones"
+  },
+  "Sushi On Me": {
+    "rating": 8.6,
+    "infatuation_name": "Sushi On Me",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-on-me",
+    "slug": "sushi-on-me"
+  },
+  "Takumi Omakase": {
+    "rating": 7.9,
+    "infatuation_name": "Takumi Omakase",
+    "url": "https://www.theinfatuation.com/new-york/reviews/takumi-omakase",
+    "slug": "takumi-omakase"
+  },
+  "Ume Williamsburg": {
+    "rating": null,
+    "not_found": true
+  },
+  "Yoshino": {
+    "rating": 8.9,
+    "infatuation_name": "Yoshino",
+    "url": "https://www.theinfatuation.com/new-york/reviews/yoshino",
+    "slug": "yoshino"
+  },
+  "Zen Sushi Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Ryusei": {
+    "rating": null,
+    "not_found": true
+  },
+  "Blue Ribbon Sushi": {
+    "rating": 8.1,
+    "infatuation_name": "Blue Ribbon Sushi",
+    "url": "https://www.theinfatuation.com/new-york/reviews/blue-ribbon-sushi",
+    "slug": "blue-ribbon-sushi"
+  },
+  "Kintsugi": {
+    "rating": null,
+    "not_found": true
+  },
+  "Maaser Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Momoya": {
+    "rating": null,
+    "not_found": true
+  },
+  "Nami Nori": {
+    "rating": 7.6,
+    "infatuation_name": "Nami Nori",
+    "url": "https://www.theinfatuation.com/new-york/reviews/nami-nori",
+    "slug": "nami-nori"
+  },
+  "Sekai Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Shiki Omakase": {
+    "rating": 7.7,
+    "infatuation_name": "Shiki Omakase",
+    "url": "https://www.theinfatuation.com/new-york/reviews/shiki-omakase",
+    "slug": "shiki-omakase"
+  },
+  "Sushi by Bae": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Ikumi": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Lin": {
+    "rating": 8.4,
+    "infatuation_name": "Sushi Lin",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-lin",
+    "slug": "sushi-lin"
+  },
+  "Sushi Ouji": {
+    "rating": null,
+    "not_found": true
+  },
+  "Atto Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Noz Market": {
+    "rating": 7.8,
+    "infatuation_name": "Noz Market",
+    "url": "https://www.theinfatuation.com/new-york/reviews/noz-market",
+    "slug": "noz-market"
+  },
+  "Oyishi Sushi": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Jin": {
+    "rating": 8.1,
+    "infatuation_name": "Sushi Jin",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-jin",
+    "slug": "sushi-jin"
+  },
+  "Sushi Koya": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Yolo": {
+    "rating": null,
+    "not_found": true
+  },
+  "Tatsuda Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Fuku Omakase": {
+    "rating": 8.2,
+    "infatuation_name": "Fuku",
+    "url": "https://www.theinfatuation.com/new-york/reviews/fuku",
+    "slug": "fuku"
+  },
+  "Hatsu Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Kinzan Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Kyuubi Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Mitsuru": {
+    "rating": 7.8,
+    "infatuation_name": "Mitsuru",
+    "url": "https://www.theinfatuation.com/new-york/reviews/mitsuru",
+    "slug": "mitsuru"
+  },
+  "Mojo East": {
+    "rating": null,
+    "not_found": true
+  },
+  "Mori": {
+    "rating": null,
+    "not_found": true
+  },
+  "Nobu Downtown": {
+    "rating": null,
+    "not_found": true
+  },
+  "Omakase by No Name": {
+    "rating": null,
+    "not_found": true
+  },
+  "Saikou": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sake Kawa": {
+    "rating": null,
+    "not_found": true
+  },
+  "SHHH Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Shinsen": {
+    "rating": 7.8,
+    "infatuation_name": "Shinsen",
+    "url": "https://www.theinfatuation.com/new-york/reviews/shinsen",
+    "slug": "shinsen"
+  },
+  "Shirokuro": {
+    "rating": 7.6,
+    "infatuation_name": "Shirokuro Omakase",
+    "url": "https://www.theinfatuation.com/new-york/reviews/shirokuro-omakase",
+    "slug": "shirokuro-omakase"
+  },
+  "Shoshin": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Daizen": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Kai": {
+    "rating": 8.1,
+    "infatuation_name": "Sushi Kai",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-kai",
+    "slug": "sushi-kai"
+  },
+  "Sushi Makoto": {
+    "rating": null,
+    "not_found": true
+  },
+  "Taikun": {
+    "rating": null,
+    "not_found": true
+  },
+  "Towa": {
+    "rating": null,
+    "not_found": true
+  },
+  "Unique Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Yokox Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Tsushima": {
+    "rating": 8.1,
+    "infatuation_name": "Tsushima",
+    "url": "https://www.theinfatuation.com/new-york/reviews/tsushima",
+    "slug": "tsushima"
+  },
+  "Iwak Sushi": {
+    "rating": null,
+    "not_found": true
+  },
+  "Junsui Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Kinjo": {
+    "rating": 7.8,
+    "infatuation_name": "Kinjo",
+    "url": "https://www.theinfatuation.com/new-york/reviews/kinjo",
+    "slug": "kinjo"
+  },
+  "Luya Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Miro Sushi": {
+    "rating": null,
+    "not_found": true
+  },
+  "Neta Shari": {
+    "rating": 8.2,
+    "infatuation_name": "Neta Shari",
+    "url": "https://www.theinfatuation.com/new-york/reviews/neta-shari",
+    "slug": "neta-shari"
+  },
+  "Omakase by Hiro": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sora": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Katsuei": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Uesugi": {
+    "rating": null,
+    "not_found": true
+  },
+  "Yamashiro": {
+    "rating": null,
+    "not_found": true
+  },
+  "E Sushi II": {
+    "rating": null,
+    "not_found": true
+  },
+  "KIMYO": {
+    "rating": null,
+    "not_found": true
+  },
+  "Ki Sushi": {
+    "rating": null,
+    "not_found": true
+  },
+  "Koma Sushi": {
+    "rating": 7.8,
+    "infatuation_name": "Koma Sushi",
+    "url": "https://www.theinfatuation.com/new-york/reviews/koma-sushi",
+    "slug": "koma-sushi"
+  },
+  "Sushi Koju": {
+    "rating": null,
+    "not_found": true
+  },
+  "Hanaya Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Joji": {
+    "rating": null,
+    "not_found": true
+  },
+  "Koete Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Shinpi": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Ann": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Goda": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi W": {
+    "rating": 7.7,
+    "infatuation_name": "Sushi W",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-w",
+    "slug": "sushi-w"
+  },
+  "Sushi Yugen": {
+    "rating": null,
+    "not_found": true
+  },
+  "Gohan Sushi": {
+    "rating": null,
+    "not_found": true
+  },
+  "Idashi Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Ishi Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Oita Sushi": {
+    "rating": null,
+    "not_found": true
+  },
+  "Uotora": {
+    "rating": 7.8,
+    "infatuation_name": "Uotora",
+    "url": "https://www.theinfatuation.com/new-york/reviews/uotora",
+    "slug": "uotora"
+  },
+  "Tanoshi Sushi": {
+    "rating": 7.9,
+    "infatuation_name": "Tanoshi Sushi",
+    "url": "https://www.theinfatuation.com/new-york/reviews/tanoshi-sushi",
+    "slug": "tanoshi-sushi"
+  }
+}

@@ -1,0 +1,814 @@
+{
+  "Hatsuhana": {
+    "rating": 4.6,
+    "review_count": 1471,
+    "google_name": "Hatsuhana"
+  },
+  "Akimori": {
+    "rating": 4.7,
+    "review_count": 87,
+    "google_name": "AKIMORI"
+  },
+  "Gosuke": {
+    "rating": 4.5,
+    "review_count": 223,
+    "google_name": "Gosuke"
+  },
+  "Hoseki": {
+    "rating": 4.7,
+    "review_count": 64,
+    "google_name": "H\u014dseki"
+  },
+  "Inase": {
+    "rating": 4.6,
+    "review_count": 137,
+    "google_name": "Inase"
+  },
+  "Kizuna Omakase": {
+    "rating": 5,
+    "review_count": 98,
+    "google_name": "Kizuna"
+  },
+  "Kun Tsuki Omakase": {
+    "rating": 4.8,
+    "review_count": 194,
+    "google_name": "Omakase by Kun Tsuki"
+  },
+  "Mari.ne Handroll": {
+    "rating": 4.5,
+    "review_count": 359,
+    "google_name": "Mari.ne Handroll"
+  },
+  "Masuda Omakase": {
+    "rating": null,
+    "review_count": null,
+    "google_name": "",
+    "address": ""
+  },
+  "Nare Sushi": {
+    "rating": 4.2,
+    "review_count": 426,
+    "google_name": "Nare Sushi"
+  },
+  "Omakase 33": {
+    "rating": 4.7,
+    "review_count": 275,
+    "google_name": "Omakase 33"
+  },
+  "Shihou Omakase": {
+    "rating": 4.7,
+    "review_count": 163,
+    "google_name": "Omakase Shihou (Shiro) - Midtown"
+  },
+  "Shogun Omakase": {
+    "rating": 4.7,
+    "review_count": 415,
+    "google_name": "SHOGUN OMAKASE | Manhattan Sushi Restaurant"
+  },
+  "Sushi Amane": {
+    "rating": 4.6,
+    "review_count": 201,
+    "google_name": "sushi AMANE"
+  },
+  "Sushi Beauu": {
+    "rating": 4.6,
+    "review_count": 74,
+    "google_name": "Sushi Beauu"
+  },
+  "Sushi Ginza Onodera": {
+    "rating": 4.6,
+    "review_count": 315,
+    "google_name": "Sushi Ginza Onodera"
+  },
+  "Sushi Kaito": {
+    "rating": 4.7,
+    "review_count": 235,
+    "google_name": "Sushi Kaito"
+  },
+  "Sushi Masu": {
+    "rating": 4.6,
+    "review_count": 149,
+    "google_name": "Sushi Masu"
+  },
+  "Sushi Sho": {
+    "rating": 4.6,
+    "review_count": 88,
+    "google_name": "Sushi Sho"
+  },
+  "Sushi Yasuda": {
+    "rating": 4.4,
+    "review_count": 1563,
+    "google_name": "Sushi Yasuda"
+  },
+  "Sushi You": {
+    "rating": 4.8,
+    "review_count": 92,
+    "google_name": "Sushi You"
+  },
+  "Trust Bae": {
+    "rating": 4.6,
+    "review_count": 63,
+    "google_name": "Trust Bae"
+  },
+  "Uka Omakase": {
+    "rating": 4.8,
+    "review_count": 762,
+    "google_name": "Uka Omakase"
+  },
+  "Uogashi": {
+    "rating": 4.4,
+    "review_count": 158,
+    "google_name": "UOGASHI"
+  },
+  "Zama Omakase": {
+    "rating": 4.9,
+    "review_count": 142,
+    "google_name": "Zama Omakase"
+  },
+  "Chemistry Room": {
+    "rating": 4.4,
+    "review_count": 238,
+    "google_name": "The Chemistry Room"
+  },
+  "Korami Omakase": {
+    "rating": 4.8,
+    "review_count": 654,
+    "google_name": "Omakase by korami"
+  },
+  "Mojo Omakase": {
+    "rating": 4.7,
+    "review_count": 326,
+    "google_name": "Mojo East"
+  },
+  "Sushiichi": {
+    "rating": 4.8,
+    "review_count": 187,
+    "google_name": "Sushiichi"
+  },
+  "Sushi Lab": {
+    "rating": 4.2,
+    "review_count": 1135,
+    "google_name": "Sushi Lab Rooftop"
+  },
+  "Sendo": {
+    "rating": 4.6,
+    "review_count": 631,
+    "google_name": "Sendo"
+  },
+  "Sushi Sasabune": {
+    "rating": 4.5,
+    "review_count": 195,
+    "google_name": "Sushi Sasabune"
+  },
+  "Omakase Sushi Dairo": {
+    "rating": 4.8,
+    "review_count": 297,
+    "google_name": "Omakase SUSHI DAIRO"
+  },
+  "Tsumo": {
+    "rating": 4.7,
+    "review_count": 619,
+    "google_name": "Tsumo Omakase"
+  },
+  "One Bite Omakase": {
+    "rating": 4.8,
+    "review_count": 221,
+    "google_name": "One Bite Omakase"
+  },
+  "ROKI": {
+    "rating": 4.4,
+    "review_count": 110,
+    "google_name": "ROKI Le Izakaya"
+  },
+  "Shinn East": {
+    "rating": 4.6,
+    "review_count": 574,
+    "google_name": "SHINN EAST"
+  },
+  "Sushi Blossoms": {
+    "rating": 4.8,
+    "review_count": 442,
+    "google_name": "Sushi Blossoms - Omakase Sushi in Chelsea NYC"
+  },
+  "Sushi Suite 1001": {
+    "rating": 4.6,
+    "review_count": 421,
+    "google_name": "Sushi By Bou - NOMAD NYC @ Hotel32|32"
+  },
+  "Tokyo Bar": {
+    "rating": 4.1,
+    "review_count": 469,
+    "google_name": "Tokyo Record Bar"
+  },
+  "KazuNori": {
+    "rating": 4.7,
+    "review_count": 3088,
+    "google_name": "KazuNori: The Original Hand Roll Bar"
+  },
+  "Hasaki": {
+    "rating": 4.4,
+    "review_count": 442,
+    "google_name": "Hasaki"
+  },
+  "KAWA Omakase": {
+    "rating": 4.9,
+    "review_count": 157,
+    "google_name": "KAWA Omakase"
+  },
+  "Kissaki": {
+    "rating": 4.5,
+    "review_count": 171,
+    "google_name": "Kissaki Japanese Restaurant"
+  },
+  "Mayanoki": {
+    "rating": 4.8,
+    "review_count": 73,
+    "google_name": "Mayanoki"
+  },
+  "Mido Omakase": {
+    "rating": 5,
+    "review_count": 868,
+    "google_name": "Mido - Omakase Room"
+  },
+  "Moko": {
+    "rating": 4.2,
+    "review_count": 855,
+    "google_name": "Moko"
+  },
+  "Noda": {
+    "rating": 4.7,
+    "review_count": 170,
+    "google_name": "noda"
+  },
+  "Noz 17": {
+    "rating": 4.4,
+    "review_count": 117,
+    "google_name": "Noz 17"
+  },
+  "odo": {
+    "rating": 4.5,
+    "review_count": 299,
+    "google_name": "odo"
+  },
+  "Omakase by Teisui": {
+    "rating": 4.5,
+    "review_count": 198,
+    "google_name": "OMAKASE by TEISUI"
+  },
+  "Robataya": {
+    "rating": 4.7,
+    "review_count": 34,
+    "google_name": "Sushi By Bou - East Village NYC",
+    "address": "320 E 11th St, New York, NY 10003, USA"
+  },
+  "Sanyuu West": {
+    "rating": 4.7,
+    "review_count": 273,
+    "google_name": "Sanyuu West"
+  },
+  "Shinzo Omakase": {
+    "rating": 4.9,
+    "review_count": 967,
+    "google_name": "Shinzo Omakase"
+  },
+  "SourAji": {
+    "rating": 4.4,
+    "review_count": 768,
+    "google_name": "SourAji"
+  },
+  "Sugarfish": {
+    "rating": 4.5,
+    "review_count": 2038,
+    "google_name": "SUGARFISH by sushi nozawa"
+  },
+  "Sushi by Bou": {
+    "rating": 4.7,
+    "review_count": 34,
+    "google_name": "Sushi By Bou - East Village NYC"
+  },
+  "Sushi by M": {
+    "rating": 4.5,
+    "review_count": 951,
+    "google_name": "Sushi by M-East 5th st"
+  },
+  "Sushi Dojo": {
+    "rating": 4.2,
+    "review_count": 432,
+    "google_name": "Sushi Dojo"
+  },
+  "Sushi Seki": {
+    "rating": 4.4,
+    "review_count": 359,
+    "google_name": "Sushi Seki"
+  },
+  "Thirteen Water": {
+    "rating": 4.6,
+    "review_count": 436,
+    "google_name": "Thirteen Water"
+  },
+  "Tsukimi": {
+    "rating": 4.6,
+    "review_count": 137,
+    "google_name": "Tsukimi"
+  },
+  "Bar Miller": {
+    "rating": 4.9,
+    "review_count": 58,
+    "google_name": "Bar Miller"
+  },
+  "Domodomo": {
+    "rating": 4.5,
+    "review_count": 1467,
+    "google_name": "DOMODOMO New York"
+  },
+  "Genki Omakase": {
+    "rating": 4.8,
+    "review_count": 1401,
+    "google_name": "Genki Omakase"
+  },
+  "Kanoyama": {
+    "rating": 4.3,
+    "review_count": 656,
+    "google_name": "Kanoyama"
+  },
+  "Kazumi Omakase": {
+    "rating": 4.9,
+    "review_count": 330,
+    "google_name": "Kazumi Omakase"
+  },
+  "Nozomi NYC": {
+    "rating": 4.9,
+    "review_count": 438,
+    "google_name": "Nozomi NYC @Williamsburg"
+  },
+  "Saishin": {
+    "rating": 4.1,
+    "review_count": 95,
+    "google_name": "Saishin at Gansevoort Rooftop"
+  },
+  "Shota Omakase": {
+    "rating": 4.6,
+    "review_count": 161,
+    "google_name": "Shota omakase"
+  },
+  "Shuko": {
+    "rating": 4.5,
+    "review_count": 383,
+    "google_name": "Shuko"
+  },
+  "Sushi Yashin": {
+    "rating": 5,
+    "review_count": 39,
+    "google_name": "Sushi Hayashi Williamsburg"
+  },
+  "U Omakase": {
+    "rating": 4.9,
+    "review_count": 197,
+    "google_name": "U Omakase"
+  },
+  "Bondi Sushi": {
+    "rating": 4.4,
+    "review_count": 271,
+    "google_name": "Bondi Sushi"
+  },
+  "Douska": {
+    "rating": 4.5,
+    "review_count": 309,
+    "google_name": "Douska"
+  },
+  "icca": {
+    "rating": 4.5,
+    "review_count": 137,
+    "google_name": "icca"
+  },
+  "Matsunori": {
+    "rating": 4.9,
+    "review_count": 211,
+    "google_name": "Matsunori Handroll Bar"
+  },
+  "Mishik": {
+    "rating": 4.6,
+    "review_count": 209,
+    "google_name": "Mishik"
+  },
+  "Shion 69 Leonard": {
+    "rating": 4.5,
+    "review_count": 241,
+    "google_name": "69 Leonard Street"
+  },
+  "Sushi 456": {
+    "rating": 4.6,
+    "review_count": 216,
+    "google_name": "Sushi 456"
+  },
+  "Sushi Hayashi": {
+    "rating": 5,
+    "review_count": 39,
+    "google_name": "Sushi Hayashi Williamsburg"
+  },
+  "Sushi Ichimura": {
+    "rating": 4.5,
+    "review_count": 74,
+    "google_name": "Sushi Ichimura"
+  },
+  "Sushi Nakazawa": {
+    "rating": 4.5,
+    "review_count": 1939,
+    "google_name": "Sushi Nakazawa"
+  },
+  "Sushi on Jones": {
+    "rating": 4.1,
+    "review_count": 365,
+    "google_name": "Sushi on Jones"
+  },
+  "Sushi On Me": {
+    "rating": 4.5,
+    "review_count": 142,
+    "google_name": "Sushi On Me - Williamsburg"
+  },
+  "Takumi Omakase": {
+    "rating": 4.8,
+    "review_count": 716,
+    "google_name": "TAKUMI OMAKASE"
+  },
+  "Ume Williamsburg": {
+    "rating": 4.3,
+    "review_count": 724,
+    "google_name": "Ume"
+  },
+  "Yoshino": {
+    "rating": 4.5,
+    "review_count": 168,
+    "google_name": "YOSHINO \u2022 NEW YORK"
+  },
+  "Zen Sushi Omakase": {
+    "rating": 4.9,
+    "review_count": 370,
+    "google_name": "Zen Sushi Omakase"
+  },
+  "Sushi Ryusei": {
+    "rating": 4.6,
+    "review_count": 329,
+    "google_name": "Sushi Ryusei"
+  },
+  "Blue Ribbon Sushi": {
+    "rating": 4.6,
+    "review_count": 1867,
+    "google_name": "Blue Ribbon Sushi"
+  },
+  "Kintsugi": {
+    "rating": 4.2,
+    "review_count": 200,
+    "google_name": "Kintsugi Omakase"
+  },
+  "Kosaka": {
+    "rating": 4.5,
+    "review_count": 305,
+    "google_name": "KOSAKA"
+  },
+  "Maaser Omakase": {
+    "rating": 4.7,
+    "review_count": 291,
+    "google_name": "Omakase room by Maaser"
+  },
+  "Momoya": {
+    "rating": 4.6,
+    "review_count": 1373,
+    "google_name": "Momoya SoHo"
+  },
+  "Nami Nori": {
+    "rating": 4.4,
+    "review_count": 1812,
+    "google_name": "Nami Nori West Village"
+  },
+  "Sekai Omakase": {
+    "rating": 4.6,
+    "review_count": 189,
+    "google_name": "Sekai Omakase"
+  },
+  "Shiki Omakase": {
+    "rating": 4.5,
+    "review_count": 458,
+    "google_name": "Shiki Omakase"
+  },
+  "Sushi by Bae": {
+    "rating": 4.8,
+    "review_count": 91,
+    "google_name": "Rei Restaurant"
+  },
+  "Sushi Ikumi": {
+    "rating": 4.6,
+    "review_count": 104,
+    "google_name": "Sushi Ikumi"
+  },
+  "Sushi Lin": {
+    "rating": 4.6,
+    "review_count": 179,
+    "google_name": "Sushi Lin SoHo"
+  },
+  "Sushi Ouji": {
+    "rating": 4.8,
+    "review_count": 205,
+    "google_name": "Sushi Ouji"
+  },
+  "Atto Omakase": {
+    "rating": 4.8,
+    "review_count": 249,
+    "google_name": "Atto Sushi"
+  },
+  "Noz Market": {
+    "rating": 4.4,
+    "review_count": 177,
+    "google_name": "Noz Market"
+  },
+  "Oyishi Sushi": {
+    "rating": 5,
+    "review_count": 521,
+    "google_name": "Oyishi Sushi 80 ST"
+  },
+  "Sushi Jin": {
+    "rating": 4.9,
+    "review_count": 167,
+    "google_name": "Sushi jin"
+  },
+  "Sushi Koya": {
+    "rating": 4.8,
+    "review_count": 222,
+    "google_name": "Sushi Koya"
+  },
+  "Sushi Yolo": {
+    "rating": 4.9,
+    "review_count": 231,
+    "google_name": "Sushi YOLO"
+  },
+  "Tatsuda Omakase": {
+    "rating": 4.8,
+    "review_count": 315,
+    "google_name": "Tatsuda Omakase"
+  },
+  "Fuku Omakase": {
+    "rating": 4.8,
+    "review_count": 334,
+    "google_name": "Fuku Omakase"
+  },
+  "Hatsu Omakase": {
+    "rating": 4.4,
+    "review_count": 138,
+    "google_name": "Hatsu Omakase"
+  },
+  "Kinzan Omakase": {
+    "rating": 4.7,
+    "review_count": 444,
+    "google_name": "Kinzan Omakase"
+  },
+  "Kyuubi Omakase": {
+    "rating": 4.7,
+    "review_count": 208,
+    "google_name": "Kyuubi Sushi Omakase"
+  },
+  "Mitsuru": {
+    "rating": 4.5,
+    "review_count": 83,
+    "google_name": "Mitsuru"
+  },
+  "Mojo East": {
+    "rating": 4.7,
+    "review_count": 326,
+    "google_name": "Mojo East"
+  },
+  "Mori": {
+    "rating": 4.9,
+    "review_count": 254,
+    "google_name": "Mori"
+  },
+  "Nobu Downtown": {
+    "rating": 4.4,
+    "review_count": 1968,
+    "google_name": "Nobu Downtown"
+  },
+  "Omakase by No Name": {
+    "rating": 4.8,
+    "review_count": 218,
+    "google_name": "Omakase Sushi by No name"
+  },
+  "Saikou": {
+    "rating": 4.9,
+    "review_count": 277,
+    "google_name": "Sushi Saikou"
+  },
+  "Sake Kawa": {
+    "rating": 4.4,
+    "review_count": 295,
+    "google_name": "Sake Kawa"
+  },
+  "SHHH Omakase": {
+    "rating": 4.8,
+    "review_count": 82,
+    "google_name": "Shh omakase"
+  },
+  "Shinsen": {
+    "rating": 4.2,
+    "review_count": 344,
+    "google_name": "Shinsen oMAXkase & Lounge"
+  },
+  "Shirokuro": {
+    "rating": 4.3,
+    "review_count": 293,
+    "google_name": "Shirokuro"
+  },
+  "Shoshin": {
+    "rating": 4.8,
+    "review_count": 354,
+    "google_name": "SHOSHIN 68"
+  },
+  "Sushi Daizen": {
+    "rating": 4.7,
+    "review_count": 695,
+    "google_name": "Otani"
+  },
+  "Sushi Kai": {
+    "rating": 4.7,
+    "review_count": 212,
+    "google_name": "Sushi Kai - West Village"
+  },
+  "Sushi Makoto": {
+    "rating": 4.8,
+    "review_count": 361,
+    "google_name": "Sushi Makoto - Omakase"
+  },
+  "Taikun": {
+    "rating": 4.9,
+    "review_count": 127,
+    "google_name": "Taikun Sushi"
+  },
+  "Towa": {
+    "rating": 4.6,
+    "review_count": 298,
+    "google_name": "TOWA"
+  },
+  "Unique Omakase": {
+    "rating": 4.9,
+    "review_count": 370,
+    "google_name": "Zen Sushi Omakase"
+  },
+  "Yokox Omakase": {
+    "rating": 4.8,
+    "review_count": 166,
+    "google_name": "Yokox Omakase"
+  },
+  "Sushi Tsushima": {
+    "rating": 4.2,
+    "review_count": 474,
+    "google_name": "Tsushima"
+  },
+  "Iwak Sushi": {
+    "rating": 4.8,
+    "review_count": 576,
+    "google_name": "IWAK Sushi + Kitchen"
+  },
+  "Junsui Omakase": {
+    "rating": 4.6,
+    "review_count": 62,
+    "google_name": "Junsui Omakase"
+  },
+  "Kinjo": {
+    "rating": 4.9,
+    "review_count": 145,
+    "google_name": "Kinjo"
+  },
+  "Luya Omakase": {
+    "rating": 4.9,
+    "review_count": 143,
+    "google_name": "LUYA Omakase & Wine Bar"
+  },
+  "Miro Sushi": {
+    "rating": 4.9,
+    "review_count": 112,
+    "google_name": "Miro Sushi"
+  },
+  "Neta Shari": {
+    "rating": 4.7,
+    "review_count": 157,
+    "google_name": "Neta Shari"
+  },
+  "Omakase by Hiro": {
+    "rating": 4.8,
+    "review_count": 269,
+    "google_name": "Omakase sushi by hiro"
+  },
+  "Sora": {
+    "rating": 4.6,
+    "review_count": 93,
+    "google_name": "SORA"
+  },
+  "Sushi Katsuei": {
+    "rating": 4.5,
+    "review_count": 809,
+    "google_name": "Sushi Katsuei"
+  },
+  "Sushi Uesugi": {
+    "rating": 4.3,
+    "review_count": 92,
+    "google_name": "Sushi Uesugi"
+  },
+  "Yamashiro": {
+    "rating": 4.5,
+    "review_count": 477,
+    "google_name": "Yamashiro"
+  },
+  "E Sushi II": {
+    "rating": 4.2,
+    "review_count": 1007,
+    "google_name": "E Sushi II"
+  },
+  "KIMYO": {
+    "rating": 4.4,
+    "review_count": 376,
+    "google_name": "Koi Omakase"
+  },
+  "Ki Sushi": {
+    "rating": 4.7,
+    "review_count": 607,
+    "google_name": "Ki Sushi"
+  },
+  "Koma Sushi": {
+    "rating": 4.6,
+    "review_count": 395,
+    "google_name": "KOMA Sushi"
+  },
+  "Sushi Koju": {
+    "rating": 5,
+    "review_count": 80,
+    "google_name": "Koju"
+  },
+  "Hanaya Omakase": {
+    "rating": 4.9,
+    "review_count": 209,
+    "google_name": "Hanaya Omakase"
+  },
+  "Joji": {
+    "rating": 4.5,
+    "review_count": 128,
+    "google_name": "J\u014dji"
+  },
+  "Koete Omakase": {
+    "rating": 4.8,
+    "review_count": 205,
+    "google_name": "Koete Omakase"
+  },
+  "Shinpi": {
+    "rating": 4.6,
+    "review_count": 186,
+    "google_name": "Shinpi Omakase"
+  },
+  "Sushi Ann": {
+    "rating": 4.3,
+    "review_count": 278,
+    "google_name": "Sushi Ann"
+  },
+  "Sushi Goda": {
+    "rating": 4.6,
+    "review_count": 185,
+    "google_name": "Sushi Goda"
+  },
+  "Sushi W": {
+    "rating": 4.8,
+    "review_count": 618,
+    "google_name": "Sushi W - UWS"
+  },
+  "Sushi Yugen": {
+    "rating": 4.9,
+    "review_count": 74,
+    "google_name": "YUGIN"
+  },
+  "Gohan Sushi": {
+    "rating": 4.7,
+    "review_count": 137,
+    "google_name": "GOHAN SUSHI INC"
+  },
+  "Idashi Omakase": {
+    "rating": 4.9,
+    "review_count": 238,
+    "google_name": "idashi Omakase"
+  },
+  "Ishi Omakase": {
+    "rating": 4.8,
+    "review_count": 214,
+    "google_name": "Ishi Omakase Sushi & Premium Sake"
+  },
+  "Oita Sushi": {
+    "rating": 4.6,
+    "review_count": 473,
+    "google_name": "Oita Sushi"
+  },
+  "Uotora": {
+    "rating": 4.6,
+    "review_count": 284,
+    "google_name": "Uotora"
+  },
+  "Tanoshi Sushi": {
+    "rating": 4.7,
+    "review_count": 654,
+    "google_name": "Tanoshi Sushi Sake Bar"
+  }
+}

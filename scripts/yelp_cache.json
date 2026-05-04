@@ -1,0 +1,1045 @@
+{
+  "Hatsuhana": {
+    "yelp_rating": 4.0,
+    "review_count": 1660,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/hatsuhana-new-york",
+    "yelp_name": "Hatsuhana"
+  },
+  "Akimori": {
+    "yelp_rating": 4.1,
+    "review_count": 10,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/akimori-new-york",
+    "yelp_name": "Akimori"
+  },
+  "Gosuke": {
+    "yelp_rating": 4.5,
+    "review_count": 79,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/gosuke-new-york-2",
+    "yelp_name": "Gosuke"
+  },
+  "Hoseki": {
+    "yelp_rating": 4.5,
+    "review_count": 16,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/h%C5%8Dseki-new-york",
+    "yelp_name": "Hōseki"
+  },
+  "Inase": {
+    "yelp_rating": 4.0,
+    "review_count": 174,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/inase-restaurant-new-york",
+    "yelp_name": "Inase Restaurant (CLOSED)"
+  },
+  "Kizuna Omakase": {
+    "yelp_rating": 5.0,
+    "review_count": 12,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/kizuna-new-york",
+    "yelp_name": "Kizuna"
+  },
+  "Kun Tsuki Omakase": {
+    "yelp_rating": 4.5,
+    "review_count": 52,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/kun-tsuki-omakase-xtra-new-york-5",
+    "yelp_name": "Kun Tsuki Omakase Xtra"
+  },
+  "Mari.ne Handroll": {
+    "yelp_rating": 4.5,
+    "review_count": 172,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/marine-handroll-new-york-2",
+    "yelp_name": "MariNe Handroll"
+  },
+  "Masuda Omakase": {
+    "yelp_rating": null,
+    "review_count": 0,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/masuda-omakase-new-york",
+    "yelp_name": "Masuda Omakase"
+  },
+  "Nare Sushi": {
+    "yelp_rating": 4.0,
+    "review_count": 421,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/nare-sushi-new-york",
+    "yelp_name": "Nare Sushi"
+  },
+  "Omakase 33": {
+    "yelp_rating": null,
+    "review_count": 44,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/omakase-33-new-york",
+    "yelp_name": "Omakase 33"
+  },
+  "Shihou Omakase": {
+    "yelp_rating": null,
+    "review_count": 43,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/shihou-omakase-midtown-new-york-3",
+    "yelp_name": "Shihou Omakase - Midtown"
+  },
+  "Shogun Omakase": {
+    "yelp_rating": 4.4,
+    "review_count": 189,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/shogun-omakase-new-york-2",
+    "yelp_name": "Shogun Omakase"
+  },
+  "Sushi Beauu": {
+    "yelp_rating": null,
+    "review_count": 2,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-beauu-new-york-3",
+    "yelp_name": "Sushi Beauu"
+  },
+  "Sushi Kaito": {
+    "yelp_rating": 4.5,
+    "review_count": 231,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-kaito-new-york",
+    "yelp_name": "Sushi Kaito"
+  },
+  "Sushi Masu": {
+    "yelp_rating": 4.5,
+    "review_count": 32,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-masu-new-york",
+    "yelp_name": "Sushi Masu"
+  },
+  "Sushi Yasuda": {
+    "yelp_rating": 4.0,
+    "review_count": 2372,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-yasuda-new-york",
+    "yelp_name": "Sushi Yasuda"
+  },
+  "Sushi You": {
+    "yelp_rating": 4.5,
+    "review_count": 296,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-you-new-york",
+    "yelp_name": "Sushi You"
+  },
+  "Trust Bae": {
+    "yelp_rating": null,
+    "review_count": 44,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/trust-bae-new-york-2",
+    "yelp_name": "Trust Bae"
+  },
+  "Uka Omakase": {
+    "yelp_rating": 4.5,
+    "review_count": 113,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/uka-omakase-new-york",
+    "yelp_name": "Uka Omakase"
+  },
+  "Uogashi": {
+    "yelp_rating": 4.3,
+    "review_count": 125,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/uogashi-new-york-3",
+    "yelp_name": "Uogashi"
+  },
+  "Zama Omakase": {
+    "yelp_rating": null,
+    "review_count": null,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/zama-omakase-new-york",
+    "yelp_name": "Zama Omakase"
+  },
+  "Chemistry Room": {
+    "yelp_rating": 4.5,
+    "review_count": 133,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/the-chemistry-room-new-york-3",
+    "yelp_name": "The Chemistry Room"
+  },
+  "Korami Omakase": {
+    "yelp_rating": 4.8,
+    "review_count": 546,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/omakase-by-korami-new-york",
+    "yelp_name": "Omakase By Korami"
+  },
+  "Mojo Omakase": {
+    "yelp_rating": 4.0,
+    "review_count": 164,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/mojo-omakase-new-york-3",
+    "yelp_name": "Mojo Omakase"
+  },
+  "Sushiichi": {
+    "yelp_rating": 4.8,
+    "review_count": 86,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushiichi-new-york-2",
+    "yelp_name": "Sushiichi"
+  },
+  "Sushi Lab": {
+    "yelp_rating": 4.1,
+    "review_count": 992,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-lab-rooftop-new-york-2",
+    "yelp_name": "Sushi Lab Rooftop"
+  },
+  "Sendo": {
+    "yelp_rating": 4.5,
+    "review_count": 205,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/sendo-manhattan",
+    "yelp_name": "Sendo"
+  },
+  "Sushi Sasabune": {
+    "yelp_rating": 4.0,
+    "review_count": 434,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sasabune-new-york",
+    "yelp_name": "Sasabune"
+  },
+  "Omakase Sushi Dairo": {
+    "yelp_rating": 4.5,
+    "review_count": 131,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/omakase-sushi-dairo-new-york",
+    "yelp_name": "Omakase Sushi Dairo"
+  },
+  "Tsumo": {
+    "yelp_rating": 4.6,
+    "review_count": 274,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/tsumo-omakase-new-york",
+    "yelp_name": "Tsumo Omakase"
+  },
+  "One Bite Omakase": {
+    "yelp_rating": 4.9,
+    "review_count": 71,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/one-bite-omakase-new-york",
+    "yelp_name": "One Bite Omakase"
+  },
+  "ROKI": {
+    "yelp_rating": 4.1,
+    "review_count": 147,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/roki-new-york",
+    "yelp_name": "ROKI"
+  },
+  "Shinn East": {
+    "yelp_rating": 4.5,
+    "review_count": 388,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/shinn-east-new-york",
+    "yelp_name": "Shinn East"
+  },
+  "Sushi Blossoms": {
+    "yelp_rating": 4.6,
+    "review_count": 199,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-blossoms-new-york",
+    "yelp_name": "Sushi Blossoms"
+  },
+  "Sushi Suite 1001": {
+    "yelp_rating": 4.5,
+    "review_count": 151,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-suite-1001-nomad-nyc-by-sushi-by-bou-new-york",
+    "yelp_name": "Sushi Suite 1001 - Nomad NYC by Sushi by Bou"
+  },
+  "Tokyo Bar": {
+    "yelp_rating": 3.9,
+    "review_count": 27,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/tokyo-bar-new-york",
+    "yelp_name": "Tokyo Bar"
+  },
+  "KazuNori": {
+    "yelp_rating": 4.0,
+    "review_count": 1652,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/kazunori-nomad-new-york",
+    "yelp_name": "KazuNori | NoMad"
+  },
+  "Hasaki": {
+    "yelp_rating": 3.8,
+    "review_count": 415,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/hasaki-new-york",
+    "yelp_name": "Hasaki"
+  },
+  "KAWA Omakase": {
+    "yelp_rating": 5.0,
+    "review_count": 11,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/kawa-omakase-new-york",
+    "yelp_name": "Kawa Omakase"
+  },
+  "Kissaki": {
+    "yelp_rating": 4.0,
+    "review_count": 285,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/kissaki-sushi-new-york-9",
+    "yelp_name": "Kissaki Sushi"
+  },
+  "Mayanoki": {
+    "yelp_rating": 4.5,
+    "review_count": 50,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/mayanoki-new-york",
+    "yelp_name": "Mayanoki"
+  },
+  "Mido Omakase": {
+    "yelp_rating": 5.0,
+    "review_count": 43,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/mido-omakase-room-brooklyn-2",
+    "yelp_name": "Mido Omakase Room"
+  },
+  "Moko": {
+    "yelp_rating": 4.0,
+    "review_count": 277,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/moko-new-york",
+    "yelp_name": "Moko"
+  },
+  "Omakase by Teisui": {
+    "yelp_rating": 4.0,
+    "review_count": 140,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/omakase-by-teisui-new-york",
+    "yelp_name": "OMAKASE by TEISUI"
+  },
+  "Robataya": {
+    "yelp_rating": 3.5,
+    "review_count": 536,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/robataya-ny-new-york",
+    "yelp_name": "Robataya NY"
+  },
+  "Sanyuu West": {
+    "yelp_rating": 4.4,
+    "review_count": 158,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sanyuu-west-new-york",
+    "yelp_name": "Sanyuu West"
+  },
+  "Shinzo Omakase": {
+    "yelp_rating": 4.7,
+    "review_count": 146,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/shinzo-omakase-new-york-2",
+    "yelp_name": "Shinzo Omakase"
+  },
+  "SourAji": {
+    "yelp_rating": 3.5,
+    "review_count": 206,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/souraji-new-york",
+    "yelp_name": "SourAji"
+  },
+  "Sugarfish": {
+    "yelp_rating": 4.1,
+    "review_count": 1093,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/sugarfish-flatiron-new-york",
+    "yelp_name": "SUGARFISH | Flatiron"
+  },
+  "Sushi by Bou": {
+    "yelp_rating": 4.6,
+    "review_count": 965,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-by-bou-times-square-new-york",
+    "yelp_name": "Sushi by Bou Times Square"
+  },
+  "Sushi by M": {
+    "yelp_rating": 4.5,
+    "review_count": 1239,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-by-m-new-york",
+    "yelp_name": "Sushi by M"
+  },
+  "Sushi Dojo": {
+    "yelp_rating": 3.8,
+    "review_count": 547,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-dojo-new-york-2",
+    "yelp_name": "Sushi Dojo"
+  },
+  "Sushi Seki": {
+    "yelp_rating": 3.8,
+    "review_count": 588,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-seki-new-york-9",
+    "yelp_name": "Sushi Seki"
+  },
+  "Thirteen Water": {
+    "yelp_rating": 4.6,
+    "review_count": 282,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/thirteen-water-new-york",
+    "yelp_name": "Thirteen Water"
+  },
+  "Domodomo": {
+    "yelp_rating": 4.2,
+    "review_count": 1712,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/domodomo-new-york-new-york-4",
+    "yelp_name": "DOMODOMO - New York"
+  },
+  "Genki Omakase": {
+    "yelp_rating": 4.5,
+    "review_count": 308,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/genki-omakase-new-york",
+    "yelp_name": "Genki Omakase"
+  },
+  "Kanoyama": {
+    "yelp_rating": 3.7,
+    "review_count": 757,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/kanoyama-new-york",
+    "yelp_name": "Kanoyama"
+  },
+  "Kazumi Omakase": {
+    "yelp_rating": 4.8,
+    "review_count": 90,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/kazumi-omakase-new-york",
+    "yelp_name": "Kazumi Omakase"
+  },
+  "Nozomi NYC": {
+    "yelp_rating": null,
+    "review_count": 13,
+    "price_level": null,
+    "yelp_url": "https://www.yelp.com/biz/nozomi-new-york",
+    "yelp_name": "Nozomi"
+  },
+  "Saishin": {
+    "yelp_rating": 4.3,
+    "review_count": 32,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/saishin-new-york",
+    "yelp_name": "Saishin"
+  },
+  "Shota Omakase": {
+    "yelp_rating": 4.5,
+    "review_count": 57,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/shota-omakase-brooklyn",
+    "yelp_name": "Shota Omakase"
+  },
+  "Sushi Yashin": {
+    "yelp_rating": 4.0,
+    "review_count": 268,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-yashin-brooklyn",
+    "yelp_name": "Sushi Yashin"
+  },
+  "U Omakase": {
+    "yelp_rating": 4.7,
+    "review_count": 41,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/u-omakase-brooklyn",
+    "yelp_name": "U Omakase"
+  },
+  "Bondi Sushi": {
+    "yelp_rating": null,
+    "review_count": 47,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/bondi-sushi-brooklyn-2",
+    "yelp_name": "Bondi Sushi"
+  },
+  "Douska": {
+    "yelp_rating": 4.4,
+    "review_count": 271,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/douska-new-york",
+    "yelp_name": "Douska"
+  },
+  "Matsunori": {
+    "yelp_rating": 4.5,
+    "review_count": 194,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/matsunori-new-york",
+    "yelp_name": "matsunori"
+  },
+  "Mishik": {
+    "yelp_rating": null,
+    "review_count": 70,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/mishik-new-york-4",
+    "yelp_name": "Mishik"
+  },
+  "Sushi 456": {
+    "yelp_rating": 4.6,
+    "review_count": 77,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-456-new-york",
+    "yelp_name": "Sushi 456"
+  },
+  "Sushi Hayashi": {
+    "yelp_rating": null,
+    "review_count": null,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-hayashi-williamsburg-brooklyn-5",
+    "yelp_name": "Sushi Hayashi Williamsburg"
+  },
+  "Sushi Nakazawa": {
+    "yelp_rating": 4.3,
+    "review_count": 1874,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-nakazawa-new-york",
+    "yelp_name": "Sushi Nakazawa"
+  },
+  "Sushi on Jones": {
+    "yelp_rating": 4.0,
+    "review_count": 511,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-on-jones-new-york",
+    "yelp_name": "Sushi on Jones"
+  },
+  "Sushi On Me": {
+    "yelp_rating": 4.6,
+    "review_count": 359,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-on-me-jackson-heights",
+    "yelp_name": "Sushi On Me"
+  },
+  "Takumi Omakase": {
+    "yelp_rating": 4.6,
+    "review_count": 277,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/takumi-omakase-new-york",
+    "yelp_name": "Takumi Omakase"
+  },
+  "Ume Williamsburg": {
+    "yelp_rating": 4.3,
+    "review_count": 697,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/ume-williamsburg-brooklyn",
+    "yelp_name": "Ume Williamsburg"
+  },
+  "Yoshino": {
+    "yelp_rating": 4.3,
+    "review_count": 51,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/yoshino-new-york-3",
+    "yelp_name": "Yoshino"
+  },
+  "Zen Sushi Omakase": {
+    "yelp_rating": 4.7,
+    "review_count": 50,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/zen-sushi-omakase-new-york",
+    "yelp_name": "Zen Sushi Omakase"
+  },
+  "Sushi Ryusei": {
+    "yelp_rating": 4.5,
+    "review_count": 157,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-ryusei-new-york-2",
+    "yelp_name": "Sushi Ryusei"
+  },
+  "Blue Ribbon Sushi": {
+    "yelp_rating": 4.1,
+    "review_count": 1327,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/blue-ribbon-sushi-new-york",
+    "yelp_name": "Blue Ribbon Sushi"
+  },
+  "Kintsugi": {
+    "yelp_rating": 4.5,
+    "review_count": 123,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/kintsugi-omakase-new-york-4",
+    "yelp_name": "Kintsugi Omakase (CLOSED)"
+  },
+  "Maaser Omakase": {
+    "yelp_rating": 4.5,
+    "review_count": 244,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/omakase-room-by-maaser-new-york",
+    "yelp_name": "omakase room by maaser"
+  },
+  "Momoya": {
+    "yelp_rating": 4.1,
+    "review_count": 399,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/momoya-soho-new-york",
+    "yelp_name": "Momoya SoHo"
+  },
+  "Nami Nori": {
+    "yelp_rating": 4.0,
+    "review_count": 1020,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/nami-nori-new-york",
+    "yelp_name": "Nami Nori"
+  },
+  "Sekai Omakase": {
+    "yelp_rating": 4.7,
+    "review_count": 65,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sekai-omakase-new-york",
+    "yelp_name": "Sekai Omakase"
+  },
+  "Shiki Omakase": {
+    "yelp_rating": 4.5,
+    "review_count": 653,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/shiki-omakase-new-york-2",
+    "yelp_name": "Shiki Omakase"
+  },
+  "Sushi by Bae": {
+    "yelp_rating": null,
+    "review_count": 27,
+    "price_level": null,
+    "yelp_url": "https://www.yelp.com/biz/sushi-by-bae-new-york-2",
+    "yelp_name": "Sushi By Bae (CLOSED)"
+  },
+  "Sushi Ikumi": {
+    "yelp_rating": 4.8,
+    "review_count": 59,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-ikumi-new-york",
+    "yelp_name": "Sushi Ikumi"
+  },
+  "Sushi Lin": {
+    "yelp_rating": 4.5,
+    "review_count": 67,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-lin-soho-new-york",
+    "yelp_name": "Sushi Lin SoHo"
+  },
+  "Sushi Ouji": {
+    "yelp_rating": 4.9,
+    "review_count": 54,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-ouji-new-york",
+    "yelp_name": "Sushi Ouji"
+  },
+  "Atto Omakase": {
+    "yelp_rating": 4.7,
+    "review_count": 37,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/atto-sushi-new-york",
+    "yelp_name": "Atto Sushi"
+  },
+  "Noz Market": {
+    "yelp_rating": 4.0,
+    "review_count": 107,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/noz-market-new-york",
+    "yelp_name": "Noz Market"
+  },
+  "Oyishi Sushi": {
+    "yelp_rating": 4.5,
+    "review_count": 28,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/oyishi-sushi-new-york-3",
+    "yelp_name": "Oyishi Sushi"
+  },
+  "Sushi Jin": {
+    "yelp_rating": 4.5,
+    "review_count": 84,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-jin-new-york",
+    "yelp_name": "Sushi Jin"
+  },
+  "Sushi Koya": {
+    "yelp_rating": 4.5,
+    "review_count": 92,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-koya-new-york",
+    "yelp_name": "Sushi Koya"
+  },
+  "Sushi Yolo": {
+    "yelp_rating": 5.0,
+    "review_count": 94,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-yolo-new-york",
+    "yelp_name": "Sushi Yolo"
+  },
+  "Tatsuda Omakase": {
+    "yelp_rating": 4.5,
+    "review_count": 129,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/tatsuda-omakase-new-york-2",
+    "yelp_name": "Tatsuda Omakase"
+  },
+  "Fuku Omakase": {
+    "yelp_rating": 4.5,
+    "review_count": 62,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/fuku-omakase-new-york",
+    "yelp_name": "Fuku Omakase"
+  },
+  "Hatsu Omakase": {
+    "yelp_rating": 4.5,
+    "review_count": 89,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/hatsu-omakase-new-york",
+    "yelp_name": "Hatsu Omakase"
+  },
+  "Kinzan Omakase": {
+    "yelp_rating": 4.5,
+    "review_count": 92,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/kinzan-omakase-new-york",
+    "yelp_name": "Kinzan Omakase"
+  },
+  "Kyuubi Omakase": {
+    "yelp_rating": 5.0,
+    "review_count": 22,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/kyuubi-omakase-new-york",
+    "yelp_name": "Kyuubi Omakase"
+  },
+  "Mitsuru": {
+    "yelp_rating": null,
+    "review_count": null,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/mitsuru-new-york",
+    "yelp_name": "Mitsuru"
+  },
+  "Mojo East": {
+    "yelp_rating": 4.5,
+    "review_count": 125,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/mojo-east-new-york-4",
+    "yelp_name": "Mojo East"
+  },
+  "Mori": {
+    "yelp_rating": 4.5,
+    "review_count": 20,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/mori-new-york",
+    "yelp_name": "Mori"
+  },
+  "Nobu Downtown": {
+    "yelp_rating": 4.0,
+    "review_count": 715,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/nobu-downtown-new-york",
+    "yelp_name": "Nobu Downtown"
+  },
+  "Omakase by No Name": {
+    "yelp_rating": 4.5,
+    "review_count": 43,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/omakase-sushi-by-no-name-new-york",
+    "yelp_name": "Omakase Sushi by No Name"
+  },
+  "Saikou": {
+    "yelp_rating": 5.0,
+    "review_count": 36,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-saikou-new-york",
+    "yelp_name": "Sushi Saikou"
+  },
+  "Sake Kawa": {
+    "yelp_rating": 4.5,
+    "review_count": 286,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/sake-kawa-astoria",
+    "yelp_name": "Sake Kawa"
+  },
+  "SHHH Omakase": {
+    "yelp_rating": 4.5,
+    "review_count": 64,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/shh-omakase-new-york",
+    "yelp_name": "Shh Omakase"
+  },
+  "Shinsen": {
+    "yelp_rating": 3.9,
+    "review_count": 362,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/shinsen-new-york-2",
+    "yelp_name": "Shinsen"
+  },
+  "Shirokuro": {
+    "yelp_rating": 4.1,
+    "review_count": 89,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/shirokuro-new-york",
+    "yelp_name": "Shirokuro"
+  },
+  "Shoshin": {
+    "yelp_rating": 4.5,
+    "review_count": 47,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/shoshin-68-new-york",
+    "yelp_name": "Shoshin 68"
+  },
+  "Sushi Daizen": {
+    "yelp_rating": null,
+    "review_count": null,
+    "price_level": null,
+    "yelp_url": null,
+    "yelp_name": null
+  },
+  "Sushi Kai": {
+    "yelp_rating": 4.5,
+    "review_count": 178,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-kai-east-village-new-york-3",
+    "yelp_name": "Sushi Kai - East Village"
+  },
+  "Sushi Makoto": {
+    "yelp_rating": 4.7,
+    "review_count": 127,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-makoto-omakase-new-york",
+    "yelp_name": "Sushi Makoto - Omakase"
+  },
+  "Taikun": {
+    "yelp_rating": 4.7,
+    "review_count": 50,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/taikun-sushi-new-york",
+    "yelp_name": "Taikun Sushi"
+  },
+  "Towa": {
+    "yelp_rating": 4.5,
+    "review_count": 141,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/towa-new-york-3",
+    "yelp_name": "Towa"
+  },
+  "Unique Omakase": {
+    "yelp_rating": 4.4,
+    "review_count": 52,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/unique-omakase-new-york-2",
+    "yelp_name": "Unique Omakase"
+  },
+  "Yokox Omakase": {
+    "yelp_rating": 4.6,
+    "review_count": 40,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/yokox-omakase-new-york",
+    "yelp_name": "Yokox Omakase"
+  },
+  "Sushi Tsushima": {
+    "yelp_rating": 3.8,
+    "review_count": 295,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-tsushima-new-york",
+    "yelp_name": "Sushi Tsushima"
+  },
+  "Iwak Sushi": {
+    "yelp_rating": 4.5,
+    "review_count": 99,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/iwak-brooklyn",
+    "yelp_name": "IWak"
+  },
+  "Junsui Omakase": {
+    "yelp_rating": 4.5,
+    "review_count": 21,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/junsui-brooklyn-2",
+    "yelp_name": "Junsui"
+  },
+  "Kinjo": {
+    "yelp_rating": 4.5,
+    "review_count": 29,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/kinjo-brooklyn-3",
+    "yelp_name": "Kinjo"
+  },
+  "Luya Omakase": {
+    "yelp_rating": 4.5,
+    "review_count": 23,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/luya-omakase-and-wine-bar-brooklyn-2",
+    "yelp_name": "Luya Omakase and Wine Bar"
+  },
+  "Miro Sushi": {
+    "yelp_rating": 4.5,
+    "review_count": 22,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/miro-sushi-brooklyn",
+    "yelp_name": "Miro Sushi"
+  },
+  "Neta Shari": {
+    "yelp_rating": 4.5,
+    "review_count": 154,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/neta-shari-brooklyn-2",
+    "yelp_name": "Neta Shari"
+  },
+  "Omakase by Hiro": {
+    "yelp_rating": 4.5,
+    "review_count": 109,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/omakase-sushi-by-hiro-brooklyn-2",
+    "yelp_name": "Omakase Sushi By Hiro"
+  },
+  "Sora": {
+    "yelp_rating": 4.5,
+    "review_count": 58,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sora-brooklyn-2",
+    "yelp_name": "Sora"
+  },
+  "Sushi Katsuei": {
+    "yelp_rating": 4.0,
+    "review_count": 547,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-katsuei-brooklyn",
+    "yelp_name": "Sushi Katsuei"
+  },
+  "Sushi Uesugi": {
+    "yelp_rating": 4.0,
+    "review_count": 87,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-uesugi-brooklyn",
+    "yelp_name": "Sushi Uesugi"
+  },
+  "Yamashiro": {
+    "yelp_rating": 3.7,
+    "review_count": 183,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/yamashiro-brooklyn-2",
+    "yelp_name": "Yamashiro"
+  },
+  "E Sushi II": {
+    "yelp_rating": 4.0,
+    "review_count": 232,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/e-sushi-2-brooklyn-3",
+    "yelp_name": "E Sushi 2"
+  },
+  "KIMYO": {
+    "yelp_rating": 4.5,
+    "review_count": 159,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/kimyo-omakase-brooklyn-3",
+    "yelp_name": "KIMYO Omakase"
+  },
+  "Ki Sushi": {
+    "yelp_rating": 4.5,
+    "review_count": 276,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/ki-sushi-brooklyn-5",
+    "yelp_name": "Ki Sushi"
+  },
+  "Koma Sushi": {
+    "yelp_rating": 4.0,
+    "review_count": 39,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/koma-sushi-brooklyn",
+    "yelp_name": "KOMA Sushi"
+  },
+  "Sushi Koju": {
+    "yelp_rating": 4.8,
+    "review_count": 11,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/koju-brooklyn",
+    "yelp_name": "Koju"
+  },
+  "Hanaya Omakase": {
+    "yelp_rating": 4.9,
+    "review_count": 29,
+    "price_level": null,
+    "yelp_url": "https://www.yelp.com/biz/hanaya-omakase-new-york",
+    "yelp_name": "Hanaya Omakase"
+  },
+  "Joji": {
+    "yelp_rating": 4.1,
+    "review_count": 39,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/joji-new-york-2",
+    "yelp_name": "JoJi"
+  },
+  "Koete Omakase": {
+    "yelp_rating": 4.8,
+    "review_count": 50,
+    "price_level": null,
+    "yelp_url": "https://www.yelp.com/biz/koete-omakase-new-york",
+    "yelp_name": "Koete Omakase"
+  },
+  "Shinpi": {
+    "yelp_rating": 4.7,
+    "review_count": 57,
+    "price_level": null,
+    "yelp_url": "https://www.yelp.com/biz/shinpi-omakase-new-york",
+    "yelp_name": "Shinpi Omakase"
+  },
+  "Sushi Ann": {
+    "yelp_rating": 3.4,
+    "review_count": 145,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-ann-restaurant-new-york",
+    "yelp_name": "Sushi-Ann Restaurant"
+  },
+  "Sushi Goda": {
+    "yelp_rating": 4.5,
+    "review_count": 69,
+    "price_level": null,
+    "yelp_url": "https://www.yelp.com/biz/sushi-goda-new-york",
+    "yelp_name": "Sushi Goda"
+  },
+  "Sushi W": {
+    "yelp_rating": 4.6,
+    "review_count": 262,
+    "price_level": null,
+    "yelp_url": "https://www.yelp.com/biz/sushi-w-new-york",
+    "yelp_name": "Sushi W"
+  },
+  "Sushi Yugen": {
+    "yelp_rating": 4.6,
+    "review_count": 47,
+    "price_level": null,
+    "yelp_url": "https://www.yelp.com/biz/sushi-yugen-new-york",
+    "yelp_name": "Sushi Yugen (CLOSED)"
+  },
+  "Gohan Sushi": {
+    "yelp_rating": 4.5,
+    "review_count": 60,
+    "price_level": null,
+    "yelp_url": "https://www.yelp.com/biz/gohan-sushi-brooklyn",
+    "yelp_name": "Gohan Sushi (CLOSED)"
+  },
+  "Idashi Omakase": {
+    "yelp_rating": 4.8,
+    "review_count": 42,
+    "price_level": null,
+    "yelp_url": "https://www.yelp.com/biz/idashi-omakase-brooklyn",
+    "yelp_name": "Idashi Omakase"
+  },
+  "Ishi Omakase": {
+    "yelp_rating": 4.7,
+    "review_count": 73,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/ishi-omakase-and-premium-sake-brooklyn",
+    "yelp_name": "Ishi Omakase & Premium Sake"
+  },
+  "Oita Sushi": {
+    "yelp_rating": 4.4,
+    "review_count": 393,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/oita-sushi-brooklyn-2",
+    "yelp_name": "Oita Sushi"
+  },
+  "Uotora": {
+    "yelp_rating": 4.3,
+    "review_count": 132,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/uotora-brooklyn",
+    "yelp_name": "Uotora"
+  },
+  "Tanoshi Sushi": {
+    "yelp_rating": 4.4,
+    "review_count": 961,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/tanoshi-sushi-sake-bar-new-york",
+    "yelp_name": "Tanoshi Sushi Sake Bar"
+  }
+}

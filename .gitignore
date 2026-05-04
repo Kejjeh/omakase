@@ -1,0 +1,19 @@
+# API keys and secrets
+scripts/config.py
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.env
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Original Excel (keep the generated one)
+# Omakase.xlsx
