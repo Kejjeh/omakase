@@ -1,0 +1,1210 @@
+[
+  {
+    "name": "Hatsuhana",
+    "neighborhood": "Manhattan (Midtown East)",
+    "price_str": "$112 / $130+",
+    "min_price": 112,
+    "pacing": "60\u201390",
+    "vibe": "2-story, \"library\" feel; Historic Michelin rep."
+  },
+  {
+    "name": "Akimori",
+    "neighborhood": "Manhattan (UES/UWS/Midtown)",
+    "price_str": "95",
+    "min_price": 95,
+    "pacing": "60\u201390",
+    "vibe": "Sleek, hushed; Kosher-certified Edomae."
+  },
+  {
+    "name": "Gosuke",
+    "neighborhood": "Manhattan (Midtown)",
+    "price_str": "$100 / $140",
+    "min_price": 100,
+    "pacing": "60\u201390",
+    "vibe": "Quiet, traditional; optimal for business lunches."
+  },
+  {
+    "name": "Hoseki",
+    "neighborhood": "Manhattan (Saks 5th Ave)",
+    "price_str": "95",
+    "min_price": 95,
+    "pacing": "",
+    "vibe": "Calm, secretive retail-attached counter."
+  },
+  {
+    "name": "Inase",
+    "neighborhood": "Manhattan (UWS)",
+    "price_str": "$120 / $150",
+    "min_price": 120,
+    "pacing": "",
+    "vibe": "Modern Edomae counter."
+  },
+  {
+    "name": "Kizuna Omakase",
+    "neighborhood": "Manhattan (UWS)",
+    "price_str": "150",
+    "min_price": 150,
+    "pacing": "",
+    "vibe": "Modern Edomae counter."
+  },
+  {
+    "name": "Kun Tsuki Omakase",
+    "neighborhood": "Manhattan (UWS)",
+    "price_str": "$49 / $89",
+    "min_price": 89,
+    "pacing": "45\u201360",
+    "vibe": "Fast-casual, high-volume."
+  },
+  {
+    "name": "Mari.ne Handroll",
+    "neighborhood": "Manhattan (Bryant Park)",
+    "price_str": "<$30",
+    "min_price": 30,
+    "pacing": "30\u201345",
+    "vibe": "Cozy Korean-Japanese fusion fast-casual."
+  },
+  {
+    "name": "Masuda Omakase",
+    "neighborhood": "Manhattan (Midtown)",
+    "price_str": "135",
+    "min_price": 135,
+    "pacing": "",
+    "vibe": "Counter."
+  },
+  {
+    "name": "Nare Sushi",
+    "neighborhood": "Manhattan (Midtown)",
+    "price_str": "79",
+    "min_price": 79,
+    "pacing": "",
+    "vibe": "Hidden in an office building; veteran chef."
+  },
+  {
+    "name": "Omakase 33",
+    "neighborhood": "Manhattan (Midtown)",
+    "price_str": "88",
+    "min_price": 88,
+    "pacing": "",
+    "vibe": "Inherently fast-paced volume counter."
+  },
+  {
+    "name": "Shihou Omakase",
+    "neighborhood": "Manhattan (Midtown)",
+    "price_str": "105",
+    "min_price": 105,
+    "pacing": "90",
+    "vibe": "Highly relaxed (offers dining table setup)."
+  },
+  {
+    "name": "Shogun Omakase",
+    "neighborhood": "Manhattan (Midtown East)",
+    "price_str": "$68 / $100 / $150",
+    "min_price": 68,
+    "pacing": "60\u201375",
+    "vibe": "Very casual, social; energetic atmosphere."
+  },
+  {
+    "name": "Sushi Beauu",
+    "neighborhood": "Manhattan (Midtown)",
+    "price_str": "$100 / $140",
+    "min_price": 100,
+    "pacing": "75",
+    "vibe": "Cozy, buzzy, reliable mid-tier modern option."
+  },
+  {
+    "name": "Sushi Kaito",
+    "neighborhood": "Manhattan (UWS)",
+    "price_str": "115",
+    "min_price": 115,
+    "pacing": "75\u201390",
+    "vibe": "Warm, inviting, hushed but conversational."
+  },
+  {
+    "name": "Sushi Masu",
+    "neighborhood": "Manhattan (UWS)",
+    "price_str": "$68 / $88",
+    "min_price": 68,
+    "pacing": "",
+    "vibe": "Extremely casual, rapid-fire functional budget."
+  },
+  {
+    "name": "Sushi Yasuda",
+    "neighborhood": "Manhattan (Midtown East)",
+    "price_str": "130",
+    "min_price": 170,
+    "pacing": "90",
+    "vibe": "Hushed, bamboo-clad historical vanguard."
+  },
+  {
+    "name": "Sushi You",
+    "neighborhood": "Manhattan (Midtown East)",
+    "price_str": "$110 / $125",
+    "min_price": 110,
+    "pacing": "",
+    "vibe": "Wednesday-only lunch omakase."
+  },
+  {
+    "name": "Trust Bae",
+    "neighborhood": "Manhattan (Midtown)",
+    "price_str": "150",
+    "min_price": 150,
+    "pacing": "90",
+    "vibe": "Dark nightclub ambiance; highly theatrical."
+  },
+  {
+    "name": "Uka Omakase",
+    "neighborhood": "Manhattan (UWS)",
+    "price_str": "$56 / $98",
+    "min_price": 56,
+    "pacing": "60\u201375",
+    "vibe": "Casual, unpretentious accessible everyday dining."
+  },
+  {
+    "name": "Uogashi",
+    "neighborhood": "Manhattan (Theater District)",
+    "price_str": "$95 / $135",
+    "min_price": 95,
+    "pacing": "",
+    "vibe": ""
+  },
+  {
+    "name": "Zama Omakase",
+    "neighborhood": "Manhattan (UWS)",
+    "price_str": "108",
+    "min_price": 108,
+    "pacing": "75",
+    "vibe": "Relaxed, casual mid-tier contemporary."
+  },
+  {
+    "name": "Chemistry Room",
+    "neighborhood": "Manhattan (Midtown West)",
+    "price_str": "$100 / $150",
+    "min_price": 100,
+    "pacing": "90\u2013120",
+    "vibe": "Modern, dark, social; molecular gastronomy."
+  },
+  {
+    "name": "Korami Omakase",
+    "neighborhood": "Manhattan (Hell's Kitchen)",
+    "price_str": "89",
+    "min_price": 89,
+    "pacing": "60",
+    "vibe": "Exceptionally tiny, highly chatty gem."
+  },
+  {
+    "name": "Mojo Omakase",
+    "neighborhood": "Manhattan (Midtown West)",
+    "price_str": "$75 / $90 / $95",
+    "min_price": 90,
+    "pacing": "60\u201375",
+    "vibe": "Counter-only, informal modern sushi."
+  },
+  {
+    "name": "Sushiichi",
+    "neighborhood": "Manhattan (Hell's Kitchen)",
+    "price_str": "130",
+    "min_price": 130,
+    "pacing": "90",
+    "vibe": "Cozy, quiet, deeply reliable neighborhood traditional."
+  },
+  {
+    "name": "Sushi Lab",
+    "neighborhood": "Manhattan (Times Sq/Midtown)",
+    "price_str": "$60 / $130",
+    "min_price": 60,
+    "pacing": "60\u201390",
+    "vibe": "Social, upbeat; theatrical smoke; stunning roof."
+  },
+  {
+    "name": "Sendo",
+    "neighborhood": "Manhattan (Midtown East)",
+    "price_str": "33",
+    "min_price": 48,
+    "pacing": "45\u201360",
+    "vibe": "Extraordinary value commuter-secret (hidden)."
+  },
+  {
+    "name": "Sushi Sasabune",
+    "neighborhood": "Manhattan (UES / UWS)",
+    "price_str": "$57 / $97",
+    "min_price": 57,
+    "pacing": "",
+    "vibe": "Casual, no-frills."
+  },
+  {
+    "name": "Omakase Sushi Dairo",
+    "neighborhood": "Manhattan (Gramercy/Midtown)",
+    "price_str": "$95 / $150 / $160",
+    "min_price": 95,
+    "pacing": "90",
+    "vibe": "Experienced, highly refined veteran chef."
+  },
+  {
+    "name": "Tsumo",
+    "neighborhood": "Manhattan (Kips Bay / UES)",
+    "price_str": "$48 / $58",
+    "min_price": 58,
+    "pacing": "45\u201360",
+    "vibe": "Fast, casual, in-and-out budget counter."
+  },
+  {
+    "name": "One Bite Omakase",
+    "neighborhood": "Manhattan (UES / Lower Manh.)",
+    "price_str": "89",
+    "min_price": 89,
+    "pacing": "",
+    "vibe": "Counter."
+  },
+  {
+    "name": "ROKI",
+    "neighborhood": "Manhattan (Flatiron)",
+    "price_str": "Unlisted",
+    "min_price": null,
+    "pacing": "",
+    "vibe": ""
+  },
+  {
+    "name": "Shinn East",
+    "neighborhood": "Manhattan (East Village)",
+    "price_str": "$65 / $69",
+    "min_price": 69,
+    "pacing": "55",
+    "vibe": "Small, no-frills, strict pacing, high fish quality."
+  },
+  {
+    "name": "Sushi Blossoms",
+    "neighborhood": "Manhattan (Chelsea/Midtown)",
+    "price_str": "85",
+    "min_price": 85,
+    "pacing": "75",
+    "vibe": "Bright, photogenic; seasonal floral presentations."
+  },
+  {
+    "name": "Sushi Suite 1001",
+    "neighborhood": "Manhattan (NoMad)",
+    "price_str": "150",
+    "min_price": 150,
+    "pacing": "75",
+    "vibe": "Ultra-private hotel-room speakeasy."
+  },
+  {
+    "name": "Tokyo Bar",
+    "neighborhood": "Manhattan",
+    "price_str": "",
+    "min_price": null,
+    "pacing": "90",
+    "vibe": "Bar-centric, vibrant multi-course tapas fusion."
+  },
+  {
+    "name": "KazuNori",
+    "neighborhood": "Manhattan (NoMad/Midtown)",
+    "price_str": "24",
+    "min_price": 24,
+    "pacing": "30\u201345",
+    "vibe": "Fast-paced, no-frills; handroll exclusive."
+  },
+  {
+    "name": "Hasaki",
+    "neighborhood": "Manhattan (East Village)",
+    "price_str": "96",
+    "min_price": 96,
+    "pacing": "75\u201390",
+    "vibe": "Cozy basement, 1984 East Village staple."
+  },
+  {
+    "name": "KAWA Omakase",
+    "neighborhood": "Manhattan (East Village)",
+    "price_str": "88",
+    "min_price": 88,
+    "pacing": "75\u201390",
+    "vibe": "Tiny, warm, casual, chatty."
+  },
+  {
+    "name": "Kissaki",
+    "neighborhood": "Manhattan (Flatiron / UES)",
+    "price_str": "$100 / $135",
+    "min_price": 100,
+    "pacing": "75\u201390",
+    "vibe": "Modern minimalist; Michelin Plate."
+  },
+  {
+    "name": "Mayanoki",
+    "neighborhood": "Manhattan (East Village)",
+    "price_str": "95",
+    "min_price": 95,
+    "pacing": "",
+    "vibe": "Sustainable-fish omakase."
+  },
+  {
+    "name": "Mido Omakase",
+    "neighborhood": "Brooklyn (Williamsburg)",
+    "price_str": "$68 / $100 / $150",
+    "min_price": 100,
+    "pacing": "60\u2013120",
+    "vibe": "Dim, romantic; interactive iPad fish education."
+  },
+  {
+    "name": "Moko",
+    "neighborhood": "Manhattan (East Village)",
+    "price_str": "$95 / $120",
+    "min_price": 95,
+    "pacing": "",
+    "vibe": "Cozy/trendy; modern fusion (table seating)."
+  },
+  {
+    "name": "Omakase by Teisui",
+    "neighborhood": "Manhattan (East Village)",
+    "price_str": "$75 / $95",
+    "min_price": 75,
+    "pacing": "60",
+    "vibe": "Intimate, warm, conversational."
+  },
+  {
+    "name": "Robataya",
+    "neighborhood": "Manhattan (East Village)",
+    "price_str": "$60 / $80",
+    "min_price": 60,
+    "pacing": "90",
+    "vibe": "Rustic, theatrical Robata grill (NOT sushi)."
+  },
+  {
+    "name": "Sanyuu West",
+    "neighborhood": "Manhattan (Chelsea)",
+    "price_str": "78",
+    "min_price": 78,
+    "pacing": "",
+    "vibe": "Sister to Shinn East / Thirteen Water."
+  },
+  {
+    "name": "Shinzo Omakase",
+    "neighborhood": "Manhattan (East Village)",
+    "price_str": "69",
+    "min_price": 69,
+    "pacing": "60",
+    "vibe": "Highly relaxed, unpretentious; Strictly BYOB."
+  },
+  {
+    "name": "SourAji",
+    "neighborhood": "Manhattan (East Village)",
+    "price_str": "98",
+    "min_price": 98,
+    "pacing": "90",
+    "vibe": "Gluttonous, fun; AYCE movement pioneer."
+  },
+  {
+    "name": "Sugarfish",
+    "neighborhood": "Manhattan",
+    "price_str": "32",
+    "min_price": 76,
+    "pacing": "45\u201360",
+    "vibe": "Dark, sleek, bustling; LA import \"Trust Me\" menus."
+  },
+  {
+    "name": "Sushi by Bou",
+    "neighborhood": "Manhattan",
+    "price_str": "50",
+    "min_price": 65,
+    "pacing": "30\u201360",
+    "vibe": "Laid-back, hip-hop, loud speakeasy chain."
+  },
+  {
+    "name": "Sushi by M",
+    "neighborhood": "Manhattan (East Village)",
+    "price_str": "$69 / $105",
+    "min_price": 69,
+    "pacing": "60",
+    "vibe": "High-energy, playful unconventional fusion."
+  },
+  {
+    "name": "Sushi Dojo",
+    "neighborhood": "Manhattan (East Village)",
+    "price_str": "60",
+    "min_price": 98,
+    "pacing": "90",
+    "vibe": "Friendly, fun, club music weekends."
+  },
+  {
+    "name": "Sushi Seki",
+    "neighborhood": "Manhattan (Chelsea / UES)",
+    "price_str": "$60 / $150",
+    "min_price": 120,
+    "pacing": "90",
+    "vibe": "Michelin Recommended; lively, semi-private rooms."
+  },
+  {
+    "name": "Thirteen Water",
+    "neighborhood": "Manhattan (East Village)",
+    "price_str": "$75 / $85",
+    "min_price": 75,
+    "pacing": "60",
+    "vibe": "Dark, sleek; highly unique \"layered\" flavors."
+  },
+  {
+    "name": "Domodomo",
+    "neighborhood": "Manhattan (Flatiron/SoHo)",
+    "price_str": "$120 / $140 / $180",
+    "min_price": 120,
+    "pacing": "90",
+    "vibe": "Warm, elegant; 8-Year Michelin Bib Gourmand."
+  },
+  {
+    "name": "Genki Omakase",
+    "neighborhood": "Manhattan (Greenwich Village)",
+    "price_str": "$75 / $98",
+    "min_price": 75,
+    "pacing": "",
+    "vibe": "Casual; BYOB-friendly."
+  },
+  {
+    "name": "Kanoyama",
+    "neighborhood": "Manhattan (East Village)",
+    "price_str": "195",
+    "min_price": 195,
+    "pacing": "120",
+    "vibe": "Former Michelin Star; classic, cozy isolated counter."
+  },
+  {
+    "name": "Kazumi Omakase",
+    "neighborhood": "Manhattan (Greenwich Village)",
+    "price_str": "$75 / $95",
+    "min_price": 75,
+    "pacing": "60",
+    "vibe": "Warm, relaxed; premier budget-friendly option."
+  },
+  {
+    "name": "Nozomi NYC",
+    "neighborhood": "Manhattan & Brooklyn",
+    "price_str": "$88 / $108",
+    "min_price": 108,
+    "pacing": "75\u201390",
+    "vibe": "Relaxed and welcoming; complex dry-aging."
+  },
+  {
+    "name": "Saishin",
+    "neighborhood": "Manhattan (Meatpacking)",
+    "price_str": "$115 / $135",
+    "min_price": 115,
+    "pacing": "90",
+    "vibe": "Vibrant, club-adjacent Gansevoort rooftop."
+  },
+  {
+    "name": "Shota Omakase",
+    "neighborhood": "Brooklyn (Williamsburg)",
+    "price_str": "$175 / $195 / $255",
+    "min_price": 175,
+    "pacing": "105",
+    "vibe": "1 Michelin Star; highly welcoming, conversational."
+  },
+  {
+    "name": "Sushi Yashin",
+    "neighborhood": "Manhattan / Brooklyn",
+    "price_str": "50",
+    "min_price": 50,
+    "pacing": "60",
+    "vibe": "Quiet minimalist space; Michelin Bib Gourmand."
+  },
+  {
+    "name": "U Omakase",
+    "neighborhood": "Brooklyn (Greenpoint)",
+    "price_str": "109",
+    "min_price": 109,
+    "pacing": "",
+    "vibe": "Communal U-shaped counter; highly social."
+  },
+  {
+    "name": "Bondi Sushi",
+    "neighborhood": "Brooklyn (Greenpoint)",
+    "price_str": "70",
+    "min_price": 75,
+    "pacing": "60",
+    "vibe": "Casual, California-influenced; friendly service."
+  },
+  {
+    "name": "Douska",
+    "neighborhood": "Manhattan (LES)",
+    "price_str": "~$95",
+    "min_price": 95,
+    "pacing": "60",
+    "vibe": "Intimately scaled, energetic cult favorite."
+  },
+  {
+    "name": "Matsunori",
+    "neighborhood": "Manhattan (LES / Bowery)",
+    "price_str": "58",
+    "min_price": 68,
+    "pacing": "60",
+    "vibe": "Stripped-down; Strictly BYOB (cash discount)."
+  },
+  {
+    "name": "Mishik",
+    "neighborhood": "Manhattan (Hudson Square)",
+    "price_str": "$95 / $145",
+    "min_price": 95,
+    "pacing": "",
+    "vibe": "Counter Edomae."
+  },
+  {
+    "name": "Sushi 456",
+    "neighborhood": "Manhattan (West Village)",
+    "price_str": "$70 / $100",
+    "min_price": 70,
+    "pacing": "",
+    "vibe": "Tiny counter, smooth-jazz, casual."
+  },
+  {
+    "name": "Sushi Hayashi",
+    "neighborhood": "Brooklyn (Williamsburg)",
+    "price_str": "98",
+    "min_price": 98,
+    "pacing": "80",
+    "vibe": "Premier AYCE; unlimited sushi, beer, and sake."
+  },
+  {
+    "name": "Sushi Nakazawa",
+    "neighborhood": "Manhattan (West Village)",
+    "price_str": "$160 / $190",
+    "min_price": 160,
+    "pacing": "120",
+    "vibe": "1 Michelin Star; dining room table seating is ideal."
+  },
+  {
+    "name": "Sushi on Jones",
+    "neighborhood": "Manhattan/Brooklyn",
+    "price_str": "50",
+    "min_price": 58,
+    "pacing": "30\u201345",
+    "vibe": "Inherently chaotic, loud originator of timed model."
+  },
+  {
+    "name": "Sushi On Me",
+    "neighborhood": "Brooklyn / Queens",
+    "price_str": "99",
+    "min_price": 99,
+    "pacing": "60",
+    "vibe": "Chaotic, party-fueled; Unlimited sake."
+  },
+  {
+    "name": "Takumi Omakase",
+    "neighborhood": "Manhattan (LES)",
+    "price_str": "89",
+    "min_price": 89,
+    "pacing": "60",
+    "vibe": "Casual, intimate; premier BYOB destination."
+  },
+  {
+    "name": "Ume Williamsburg",
+    "neighborhood": "Brooklyn (Williamsburg)",
+    "price_str": "$55 / $78",
+    "min_price": 78,
+    "pacing": "",
+    "vibe": "Referral-only; barefoot policy; DIY options."
+  },
+  {
+    "name": "Yoshino",
+    "neighborhood": "Manhattan (NoHo)",
+    "price_str": "500",
+    "min_price": 500,
+    "pacing": "150",
+    "vibe": "1 Michelin Star; highly conversational but pricey."
+  },
+  {
+    "name": "Zen Sushi Omakase",
+    "neighborhood": "Manhattan (LES)",
+    "price_str": "89",
+    "min_price": 89,
+    "pacing": "",
+    "vibe": "Heavy TikTok presence; veteran chefs."
+  },
+  {
+    "name": "Sushi Ryusei",
+    "neighborhood": "Manhattan (Murray Hill/Midtown)",
+    "price_str": "$95 / $140",
+    "min_price": 95,
+    "pacing": "60\u201390",
+    "vibe": "Calm, distraction-free, quiet traditional."
+  },
+  {
+    "name": "Blue Ribbon Sushi",
+    "neighborhood": "Manhattan (SoHo)",
+    "price_str": "$85 / $115 / $150",
+    "min_price": 150,
+    "pacing": "75\u201390",
+    "vibe": "Bustling, iconic; Historic NYC institution (1995)."
+  },
+  {
+    "name": "Kintsugi",
+    "neighborhood": "Manhattan (SoHo)",
+    "price_str": "$60 / $95 / $195",
+    "min_price": 90,
+    "pacing": "60\u201390",
+    "vibe": "Lighthearted; innovative global sourcing."
+  },
+  {
+    "name": "Maaser Omakase",
+    "neighborhood": "Manhattan (SoHo / West Vil.)",
+    "price_str": "$65 / $95 / $135",
+    "min_price": 135,
+    "pacing": "90",
+    "vibe": "Quiet, minimalist; Kosher omakase counter."
+  },
+  {
+    "name": "Momoya",
+    "neighborhood": "Manhattan (SoHo)",
+    "price_str": "150",
+    "min_price": 150,
+    "pacing": "90\u2013120",
+    "vibe": "Modern, spacious; architectural pastry desserts."
+  },
+  {
+    "name": "Nami Nori",
+    "neighborhood": "Manhattan (SoHo/West Village)",
+    "price_str": "30",
+    "min_price": 32,
+    "pacing": "45\u201360",
+    "vibe": "Bright, highly social; Michelin Bib Gourmand."
+  },
+  {
+    "name": "Sekai Omakase",
+    "neighborhood": "Manhattan (South Village)",
+    "price_str": "108",
+    "min_price": 108,
+    "pacing": "60\u201375",
+    "vibe": "Comfortable and familiar dependable staple."
+  },
+  {
+    "name": "Shiki Omakase",
+    "neighborhood": "Manhattan (SoHo)",
+    "price_str": "$65 / $100",
+    "min_price": 65,
+    "pacing": "40",
+    "vibe": "Cozy all-white room; extreme efficiency/fast."
+  },
+  {
+    "name": "Sushi by Bae",
+    "neighborhood": "Manhattan (SoHo)",
+    "price_str": "$75 / $90",
+    "min_price": 75,
+    "pacing": "75",
+    "vibe": "Casual, straightforward."
+  },
+  {
+    "name": "Sushi Ikumi",
+    "neighborhood": "Manhattan (SoHo)",
+    "price_str": "150",
+    "min_price": 150,
+    "pacing": "90",
+    "vibe": "Intimate, elegant Saturday lunch exclusive."
+  },
+  {
+    "name": "Sushi Lin",
+    "neighborhood": "Manhattan",
+    "price_str": "35",
+    "min_price": 90,
+    "pacing": "45\u201390",
+    "vibe": "Minimalist, serene; Sourced from Tsukiji."
+  },
+  {
+    "name": "Sushi Ouji",
+    "neighborhood": "Manhattan (SoHo / Lower Manh.)",
+    "price_str": "129",
+    "min_price": 129,
+    "pacing": "90\u2013120",
+    "vibe": "Decidedly upscale; rare imports (Kuruma Ebi)."
+  },
+  {
+    "name": "Atto Omakase",
+    "neighborhood": "Manhattan (UES)",
+    "price_str": "$85 / $95 / $115",
+    "min_price": 85,
+    "pacing": "60\u201375",
+    "vibe": "Intimate counter, hushed but non-restrictive."
+  },
+  {
+    "name": "Noz Market",
+    "neighborhood": "Manhattan (UES)",
+    "price_str": "$90 / $150",
+    "min_price": 90,
+    "pacing": "60",
+    "vibe": "Pristine fish market feel; casual sibling to Sushi Noz."
+  },
+  {
+    "name": "Oyishi Sushi",
+    "neighborhood": "Manhattan (UES)",
+    "price_str": "50",
+    "min_price": 50,
+    "pacing": "45",
+    "vibe": "Extremely casual, absolute lowest budget point."
+  },
+  {
+    "name": "Sushi Jin",
+    "neighborhood": "Manhattan (UES)",
+    "price_str": "145",
+    "min_price": 145,
+    "pacing": "90",
+    "vibe": "Quiet, refined, upscale intimacy."
+  },
+  {
+    "name": "Sushi Koya",
+    "neighborhood": "Manhattan (UES)",
+    "price_str": "115",
+    "min_price": 115,
+    "pacing": "75",
+    "vibe": "Casual, modern 18-course contemporary menu."
+  },
+  {
+    "name": "Sushi Yolo",
+    "neighborhood": "Manhattan (UES)",
+    "price_str": "109",
+    "min_price": 109,
+    "pacing": "60",
+    "vibe": "Fun, casual, bold fusion-heavy menu."
+  },
+  {
+    "name": "Tatsuda Omakase",
+    "neighborhood": "Manhattan (UES)",
+    "price_str": "90",
+    "min_price": 90,
+    "pacing": "60",
+    "vibe": "Neighborhood-casual value-driven traditionalists."
+  },
+  {
+    "name": "Fuku Omakase",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "75",
+    "min_price": 75,
+    "pacing": "",
+    "vibe": "Modest counter."
+  },
+  {
+    "name": "Hatsu Omakase",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "95",
+    "min_price": 95,
+    "pacing": "",
+    "vibe": "Casual; features an AYCE round."
+  },
+  {
+    "name": "Kinzan Omakase",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "$69 / $89",
+    "min_price": 69,
+    "pacing": "",
+    "vibe": "Classic Edomae Counter."
+  },
+  {
+    "name": "Kyuubi Omakase",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "68",
+    "min_price": 68,
+    "pacing": "",
+    "vibe": "Brisk."
+  },
+  {
+    "name": "Mitsuru",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "150",
+    "min_price": 150,
+    "pacing": "",
+    "vibe": "Counter Edomae."
+  },
+  {
+    "name": "Mojo East",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "55",
+    "min_price": 55,
+    "pacing": "",
+    "vibe": "Gratuity included; ultra budget-friendly."
+  },
+  {
+    "name": "Mori",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "125",
+    "min_price": 125,
+    "pacing": "90",
+    "vibe": "Calm, focused, quiet foundational baseline."
+  },
+  {
+    "name": "Nobu Downtown",
+    "neighborhood": "Manhattan (FiDi)",
+    "price_str": "150",
+    "min_price": 150,
+    "pacing": "120",
+    "vibe": "Sleek subterranean Japanese-Peruvian fusion."
+  },
+  {
+    "name": "Omakase by No Name",
+    "neighborhood": "Manhattan (Lower Manh.)",
+    "price_str": "$88 / $128",
+    "min_price": 88,
+    "pacing": "",
+    "vibe": ""
+  },
+  {
+    "name": "Saikou",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "120",
+    "min_price": 120,
+    "pacing": "75\u201390",
+    "vibe": "Quiet, highly focused, measured 17-course menu."
+  },
+  {
+    "name": "Sake Kawa",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "$60 / $90",
+    "min_price": 60,
+    "pacing": "",
+    "vibe": "Sake-focused counter."
+  },
+  {
+    "name": "SHHH Omakase",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "$98 / $128",
+    "min_price": 98,
+    "pacing": "",
+    "vibe": "Speakeasy-style hidden counter."
+  },
+  {
+    "name": "Shinsen",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "98",
+    "min_price": 98,
+    "pacing": "",
+    "vibe": "Features an AYCE round."
+  },
+  {
+    "name": "Shirokuro",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "$60 / $90",
+    "min_price": 60,
+    "pacing": "",
+    "vibe": "Casual counter."
+  },
+  {
+    "name": "Shoshin",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "$68 / $98",
+    "min_price": 68,
+    "pacing": "",
+    "vibe": ""
+  },
+  {
+    "name": "Sushi Daizen",
+    "neighborhood": "Manhattan (FiDi)",
+    "price_str": "$75 / $95",
+    "min_price": 75,
+    "pacing": "75",
+    "vibe": "Quiet, warm, traditional sushi focus."
+  },
+  {
+    "name": "Sushi Kai",
+    "neighborhood": "Manhattan",
+    "price_str": "85",
+    "min_price": 85,
+    "pacing": "60\u201375",
+    "vibe": "Intimate, humble high quality."
+  },
+  {
+    "name": "Sushi Makoto",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "$120 / $150",
+    "min_price": 120,
+    "pacing": "90",
+    "vibe": "Deeply respectful 15-18 course traditional menu."
+  },
+  {
+    "name": "Taikun",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "85",
+    "min_price": 85,
+    "pacing": "",
+    "vibe": ""
+  },
+  {
+    "name": "Towa",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "125",
+    "min_price": 125,
+    "pacing": "90",
+    "vibe": "Elegant, refined; distinct kaiseki influences."
+  },
+  {
+    "name": "Unique Omakase",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "120",
+    "min_price": 120,
+    "pacing": "",
+    "vibe": "Intimate counter."
+  },
+  {
+    "name": "Yokox Omakase",
+    "neighborhood": "Manhattan (Lower Manhattan)",
+    "price_str": "89",
+    "min_price": 89,
+    "pacing": "",
+    "vibe": "Counter."
+  },
+  {
+    "name": "Sushi Tsushima",
+    "neighborhood": "Manhattan (Midtown East)",
+    "price_str": "60",
+    "min_price": 60,
+    "pacing": "60",
+    "vibe": "Simple bright funky $60 omakase; relaxed."
+  },
+  {
+    "name": "Iwak Sushi",
+    "neighborhood": "Brooklyn",
+    "price_str": "67",
+    "min_price": 67,
+    "pacing": "",
+    "vibe": "Modest counter."
+  },
+  {
+    "name": "Junsui Omakase",
+    "neighborhood": "Brooklyn (DUMBO)",
+    "price_str": "$125 / $145",
+    "min_price": 125,
+    "pacing": "",
+    "vibe": "Museum-like, quiet; BYOB."
+  },
+  {
+    "name": "Kinjo",
+    "neighborhood": "Brooklyn (DUMBO)",
+    "price_str": "95",
+    "min_price": 95,
+    "pacing": "75\u201390",
+    "vibe": "Stunning industrial-chic torpedo factory."
+  },
+  {
+    "name": "Luya Omakase",
+    "neighborhood": "Brooklyn",
+    "price_str": "$59 / $89",
+    "min_price": 89,
+    "pacing": "",
+    "vibe": ""
+  },
+  {
+    "name": "Miro Sushi",
+    "neighborhood": "Brooklyn",
+    "price_str": "75",
+    "min_price": 75,
+    "pacing": "",
+    "vibe": ""
+  },
+  {
+    "name": "Neta Shari",
+    "neighborhood": "Brooklyn (Bensonhurst)",
+    "price_str": "$65 / $125",
+    "min_price": 65,
+    "pacing": "90",
+    "vibe": "Tiny, intimate; Michelin Guide 4 years."
+  },
+  {
+    "name": "Omakase by Hiro",
+    "neighborhood": "Brooklyn (Sheepshead Bay)",
+    "price_str": "85",
+    "min_price": 118,
+    "pacing": "",
+    "vibe": "Intimate, classy; former Sushi Nakazawa alum."
+  },
+  {
+    "name": "Sora",
+    "neighborhood": "Brooklyn",
+    "price_str": "120",
+    "min_price": 120,
+    "pacing": "",
+    "vibe": ""
+  },
+  {
+    "name": "Sushi Katsuei",
+    "neighborhood": "Brooklyn / Manhattan",
+    "price_str": "60",
+    "min_price": 77,
+    "pacing": "60\u201375",
+    "vibe": "Minimalist strict purists (no mayo/heavy soy)."
+  },
+  {
+    "name": "Sushi Uesugi",
+    "neighborhood": "Brooklyn",
+    "price_str": "75",
+    "min_price": 75,
+    "pacing": "",
+    "vibe": ""
+  },
+  {
+    "name": "Yamashiro",
+    "neighborhood": "Brooklyn",
+    "price_str": "$88 / $108",
+    "min_price": 88,
+    "pacing": "",
+    "vibe": ""
+  },
+  {
+    "name": "E Sushi II",
+    "neighborhood": "Brooklyn (Flatbush)",
+    "price_str": "~$32",
+    "min_price": 32,
+    "pacing": "",
+    "vibe": "Bustling, casual; All-You-Can-Eat (AYCE)."
+  },
+  {
+    "name": "KIMYO",
+    "neighborhood": "Brooklyn (Park Slope/Downtown)",
+    "price_str": "$49 / $69",
+    "min_price": 69,
+    "pacing": "60",
+    "vibe": "Dark, chic, social; $69 tier = unlimited drinks."
+  },
+  {
+    "name": "Ki Sushi",
+    "neighborhood": "Brooklyn (Prospect Heights)",
+    "price_str": "55",
+    "min_price": 55,
+    "pacing": "60",
+    "vibe": "Family-friendly, bustling neighborhood staple."
+  },
+  {
+    "name": "Koma Sushi",
+    "neighborhood": "Brooklyn (Flatbush)",
+    "price_str": "40",
+    "min_price": 40,
+    "pacing": "60",
+    "vibe": "Casual banquet-style; Kosher-certified AYCE."
+  },
+  {
+    "name": "Sushi Koju",
+    "neighborhood": "Brooklyn (Boerum Hill)",
+    "price_str": "145",
+    "min_price": 145,
+    "pacing": "120",
+    "vibe": "Plush hotel lobby; conversation-friendly host."
+  },
+  {
+    "name": "Hanaya Omakase",
+    "neighborhood": "Manhattan (UES/Midtown)",
+    "price_str": "75",
+    "min_price": 75,
+    "pacing": "60",
+    "vibe": "Casual, bright, quick-service budget model."
+  },
+  {
+    "name": "Joji",
+    "neighborhood": "Manhattan (Midtown East)",
+    "price_str": "$325 / $450",
+    "min_price": 325,
+    "pacing": "90\u2013120",
+    "vibe": "1 Michelin Star; sleek hidden room in One Vanderbilt."
+  },
+  {
+    "name": "Koete Omakase",
+    "neighborhood": "Manhattan (UES/Theater Dist.)",
+    "price_str": "$65 / $118",
+    "min_price": 118,
+    "pacing": "60\u201390",
+    "vibe": "Intimate, energetic; pre-theater efficiency."
+  },
+  {
+    "name": "Shinpi",
+    "neighborhood": "Manhattan (Upper Manhattan)",
+    "price_str": "150",
+    "min_price": 150,
+    "pacing": "",
+    "vibe": ""
+  },
+  {
+    "name": "Sushi Ann",
+    "neighborhood": "Manhattan (Midtown East)",
+    "price_str": "$80 / $125",
+    "min_price": 80,
+    "pacing": "60\u201390",
+    "vibe": "Hushed, respectful staple for business lunches."
+  },
+  {
+    "name": "Sushi Goda",
+    "neighborhood": "Manhattan (Upper Manhattan)",
+    "price_str": "110",
+    "min_price": 110,
+    "pacing": "60\u201375",
+    "vibe": "Comfortable, quiet hushed counter."
+  },
+  {
+    "name": "Sushi W",
+    "neighborhood": "Manhattan (UWS/UES/East Vil.)",
+    "price_str": "$38 / $68",
+    "min_price": 53,
+    "pacing": "60",
+    "vibe": "Casual, highly efficient; Strict no-tipping."
+  },
+  {
+    "name": "Sushi Yugen",
+    "neighborhood": "Manhattan (Upper Manhattan)",
+    "price_str": "120",
+    "min_price": 120,
+    "pacing": "",
+    "vibe": ""
+  },
+  {
+    "name": "Gohan Sushi",
+    "neighborhood": "Brooklyn (Bay Ridge)",
+    "price_str": "$70 / $99",
+    "min_price": 70,
+    "pacing": "60\u201375",
+    "vibe": "Casual family vibe; traditional family-run."
+  },
+  {
+    "name": "Idashi Omakase",
+    "neighborhood": "Brooklyn (Park Slope)",
+    "price_str": "99",
+    "min_price": 99,
+    "pacing": "90",
+    "vibe": "Cozy, relaxed; TikTok/Yelp famous; BYOB."
+  },
+  {
+    "name": "Ishi Omakase",
+    "neighborhood": "Brooklyn (Park Slope)",
+    "price_str": "$85 / $105 / $125",
+    "min_price": 85,
+    "pacing": "",
+    "vibe": "Dim, refined, intimate traditional sushi."
+  },
+  {
+    "name": "Oita Sushi",
+    "neighborhood": "Brooklyn (Park Slope)",
+    "price_str": "85",
+    "min_price": 85,
+    "pacing": "60\u201375",
+    "vibe": "Allows mixed formats (a la carte + omakase)."
+  },
+  {
+    "name": "Uotora",
+    "neighborhood": "Brooklyn (Crown Heights)",
+    "price_str": "$85 / $105",
+    "min_price": 85,
+    "pacing": "75\u201390",
+    "vibe": "Quiet, highly respectful; Michelin Plate."
+  },
+  {
+    "name": "Tanoshi Sushi",
+    "neighborhood": "Manhattan (UES / Lenox Hill)",
+    "price_str": "60",
+    "min_price": 102,
+    "pacing": "90",
+    "vibe": "Cult-favorite loosey-sushi; strictly BYOB."
+  },
+  {
+    "name": "Kaki",
+    "neighborhood": "Lower East Side",
+    "price_str": "$85",
+    "min_price": 85,
+    "pacing": "60",
+    "vibe": "Intimate LES counter, free house sake, BYOB friendly."
+  },
+  {
+    "name": "Sushi Oku",
+    "neighborhood": "Lower East Side",
+    "price_str": "$85 / $100 / $165",
+    "min_price": 85,
+    "pacing": "75-90",
+    "vibe": "Upscale counter inside old Scarr's Pizza space. Chef Kei Yoshino."
+  }
+]
