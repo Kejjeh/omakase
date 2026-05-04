@@ -18,3 +18,13 @@ Thumbs.db
 
 # Original Excel (keep the generated one)
 # Omakase.xlsx
+
+# Local version snapshots (nested git repos, not submodules)
+omakase-clean/
+omakase-final/
+omakase-v2/
+omakase-v3/
+omakase-v4/
+omakase-v5.bundle
+omakase-v6.bundle
+omakase-update.bundle
