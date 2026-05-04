@@ -42,8 +42,7 @@
   "Masuda Omakase": {
     "rating": null,
     "review_count": null,
-    "google_name": "",
-    "address": ""
+    "google_name": ""
   },
   "Nare Sushi": {
     "rating": 4.2,
@@ -258,8 +257,7 @@
   "Robataya": {
     "rating": 4.7,
     "review_count": 34,
-    "google_name": "Sushi By Bou - East Village NYC",
-    "address": "320 E 11th St, New York, NY 10003, USA"
+    "google_name": "Sushi By Bou - East Village NYC"
   },
   "Sanyuu West": {
     "rating": 4.7,
@@ -810,5 +808,15 @@
     "rating": 4.7,
     "review_count": 654,
     "google_name": "Tanoshi Sushi Sake Bar"
+  },
+  "Kaki": {
+    "rating": 4.9,
+    "review_count": 219,
+    "google_name": "Kaki"
+  },
+  "Sushi Oku": {
+    "rating": 4.8,
+    "review_count": 67,
+    "google_name": "Sushi Oku"
   }
 }

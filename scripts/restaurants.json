@@ -5,10 +5,7 @@
     "price_str": "$112 / $130+",
     "min_price": 112,
     "pacing": "60\u201390",
-    "vibe": "2-story, \"library\" feel; Historic Michelin rep.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~41m",
-    "time_diff": "10m"
+    "vibe": "2-story, \"library\" feel; Historic Michelin rep."
   },
   {
     "name": "Akimori",
@@ -16,10 +13,7 @@
     "price_str": "95",
     "min_price": 95,
     "pacing": "60\u201390",
-    "vibe": "Sleek, hushed; Kosher-certified Edomae.",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~45m",
-    "time_diff": "11m"
+    "vibe": "Sleek, hushed; Kosher-certified Edomae."
   },
   {
     "name": "Gosuke",
@@ -27,10 +21,7 @@
     "price_str": "$100 / $140",
     "min_price": 100,
     "pacing": "60\u201390",
-    "vibe": "Quiet, traditional; optimal for business lunches.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~40m",
-    "time_diff": "11m"
+    "vibe": "Quiet, traditional; optimal for business lunches."
   },
   {
     "name": "Hoseki",
@@ -38,10 +29,7 @@
     "price_str": "95",
     "min_price": 95,
     "pacing": "",
-    "vibe": "Calm, secretive retail-attached counter.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~40m",
-    "time_diff": "11m"
+    "vibe": "Calm, secretive retail-attached counter."
   },
   {
     "name": "Inase",
@@ -49,10 +37,7 @@
     "price_str": "$120 / $150",
     "min_price": 120,
     "pacing": "",
-    "vibe": "Modern Edomae counter.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~50m",
-    "time_diff": "11m"
+    "vibe": "Modern Edomae counter."
   },
   {
     "name": "Kizuna Omakase",
@@ -60,10 +45,7 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "",
-    "vibe": "Modern Edomae counter.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~50m",
-    "time_diff": "11m"
+    "vibe": "Modern Edomae counter."
   },
   {
     "name": "Kun Tsuki Omakase",
@@ -71,10 +53,7 @@
     "price_str": "$49 / $89",
     "min_price": 89,
     "pacing": "45\u201360",
-    "vibe": "Fast-casual, high-volume.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~50m",
-    "time_diff": "11m"
+    "vibe": "Fast-casual, high-volume."
   },
   {
     "name": "Mari.ne Handroll",
@@ -82,10 +61,7 @@
     "price_str": "<$30",
     "min_price": 30,
     "pacing": "30\u201345",
-    "vibe": "Cozy Korean-Japanese fusion fast-casual.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~40m",
-    "time_diff": "11m"
+    "vibe": "Cozy Korean-Japanese fusion fast-casual."
   },
   {
     "name": "Masuda Omakase",
@@ -93,10 +69,7 @@
     "price_str": "135",
     "min_price": 135,
     "pacing": "",
-    "vibe": "Counter.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~40m",
-    "time_diff": "11m"
+    "vibe": "Counter."
   },
   {
     "name": "Nare Sushi",
@@ -104,10 +77,7 @@
     "price_str": "79",
     "min_price": 79,
     "pacing": "",
-    "vibe": "Hidden in an office building; veteran chef.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~40m",
-    "time_diff": "11m"
+    "vibe": "Hidden in an office building; veteran chef."
   },
   {
     "name": "Omakase 33",
@@ -115,10 +85,7 @@
     "price_str": "88",
     "min_price": 88,
     "pacing": "",
-    "vibe": "Inherently fast-paced volume counter.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~40m",
-    "time_diff": "11m"
+    "vibe": "Inherently fast-paced volume counter."
   },
   {
     "name": "Shihou Omakase",
@@ -126,10 +93,7 @@
     "price_str": "105",
     "min_price": 105,
     "pacing": "90",
-    "vibe": "Highly relaxed (offers dining table setup).",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~40m",
-    "time_diff": "11m"
+    "vibe": "Highly relaxed (offers dining table setup)."
   },
   {
     "name": "Shogun Omakase",
@@ -137,10 +101,7 @@
     "price_str": "$68 / $100 / $150",
     "min_price": 68,
     "pacing": "60\u201375",
-    "vibe": "Very casual, social; energetic atmosphere.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~40m",
-    "time_diff": "11m"
+    "vibe": "Very casual, social; energetic atmosphere."
   },
   {
     "name": "Sushi Beauu",
@@ -148,10 +109,7 @@
     "price_str": "$100 / $140",
     "min_price": 100,
     "pacing": "75",
-    "vibe": "Cozy, buzzy, reliable mid-tier modern option.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~40m",
-    "time_diff": "11m"
+    "vibe": "Cozy, buzzy, reliable mid-tier modern option."
   },
   {
     "name": "Sushi Kaito",
@@ -159,10 +117,7 @@
     "price_str": "115",
     "min_price": 115,
     "pacing": "75\u201390",
-    "vibe": "Warm, inviting, hushed but conversational.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~50m",
-    "time_diff": "11m"
+    "vibe": "Warm, inviting, hushed but conversational."
   },
   {
     "name": "Sushi Masu",
@@ -170,10 +125,7 @@
     "price_str": "$68 / $88",
     "min_price": 68,
     "pacing": "",
-    "vibe": "Extremely casual, rapid-fire functional budget.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~50m",
-    "time_diff": "11m"
+    "vibe": "Extremely casual, rapid-fire functional budget."
   },
   {
     "name": "Sushi Yasuda",
@@ -181,10 +133,7 @@
     "price_str": "130",
     "min_price": 170,
     "pacing": "90",
-    "vibe": "Hushed, bamboo-clad historical vanguard.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~40m",
-    "time_diff": "11m"
+    "vibe": "Hushed, bamboo-clad historical vanguard."
   },
   {
     "name": "Sushi You",
@@ -192,10 +141,7 @@
     "price_str": "$110 / $125",
     "min_price": 110,
     "pacing": "",
-    "vibe": "Wednesday-only lunch omakase.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~40m",
-    "time_diff": "11m"
+    "vibe": "Wednesday-only lunch omakase."
   },
   {
     "name": "Trust Bae",
@@ -203,10 +149,7 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "90",
-    "vibe": "Dark nightclub ambiance; highly theatrical.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~40m",
-    "time_diff": "11m"
+    "vibe": "Dark nightclub ambiance; highly theatrical."
   },
   {
     "name": "Uka Omakase",
@@ -214,10 +157,7 @@
     "price_str": "$56 / $98",
     "min_price": 56,
     "pacing": "60\u201375",
-    "vibe": "Casual, unpretentious accessible everyday dining.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~50m",
-    "time_diff": "11m"
+    "vibe": "Casual, unpretentious accessible everyday dining."
   },
   {
     "name": "Uogashi",
@@ -225,10 +165,7 @@
     "price_str": "$95 / $135",
     "min_price": 95,
     "pacing": "",
-    "vibe": "",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~45m",
-    "time_diff": "11m"
+    "vibe": ""
   },
   {
     "name": "Zama Omakase",
@@ -236,10 +173,7 @@
     "price_str": "108",
     "min_price": 108,
     "pacing": "75",
-    "vibe": "Relaxed, casual mid-tier contemporary.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~50m",
-    "time_diff": "11m"
+    "vibe": "Relaxed, casual mid-tier contemporary."
   },
   {
     "name": "Chemistry Room",
@@ -247,10 +181,7 @@
     "price_str": "$100 / $150",
     "min_price": 100,
     "pacing": "90\u2013120",
-    "vibe": "Modern, dark, social; molecular gastronomy.",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~40m",
-    "time_diff": "16m"
+    "vibe": "Modern, dark, social; molecular gastronomy."
   },
   {
     "name": "Korami Omakase",
@@ -258,10 +189,7 @@
     "price_str": "89",
     "min_price": 89,
     "pacing": "60",
-    "vibe": "Exceptionally tiny, highly chatty gem.",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~40m",
-    "time_diff": "16m"
+    "vibe": "Exceptionally tiny, highly chatty gem."
   },
   {
     "name": "Mojo Omakase",
@@ -269,10 +197,7 @@
     "price_str": "$75 / $90 / $95",
     "min_price": 90,
     "pacing": "60\u201375",
-    "vibe": "Counter-only, informal modern sushi.",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~40m",
-    "time_diff": "16m"
+    "vibe": "Counter-only, informal modern sushi."
   },
   {
     "name": "Sushiichi",
@@ -280,10 +205,7 @@
     "price_str": "130",
     "min_price": 130,
     "pacing": "90",
-    "vibe": "Cozy, quiet, deeply reliable neighborhood traditional.",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~40m",
-    "time_diff": "16m"
+    "vibe": "Cozy, quiet, deeply reliable neighborhood traditional."
   },
   {
     "name": "Sushi Lab",
@@ -291,10 +213,7 @@
     "price_str": "$60 / $130",
     "min_price": 60,
     "pacing": "60\u201390",
-    "vibe": "Social, upbeat; theatrical smoke; stunning roof.",
-    "commute_parkchester": "~55m",
-    "commute_parkslope": "~38m",
-    "time_diff": "17m"
+    "vibe": "Social, upbeat; theatrical smoke; stunning roof."
   },
   {
     "name": "Sendo",
@@ -302,10 +221,7 @@
     "price_str": "33",
     "min_price": 48,
     "pacing": "45\u201360",
-    "vibe": "Extraordinary value commuter-secret (hidden).",
-    "commute_parkchester": "~54m",
-    "commute_parkslope": "~35m",
-    "time_diff": "19m"
+    "vibe": "Extraordinary value commuter-secret (hidden)."
   },
   {
     "name": "Sushi Sasabune",
@@ -313,10 +229,7 @@
     "price_str": "$57 / $97",
     "min_price": 57,
     "pacing": "",
-    "vibe": "Casual, no-frills.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~50m",
-    "time_diff": "1m"
+    "vibe": "Casual, no-frills."
   },
   {
     "name": "Omakase Sushi Dairo",
@@ -324,10 +237,7 @@
     "price_str": "$95 / $150 / $160",
     "min_price": 95,
     "pacing": "90",
-    "vibe": "Experienced, highly refined veteran chef.",
-    "commute_parkchester": "~58m",
-    "commute_parkslope": "~38m",
-    "time_diff": "20m"
+    "vibe": "Experienced, highly refined veteran chef."
   },
   {
     "name": "Tsumo",
@@ -335,10 +245,7 @@
     "price_str": "$48 / $58",
     "min_price": 58,
     "pacing": "45\u201360",
-    "vibe": "Fast, casual, in-and-out budget counter.",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~36m",
-    "time_diff": "20m"
+    "vibe": "Fast, casual, in-and-out budget counter."
   },
   {
     "name": "One Bite Omakase",
@@ -346,10 +253,7 @@
     "price_str": "89",
     "min_price": 89,
     "pacing": "",
-    "vibe": "Counter.",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~35m",
-    "time_diff": "21m"
+    "vibe": "Counter."
   },
   {
     "name": "ROKI",
@@ -357,10 +261,7 @@
     "price_str": "Unlisted",
     "min_price": null,
     "pacing": "",
-    "vibe": "",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~35m",
-    "time_diff": "21m"
+    "vibe": ""
   },
   {
     "name": "Shinn East",
@@ -368,10 +269,7 @@
     "price_str": "$65 / $69",
     "min_price": 69,
     "pacing": "55",
-    "vibe": "Small, no-frills, strict pacing, high fish quality.",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~35m",
-    "time_diff": "21m"
+    "vibe": "Small, no-frills, strict pacing, high fish quality."
   },
   {
     "name": "Sushi Blossoms",
@@ -379,10 +277,7 @@
     "price_str": "85",
     "min_price": 85,
     "pacing": "75",
-    "vibe": "Bright, photogenic; seasonal floral presentations.",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~35m",
-    "time_diff": "21m"
+    "vibe": "Bright, photogenic; seasonal floral presentations."
   },
   {
     "name": "Sushi Suite 1001",
@@ -390,10 +285,7 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "75",
-    "vibe": "Ultra-private hotel-room speakeasy.",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~35m",
-    "time_diff": "21m"
+    "vibe": "Ultra-private hotel-room speakeasy."
   },
   {
     "name": "Tokyo Bar",
@@ -401,10 +293,7 @@
     "price_str": "",
     "min_price": null,
     "pacing": "90",
-    "vibe": "Bar-centric, vibrant multi-course tapas fusion.",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~35m",
-    "time_diff": "21m"
+    "vibe": "Bar-centric, vibrant multi-course tapas fusion."
   },
   {
     "name": "KazuNori",
@@ -412,10 +301,7 @@
     "price_str": "24",
     "min_price": 24,
     "pacing": "30\u201345",
-    "vibe": "Fast-paced, no-frills; handroll exclusive.",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~31m",
-    "time_diff": "25m"
+    "vibe": "Fast-paced, no-frills; handroll exclusive."
   },
   {
     "name": "Hasaki",
@@ -423,10 +309,7 @@
     "price_str": "96",
     "min_price": 96,
     "pacing": "75\u201390",
-    "vibe": "Cozy basement, 1984 East Village staple.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~35m",
-    "time_diff": "26m"
+    "vibe": "Cozy basement, 1984 East Village staple."
   },
   {
     "name": "KAWA Omakase",
@@ -434,10 +317,7 @@
     "price_str": "88",
     "min_price": 88,
     "pacing": "75\u201390",
-    "vibe": "Tiny, warm, casual, chatty.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~35m",
-    "time_diff": "26m"
+    "vibe": "Tiny, warm, casual, chatty."
   },
   {
     "name": "Kissaki",
@@ -445,10 +325,7 @@
     "price_str": "$100 / $135",
     "min_price": 100,
     "pacing": "75\u201390",
-    "vibe": "Modern minimalist; Michelin Plate.",
-    "commute_parkchester": "~58m",
-    "commute_parkslope": "~32m",
-    "time_diff": "26m"
+    "vibe": "Modern minimalist; Michelin Plate."
   },
   {
     "name": "Mayanoki",
@@ -456,10 +333,7 @@
     "price_str": "95",
     "min_price": 95,
     "pacing": "",
-    "vibe": "Sustainable-fish omakase.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~35m",
-    "time_diff": "26m"
+    "vibe": "Sustainable-fish omakase."
   },
   {
     "name": "Mido Omakase",
@@ -467,10 +341,7 @@
     "price_str": "$68 / $100 / $150",
     "min_price": 100,
     "pacing": "60\u2013120",
-    "vibe": "Dim, romantic; interactive iPad fish education.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~40m",
-    "time_diff": "26m"
+    "vibe": "Dim, romantic; interactive iPad fish education."
   },
   {
     "name": "Moko",
@@ -478,10 +349,7 @@
     "price_str": "$95 / $120",
     "min_price": 95,
     "pacing": "",
-    "vibe": "Cozy/trendy; modern fusion (table seating).",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~35m",
-    "time_diff": "26m"
+    "vibe": "Cozy/trendy; modern fusion (table seating)."
   },
   {
     "name": "Omakase by Teisui",
@@ -489,10 +357,7 @@
     "price_str": "$75 / $95",
     "min_price": 75,
     "pacing": "60",
-    "vibe": "Intimate, warm, conversational.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~35m",
-    "time_diff": "26m"
+    "vibe": "Intimate, warm, conversational."
   },
   {
     "name": "Robataya",
@@ -500,10 +365,7 @@
     "price_str": "$60 / $80",
     "min_price": 60,
     "pacing": "90",
-    "vibe": "Rustic, theatrical Robata grill (NOT sushi).",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~35m",
-    "time_diff": "26m"
+    "vibe": "Rustic, theatrical Robata grill (NOT sushi)."
   },
   {
     "name": "Sanyuu West",
@@ -511,10 +373,7 @@
     "price_str": "78",
     "min_price": 78,
     "pacing": "",
-    "vibe": "Sister to Shinn East / Thirteen Water.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~35m",
-    "time_diff": "26m"
+    "vibe": "Sister to Shinn East / Thirteen Water."
   },
   {
     "name": "Shinzo Omakase",
@@ -522,10 +381,7 @@
     "price_str": "69",
     "min_price": 69,
     "pacing": "60",
-    "vibe": "Highly relaxed, unpretentious; Strictly BYOB.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~35m",
-    "time_diff": "26m"
+    "vibe": "Highly relaxed, unpretentious; Strictly BYOB."
   },
   {
     "name": "SourAji",
@@ -533,10 +389,7 @@
     "price_str": "98",
     "min_price": 98,
     "pacing": "90",
-    "vibe": "Gluttonous, fun; AYCE movement pioneer.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~35m",
-    "time_diff": "26m"
+    "vibe": "Gluttonous, fun; AYCE movement pioneer."
   },
   {
     "name": "Sugarfish",
@@ -544,10 +397,7 @@
     "price_str": "32",
     "min_price": 76,
     "pacing": "45\u201360",
-    "vibe": "Dark, sleek, bustling; LA import \"Trust Me\" menus.",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~30m",
-    "time_diff": "26m"
+    "vibe": "Dark, sleek, bustling; LA import \"Trust Me\" menus."
   },
   {
     "name": "Sushi by Bou",
@@ -555,10 +405,7 @@
     "price_str": "50",
     "min_price": 65,
     "pacing": "30\u201360",
-    "vibe": "Laid-back, hip-hop, loud speakeasy chain.",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~30m",
-    "time_diff": "26m"
+    "vibe": "Laid-back, hip-hop, loud speakeasy chain."
   },
   {
     "name": "Sushi by M",
@@ -566,10 +413,7 @@
     "price_str": "$69 / $105",
     "min_price": 69,
     "pacing": "60",
-    "vibe": "High-energy, playful unconventional fusion.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~35m",
-    "time_diff": "26m"
+    "vibe": "High-energy, playful unconventional fusion."
   },
   {
     "name": "Sushi Dojo",
@@ -577,10 +421,7 @@
     "price_str": "60",
     "min_price": 98,
     "pacing": "90",
-    "vibe": "Friendly, fun, club music weekends.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~35m",
-    "time_diff": "26m"
+    "vibe": "Friendly, fun, club music weekends."
   },
   {
     "name": "Sushi Seki",
@@ -588,10 +429,7 @@
     "price_str": "$60 / $150",
     "min_price": 120,
     "pacing": "90",
-    "vibe": "Michelin Recommended; lively, semi-private rooms.",
-    "commute_parkchester": "~56m",
-    "commute_parkslope": "~30m",
-    "time_diff": "26m"
+    "vibe": "Michelin Recommended; lively, semi-private rooms."
   },
   {
     "name": "Thirteen Water",
@@ -599,10 +437,7 @@
     "price_str": "$75 / $85",
     "min_price": 75,
     "pacing": "60",
-    "vibe": "Dark, sleek; highly unique \"layered\" flavors.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~35m",
-    "time_diff": "26m"
+    "vibe": "Dark, sleek; highly unique \"layered\" flavors."
   },
   {
     "name": "Domodomo",
@@ -610,10 +445,7 @@
     "price_str": "$120 / $140 / $180",
     "min_price": 120,
     "pacing": "90",
-    "vibe": "Warm, elegant; 8-Year Michelin Bib Gourmand.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~30m",
-    "time_diff": "31m"
+    "vibe": "Warm, elegant; 8-Year Michelin Bib Gourmand."
   },
   {
     "name": "Genki Omakase",
@@ -621,10 +453,7 @@
     "price_str": "$75 / $98",
     "min_price": 75,
     "pacing": "",
-    "vibe": "Casual; BYOB-friendly.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~30m",
-    "time_diff": "31m"
+    "vibe": "Casual; BYOB-friendly."
   },
   {
     "name": "Kanoyama",
@@ -632,10 +461,7 @@
     "price_str": "195",
     "min_price": 195,
     "pacing": "120",
-    "vibe": "Former Michelin Star; classic, cozy isolated counter.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~30m",
-    "time_diff": "31m"
+    "vibe": "Former Michelin Star; classic, cozy isolated counter."
   },
   {
     "name": "Kazumi Omakase",
@@ -643,10 +469,7 @@
     "price_str": "$75 / $95",
     "min_price": 75,
     "pacing": "60",
-    "vibe": "Warm, relaxed; premier budget-friendly option.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~30m",
-    "time_diff": "31m"
+    "vibe": "Warm, relaxed; premier budget-friendly option."
   },
   {
     "name": "Nozomi NYC",
@@ -654,10 +477,7 @@
     "price_str": "$88 / $108",
     "min_price": 108,
     "pacing": "75\u201390",
-    "vibe": "Relaxed and welcoming; complex dry-aging.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~30m",
-    "time_diff": "31m"
+    "vibe": "Relaxed and welcoming; complex dry-aging."
   },
   {
     "name": "Saishin",
@@ -665,10 +485,7 @@
     "price_str": "$115 / $135",
     "min_price": 115,
     "pacing": "90",
-    "vibe": "Vibrant, club-adjacent Gansevoort rooftop.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~35m",
-    "time_diff": "31m"
+    "vibe": "Vibrant, club-adjacent Gansevoort rooftop."
   },
   {
     "name": "Shota Omakase",
@@ -676,10 +493,7 @@
     "price_str": "$175 / $195 / $255",
     "min_price": 175,
     "pacing": "105",
-    "vibe": "1 Michelin Star; highly welcoming, conversational.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~35m",
-    "time_diff": "31m"
+    "vibe": "1 Michelin Star; highly welcoming, conversational."
   },
   {
     "name": "Sushi Yashin",
@@ -687,10 +501,7 @@
     "price_str": "50",
     "min_price": 50,
     "pacing": "60",
-    "vibe": "Quiet minimalist space; Michelin Bib Gourmand.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~30m",
-    "time_diff": "31m"
+    "vibe": "Quiet minimalist space; Michelin Bib Gourmand."
   },
   {
     "name": "U Omakase",
@@ -698,10 +509,7 @@
     "price_str": "109",
     "min_price": 109,
     "pacing": "",
-    "vibe": "Communal U-shaped counter; highly social.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~40m",
-    "time_diff": "31m"
+    "vibe": "Communal U-shaped counter; highly social."
   },
   {
     "name": "Bondi Sushi",
@@ -709,10 +517,7 @@
     "price_str": "70",
     "min_price": 75,
     "pacing": "60",
-    "vibe": "Casual, California-influenced; friendly service.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~35m",
-    "time_diff": "36m"
+    "vibe": "Casual, California-influenced; friendly service."
   },
   {
     "name": "Douska",
@@ -720,10 +525,7 @@
     "price_str": "~$95",
     "min_price": 95,
     "pacing": "60",
-    "vibe": "Intimately scaled, energetic cult favorite.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~30m",
-    "time_diff": "36m"
+    "vibe": "Intimately scaled, energetic cult favorite."
   },
   {
     "name": "Matsunori",
@@ -731,10 +533,7 @@
     "price_str": "58",
     "min_price": 68,
     "pacing": "60",
-    "vibe": "Stripped-down; Strictly BYOB (cash discount).",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~30m",
-    "time_diff": "36m"
+    "vibe": "Stripped-down; Strictly BYOB (cash discount)."
   },
   {
     "name": "Mishik",
@@ -742,10 +541,7 @@
     "price_str": "$95 / $145",
     "min_price": 95,
     "pacing": "",
-    "vibe": "Counter Edomae.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~30m",
-    "time_diff": "36m"
+    "vibe": "Counter Edomae."
   },
   {
     "name": "Sushi 456",
@@ -753,10 +549,7 @@
     "price_str": "$70 / $100",
     "min_price": 70,
     "pacing": "",
-    "vibe": "Tiny counter, smooth-jazz, casual.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~30m",
-    "time_diff": "36m"
+    "vibe": "Tiny counter, smooth-jazz, casual."
   },
   {
     "name": "Sushi Hayashi",
@@ -764,10 +557,7 @@
     "price_str": "98",
     "min_price": 98,
     "pacing": "80",
-    "vibe": "Premier AYCE; unlimited sushi, beer, and sake.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~35m",
-    "time_diff": "36m"
+    "vibe": "Premier AYCE; unlimited sushi, beer, and sake."
   },
   {
     "name": "Sushi Nakazawa",
@@ -775,10 +565,7 @@
     "price_str": "$160 / $190",
     "min_price": 160,
     "pacing": "120",
-    "vibe": "1 Michelin Star; dining room table seating is ideal.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~25m",
-    "time_diff": "36m"
+    "vibe": "1 Michelin Star; dining room table seating is ideal."
   },
   {
     "name": "Sushi on Jones",
@@ -786,10 +573,7 @@
     "price_str": "50",
     "min_price": 58,
     "pacing": "30\u201345",
-    "vibe": "Inherently chaotic, loud originator of timed model.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~30m",
-    "time_diff": "36m"
+    "vibe": "Inherently chaotic, loud originator of timed model."
   },
   {
     "name": "Sushi On Me",
@@ -797,10 +581,7 @@
     "price_str": "99",
     "min_price": 99,
     "pacing": "60",
-    "vibe": "Chaotic, party-fueled; Unlimited sake.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~35m",
-    "time_diff": "36m"
+    "vibe": "Chaotic, party-fueled; Unlimited sake."
   },
   {
     "name": "Takumi Omakase",
@@ -808,10 +589,7 @@
     "price_str": "89",
     "min_price": 89,
     "pacing": "60",
-    "vibe": "Casual, intimate; premier BYOB destination.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~30m",
-    "time_diff": "36m"
+    "vibe": "Casual, intimate; premier BYOB destination."
   },
   {
     "name": "Ume Williamsburg",
@@ -819,10 +597,7 @@
     "price_str": "$55 / $78",
     "min_price": 78,
     "pacing": "",
-    "vibe": "Referral-only; barefoot policy; DIY options.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~35m",
-    "time_diff": "36m"
+    "vibe": "Referral-only; barefoot policy; DIY options."
   },
   {
     "name": "Yoshino",
@@ -830,10 +605,7 @@
     "price_str": "500",
     "min_price": 500,
     "pacing": "150",
-    "vibe": "1 Michelin Star; highly conversational but pricey.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~25m",
-    "time_diff": "36m"
+    "vibe": "1 Michelin Star; highly conversational but pricey."
   },
   {
     "name": "Zen Sushi Omakase",
@@ -841,10 +613,7 @@
     "price_str": "89",
     "min_price": 89,
     "pacing": "",
-    "vibe": "Heavy TikTok presence; veteran chefs.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~30m",
-    "time_diff": "36m"
+    "vibe": "Heavy TikTok presence; veteran chefs."
   },
   {
     "name": "Sushi Ryusei",
@@ -852,10 +621,7 @@
     "price_str": "$95 / $140",
     "min_price": 95,
     "pacing": "60\u201390",
-    "vibe": "Calm, distraction-free, quiet traditional.",
-    "commute_parkchester": "~53m",
-    "commute_parkslope": "~50m",
-    "time_diff": "3m"
+    "vibe": "Calm, distraction-free, quiet traditional."
   },
   {
     "name": "Blue Ribbon Sushi",
@@ -863,10 +629,7 @@
     "price_str": "$85 / $115 / $150",
     "min_price": 150,
     "pacing": "75\u201390",
-    "vibe": "Bustling, iconic; Historic NYC institution (1995).",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~25m",
-    "time_diff": "41m"
+    "vibe": "Bustling, iconic; Historic NYC institution (1995)."
   },
   {
     "name": "Kintsugi",
@@ -874,10 +637,7 @@
     "price_str": "$60 / $95 / $195",
     "min_price": 90,
     "pacing": "60\u201390",
-    "vibe": "Lighthearted; innovative global sourcing.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~25m",
-    "time_diff": "41m"
+    "vibe": "Lighthearted; innovative global sourcing."
   },
   {
     "name": "Maaser Omakase",
@@ -885,10 +645,7 @@
     "price_str": "$65 / $95 / $135",
     "min_price": 135,
     "pacing": "90",
-    "vibe": "Quiet, minimalist; Kosher omakase counter.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~25m",
-    "time_diff": "41m"
+    "vibe": "Quiet, minimalist; Kosher omakase counter."
   },
   {
     "name": "Momoya",
@@ -896,10 +653,7 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "90\u2013120",
-    "vibe": "Modern, spacious; architectural pastry desserts.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~25m",
-    "time_diff": "41m"
+    "vibe": "Modern, spacious; architectural pastry desserts."
   },
   {
     "name": "Nami Nori",
@@ -907,10 +661,7 @@
     "price_str": "30",
     "min_price": 32,
     "pacing": "45\u201360",
-    "vibe": "Bright, highly social; Michelin Bib Gourmand.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~25m",
-    "time_diff": "41m"
+    "vibe": "Bright, highly social; Michelin Bib Gourmand."
   },
   {
     "name": "Sekai Omakase",
@@ -918,10 +669,7 @@
     "price_str": "108",
     "min_price": 108,
     "pacing": "60\u201375",
-    "vibe": "Comfortable and familiar dependable staple.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~25m",
-    "time_diff": "41m"
+    "vibe": "Comfortable and familiar dependable staple."
   },
   {
     "name": "Shiki Omakase",
@@ -929,10 +677,7 @@
     "price_str": "$65 / $100",
     "min_price": 65,
     "pacing": "40",
-    "vibe": "Cozy all-white room; extreme efficiency/fast.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~25m",
-    "time_diff": "41m"
+    "vibe": "Cozy all-white room; extreme efficiency/fast."
   },
   {
     "name": "Sushi by Bae",
@@ -940,10 +685,7 @@
     "price_str": "$75 / $90",
     "min_price": 75,
     "pacing": "75",
-    "vibe": "Casual, straightforward.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~25m",
-    "time_diff": "41m"
+    "vibe": "Casual, straightforward."
   },
   {
     "name": "Sushi Ikumi",
@@ -951,10 +693,7 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "90",
-    "vibe": "Intimate, elegant Saturday lunch exclusive.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~25m",
-    "time_diff": "41m"
+    "vibe": "Intimate, elegant Saturday lunch exclusive."
   },
   {
     "name": "Sushi Lin",
@@ -962,10 +701,7 @@
     "price_str": "35",
     "min_price": 90,
     "pacing": "45\u201390",
-    "vibe": "Minimalist, serene; Sourced from Tsukiji.",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~25m",
-    "time_diff": "41m"
+    "vibe": "Minimalist, serene; Sourced from Tsukiji."
   },
   {
     "name": "Sushi Ouji",
@@ -973,10 +709,7 @@
     "price_str": "129",
     "min_price": 129,
     "pacing": "90\u2013120",
-    "vibe": "Decidedly upscale; rare imports (Kuruma Ebi).",
-    "commute_parkchester": "~66m",
-    "commute_parkslope": "~25m",
-    "time_diff": "41m"
+    "vibe": "Decidedly upscale; rare imports (Kuruma Ebi)."
   },
   {
     "name": "Atto Omakase",
@@ -984,10 +717,7 @@
     "price_str": "$85 / $95 / $115",
     "min_price": 85,
     "pacing": "60\u201375",
-    "vibe": "Intimate counter, hushed but non-restrictive.",
-    "commute_parkchester": "~46m",
-    "commute_parkslope": "~50m",
-    "time_diff": "4m"
+    "vibe": "Intimate counter, hushed but non-restrictive."
   },
   {
     "name": "Noz Market",
@@ -995,10 +725,7 @@
     "price_str": "$90 / $150",
     "min_price": 90,
     "pacing": "60",
-    "vibe": "Pristine fish market feel; casual sibling to Sushi Noz.",
-    "commute_parkchester": "~46m",
-    "commute_parkslope": "~50m",
-    "time_diff": "4m"
+    "vibe": "Pristine fish market feel; casual sibling to Sushi Noz."
   },
   {
     "name": "Oyishi Sushi",
@@ -1006,10 +733,7 @@
     "price_str": "50",
     "min_price": 50,
     "pacing": "45",
-    "vibe": "Extremely casual, absolute lowest budget point.",
-    "commute_parkchester": "~46m",
-    "commute_parkslope": "~50m",
-    "time_diff": "4m"
+    "vibe": "Extremely casual, absolute lowest budget point."
   },
   {
     "name": "Sushi Jin",
@@ -1017,10 +741,7 @@
     "price_str": "145",
     "min_price": 145,
     "pacing": "90",
-    "vibe": "Quiet, refined, upscale intimacy.",
-    "commute_parkchester": "~46m",
-    "commute_parkslope": "~50m",
-    "time_diff": "4m"
+    "vibe": "Quiet, refined, upscale intimacy."
   },
   {
     "name": "Sushi Koya",
@@ -1028,10 +749,7 @@
     "price_str": "115",
     "min_price": 115,
     "pacing": "75",
-    "vibe": "Casual, modern 18-course contemporary menu.",
-    "commute_parkchester": "~46m",
-    "commute_parkslope": "~50m",
-    "time_diff": "4m"
+    "vibe": "Casual, modern 18-course contemporary menu."
   },
   {
     "name": "Sushi Yolo",
@@ -1039,10 +757,7 @@
     "price_str": "109",
     "min_price": 109,
     "pacing": "60",
-    "vibe": "Fun, casual, bold fusion-heavy menu.",
-    "commute_parkchester": "~46m",
-    "commute_parkslope": "~50m",
-    "time_diff": "4m"
+    "vibe": "Fun, casual, bold fusion-heavy menu."
   },
   {
     "name": "Tatsuda Omakase",
@@ -1050,10 +765,7 @@
     "price_str": "90",
     "min_price": 90,
     "pacing": "60",
-    "vibe": "Neighborhood-casual value-driven traditionalists.",
-    "commute_parkchester": "~46m",
-    "commute_parkslope": "~50m",
-    "time_diff": "4m"
+    "vibe": "Neighborhood-casual value-driven traditionalists."
   },
   {
     "name": "Fuku Omakase",
@@ -1061,10 +773,7 @@
     "price_str": "75",
     "min_price": 75,
     "pacing": "",
-    "vibe": "Modest counter.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Modest counter."
   },
   {
     "name": "Hatsu Omakase",
@@ -1072,10 +781,7 @@
     "price_str": "95",
     "min_price": 95,
     "pacing": "",
-    "vibe": "Casual; features an AYCE round.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Casual; features an AYCE round."
   },
   {
     "name": "Kinzan Omakase",
@@ -1083,10 +789,7 @@
     "price_str": "$69 / $89",
     "min_price": 69,
     "pacing": "",
-    "vibe": "Classic Edomae Counter.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Classic Edomae Counter."
   },
   {
     "name": "Kyuubi Omakase",
@@ -1094,10 +797,7 @@
     "price_str": "68",
     "min_price": 68,
     "pacing": "",
-    "vibe": "Brisk.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Brisk."
   },
   {
     "name": "Mitsuru",
@@ -1105,10 +805,7 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "",
-    "vibe": "Counter Edomae.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Counter Edomae."
   },
   {
     "name": "Mojo East",
@@ -1116,10 +813,7 @@
     "price_str": "55",
     "min_price": 55,
     "pacing": "",
-    "vibe": "Gratuity included; ultra budget-friendly.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Gratuity included; ultra budget-friendly."
   },
   {
     "name": "Mori",
@@ -1127,10 +821,7 @@
     "price_str": "125",
     "min_price": 125,
     "pacing": "90",
-    "vibe": "Calm, focused, quiet foundational baseline.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Calm, focused, quiet foundational baseline."
   },
   {
     "name": "Nobu Downtown",
@@ -1138,10 +829,7 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "120",
-    "vibe": "Sleek subterranean Japanese-Peruvian fusion.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Sleek subterranean Japanese-Peruvian fusion."
   },
   {
     "name": "Omakase by No Name",
@@ -1149,10 +837,7 @@
     "price_str": "$88 / $128",
     "min_price": 88,
     "pacing": "",
-    "vibe": "",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": ""
   },
   {
     "name": "Saikou",
@@ -1160,10 +845,7 @@
     "price_str": "120",
     "min_price": 120,
     "pacing": "75\u201390",
-    "vibe": "Quiet, highly focused, measured 17-course menu.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Quiet, highly focused, measured 17-course menu."
   },
   {
     "name": "Sake Kawa",
@@ -1171,10 +853,7 @@
     "price_str": "$60 / $90",
     "min_price": 60,
     "pacing": "",
-    "vibe": "Sake-focused counter.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Sake-focused counter."
   },
   {
     "name": "SHHH Omakase",
@@ -1182,10 +861,7 @@
     "price_str": "$98 / $128",
     "min_price": 98,
     "pacing": "",
-    "vibe": "Speakeasy-style hidden counter.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Speakeasy-style hidden counter."
   },
   {
     "name": "Shinsen",
@@ -1193,10 +869,7 @@
     "price_str": "98",
     "min_price": 98,
     "pacing": "",
-    "vibe": "Features an AYCE round.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Features an AYCE round."
   },
   {
     "name": "Shirokuro",
@@ -1204,10 +877,7 @@
     "price_str": "$60 / $90",
     "min_price": 60,
     "pacing": "",
-    "vibe": "Casual counter.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Casual counter."
   },
   {
     "name": "Shoshin",
@@ -1215,10 +885,7 @@
     "price_str": "$68 / $98",
     "min_price": 68,
     "pacing": "",
-    "vibe": "",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": ""
   },
   {
     "name": "Sushi Daizen",
@@ -1226,10 +893,7 @@
     "price_str": "$75 / $95",
     "min_price": 75,
     "pacing": "75",
-    "vibe": "Quiet, warm, traditional sushi focus.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Quiet, warm, traditional sushi focus."
   },
   {
     "name": "Sushi Kai",
@@ -1237,10 +901,7 @@
     "price_str": "85",
     "min_price": 85,
     "pacing": "60\u201375",
-    "vibe": "Intimate, humble high quality.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Intimate, humble high quality."
   },
   {
     "name": "Sushi Makoto",
@@ -1248,10 +909,7 @@
     "price_str": "$120 / $150",
     "min_price": 120,
     "pacing": "90",
-    "vibe": "Deeply respectful 15-18 course traditional menu.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Deeply respectful 15-18 course traditional menu."
   },
   {
     "name": "Taikun",
@@ -1259,10 +917,7 @@
     "price_str": "85",
     "min_price": 85,
     "pacing": "",
-    "vibe": "",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": ""
   },
   {
     "name": "Towa",
@@ -1270,10 +925,7 @@
     "price_str": "125",
     "min_price": 125,
     "pacing": "90",
-    "vibe": "Elegant, refined; distinct kaiseki influences.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Elegant, refined; distinct kaiseki influences."
   },
   {
     "name": "Unique Omakase",
@@ -1281,10 +933,7 @@
     "price_str": "120",
     "min_price": 120,
     "pacing": "",
-    "vibe": "Intimate counter.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Intimate counter."
   },
   {
     "name": "Yokox Omakase",
@@ -1292,10 +941,7 @@
     "price_str": "89",
     "min_price": 89,
     "pacing": "",
-    "vibe": "Counter.",
-    "commute_parkchester": "~71m",
-    "commute_parkslope": "~20m",
-    "time_diff": "51m"
+    "vibe": "Counter."
   },
   {
     "name": "Sushi Tsushima",
@@ -1303,10 +949,7 @@
     "price_str": "60",
     "min_price": 60,
     "pacing": "60",
-    "vibe": "Simple bright funky $60 omakase; relaxed.",
-    "commute_parkchester": "~53m",
-    "commute_parkslope": "~48m",
-    "time_diff": "5m"
+    "vibe": "Simple bright funky $60 omakase; relaxed."
   },
   {
     "name": "Iwak Sushi",
@@ -1314,10 +957,7 @@
     "price_str": "67",
     "min_price": 67,
     "pacing": "",
-    "vibe": "Modest counter.",
-    "commute_parkchester": "~81m",
-    "commute_parkslope": "~20m",
-    "time_diff": "61m"
+    "vibe": "Modest counter."
   },
   {
     "name": "Junsui Omakase",
@@ -1325,10 +965,7 @@
     "price_str": "$125 / $145",
     "min_price": 125,
     "pacing": "",
-    "vibe": "Museum-like, quiet; BYOB.",
-    "commute_parkchester": "~76m",
-    "commute_parkslope": "~15m",
-    "time_diff": "61m"
+    "vibe": "Museum-like, quiet; BYOB."
   },
   {
     "name": "Kinjo",
@@ -1336,10 +973,7 @@
     "price_str": "95",
     "min_price": 95,
     "pacing": "75\u201390",
-    "vibe": "Stunning industrial-chic torpedo factory.",
-    "commute_parkchester": "~76m",
-    "commute_parkslope": "~15m",
-    "time_diff": "61m"
+    "vibe": "Stunning industrial-chic torpedo factory."
   },
   {
     "name": "Luya Omakase",
@@ -1347,10 +981,7 @@
     "price_str": "$59 / $89",
     "min_price": 89,
     "pacing": "",
-    "vibe": "",
-    "commute_parkchester": "~81m",
-    "commute_parkslope": "~20m",
-    "time_diff": "61m"
+    "vibe": ""
   },
   {
     "name": "Miro Sushi",
@@ -1358,10 +989,7 @@
     "price_str": "75",
     "min_price": 75,
     "pacing": "",
-    "vibe": "",
-    "commute_parkchester": "~81m",
-    "commute_parkslope": "~20m",
-    "time_diff": "61m"
+    "vibe": ""
   },
   {
     "name": "Neta Shari",
@@ -1369,10 +997,7 @@
     "price_str": "$65 / $125",
     "min_price": 65,
     "pacing": "90",
-    "vibe": "Tiny, intimate; Michelin Guide 4 years.",
-    "commute_parkchester": "~91m",
-    "commute_parkslope": "~30m",
-    "time_diff": "61m"
+    "vibe": "Tiny, intimate; Michelin Guide 4 years."
   },
   {
     "name": "Omakase by Hiro",
@@ -1380,10 +1005,7 @@
     "price_str": "85",
     "min_price": 118,
     "pacing": "",
-    "vibe": "Intimate, classy; former Sushi Nakazawa alum.",
-    "commute_parkchester": "~96m",
-    "commute_parkslope": "~35m",
-    "time_diff": "61m"
+    "vibe": "Intimate, classy; former Sushi Nakazawa alum."
   },
   {
     "name": "Sora",
@@ -1391,10 +1013,7 @@
     "price_str": "120",
     "min_price": 120,
     "pacing": "",
-    "vibe": "",
-    "commute_parkchester": "~81m",
-    "commute_parkslope": "~20m",
-    "time_diff": "61m"
+    "vibe": ""
   },
   {
     "name": "Sushi Katsuei",
@@ -1402,10 +1021,7 @@
     "price_str": "60",
     "min_price": 77,
     "pacing": "60\u201375",
-    "vibe": "Minimalist strict purists (no mayo/heavy soy).",
-    "commute_parkchester": "~76m",
-    "commute_parkslope": "~15m",
-    "time_diff": "61m"
+    "vibe": "Minimalist strict purists (no mayo/heavy soy)."
   },
   {
     "name": "Sushi Uesugi",
@@ -1413,10 +1029,7 @@
     "price_str": "75",
     "min_price": 75,
     "pacing": "",
-    "vibe": "",
-    "commute_parkchester": "~81m",
-    "commute_parkslope": "~20m",
-    "time_diff": "61m"
+    "vibe": ""
   },
   {
     "name": "Yamashiro",
@@ -1424,10 +1037,7 @@
     "price_str": "$88 / $108",
     "min_price": 88,
     "pacing": "",
-    "vibe": "",
-    "commute_parkchester": "~81m",
-    "commute_parkslope": "~20m",
-    "time_diff": "61m"
+    "vibe": ""
   },
   {
     "name": "E Sushi II",
@@ -1435,10 +1045,7 @@
     "price_str": "~$32",
     "min_price": 32,
     "pacing": "",
-    "vibe": "Bustling, casual; All-You-Can-Eat (AYCE).",
-    "commute_parkchester": "~86m",
-    "commute_parkslope": "~20m",
-    "time_diff": "66m"
+    "vibe": "Bustling, casual; All-You-Can-Eat (AYCE)."
   },
   {
     "name": "KIMYO",
@@ -1446,10 +1053,7 @@
     "price_str": "$49 / $69",
     "min_price": 69,
     "pacing": "60",
-    "vibe": "Dark, chic, social; $69 tier = unlimited drinks.",
-    "commute_parkchester": "~76m",
-    "commute_parkslope": "~10m",
-    "time_diff": "66m"
+    "vibe": "Dark, chic, social; $69 tier = unlimited drinks."
   },
   {
     "name": "Ki Sushi",
@@ -1457,10 +1061,7 @@
     "price_str": "55",
     "min_price": 55,
     "pacing": "60",
-    "vibe": "Family-friendly, bustling neighborhood staple.",
-    "commute_parkchester": "~76m",
-    "commute_parkslope": "~10m",
-    "time_diff": "66m"
+    "vibe": "Family-friendly, bustling neighborhood staple."
   },
   {
     "name": "Koma Sushi",
@@ -1468,10 +1069,7 @@
     "price_str": "40",
     "min_price": 40,
     "pacing": "60",
-    "vibe": "Casual banquet-style; Kosher-certified AYCE.",
-    "commute_parkchester": "~86m",
-    "commute_parkslope": "~20m",
-    "time_diff": "66m"
+    "vibe": "Casual banquet-style; Kosher-certified AYCE."
   },
   {
     "name": "Sushi Koju",
@@ -1479,10 +1077,7 @@
     "price_str": "145",
     "min_price": 145,
     "pacing": "120",
-    "vibe": "Plush hotel lobby; conversation-friendly host.",
-    "commute_parkchester": "~76m",
-    "commute_parkslope": "~10m",
-    "time_diff": "66m"
+    "vibe": "Plush hotel lobby; conversation-friendly host."
   },
   {
     "name": "Hanaya Omakase",
@@ -1490,10 +1085,7 @@
     "price_str": "75",
     "min_price": 75,
     "pacing": "60",
-    "vibe": "Casual, bright, quick-service budget model.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~45m",
-    "time_diff": "6m"
+    "vibe": "Casual, bright, quick-service budget model."
   },
   {
     "name": "Joji",
@@ -1501,10 +1093,7 @@
     "price_str": "$325 / $450",
     "min_price": 325,
     "pacing": "90\u2013120",
-    "vibe": "1 Michelin Star; sleek hidden room in One Vanderbilt.",
-    "commute_parkchester": "~46m",
-    "commute_parkslope": "~40m",
-    "time_diff": "6m"
+    "vibe": "1 Michelin Star; sleek hidden room in One Vanderbilt."
   },
   {
     "name": "Koete Omakase",
@@ -1512,10 +1101,7 @@
     "price_str": "$65 / $118",
     "min_price": 118,
     "pacing": "60\u201390",
-    "vibe": "Intimate, energetic; pre-theater efficiency.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~45m",
-    "time_diff": "6m"
+    "vibe": "Intimate, energetic; pre-theater efficiency."
   },
   {
     "name": "Shinpi",
@@ -1523,10 +1109,7 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "",
-    "vibe": "",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~55m",
-    "time_diff": "6m"
+    "vibe": ""
   },
   {
     "name": "Sushi Ann",
@@ -1534,10 +1117,7 @@
     "price_str": "$80 / $125",
     "min_price": 80,
     "pacing": "60\u201390",
-    "vibe": "Hushed, respectful staple for business lunches.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~45m",
-    "time_diff": "6m"
+    "vibe": "Hushed, respectful staple for business lunches."
   },
   {
     "name": "Sushi Goda",
@@ -1545,10 +1125,7 @@
     "price_str": "110",
     "min_price": 110,
     "pacing": "60\u201375",
-    "vibe": "Comfortable, quiet hushed counter.",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~55m",
-    "time_diff": "6m"
+    "vibe": "Comfortable, quiet hushed counter."
   },
   {
     "name": "Sushi W",
@@ -1556,10 +1133,7 @@
     "price_str": "$38 / $68",
     "min_price": 53,
     "pacing": "60",
-    "vibe": "Casual, highly efficient; Strict no-tipping.",
-    "commute_parkchester": "~51m",
-    "commute_parkslope": "~45m",
-    "time_diff": "6m"
+    "vibe": "Casual, highly efficient; Strict no-tipping."
   },
   {
     "name": "Sushi Yugen",
@@ -1567,10 +1141,7 @@
     "price_str": "120",
     "min_price": 120,
     "pacing": "",
-    "vibe": "",
-    "commute_parkchester": "~61m",
-    "commute_parkslope": "~55m",
-    "time_diff": "6m"
+    "vibe": ""
   },
   {
     "name": "Gohan Sushi",
@@ -1578,10 +1149,7 @@
     "price_str": "$70 / $99",
     "min_price": 70,
     "pacing": "60\u201375",
-    "vibe": "Casual family vibe; traditional family-run.",
-    "commute_parkchester": "~96m",
-    "commute_parkslope": "~25m",
-    "time_diff": "71m"
+    "vibe": "Casual family vibe; traditional family-run."
   },
   {
     "name": "Idashi Omakase",
@@ -1589,10 +1157,7 @@
     "price_str": "99",
     "min_price": 99,
     "pacing": "90",
-    "vibe": "Cozy, relaxed; TikTok/Yelp famous; BYOB.",
-    "commute_parkchester": "~81m",
-    "commute_parkslope": "~10m",
-    "time_diff": "71m"
+    "vibe": "Cozy, relaxed; TikTok/Yelp famous; BYOB."
   },
   {
     "name": "Ishi Omakase",
@@ -1600,10 +1165,7 @@
     "price_str": "$85 / $105 / $125",
     "min_price": 85,
     "pacing": "",
-    "vibe": "Dim, refined, intimate traditional sushi.",
-    "commute_parkchester": "~81m",
-    "commute_parkslope": "~10m",
-    "time_diff": "71m"
+    "vibe": "Dim, refined, intimate traditional sushi."
   },
   {
     "name": "Oita Sushi",
@@ -1611,10 +1173,7 @@
     "price_str": "85",
     "min_price": 85,
     "pacing": "60\u201375",
-    "vibe": "Allows mixed formats (a la carte + omakase).",
-    "commute_parkchester": "~81m",
-    "commute_parkslope": "~10m",
-    "time_diff": "71m"
+    "vibe": "Allows mixed formats (a la carte + omakase)."
   },
   {
     "name": "Uotora",
@@ -1622,10 +1181,7 @@
     "price_str": "$85 / $105",
     "min_price": 85,
     "pacing": "75\u201390",
-    "vibe": "Quiet, highly respectful; Michelin Plate.",
-    "commute_parkchester": "~86m",
-    "commute_parkslope": "~15m",
-    "time_diff": "71m"
+    "vibe": "Quiet, highly respectful; Michelin Plate."
   },
   {
     "name": "Tanoshi Sushi",
@@ -1633,9 +1189,22 @@
     "price_str": "60",
     "min_price": 102,
     "pacing": "90",
-    "vibe": "Cult-favorite loosey-sushi; strictly BYOB.",
-    "commute_parkchester": "~46m",
-    "commute_parkslope": "~55m",
-    "time_diff": "9m"
+    "vibe": "Cult-favorite loosey-sushi; strictly BYOB."
+  },
+  {
+    "name": "Kaki",
+    "neighborhood": "Lower East Side",
+    "price_str": "$85",
+    "min_price": 85,
+    "pacing": "60",
+    "vibe": "Intimate LES counter, free house sake, BYOB friendly."
+  },
+  {
+    "name": "Sushi Oku",
+    "neighborhood": "Lower East Side",
+    "price_str": "$85 / $100 / $165",
+    "min_price": 85,
+    "pacing": "75-90",
+    "vibe": "Upscale counter inside old Scarr's Pizza space. Chef Kei Yoshino."
   }
 ]

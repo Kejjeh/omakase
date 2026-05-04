@@ -695,5 +695,21 @@
     "infatuation_name": "Tanoshi Sushi",
     "url": "https://www.theinfatuation.com/new-york/reviews/tanoshi-sushi",
     "slug": "tanoshi-sushi"
+  },
+  "Kaki": {
+    "rating": null,
+    "infatuation_name": null,
+    "cuisine": [],
+    "neighborhood": null,
+    "url": null,
+    "slug_used": null
+  },
+  "Sushi Oku": {
+    "rating": 7.5,
+    "infatuation_name": "Sushi Oku",
+    "cuisine": [],
+    "neighborhood": "Lower East Side",
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-oku",
+    "slug_used": "sushi-oku"
   }
 }

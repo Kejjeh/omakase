@@ -25,7 +25,7 @@
     "review_count": 16,
     "price_level": "$$$$",
     "yelp_url": "https://www.yelp.com/biz/h%C5%8Dseki-new-york",
-    "yelp_name": "Hōseki"
+    "yelp_name": "H\u014dseki"
   },
   "Inase": {
     "yelp_rating": 4.0,
@@ -1041,5 +1041,19 @@
     "price_level": "$$$$",
     "yelp_url": "https://www.yelp.com/biz/tanoshi-sushi-sake-bar-new-york",
     "yelp_name": "Tanoshi Sushi Sake Bar"
+  },
+  "Kaki": {
+    "yelp_rating": 4.5,
+    "review_count": 91,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/kaki-new-york",
+    "yelp_name": "Kaki"
+  },
+  "Sushi Oku": {
+    "yelp_rating": 4.5,
+    "review_count": 19,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/sushi-oku-new-york",
+    "yelp_name": "Sushi Oku"
   }
 }
