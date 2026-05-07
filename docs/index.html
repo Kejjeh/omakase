@@ -8,37 +8,41 @@
 <style>
 :root {
   /* Light mode (default) */
-  --bg: #FAF7F2;
-  --bg-secondary: #F5F1EB;
-  --text: #2a2420;
-  --text-secondary: #6d6b66;
-  --text-dim: #999993;
-  --border: #E8E5E0;
-  --accent-primary: #C25A3C;
-  --accent-positive: #7A8F6B;
-  --accent-orange: #FFA500;
-  --card-bg: #FFFBF6;
-  --hover-bg: rgba(194, 90, 60, 0.05);
+  --bg: #F7F3EC;
+  --bg-secondary: #EFEAE0;
+  --text: #1a1612;
+  --text-secondary: #514d47;
+  --text-dim: #87837c;
+  --border: #D9D3C7;
+  --border-strong: #B8B0A2;
+  --accent-primary: #B04A2C;
+  --accent-secondary: #D88A4A;
+  --accent-positive: #5C7A50;
+  --accent-orange: #E89020;
+  --card-bg: #FFFCF6;
+  --hover-bg: rgba(176, 74, 44, 0.06);
 
   /* Charts */
-  --chart-grid: rgba(108, 107, 102, 0.08);
-  --chart-text: #6d6b66;
+  --chart-grid: rgba(26, 22, 18, 0.08);
+  --chart-text: #514d47;
 }
 
 html.dark-mode {
-  --bg: #1a1612;
-  --bg-secondary: #241f1a;
-  --text: #F5F1EB;
-  --text-secondary: #C4C0BA;
-  --text-dim: #8E8B86;
-  --border: #3a3530;
-  --accent-primary: #E87A5C;
-  --accent-positive: #9CBD81;
+  --bg: #15110d;
+  --bg-secondary: #1f1a14;
+  --text: #F7F3EC;
+  --text-secondary: #CFC9BF;
+  --text-dim: #8a8580;
+  --border: #3a342c;
+  --border-strong: #524a3f;
+  --accent-primary: #F08760;
+  --accent-secondary: #E8A968;
+  --accent-positive: #A8C58D;
   --accent-orange: #FFB84D;
-  --card-bg: #2a251f;
-  --hover-bg: rgba(232, 122, 92, 0.08);
-  --chart-grid: rgba(244, 241, 237, 0.08);
-  --chart-text: #C4C0BA;
+  --card-bg: #28221b;
+  --hover-bg: rgba(240, 135, 96, 0.10);
+  --chart-grid: rgba(247, 243, 236, 0.08);
+  --chart-text: #CFC9BF;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -245,7 +249,7 @@ table {
 
 thead {
   background: var(--bg-secondary);
-  border-bottom: 2px solid var(--border);
+  border-bottom: 2px solid var(--border-strong);
   position: sticky;
   top: 0;
   z-index: 10;
@@ -257,11 +261,11 @@ th {
   cursor: pointer;
   user-select: none;
   white-space: nowrap;
-  font-weight: 500;
-  font-size: 0.65rem;
+  font-weight: 600;
+  font-size: 0.7rem;
   letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--text-secondary);
+  color: var(--text);
   transition: background-color 0.2s ease;
 }
 
@@ -444,7 +448,7 @@ tbody tr:hover {
     <div class="filter-group"><label>Borough</label><select id="f-borough"><option value="">All</option><option value="Manhattan">Manhattan</option><option value="Brooklyn">Brooklyn</option></select></div>
     <div class="filter-group"><label>Neighborhood</label><select id="f-neighborhood"><option value="">All</option></select></div>
     <div class="filter-group"><label>Min Price</label><input type="number" id="f-price-min" placeholder="0" min="0"></div>
-    <div class="filter-group"><label>Max Price</label><input type="number" id="f-price-max" placeholder="500" min="0"></div>
+    <div class="filter-group"><label>Max Price</label><input type="number" id="f-price-max" placeholder="any" min="0" value="200"></div>
     <div class="filter-group"><label>Min Sources</label><select id="f-sources"><option value="1">1+</option><option value="2">2+</option><option value="3">3</option></select></div>
     <div class="filter-group"><label>Visited</label><select id="f-visited"><option value="">All</option><option value="yes">Visited Only</option><option value="no">Not Visited</option></select></div>
     <div class="filter-group"><label>Min Rating %ile</label><input type="number" id="f-pctl-min" placeholder="0" min="0" max="100"></div>
@@ -454,11 +458,10 @@ tbody tr:hover {
 </div>
 
 <div class="legend">
-  <div class="legend-item"><div class="legend-dot" style="background:var(--accent-orange)"></div>Friend suggested</div>
   <div class="legend-item"><div class="legend-dot" style="background:var(--accent-primary)"></div>3 sources</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--accent-primary); opacity: 0.6;"></div>2 sources</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--border)"></div>1 source</div>
-  <div class="legend-item"><div class="legend-dot" style="background:var(--accent-primary); border: 2px solid var(--accent-primary);"></div>Visited</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--accent-secondary)"></div>2 sources</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--text-dim)"></div>1 source</div>
+  <div class="legend-item"><div class="legend-dot" style="background:var(--accent-positive); border: 2px solid var(--accent-positive);"></div>Visited</div>
 </div>
 
 <span class="section-label">Price vs Rating</span>
@@ -509,11 +512,15 @@ function getBorough(n) {
   return '';
 }
 
+function cssVar(name) {
+  return getComputedStyle(document.documentElement).getPropertyValue(name).trim();
+}
+
 function getColor(r) {
-  if (r.visited) return 'rgba(226,75,74,0.8)';
-  if (r.n_sources >= 3) return 'rgba(83,74,183,0.8)';
-  if (r.n_sources >= 2) return 'rgba(55,138,221,0.8)';
-  return 'rgba(180,178,169,0.6)';
+  if (r.visited) return cssVar('--accent-positive');
+  if (r.n_sources >= 3) return cssVar('--accent-primary');
+  if (r.n_sources >= 2) return cssVar('--accent-secondary');
+  return cssVar('--text-dim');
 }
 
 function populateNeighborhoods() {
@@ -568,6 +575,8 @@ function updateStats() {
 }
 
 function updateChart() {
+  const accentPos = cssVar('--accent-positive');
+  const cardBg = cssVar('--card-bg');
   const datasets = [{
     data: filtered.map(r => ({
       x: r.min_price || 0,
@@ -577,12 +586,21 @@ function updateChart() {
       restaurant: r
     })),
     backgroundColor: filtered.map(r => getColor(r)),
-    borderColor: filtered.map(r => r.visited ? 'rgba(226,75,74,1)' : 'rgba(255,255,255,0.3)'),
-    borderWidth: filtered.map(r => r.visited ? 2 : 1),
+    borderColor: filtered.map(r => r.visited ? accentPos : cardBg),
+    borderWidth: filtered.map(r => r.visited ? 2.5 : 1),
   }];
+
+  const gridColor = cssVar('--chart-grid');
+  const textColor = cssVar('--chart-text');
 
   if (chart) {
     chart.data.datasets = datasets;
+    chart.options.scales.x.grid.color = gridColor;
+    chart.options.scales.x.ticks.color = textColor;
+    chart.options.scales.x.title.color = textColor;
+    chart.options.scales.y.grid.color = gridColor;
+    chart.options.scales.y.ticks.color = textColor;
+    chart.options.scales.y.title.color = textColor;
     chart.update();
   } else {
     chart = new Chart(document.getElementById('chart'), {
@@ -607,8 +625,8 @@ function updateChart() {
           }
         },
         scales: {
-          x: { title: { display: true, text: 'Price ($)', color: '#aaa' }, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#aaa' } },
-          y: { title: { display: true, text: 'Composite Rating', color: '#aaa' }, grid: { color: 'rgba(255,255,255,0.05)' }, ticks: { color: '#aaa' }, min: 3.0, max: 5.0 }
+          x: { title: { display: true, text: 'Price ($)', color: textColor }, grid: { color: gridColor }, ticks: { color: textColor } },
+          y: { title: { display: true, text: 'Composite Rating', color: textColor }, grid: { color: gridColor }, ticks: { color: textColor }, min: 3.0, max: 5.0 }
         }
       }
     });
@@ -687,7 +705,7 @@ themeToggle.addEventListener('click', () => {
   const isDark = html.classList.contains('dark-mode');
   themeToggle.textContent = isDark ? '☀️' : '🌙';
   localStorage.setItem('theme-mode', isDark ? 'dark' : 'light');
-  if (chart) chart.resize();
+  if (chart) updateChart();
 });
 
 initTheme();
