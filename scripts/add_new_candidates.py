@@ -1,10 +1,15 @@
 """
-Adds the 37 omakase-qualifying new candidates to scripts/restaurants.json.
-Parses price ranges from research_input/new_candidates_omakase.json and builds
-records matching the existing schema (name, neighborhood, price_str, min_price,
-pacing, vibe).
+Adds research-sourced candidates to scripts/restaurants.json:
+  - 37 omakase-qualifying new candidates (counter omakase / kaiseki / hybrid)
+  - 13 AYCE-Wagyu hybrid candidates (yakiniku/shabu/AYCE sushi formats)
 
-Run once from the repo root: python scripts/add_new_candidates.py
+Builds records matching the existing schema (name, neighborhood, price_str,
+min_price, pacing, vibe) and adds a `format` field on hybrid records so they
+can be distinguished from true omakase in downstream consumers.
+
+Idempotent: skips names already in restaurants.json.
+
+Run from the repo root: python scripts/add_new_candidates.py
 """
 import json, pathlib, re
 
@@ -79,7 +84,24 @@ for c in candidates:
         "min_price": price,
         "pacing": "60-90",
         "vibe": vibe,
+        "format": "omakase",
     })
+
+# Also build records for AYCE-Wagyu hybrid candidates (yakiniku/shabu/AYCE sushi).
+# Their JSON already carries price/vibe/format so we use that directly.
+hybrid_path = ROOT / "research_input" / "new_candidates_ayce_wagyu_hybrid.json"
+if hybrid_path.exists():
+    hybrids = json.loads(hybrid_path.read_text(encoding="utf-8"))
+    for h in hybrids:
+        new_records.append({
+            "name": h["name"],
+            "neighborhood": h["neighborhood"],
+            "price_str": h.get("price_str", str(h.get("min_price", ""))),
+            "min_price": h.get("min_price"),
+            "pacing": "varies (AYCE 90-120min)",
+            "vibe": h.get("vibe", ""),
+            "format": h.get("format", "ayce_wagyu_hybrid"),
+        })
 
 # Merge into restaurants.json (skip names already present)
 restaurants_path = ROOT / "scripts" / "restaurants.json"
@@ -90,5 +112,11 @@ for r in new_records:
     if r["name"] not in existing_names:
         existing.append(r)
         added += 1
+
+# Backfill format="omakase" on any record that lacks one (the original 151 + earlier 37)
+for r in existing:
+    if "format" not in r:
+        r["format"] = "omakase"
+
 restaurants_path.write_text(json.dumps(existing, indent=2, ensure_ascii=False), encoding="utf-8")
 print(f"Added {added} new records. Total: {len(existing)}")

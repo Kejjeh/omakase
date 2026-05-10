@@ -58,6 +58,7 @@ YELP_CACHE_PATH = os.path.join(PROJECT_ROOT, "scripts", "yelp_cache.json")
 INFATUATION_CACHE_PATH = os.path.join(PROJECT_ROOT, "scripts", "infatuation_cache.json")
 SPECIALTIES_151_PATH = os.path.join(PROJECT_ROOT, "research_input", "specialties_151.json")
 NEW_CANDIDATES_PATH = os.path.join(PROJECT_ROOT, "research_input", "new_candidates_omakase.json")
+HYBRID_CANDIDATES_PATH = os.path.join(PROJECT_ROOT, "research_input", "new_candidates_ayce_wagyu_hybrid.json")
 OUTPUT_PATH = os.path.join(PROJECT_ROOT, "scripts", "scored_restaurants.json")
 
 
@@ -132,7 +133,11 @@ def main():
     prev_by_name = {r["name"]: r for r in prev_scored}
 
     # Specialty data (optional)
-    specialty_records = load_json(SPECIALTIES_151_PATH, []) + load_json(NEW_CANDIDATES_PATH, [])
+    specialty_records = (
+        load_json(SPECIALTIES_151_PATH, [])
+        + load_json(NEW_CANDIDATES_PATH, [])
+        + load_json(HYBRID_CANDIDATES_PATH, [])
+    )
     specialty_by_name = {r["name"]: r for r in specialty_records}
 
     # First pass: compute corrected ratings + Wilson scores
@@ -172,6 +177,7 @@ def main():
         rows.append({
             "name": name,
             "neighborhood": r["neighborhood"],
+            "format": r.get("format", "omakase"),
             "price_str": r.get("price_str"),
             "min_price": r.get("min_price"),
             "pacing": r.get("pacing"),

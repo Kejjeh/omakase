@@ -5,7 +5,8 @@
     "price_str": "$112 / $130+",
     "min_price": 112,
     "pacing": "60–90",
-    "vibe": "2-story, \"library\" feel; Historic Michelin rep."
+    "vibe": "2-story, \"library\" feel; Historic Michelin rep.",
+    "format": "omakase"
   },
   {
     "name": "Akimori",
@@ -13,7 +14,8 @@
     "price_str": "95",
     "min_price": 95,
     "pacing": "60–90",
-    "vibe": "Sleek, hushed; Kosher-certified Edomae."
+    "vibe": "Sleek, hushed; Kosher-certified Edomae.",
+    "format": "omakase"
   },
   {
     "name": "Gosuke",
@@ -21,7 +23,8 @@
     "price_str": "$100 / $140",
     "min_price": 100,
     "pacing": "60–90",
-    "vibe": "Quiet, traditional; optimal for business lunches."
+    "vibe": "Quiet, traditional; optimal for business lunches.",
+    "format": "omakase"
   },
   {
     "name": "Hoseki",
@@ -29,7 +32,8 @@
     "price_str": "95",
     "min_price": 95,
     "pacing": "",
-    "vibe": "Calm, secretive retail-attached counter."
+    "vibe": "Calm, secretive retail-attached counter.",
+    "format": "omakase"
   },
   {
     "name": "Inase",
@@ -37,7 +41,8 @@
     "price_str": "$120 / $150",
     "min_price": 120,
     "pacing": "",
-    "vibe": "Modern Edomae counter."
+    "vibe": "Modern Edomae counter.",
+    "format": "omakase"
   },
   {
     "name": "Kizuna Omakase",
@@ -45,7 +50,8 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "",
-    "vibe": "Modern Edomae counter."
+    "vibe": "Modern Edomae counter.",
+    "format": "omakase"
   },
   {
     "name": "Kun Tsuki Omakase",
@@ -53,7 +59,8 @@
     "price_str": "$49 / $89",
     "min_price": 89,
     "pacing": "45–60",
-    "vibe": "Fast-casual, high-volume."
+    "vibe": "Fast-casual, high-volume.",
+    "format": "omakase"
   },
   {
     "name": "Mari.ne Handroll",
@@ -61,7 +68,8 @@
     "price_str": "<$30",
     "min_price": 30,
     "pacing": "30–45",
-    "vibe": "Cozy Korean-Japanese fusion fast-casual."
+    "vibe": "Cozy Korean-Japanese fusion fast-casual.",
+    "format": "omakase"
   },
   {
     "name": "Masuda Omakase",
@@ -69,7 +77,8 @@
     "price_str": "135",
     "min_price": 135,
     "pacing": "",
-    "vibe": "Counter."
+    "vibe": "Counter.",
+    "format": "omakase"
   },
   {
     "name": "Nare Sushi",
@@ -77,7 +86,8 @@
     "price_str": "79",
     "min_price": 79,
     "pacing": "",
-    "vibe": "Hidden in an office building; veteran chef."
+    "vibe": "Hidden in an office building; veteran chef.",
+    "format": "omakase"
   },
   {
     "name": "Omakase 33",
@@ -85,7 +95,8 @@
     "price_str": "88",
     "min_price": 88,
     "pacing": "",
-    "vibe": "Inherently fast-paced volume counter."
+    "vibe": "Inherently fast-paced volume counter.",
+    "format": "omakase"
   },
   {
     "name": "Shihou Omakase",
@@ -93,7 +104,8 @@
     "price_str": "105",
     "min_price": 105,
     "pacing": "90",
-    "vibe": "Highly relaxed (offers dining table setup)."
+    "vibe": "Highly relaxed (offers dining table setup).",
+    "format": "omakase"
   },
   {
     "name": "Shogun Omakase",
@@ -101,7 +113,8 @@
     "price_str": "$68 / $100 / $150",
     "min_price": 68,
     "pacing": "60–75",
-    "vibe": "Very casual, social; energetic atmosphere."
+    "vibe": "Very casual, social; energetic atmosphere.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Beauu",
@@ -109,7 +122,8 @@
     "price_str": "$100 / $140",
     "min_price": 100,
     "pacing": "75",
-    "vibe": "Cozy, buzzy, reliable mid-tier modern option."
+    "vibe": "Cozy, buzzy, reliable mid-tier modern option.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Kaito",
@@ -117,7 +131,8 @@
     "price_str": "115",
     "min_price": 115,
     "pacing": "75–90",
-    "vibe": "Warm, inviting, hushed but conversational."
+    "vibe": "Warm, inviting, hushed but conversational.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Masu",
@@ -125,7 +140,8 @@
     "price_str": "$68 / $88",
     "min_price": 68,
     "pacing": "",
-    "vibe": "Extremely casual, rapid-fire functional budget."
+    "vibe": "Extremely casual, rapid-fire functional budget.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Yasuda",
@@ -133,7 +149,8 @@
     "price_str": "130",
     "min_price": 170,
     "pacing": "90",
-    "vibe": "Hushed, bamboo-clad historical vanguard."
+    "vibe": "Hushed, bamboo-clad historical vanguard.",
+    "format": "omakase"
   },
   {
     "name": "Sushi You",
@@ -141,7 +158,8 @@
     "price_str": "$110 / $125",
     "min_price": 110,
     "pacing": "",
-    "vibe": "Wednesday-only lunch omakase."
+    "vibe": "Wednesday-only lunch omakase.",
+    "format": "omakase"
   },
   {
     "name": "Trust Bae",
@@ -149,7 +167,8 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "90",
-    "vibe": "Dark nightclub ambiance; highly theatrical."
+    "vibe": "Dark nightclub ambiance; highly theatrical.",
+    "format": "omakase"
   },
   {
     "name": "Uka Omakase",
@@ -157,7 +176,8 @@
     "price_str": "$56 / $98",
     "min_price": 56,
     "pacing": "60–75",
-    "vibe": "Casual, unpretentious accessible everyday dining."
+    "vibe": "Casual, unpretentious accessible everyday dining.",
+    "format": "omakase"
   },
   {
     "name": "Uogashi",
@@ -165,7 +185,8 @@
     "price_str": "$95 / $135",
     "min_price": 95,
     "pacing": "",
-    "vibe": ""
+    "vibe": "",
+    "format": "omakase"
   },
   {
     "name": "Zama Omakase",
@@ -173,7 +194,8 @@
     "price_str": "108",
     "min_price": 108,
     "pacing": "75",
-    "vibe": "Relaxed, casual mid-tier contemporary."
+    "vibe": "Relaxed, casual mid-tier contemporary.",
+    "format": "omakase"
   },
   {
     "name": "Chemistry Room",
@@ -181,7 +203,8 @@
     "price_str": "$100 / $150",
     "min_price": 100,
     "pacing": "90–120",
-    "vibe": "Modern, dark, social; molecular gastronomy."
+    "vibe": "Modern, dark, social; molecular gastronomy.",
+    "format": "omakase"
   },
   {
     "name": "Korami Omakase",
@@ -189,7 +212,8 @@
     "price_str": "89",
     "min_price": 89,
     "pacing": "60",
-    "vibe": "Exceptionally tiny, highly chatty gem."
+    "vibe": "Exceptionally tiny, highly chatty gem.",
+    "format": "omakase"
   },
   {
     "name": "Mojo Omakase",
@@ -197,7 +221,8 @@
     "price_str": "$75 / $90 / $95",
     "min_price": 90,
     "pacing": "60–75",
-    "vibe": "Counter-only, informal modern sushi."
+    "vibe": "Counter-only, informal modern sushi.",
+    "format": "omakase"
   },
   {
     "name": "Sushiichi",
@@ -205,7 +230,8 @@
     "price_str": "130",
     "min_price": 130,
     "pacing": "90",
-    "vibe": "Cozy, quiet, deeply reliable neighborhood traditional."
+    "vibe": "Cozy, quiet, deeply reliable neighborhood traditional.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Lab",
@@ -213,7 +239,8 @@
     "price_str": "$60 / $130",
     "min_price": 60,
     "pacing": "60–90",
-    "vibe": "Social, upbeat; theatrical smoke; stunning roof."
+    "vibe": "Social, upbeat; theatrical smoke; stunning roof.",
+    "format": "omakase"
   },
   {
     "name": "Sendo",
@@ -221,7 +248,8 @@
     "price_str": "33",
     "min_price": 48,
     "pacing": "45–60",
-    "vibe": "Extraordinary value commuter-secret (hidden)."
+    "vibe": "Extraordinary value commuter-secret (hidden).",
+    "format": "omakase"
   },
   {
     "name": "Sushi Sasabune",
@@ -229,7 +257,8 @@
     "price_str": "$57 / $97",
     "min_price": 57,
     "pacing": "",
-    "vibe": "Casual, no-frills."
+    "vibe": "Casual, no-frills.",
+    "format": "omakase"
   },
   {
     "name": "Omakase Sushi Dairo",
@@ -237,7 +266,8 @@
     "price_str": "$95 / $150 / $160",
     "min_price": 95,
     "pacing": "90",
-    "vibe": "Experienced, highly refined veteran chef."
+    "vibe": "Experienced, highly refined veteran chef.",
+    "format": "omakase"
   },
   {
     "name": "Tsumo",
@@ -245,7 +275,8 @@
     "price_str": "$48 / $58",
     "min_price": 58,
     "pacing": "45–60",
-    "vibe": "Fast, casual, in-and-out budget counter."
+    "vibe": "Fast, casual, in-and-out budget counter.",
+    "format": "omakase"
   },
   {
     "name": "One Bite Omakase",
@@ -253,7 +284,8 @@
     "price_str": "89",
     "min_price": 89,
     "pacing": "",
-    "vibe": "Counter."
+    "vibe": "Counter.",
+    "format": "omakase"
   },
   {
     "name": "ROKI",
@@ -261,7 +293,8 @@
     "price_str": "Unlisted",
     "min_price": null,
     "pacing": "",
-    "vibe": ""
+    "vibe": "",
+    "format": "omakase"
   },
   {
     "name": "Shinn East",
@@ -269,7 +302,8 @@
     "price_str": "$65 / $69",
     "min_price": 69,
     "pacing": "55",
-    "vibe": "Small, no-frills, strict pacing, high fish quality."
+    "vibe": "Small, no-frills, strict pacing, high fish quality.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Blossoms",
@@ -277,7 +311,8 @@
     "price_str": "85",
     "min_price": 85,
     "pacing": "75",
-    "vibe": "Bright, photogenic; seasonal floral presentations."
+    "vibe": "Bright, photogenic; seasonal floral presentations.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Suite 1001",
@@ -285,7 +320,8 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "75",
-    "vibe": "Ultra-private hotel-room speakeasy."
+    "vibe": "Ultra-private hotel-room speakeasy.",
+    "format": "omakase"
   },
   {
     "name": "Tokyo Bar",
@@ -293,7 +329,8 @@
     "price_str": "",
     "min_price": null,
     "pacing": "90",
-    "vibe": "Bar-centric, vibrant multi-course tapas fusion."
+    "vibe": "Bar-centric, vibrant multi-course tapas fusion.",
+    "format": "omakase"
   },
   {
     "name": "KazuNori",
@@ -301,7 +338,8 @@
     "price_str": "24",
     "min_price": 24,
     "pacing": "30–45",
-    "vibe": "Fast-paced, no-frills; handroll exclusive."
+    "vibe": "Fast-paced, no-frills; handroll exclusive.",
+    "format": "omakase"
   },
   {
     "name": "Hasaki",
@@ -309,7 +347,8 @@
     "price_str": "96",
     "min_price": 96,
     "pacing": "75–90",
-    "vibe": "Cozy basement, 1984 East Village staple."
+    "vibe": "Cozy basement, 1984 East Village staple.",
+    "format": "omakase"
   },
   {
     "name": "KAWA Omakase",
@@ -317,7 +356,8 @@
     "price_str": "88",
     "min_price": 88,
     "pacing": "75–90",
-    "vibe": "Tiny, warm, casual, chatty."
+    "vibe": "Tiny, warm, casual, chatty.",
+    "format": "omakase"
   },
   {
     "name": "Kissaki",
@@ -325,7 +365,8 @@
     "price_str": "$100 / $135",
     "min_price": 100,
     "pacing": "75–90",
-    "vibe": "Modern minimalist; Michelin Plate."
+    "vibe": "Modern minimalist; Michelin Plate.",
+    "format": "omakase"
   },
   {
     "name": "Mayanoki",
@@ -333,7 +374,8 @@
     "price_str": "95",
     "min_price": 95,
     "pacing": "",
-    "vibe": "Sustainable-fish omakase."
+    "vibe": "Sustainable-fish omakase.",
+    "format": "omakase"
   },
   {
     "name": "Mido Omakase",
@@ -341,7 +383,8 @@
     "price_str": "$68 / $100 / $150",
     "min_price": 100,
     "pacing": "60–120",
-    "vibe": "Dim, romantic; interactive iPad fish education."
+    "vibe": "Dim, romantic; interactive iPad fish education.",
+    "format": "omakase"
   },
   {
     "name": "Moko",
@@ -349,7 +392,8 @@
     "price_str": "$95 / $120",
     "min_price": 95,
     "pacing": "",
-    "vibe": "Cozy/trendy; modern fusion (table seating)."
+    "vibe": "Cozy/trendy; modern fusion (table seating).",
+    "format": "omakase"
   },
   {
     "name": "Omakase by Teisui",
@@ -357,7 +401,8 @@
     "price_str": "$75 / $95",
     "min_price": 75,
     "pacing": "60",
-    "vibe": "Intimate, warm, conversational."
+    "vibe": "Intimate, warm, conversational.",
+    "format": "omakase"
   },
   {
     "name": "Robataya",
@@ -365,7 +410,8 @@
     "price_str": "$60 / $80",
     "min_price": 60,
     "pacing": "90",
-    "vibe": "Rustic, theatrical Robata grill (NOT sushi)."
+    "vibe": "Rustic, theatrical Robata grill (NOT sushi).",
+    "format": "omakase"
   },
   {
     "name": "Sanyuu West",
@@ -373,7 +419,8 @@
     "price_str": "78",
     "min_price": 78,
     "pacing": "",
-    "vibe": "Sister to Shinn East / Thirteen Water."
+    "vibe": "Sister to Shinn East / Thirteen Water.",
+    "format": "omakase"
   },
   {
     "name": "Shinzo Omakase",
@@ -381,7 +428,8 @@
     "price_str": "69",
     "min_price": 69,
     "pacing": "60",
-    "vibe": "Highly relaxed, unpretentious; Strictly BYOB."
+    "vibe": "Highly relaxed, unpretentious; Strictly BYOB.",
+    "format": "omakase"
   },
   {
     "name": "SourAji",
@@ -389,7 +437,8 @@
     "price_str": "98",
     "min_price": 98,
     "pacing": "90",
-    "vibe": "Gluttonous, fun; AYCE movement pioneer."
+    "vibe": "Gluttonous, fun; AYCE movement pioneer.",
+    "format": "omakase"
   },
   {
     "name": "Sugarfish",
@@ -397,7 +446,8 @@
     "price_str": "32",
     "min_price": 76,
     "pacing": "45–60",
-    "vibe": "Dark, sleek, bustling; LA import \"Trust Me\" menus."
+    "vibe": "Dark, sleek, bustling; LA import \"Trust Me\" menus.",
+    "format": "omakase"
   },
   {
     "name": "Sushi by Bou",
@@ -405,7 +455,8 @@
     "price_str": "50",
     "min_price": 65,
     "pacing": "30–60",
-    "vibe": "Laid-back, hip-hop, loud speakeasy chain."
+    "vibe": "Laid-back, hip-hop, loud speakeasy chain.",
+    "format": "omakase"
   },
   {
     "name": "Sushi by M",
@@ -413,7 +464,8 @@
     "price_str": "$69 / $105",
     "min_price": 69,
     "pacing": "60",
-    "vibe": "High-energy, playful unconventional fusion."
+    "vibe": "High-energy, playful unconventional fusion.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Dojo",
@@ -421,7 +473,8 @@
     "price_str": "60",
     "min_price": 98,
     "pacing": "90",
-    "vibe": "Friendly, fun, club music weekends."
+    "vibe": "Friendly, fun, club music weekends.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Seki",
@@ -429,7 +482,8 @@
     "price_str": "$60 / $150",
     "min_price": 120,
     "pacing": "90",
-    "vibe": "Michelin Recommended; lively, semi-private rooms."
+    "vibe": "Michelin Recommended; lively, semi-private rooms.",
+    "format": "omakase"
   },
   {
     "name": "Thirteen Water",
@@ -437,7 +491,8 @@
     "price_str": "$75 / $85",
     "min_price": 75,
     "pacing": "60",
-    "vibe": "Dark, sleek; highly unique \"layered\" flavors."
+    "vibe": "Dark, sleek; highly unique \"layered\" flavors.",
+    "format": "omakase"
   },
   {
     "name": "Domodomo",
@@ -445,7 +500,8 @@
     "price_str": "$120 / $140 / $180",
     "min_price": 120,
     "pacing": "90",
-    "vibe": "Warm, elegant; 8-Year Michelin Bib Gourmand."
+    "vibe": "Warm, elegant; 8-Year Michelin Bib Gourmand.",
+    "format": "omakase"
   },
   {
     "name": "Genki Omakase",
@@ -453,7 +509,8 @@
     "price_str": "$75 / $98",
     "min_price": 75,
     "pacing": "",
-    "vibe": "Casual; BYOB-friendly."
+    "vibe": "Casual; BYOB-friendly.",
+    "format": "omakase"
   },
   {
     "name": "Kanoyama",
@@ -461,7 +518,8 @@
     "price_str": "195",
     "min_price": 195,
     "pacing": "120",
-    "vibe": "Former Michelin Star; classic, cozy isolated counter."
+    "vibe": "Former Michelin Star; classic, cozy isolated counter.",
+    "format": "omakase"
   },
   {
     "name": "Kazumi Omakase",
@@ -469,7 +527,8 @@
     "price_str": "$75 / $95",
     "min_price": 75,
     "pacing": "60",
-    "vibe": "Warm, relaxed; premier budget-friendly option."
+    "vibe": "Warm, relaxed; premier budget-friendly option.",
+    "format": "omakase"
   },
   {
     "name": "Nozomi NYC",
@@ -477,7 +536,8 @@
     "price_str": "$88 / $108",
     "min_price": 108,
     "pacing": "75–90",
-    "vibe": "Relaxed and welcoming; complex dry-aging."
+    "vibe": "Relaxed and welcoming; complex dry-aging.",
+    "format": "omakase"
   },
   {
     "name": "Saishin",
@@ -485,7 +545,8 @@
     "price_str": "$115 / $135",
     "min_price": 115,
     "pacing": "90",
-    "vibe": "Vibrant, club-adjacent Gansevoort rooftop."
+    "vibe": "Vibrant, club-adjacent Gansevoort rooftop.",
+    "format": "omakase"
   },
   {
     "name": "Shota Omakase",
@@ -493,7 +554,8 @@
     "price_str": "$175 / $195 / $255",
     "min_price": 175,
     "pacing": "105",
-    "vibe": "1 Michelin Star; highly welcoming, conversational."
+    "vibe": "1 Michelin Star; highly welcoming, conversational.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Yashin",
@@ -501,7 +563,8 @@
     "price_str": "50",
     "min_price": 50,
     "pacing": "60",
-    "vibe": "Quiet minimalist space; Michelin Bib Gourmand."
+    "vibe": "Quiet minimalist space; Michelin Bib Gourmand.",
+    "format": "omakase"
   },
   {
     "name": "U Omakase",
@@ -509,7 +572,8 @@
     "price_str": "109",
     "min_price": 109,
     "pacing": "",
-    "vibe": "Communal U-shaped counter; highly social."
+    "vibe": "Communal U-shaped counter; highly social.",
+    "format": "omakase"
   },
   {
     "name": "Bondi Sushi",
@@ -517,7 +581,8 @@
     "price_str": "70",
     "min_price": 75,
     "pacing": "60",
-    "vibe": "Casual, California-influenced; friendly service."
+    "vibe": "Casual, California-influenced; friendly service.",
+    "format": "omakase"
   },
   {
     "name": "Douska",
@@ -525,7 +590,8 @@
     "price_str": "~$95",
     "min_price": 95,
     "pacing": "60",
-    "vibe": "Intimately scaled, energetic cult favorite."
+    "vibe": "Intimately scaled, energetic cult favorite.",
+    "format": "omakase"
   },
   {
     "name": "Matsunori",
@@ -533,7 +599,8 @@
     "price_str": "58",
     "min_price": 68,
     "pacing": "60",
-    "vibe": "Stripped-down; Strictly BYOB (cash discount)."
+    "vibe": "Stripped-down; Strictly BYOB (cash discount).",
+    "format": "omakase"
   },
   {
     "name": "Mishik",
@@ -541,7 +608,8 @@
     "price_str": "$95 / $145",
     "min_price": 95,
     "pacing": "",
-    "vibe": "Counter Edomae."
+    "vibe": "Counter Edomae.",
+    "format": "omakase"
   },
   {
     "name": "Sushi 456",
@@ -549,7 +617,8 @@
     "price_str": "$70 / $100",
     "min_price": 70,
     "pacing": "",
-    "vibe": "Tiny counter, smooth-jazz, casual."
+    "vibe": "Tiny counter, smooth-jazz, casual.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Hayashi",
@@ -557,7 +626,8 @@
     "price_str": "98",
     "min_price": 98,
     "pacing": "80",
-    "vibe": "Premier AYCE; unlimited sushi, beer, and sake."
+    "vibe": "Premier AYCE; unlimited sushi, beer, and sake.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Nakazawa",
@@ -565,7 +635,8 @@
     "price_str": "$160 / $190",
     "min_price": 160,
     "pacing": "120",
-    "vibe": "1 Michelin Star; dining room table seating is ideal."
+    "vibe": "1 Michelin Star; dining room table seating is ideal.",
+    "format": "omakase"
   },
   {
     "name": "Sushi on Jones",
@@ -573,7 +644,8 @@
     "price_str": "50",
     "min_price": 58,
     "pacing": "30–45",
-    "vibe": "Inherently chaotic, loud originator of timed model."
+    "vibe": "Inherently chaotic, loud originator of timed model.",
+    "format": "omakase"
   },
   {
     "name": "Sushi On Me",
@@ -581,7 +653,8 @@
     "price_str": "99",
     "min_price": 99,
     "pacing": "60",
-    "vibe": "Chaotic, party-fueled; Unlimited sake."
+    "vibe": "Chaotic, party-fueled; Unlimited sake.",
+    "format": "omakase"
   },
   {
     "name": "Takumi Omakase",
@@ -589,7 +662,8 @@
     "price_str": "89",
     "min_price": 89,
     "pacing": "60",
-    "vibe": "Casual, intimate; premier BYOB destination."
+    "vibe": "Casual, intimate; premier BYOB destination.",
+    "format": "omakase"
   },
   {
     "name": "Ume Williamsburg",
@@ -597,7 +671,8 @@
     "price_str": "$55 / $78",
     "min_price": 78,
     "pacing": "",
-    "vibe": "Referral-only; barefoot policy; DIY options."
+    "vibe": "Referral-only; barefoot policy; DIY options.",
+    "format": "omakase"
   },
   {
     "name": "Yoshino",
@@ -605,7 +680,8 @@
     "price_str": "500",
     "min_price": 500,
     "pacing": "150",
-    "vibe": "1 Michelin Star; highly conversational but pricey."
+    "vibe": "1 Michelin Star; highly conversational but pricey.",
+    "format": "omakase"
   },
   {
     "name": "Zen Sushi Omakase",
@@ -613,7 +689,8 @@
     "price_str": "89",
     "min_price": 89,
     "pacing": "",
-    "vibe": "Heavy TikTok presence; veteran chefs."
+    "vibe": "Heavy TikTok presence; veteran chefs.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Ryusei",
@@ -621,7 +698,8 @@
     "price_str": "$95 / $140",
     "min_price": 95,
     "pacing": "60–90",
-    "vibe": "Calm, distraction-free, quiet traditional."
+    "vibe": "Calm, distraction-free, quiet traditional.",
+    "format": "omakase"
   },
   {
     "name": "Blue Ribbon Sushi",
@@ -629,7 +707,8 @@
     "price_str": "$85 / $115 / $150",
     "min_price": 150,
     "pacing": "75–90",
-    "vibe": "Bustling, iconic; Historic NYC institution (1995)."
+    "vibe": "Bustling, iconic; Historic NYC institution (1995).",
+    "format": "omakase"
   },
   {
     "name": "Kintsugi",
@@ -637,7 +716,8 @@
     "price_str": "$60 / $95 / $195",
     "min_price": 90,
     "pacing": "60–90",
-    "vibe": "Lighthearted; innovative global sourcing."
+    "vibe": "Lighthearted; innovative global sourcing.",
+    "format": "omakase"
   },
   {
     "name": "Maaser Omakase",
@@ -645,7 +725,8 @@
     "price_str": "$65 / $95 / $135",
     "min_price": 135,
     "pacing": "90",
-    "vibe": "Quiet, minimalist; Kosher omakase counter."
+    "vibe": "Quiet, minimalist; Kosher omakase counter.",
+    "format": "omakase"
   },
   {
     "name": "Momoya",
@@ -653,7 +734,8 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "90–120",
-    "vibe": "Modern, spacious; architectural pastry desserts."
+    "vibe": "Modern, spacious; architectural pastry desserts.",
+    "format": "omakase"
   },
   {
     "name": "Nami Nori",
@@ -661,7 +743,8 @@
     "price_str": "30",
     "min_price": 32,
     "pacing": "45–60",
-    "vibe": "Bright, highly social; Michelin Bib Gourmand."
+    "vibe": "Bright, highly social; Michelin Bib Gourmand.",
+    "format": "omakase"
   },
   {
     "name": "Sekai Omakase",
@@ -669,7 +752,8 @@
     "price_str": "108",
     "min_price": 108,
     "pacing": "60–75",
-    "vibe": "Comfortable and familiar dependable staple."
+    "vibe": "Comfortable and familiar dependable staple.",
+    "format": "omakase"
   },
   {
     "name": "Shiki Omakase",
@@ -677,7 +761,8 @@
     "price_str": "$65 / $100",
     "min_price": 65,
     "pacing": "40",
-    "vibe": "Cozy all-white room; extreme efficiency/fast."
+    "vibe": "Cozy all-white room; extreme efficiency/fast.",
+    "format": "omakase"
   },
   {
     "name": "Sushi by Bae",
@@ -685,7 +770,8 @@
     "price_str": "$75 / $90",
     "min_price": 75,
     "pacing": "75",
-    "vibe": "Casual, straightforward."
+    "vibe": "Casual, straightforward.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Ikumi",
@@ -693,7 +779,8 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "90",
-    "vibe": "Intimate, elegant Saturday lunch exclusive."
+    "vibe": "Intimate, elegant Saturday lunch exclusive.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Lin",
@@ -701,7 +788,8 @@
     "price_str": "35",
     "min_price": 90,
     "pacing": "45–90",
-    "vibe": "Minimalist, serene; Sourced from Tsukiji."
+    "vibe": "Minimalist, serene; Sourced from Tsukiji.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Ouji",
@@ -709,7 +797,8 @@
     "price_str": "129",
     "min_price": 129,
     "pacing": "90–120",
-    "vibe": "Decidedly upscale; rare imports (Kuruma Ebi)."
+    "vibe": "Decidedly upscale; rare imports (Kuruma Ebi).",
+    "format": "omakase"
   },
   {
     "name": "Atto Omakase",
@@ -717,7 +806,8 @@
     "price_str": "$85 / $95 / $115",
     "min_price": 85,
     "pacing": "60–75",
-    "vibe": "Intimate counter, hushed but non-restrictive."
+    "vibe": "Intimate counter, hushed but non-restrictive.",
+    "format": "omakase"
   },
   {
     "name": "Noz Market",
@@ -725,7 +815,8 @@
     "price_str": "$90 / $150",
     "min_price": 90,
     "pacing": "60",
-    "vibe": "Pristine fish market feel; casual sibling to Sushi Noz."
+    "vibe": "Pristine fish market feel; casual sibling to Sushi Noz.",
+    "format": "omakase"
   },
   {
     "name": "Oyishi Sushi",
@@ -733,7 +824,8 @@
     "price_str": "50",
     "min_price": 50,
     "pacing": "45",
-    "vibe": "Extremely casual, absolute lowest budget point."
+    "vibe": "Extremely casual, absolute lowest budget point.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Jin",
@@ -741,7 +833,8 @@
     "price_str": "145",
     "min_price": 145,
     "pacing": "90",
-    "vibe": "Quiet, refined, upscale intimacy."
+    "vibe": "Quiet, refined, upscale intimacy.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Koya",
@@ -749,7 +842,8 @@
     "price_str": "115",
     "min_price": 115,
     "pacing": "75",
-    "vibe": "Casual, modern 18-course contemporary menu."
+    "vibe": "Casual, modern 18-course contemporary menu.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Yolo",
@@ -757,7 +851,8 @@
     "price_str": "109",
     "min_price": 109,
     "pacing": "60",
-    "vibe": "Fun, casual, bold fusion-heavy menu."
+    "vibe": "Fun, casual, bold fusion-heavy menu.",
+    "format": "omakase"
   },
   {
     "name": "Tatsuda Omakase",
@@ -765,7 +860,8 @@
     "price_str": "90",
     "min_price": 90,
     "pacing": "60",
-    "vibe": "Neighborhood-casual value-driven traditionalists."
+    "vibe": "Neighborhood-casual value-driven traditionalists.",
+    "format": "omakase"
   },
   {
     "name": "Fuku Omakase",
@@ -773,7 +869,8 @@
     "price_str": "75",
     "min_price": 75,
     "pacing": "",
-    "vibe": "Modest counter."
+    "vibe": "Modest counter.",
+    "format": "omakase"
   },
   {
     "name": "Hatsu Omakase",
@@ -781,7 +878,8 @@
     "price_str": "95",
     "min_price": 95,
     "pacing": "",
-    "vibe": "Casual; features an AYCE round."
+    "vibe": "Casual; features an AYCE round.",
+    "format": "omakase"
   },
   {
     "name": "Kinzan Omakase",
@@ -789,7 +887,8 @@
     "price_str": "$69 / $89",
     "min_price": 69,
     "pacing": "",
-    "vibe": "Classic Edomae Counter."
+    "vibe": "Classic Edomae Counter.",
+    "format": "omakase"
   },
   {
     "name": "Kyuubi Omakase",
@@ -797,7 +896,8 @@
     "price_str": "68",
     "min_price": 68,
     "pacing": "",
-    "vibe": "Brisk."
+    "vibe": "Brisk.",
+    "format": "omakase"
   },
   {
     "name": "Mitsuru",
@@ -805,7 +905,8 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "",
-    "vibe": "Counter Edomae."
+    "vibe": "Counter Edomae.",
+    "format": "omakase"
   },
   {
     "name": "Mojo East",
@@ -813,7 +914,8 @@
     "price_str": "55",
     "min_price": 55,
     "pacing": "",
-    "vibe": "Gratuity included; ultra budget-friendly."
+    "vibe": "Gratuity included; ultra budget-friendly.",
+    "format": "omakase"
   },
   {
     "name": "Mori",
@@ -821,7 +923,8 @@
     "price_str": "125",
     "min_price": 125,
     "pacing": "90",
-    "vibe": "Calm, focused, quiet foundational baseline."
+    "vibe": "Calm, focused, quiet foundational baseline.",
+    "format": "omakase"
   },
   {
     "name": "Nobu Downtown",
@@ -829,7 +932,8 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "120",
-    "vibe": "Sleek subterranean Japanese-Peruvian fusion."
+    "vibe": "Sleek subterranean Japanese-Peruvian fusion.",
+    "format": "omakase"
   },
   {
     "name": "Omakase by No Name",
@@ -837,7 +941,8 @@
     "price_str": "$88 / $128",
     "min_price": 88,
     "pacing": "",
-    "vibe": ""
+    "vibe": "",
+    "format": "omakase"
   },
   {
     "name": "Saikou",
@@ -845,7 +950,8 @@
     "price_str": "120",
     "min_price": 120,
     "pacing": "75–90",
-    "vibe": "Quiet, highly focused, measured 17-course menu."
+    "vibe": "Quiet, highly focused, measured 17-course menu.",
+    "format": "omakase"
   },
   {
     "name": "Sake Kawa",
@@ -853,7 +959,8 @@
     "price_str": "$60 / $90",
     "min_price": 60,
     "pacing": "",
-    "vibe": "Sake-focused counter."
+    "vibe": "Sake-focused counter.",
+    "format": "omakase"
   },
   {
     "name": "SHHH Omakase",
@@ -861,7 +968,8 @@
     "price_str": "$98 / $128",
     "min_price": 98,
     "pacing": "",
-    "vibe": "Speakeasy-style hidden counter."
+    "vibe": "Speakeasy-style hidden counter.",
+    "format": "omakase"
   },
   {
     "name": "Shinsen",
@@ -869,7 +977,8 @@
     "price_str": "98",
     "min_price": 98,
     "pacing": "",
-    "vibe": "Features an AYCE round."
+    "vibe": "Features an AYCE round.",
+    "format": "omakase"
   },
   {
     "name": "Shirokuro",
@@ -877,7 +986,8 @@
     "price_str": "$60 / $90",
     "min_price": 60,
     "pacing": "",
-    "vibe": "Casual counter."
+    "vibe": "Casual counter.",
+    "format": "omakase"
   },
   {
     "name": "Shoshin",
@@ -885,7 +995,8 @@
     "price_str": "$68 / $98",
     "min_price": 68,
     "pacing": "",
-    "vibe": ""
+    "vibe": "",
+    "format": "omakase"
   },
   {
     "name": "Sushi Daizen",
@@ -893,7 +1004,8 @@
     "price_str": "$75 / $95",
     "min_price": 75,
     "pacing": "75",
-    "vibe": "Quiet, warm, traditional sushi focus."
+    "vibe": "Quiet, warm, traditional sushi focus.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Kai",
@@ -901,7 +1013,8 @@
     "price_str": "85",
     "min_price": 85,
     "pacing": "60–75",
-    "vibe": "Intimate, humble high quality."
+    "vibe": "Intimate, humble high quality.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Makoto",
@@ -909,7 +1022,8 @@
     "price_str": "$120 / $150",
     "min_price": 120,
     "pacing": "90",
-    "vibe": "Deeply respectful 15-18 course traditional menu."
+    "vibe": "Deeply respectful 15-18 course traditional menu.",
+    "format": "omakase"
   },
   {
     "name": "Taikun",
@@ -917,7 +1031,8 @@
     "price_str": "85",
     "min_price": 85,
     "pacing": "",
-    "vibe": ""
+    "vibe": "",
+    "format": "omakase"
   },
   {
     "name": "Towa",
@@ -925,7 +1040,8 @@
     "price_str": "125",
     "min_price": 125,
     "pacing": "90",
-    "vibe": "Elegant, refined; distinct kaiseki influences."
+    "vibe": "Elegant, refined; distinct kaiseki influences.",
+    "format": "omakase"
   },
   {
     "name": "Unique Omakase",
@@ -933,7 +1049,8 @@
     "price_str": "120",
     "min_price": 120,
     "pacing": "",
-    "vibe": "Intimate counter."
+    "vibe": "Intimate counter.",
+    "format": "omakase"
   },
   {
     "name": "Yokox Omakase",
@@ -941,7 +1058,8 @@
     "price_str": "89",
     "min_price": 89,
     "pacing": "",
-    "vibe": "Counter."
+    "vibe": "Counter.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Tsushima",
@@ -949,7 +1067,8 @@
     "price_str": "60",
     "min_price": 60,
     "pacing": "60",
-    "vibe": "Simple bright funky $60 omakase; relaxed."
+    "vibe": "Simple bright funky $60 omakase; relaxed.",
+    "format": "omakase"
   },
   {
     "name": "Iwak Sushi",
@@ -957,7 +1076,8 @@
     "price_str": "67",
     "min_price": 67,
     "pacing": "",
-    "vibe": "Modest counter."
+    "vibe": "Modest counter.",
+    "format": "omakase"
   },
   {
     "name": "Junsui Omakase",
@@ -965,7 +1085,8 @@
     "price_str": "$125 / $145",
     "min_price": 125,
     "pacing": "",
-    "vibe": "Museum-like, quiet; BYOB."
+    "vibe": "Museum-like, quiet; BYOB.",
+    "format": "omakase"
   },
   {
     "name": "Kinjo",
@@ -973,7 +1094,8 @@
     "price_str": "95",
     "min_price": 95,
     "pacing": "75–90",
-    "vibe": "Stunning industrial-chic torpedo factory."
+    "vibe": "Stunning industrial-chic torpedo factory.",
+    "format": "omakase"
   },
   {
     "name": "Luya Omakase",
@@ -981,7 +1103,8 @@
     "price_str": "$59 / $89",
     "min_price": 89,
     "pacing": "",
-    "vibe": ""
+    "vibe": "",
+    "format": "omakase"
   },
   {
     "name": "Miro Sushi",
@@ -989,7 +1112,8 @@
     "price_str": "75",
     "min_price": 75,
     "pacing": "",
-    "vibe": ""
+    "vibe": "",
+    "format": "omakase"
   },
   {
     "name": "Neta Shari",
@@ -997,7 +1121,8 @@
     "price_str": "$65 / $125",
     "min_price": 65,
     "pacing": "90",
-    "vibe": "Tiny, intimate; Michelin Guide 4 years."
+    "vibe": "Tiny, intimate; Michelin Guide 4 years.",
+    "format": "omakase"
   },
   {
     "name": "Omakase by Hiro",
@@ -1005,7 +1130,8 @@
     "price_str": "85",
     "min_price": 118,
     "pacing": "",
-    "vibe": "Intimate, classy; former Sushi Nakazawa alum."
+    "vibe": "Intimate, classy; former Sushi Nakazawa alum.",
+    "format": "omakase"
   },
   {
     "name": "Sora",
@@ -1013,7 +1139,8 @@
     "price_str": "120",
     "min_price": 120,
     "pacing": "",
-    "vibe": ""
+    "vibe": "",
+    "format": "omakase"
   },
   {
     "name": "Sushi Katsuei",
@@ -1021,7 +1148,8 @@
     "price_str": "60",
     "min_price": 77,
     "pacing": "60–75",
-    "vibe": "Minimalist strict purists (no mayo/heavy soy)."
+    "vibe": "Minimalist strict purists (no mayo/heavy soy).",
+    "format": "omakase"
   },
   {
     "name": "Sushi Uesugi",
@@ -1029,7 +1157,8 @@
     "price_str": "75",
     "min_price": 75,
     "pacing": "",
-    "vibe": ""
+    "vibe": "",
+    "format": "omakase"
   },
   {
     "name": "Yamashiro",
@@ -1037,7 +1166,8 @@
     "price_str": "$88 / $108",
     "min_price": 88,
     "pacing": "",
-    "vibe": ""
+    "vibe": "",
+    "format": "omakase"
   },
   {
     "name": "E Sushi II",
@@ -1045,7 +1175,8 @@
     "price_str": "~$32",
     "min_price": 32,
     "pacing": "",
-    "vibe": "Bustling, casual; All-You-Can-Eat (AYCE)."
+    "vibe": "Bustling, casual; All-You-Can-Eat (AYCE).",
+    "format": "omakase"
   },
   {
     "name": "KIMYO",
@@ -1053,7 +1184,8 @@
     "price_str": "$49 / $69",
     "min_price": 69,
     "pacing": "60",
-    "vibe": "Dark, chic, social; $69 tier = unlimited drinks."
+    "vibe": "Dark, chic, social; $69 tier = unlimited drinks.",
+    "format": "omakase"
   },
   {
     "name": "Ki Sushi",
@@ -1061,7 +1193,8 @@
     "price_str": "55",
     "min_price": 55,
     "pacing": "60",
-    "vibe": "Family-friendly, bustling neighborhood staple."
+    "vibe": "Family-friendly, bustling neighborhood staple.",
+    "format": "omakase"
   },
   {
     "name": "Koma Sushi",
@@ -1069,7 +1202,8 @@
     "price_str": "40",
     "min_price": 40,
     "pacing": "60",
-    "vibe": "Casual banquet-style; Kosher-certified AYCE."
+    "vibe": "Casual banquet-style; Kosher-certified AYCE.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Koju",
@@ -1077,7 +1211,8 @@
     "price_str": "145",
     "min_price": 145,
     "pacing": "120",
-    "vibe": "Plush hotel lobby; conversation-friendly host."
+    "vibe": "Plush hotel lobby; conversation-friendly host.",
+    "format": "omakase"
   },
   {
     "name": "Hanaya Omakase",
@@ -1085,7 +1220,8 @@
     "price_str": "75",
     "min_price": 75,
     "pacing": "60",
-    "vibe": "Casual, bright, quick-service budget model."
+    "vibe": "Casual, bright, quick-service budget model.",
+    "format": "omakase"
   },
   {
     "name": "Joji",
@@ -1093,7 +1229,8 @@
     "price_str": "$325 / $450",
     "min_price": 325,
     "pacing": "90–120",
-    "vibe": "1 Michelin Star; sleek hidden room in One Vanderbilt."
+    "vibe": "1 Michelin Star; sleek hidden room in One Vanderbilt.",
+    "format": "omakase"
   },
   {
     "name": "Koete Omakase",
@@ -1101,7 +1238,8 @@
     "price_str": "$65 / $118",
     "min_price": 118,
     "pacing": "60–90",
-    "vibe": "Intimate, energetic; pre-theater efficiency."
+    "vibe": "Intimate, energetic; pre-theater efficiency.",
+    "format": "omakase"
   },
   {
     "name": "Shinpi",
@@ -1109,7 +1247,8 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "",
-    "vibe": ""
+    "vibe": "",
+    "format": "omakase"
   },
   {
     "name": "Sushi Ann",
@@ -1117,7 +1256,8 @@
     "price_str": "$80 / $125",
     "min_price": 80,
     "pacing": "60–90",
-    "vibe": "Hushed, respectful staple for business lunches."
+    "vibe": "Hushed, respectful staple for business lunches.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Goda",
@@ -1125,7 +1265,8 @@
     "price_str": "110",
     "min_price": 110,
     "pacing": "60–75",
-    "vibe": "Comfortable, quiet hushed counter."
+    "vibe": "Comfortable, quiet hushed counter.",
+    "format": "omakase"
   },
   {
     "name": "Sushi W",
@@ -1133,7 +1274,8 @@
     "price_str": "$38 / $68",
     "min_price": 53,
     "pacing": "60",
-    "vibe": "Casual, highly efficient; Strict no-tipping."
+    "vibe": "Casual, highly efficient; Strict no-tipping.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Yugen",
@@ -1141,7 +1283,8 @@
     "price_str": "120",
     "min_price": 120,
     "pacing": "",
-    "vibe": ""
+    "vibe": "",
+    "format": "omakase"
   },
   {
     "name": "Gohan Sushi",
@@ -1149,7 +1292,8 @@
     "price_str": "$70 / $99",
     "min_price": 70,
     "pacing": "60–75",
-    "vibe": "Casual family vibe; traditional family-run."
+    "vibe": "Casual family vibe; traditional family-run.",
+    "format": "omakase"
   },
   {
     "name": "Idashi Omakase",
@@ -1157,7 +1301,8 @@
     "price_str": "99",
     "min_price": 99,
     "pacing": "90",
-    "vibe": "Cozy, relaxed; TikTok/Yelp famous; BYOB."
+    "vibe": "Cozy, relaxed; TikTok/Yelp famous; BYOB.",
+    "format": "omakase"
   },
   {
     "name": "Ishi Omakase",
@@ -1165,7 +1310,8 @@
     "price_str": "$85 / $105 / $125",
     "min_price": 85,
     "pacing": "",
-    "vibe": "Dim, refined, intimate traditional sushi."
+    "vibe": "Dim, refined, intimate traditional sushi.",
+    "format": "omakase"
   },
   {
     "name": "Oita Sushi",
@@ -1173,7 +1319,8 @@
     "price_str": "85",
     "min_price": 85,
     "pacing": "60–75",
-    "vibe": "Allows mixed formats (a la carte + omakase)."
+    "vibe": "Allows mixed formats (a la carte + omakase).",
+    "format": "omakase"
   },
   {
     "name": "Uotora",
@@ -1181,7 +1328,8 @@
     "price_str": "$85 / $105",
     "min_price": 85,
     "pacing": "75–90",
-    "vibe": "Quiet, highly respectful; Michelin Plate."
+    "vibe": "Quiet, highly respectful; Michelin Plate.",
+    "format": "omakase"
   },
   {
     "name": "Tanoshi Sushi",
@@ -1189,7 +1337,8 @@
     "price_str": "60",
     "min_price": 102,
     "pacing": "90",
-    "vibe": "Cult-favorite loosey-sushi; strictly BYOB."
+    "vibe": "Cult-favorite loosey-sushi; strictly BYOB.",
+    "format": "omakase"
   },
   {
     "name": "Kaki",
@@ -1197,7 +1346,8 @@
     "price_str": "$85",
     "min_price": 85,
     "pacing": "60",
-    "vibe": "Intimate LES counter, free house sake, BYOB friendly."
+    "vibe": "Intimate LES counter, free house sake, BYOB friendly.",
+    "format": "omakase"
   },
   {
     "name": "Sushi Oku",
@@ -1205,7 +1355,8 @@
     "price_str": "$85 / $100 / $165",
     "min_price": 85,
     "pacing": "75-90",
-    "vibe": "Upscale counter inside old Scarr's Pizza space. Chef Kei Yoshino."
+    "vibe": "Upscale counter inside old Scarr's Pizza space. Chef Kei Yoshino.",
+    "format": "omakase"
   },
   {
     "name": "Warabi Omakase",
@@ -1213,7 +1364,8 @@
     "price_str": "108",
     "min_price": 108,
     "pacing": "60-90",
-    "vibe": "$108 14-course AYCE/AYCD over 80min (LIC value omakase)"
+    "vibe": "$108 14-course AYCE/AYCD over 80min (LIC value omakase)",
+    "format": "omakase"
   },
   {
     "name": "Sushi Hayashi (Williamsburg)",
@@ -1221,7 +1373,8 @@
     "price_str": "98",
     "min_price": 98,
     "pacing": "60-90",
-    "vibe": "$98/80min, 14-course omakase + 2 AYCE refill rounds (Williamsburg)"
+    "vibe": "$98/80min, 14-course omakase + 2 AYCE refill rounds (Williamsburg)",
+    "format": "omakase"
   },
   {
     "name": "Toka Chef Kitchen",
@@ -1229,7 +1382,8 @@
     "price_str": "58",
     "min_price": 58,
     "pacing": "60-90",
-    "vibe": "$58-$98, 14-18 course omakase + AYCE nigiri (from Matsunori team)"
+    "vibe": "$58-$98, 14-18 course omakase + AYCE nigiri (from Matsunori team)",
+    "format": "omakase"
   },
   {
     "name": "Sushi Sho",
@@ -1237,7 +1391,8 @@
     "price_str": "450",
     "min_price": 450,
     "pacing": "60-90",
-    "vibe": "3-Michelin Edomae from Tokyo legend Keiji Nakazawa, Andaz 5th Ave"
+    "vibe": "3-Michelin Edomae from Tokyo legend Keiji Nakazawa, Andaz 5th Ave",
+    "format": "omakase"
   },
   {
     "name": "Muku",
@@ -1245,7 +1400,8 @@
     "price_str": "295",
     "min_price": 295,
     "pacing": "60-90",
-    "vibe": "Tribeca kaiseki, 1 Michelin star in 2 months (Kuma Hospitality)"
+    "vibe": "Tribeca kaiseki, 1 Michelin star in 2 months (Kuma Hospitality)",
+    "format": "omakase"
   },
   {
     "name": "Yamada",
@@ -1253,7 +1409,8 @@
     "price_str": "300",
     "min_price": 300,
     "pacing": "60-90",
-    "vibe": "10-seat hinoki counter kaiseki from Isao Yamada (ex-Brushstroke)"
+    "vibe": "10-seat hinoki counter kaiseki from Isao Yamada (ex-Brushstroke)",
+    "format": "omakase"
   },
   {
     "name": "Odo East Village",
@@ -1261,7 +1418,8 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "60-90",
-    "vibe": "Kaiseki-izakaya from 2-Michelin Hiroki Odo, late-night"
+    "vibe": "Kaiseki-izakaya from 2-Michelin Hiroki Odo, late-night",
+    "format": "omakase"
   },
   {
     "name": "Yoshoku",
@@ -1269,7 +1427,8 @@
     "price_str": "188",
     "min_price": 188,
     "pacing": "60-90",
-    "vibe": "Waldorf Astoria lobby kaiseki tasting; chef ex-Zero Bond"
+    "vibe": "Waldorf Astoria lobby kaiseki tasting; chef ex-Zero Bond",
+    "format": "omakase"
   },
   {
     "name": "Yūgin",
@@ -1277,7 +1436,8 @@
     "price_str": "400",
     "min_price": 400,
     "pacing": "60-90",
-    "vibe": "Hidden in private club 37th floor; chef ex-Masa; 72 micro-seasons"
+    "vibe": "Hidden in private club 37th floor; chef ex-Masa; 72 micro-seasons",
+    "format": "omakase"
   },
   {
     "name": "Anbā",
@@ -1285,7 +1445,8 @@
     "price_str": "220",
     "min_price": 220,
     "pacing": "60-90",
-    "vibe": "16-course kaiseki, female chef Ambrely Ouimette, dry-age fish program"
+    "vibe": "16-course kaiseki, female chef Ambrely Ouimette, dry-age fish program",
+    "format": "omakase"
   },
   {
     "name": "Enso Omakase",
@@ -1293,7 +1454,8 @@
     "price_str": "195",
     "min_price": 195,
     "pacing": "60-90",
-    "vibe": "16-course chef Nick Wang (Ako/Amami); Eater Restaurants to Watch"
+    "vibe": "16-course chef Nick Wang (Ako/Amami); Eater Restaurants to Watch",
+    "format": "omakase"
   },
   {
     "name": "Hear & There",
@@ -1301,7 +1463,8 @@
     "price_str": "105",
     "min_price": 105,
     "pacing": "60-90",
-    "vibe": "Behind sliding door in Williamsburg listening lounge, 22-seat counter"
+    "vibe": "Behind sliding door in Williamsburg listening lounge, 22-seat counter",
+    "format": "omakase"
   },
   {
     "name": "Kansha",
@@ -1309,7 +1472,8 @@
     "price_str": "145",
     "min_price": 145,
     "pacing": "60-90",
-    "vibe": "Carnegie Hill Nikkei (Japanese-Peruvian) from Sushi Noz alum"
+    "vibe": "Carnegie Hill Nikkei (Japanese-Peruvian) from Sushi Noz alum",
+    "format": "omakase"
   },
   {
     "name": "Ikigai",
@@ -1317,7 +1481,8 @@
     "price_str": "165",
     "min_price": 165,
     "pacing": "60-90",
-    "vibe": "12-seat subterranean kaiseki, all proceeds donated"
+    "vibe": "12-seat subterranean kaiseki, all proceeds donated",
+    "format": "omakase"
   },
   {
     "name": "Sushi Ichimura",
@@ -1325,7 +1490,8 @@
     "price_str": "425",
     "min_price": 425,
     "pacing": "60-90",
-    "vibe": "Eiji Ichimura's 20-course Edomae, signature uni+caviar monaka"
+    "vibe": "Eiji Ichimura's 20-course Edomae, signature uni+caviar monaka",
+    "format": "omakase"
   },
   {
     "name": "Sushi Ishikawa",
@@ -1333,7 +1499,8 @@
     "price_str": "135",
     "min_price": 135,
     "pacing": "60-90",
-    "vibe": "Truffle/caviar/gold-leaf/foie gras stacking, 17-course MATSU"
+    "vibe": "Truffle/caviar/gold-leaf/foie gras stacking, 17-course MATSU",
+    "format": "omakase"
   },
   {
     "name": "Nakaji",
@@ -1341,7 +1508,8 @@
     "price_str": "365",
     "min_price": 365,
     "pacing": "60-90",
-    "vibe": "10-seat Edomae with comparative uni tasting from Toyosu auction"
+    "vibe": "10-seat Edomae with comparative uni tasting from Toyosu auction",
+    "format": "omakase"
   },
   {
     "name": "Shion 69 Leonard Street",
@@ -1349,7 +1517,8 @@
     "price_str": "480",
     "min_price": 480,
     "pacing": "60-90",
-    "vibe": "Edomae with rare Edo-period chinmi (CAVEAT: closed early 2026)"
+    "vibe": "Edomae with rare Edo-period chinmi (CAVEAT: closed early 2026)",
+    "format": "omakase"
   },
   {
     "name": "Shuko",
@@ -1357,7 +1526,8 @@
     "price_str": "270",
     "min_price": 270,
     "pacing": "60-90",
-    "vibe": "Cult counter from Nick Kim/Jimmy Lau (ex-Masa); secret toro/uni/caviar toast"
+    "vibe": "Cult counter from Nick Kim/Jimmy Lau (ex-Masa); secret toro/uni/caviar toast",
+    "format": "omakase"
   },
   {
     "name": "Kurumazushi",
@@ -1365,7 +1535,8 @@
     "price_str": "300",
     "min_price": 300,
     "pacing": "60-90",
-    "vibe": "Original toro-flight specialist (since 1977), 16-course omakase"
+    "vibe": "Original toro-flight specialist (since 1977), 16-course omakase",
+    "format": "omakase"
   },
   {
     "name": "icca",
@@ -1373,7 +1544,8 @@
     "price_str": "400",
     "min_price": 400,
     "pacing": "60-90",
-    "vibe": "8-seat counter with rare Edo chinmi + Italo-Japanese capellini bridge"
+    "vibe": "8-seat counter with rare Edo chinmi + Italo-Japanese capellini bridge",
+    "format": "omakase"
   },
   {
     "name": "Masa",
@@ -1381,7 +1553,8 @@
     "price_str": "950",
     "min_price": 950,
     "pacing": "60-90",
-    "vibe": "Only 3-Michelin Japanese in America; no Ã  la carte, no photos"
+    "vibe": "Only 3-Michelin Japanese in America; no Ã  la carte, no photos",
+    "format": "omakase"
   },
   {
     "name": "Bar Masa",
@@ -1389,7 +1562,8 @@
     "price_str": "290",
     "min_price": 290,
     "pacing": "60-90",
-    "vibe": "Masa-family Ã  la carte + sushi tasting; toro tartare with caviar"
+    "vibe": "Masa-family Ã  la carte + sushi tasting; toro tartare with caviar",
+    "format": "omakase"
   },
   {
     "name": "Kappo Masa",
@@ -1397,7 +1571,8 @@
     "price_str": "300",
     "min_price": 300,
     "pacing": "60-90",
-    "vibe": "Masa-family hybrid counter+tables UES; sukiyaki, caviar/truffle dishes"
+    "vibe": "Masa-family hybrid counter+tables UES; sukiyaki, caviar/truffle dishes",
+    "format": "omakase"
   },
   {
     "name": "Togyushi",
@@ -1405,7 +1580,8 @@
     "price_str": "200",
     "min_price": 200,
     "pacing": "60-90",
-    "vibe": "Wagyu kappo+omakase counter with exclusive G1 Zao Wagyu (Yamagata)"
+    "vibe": "Wagyu kappo+omakase counter with exclusive G1 Zao Wagyu (Yamagata)",
+    "format": "omakase"
   },
   {
     "name": "Omi Omakase",
@@ -1413,7 +1589,8 @@
     "price_str": "109",
     "min_price": 109,
     "pacing": "60-90",
-    "vibe": "Flushing Edomae counter, $159 tier has A5 wagyu + Hokkaido uni"
+    "vibe": "Flushing Edomae counter, $159 tier has A5 wagyu + Hokkaido uni",
+    "format": "omakase"
   },
   {
     "name": "Himitsu Flushing",
@@ -1421,7 +1598,8 @@
     "price_str": "150",
     "min_price": 150,
     "pacing": "60-90",
-    "vibe": "First speakeasy-style omakase in Queens, hidden inside Siam Thai"
+    "vibe": "First speakeasy-style omakase in Queens, hidden inside Siam Thai",
+    "format": "omakase"
   },
   {
     "name": "Kakurega Sushi",
@@ -1429,7 +1607,8 @@
     "price_str": "145",
     "min_price": 145,
     "pacing": "60-90",
-    "vibe": "Flushing 7-seat counter, A5 wagyu nigiri add-on, fish flown from Japan"
+    "vibe": "Flushing 7-seat counter, A5 wagyu nigiri add-on, fish flown from Japan",
+    "format": "omakase"
   },
   {
     "name": "Kaizen (Wabi Nori Hand Roll Bar)",
@@ -1437,7 +1616,8 @@
     "price_str": "55",
     "min_price": 55,
     "pacing": "60-90",
-    "vibe": "Hand-roll + omakase + izakaya hybrid in Flushing"
+    "vibe": "Hand-roll + omakase + izakaya hybrid in Flushing",
+    "format": "omakase"
   },
   {
     "name": "Izakaya Nana",
@@ -1445,7 +1625,8 @@
     "price_str": "80",
     "min_price": 80,
     "pacing": "60-90",
-    "vibe": "Flushing izakaya with sushi counter; signature Wagyu Foie Gras Uni nigiri"
+    "vibe": "Flushing izakaya with sushi counter; signature Wagyu Foie Gras Uni nigiri",
+    "format": "omakase"
   },
   {
     "name": "That Place Omakase",
@@ -1453,7 +1634,8 @@
     "price_str": "98",
     "min_price": 98,
     "pacing": "60-90",
-    "vibe": "Less-publicized Flushing omakase, wagyu in upper tier"
+    "vibe": "Less-publicized Flushing omakase, wagyu in upper tier",
+    "format": "omakase"
   },
   {
     "name": "Kaiyo Omakase",
@@ -1461,7 +1643,8 @@
     "price_str": "130",
     "min_price": 130,
     "pacing": "60-90",
-    "vibe": "Reasonably-priced LIC counter omakase, 15- and 18-course tiers"
+    "vibe": "Reasonably-priced LIC counter omakase, 15- and 18-course tiers",
+    "format": "omakase"
   },
   {
     "name": "Omakase Osukāā LIC",
@@ -1469,7 +1652,8 @@
     "price_str": "180",
     "min_price": 180,
     "pacing": "60-90",
-    "vibe": "LIC counter omakase; seasonal Japanese fish, wagyu in higher courses"
+    "vibe": "LIC counter omakase; seasonal Japanese fish, wagyu in higher courses",
+    "format": "omakase"
   },
   {
     "name": "Sapps",
@@ -1477,7 +1661,8 @@
     "price_str": "30",
     "min_price": 30,
     "pacing": "60-90",
-    "vibe": "LIC izakaya with $30 8-piece sushi omakase set + yakitori"
+    "vibe": "LIC izakaya with $30 8-piece sushi omakase set + yakitori",
+    "format": "omakase"
   },
   {
     "name": "Hibino LIC",
@@ -1485,7 +1670,8 @@
     "price_str": "48",
     "min_price": 48,
     "pacing": "60-90",
-    "vibe": "LIC izakaya with $48 omakase (+$15 uni upgrade), housemade tofu"
+    "vibe": "LIC izakaya with $48 omakase (+$15 uni upgrade), housemade tofu",
+    "format": "omakase"
   },
   {
     "name": "Bushniwa",
@@ -1493,7 +1679,8 @@
     "price_str": "60",
     "min_price": 60,
     "pacing": "60-90",
-    "vibe": "Bushwick brasserie with reservation-only full omakase, niche"
+    "vibe": "Bushwick brasserie with reservation-only full omakase, niche",
+    "format": "omakase"
   },
   {
     "name": "Nigiri (by Honshu)",
@@ -1501,6 +1688,124 @@
     "price_str": "140",
     "min_price": 140,
     "pacing": "60-90",
-    "vibe": "Jersey City counter omakase hidden behind Honshu Lounge"
+    "vibe": "Jersey City counter omakase hidden behind Honshu Lounge",
+    "format": "omakase"
+  },
+  {
+    "name": "Wagyu Place",
+    "neighborhood": "Queens (Flushing)",
+    "price_str": "$69-$159 AYCE",
+    "min_price": 68,
+    "pacing": "varies (AYCE 90-120min)",
+    "vibe": "AYCE wagyu yakiniku with complimentary omakase sushi set (A5 tier $159)",
+    "format": "ayce_wagyu_hybrid"
+  },
+  {
+    "name": "Niku X NYC",
+    "neighborhood": "Manhattan (Midtown/Koreatown)",
+    "price_str": "$119-$168 AYCE",
+    "min_price": 119,
+    "pacing": "varies (AYCE 90-120min)",
+    "vibe": "Self-described 'only unlimited A5 Wagyu Steakhouse in the U.S.' with unlimited sushi+wagyu nigiri",
+    "format": "ayce_wagyu_hybrid"
+  },
+  {
+    "name": "Mikiya Wagyu Shabu House (Flushing)",
+    "neighborhood": "Queens (Flushing)",
+    "price_str": "$45-$98 AYCE",
+    "min_price": 45,
+    "pacing": "varies (AYCE 90-120min)",
+    "vibe": "Shabu AYCE with A5 wagyu tiers; wagyu nigiri+tartare in every tier",
+    "format": "ayce_wagyu_hybrid"
+  },
+  {
+    "name": "Mikiya Wagyu Shabu House (Manhattan)",
+    "neighborhood": "Manhattan (Midtown East)",
+    "price_str": "$68-$98 AYCE",
+    "min_price": 68,
+    "pacing": "varies (AYCE 90-120min)",
+    "vibe": "Manhattan sister of Mikiya Flushing; explicit AYCE wagyu nigiri program",
+    "format": "ayce_wagyu_hybrid"
+  },
+  {
+    "name": "Chubby Cattle BBQ NYC",
+    "neighborhood": "Manhattan (SoHo)",
+    "price_str": "$58-$88 AYCE",
+    "min_price": 58,
+    "pacing": "varies (AYCE 90-120min)",
+    "vibe": "Signature Wagyu Uni Caviar Nigiri served as part of AYCE wagyu yakiniku",
+    "format": "ayce_wagyu_hybrid"
+  },
+  {
+    "name": "Y Space BBQ",
+    "neighborhood": "Queens (Flushing)",
+    "price_str": "$49-$158 AYCE",
+    "min_price": 49,
+    "pacing": "varies (AYCE 90-120min)",
+    "vibe": "Space-themed AYCE wagyu yakiniku with A5 Wagyu Nigiri Sushi as part of AYCE",
+    "format": "ayce_wagyu_hybrid"
+  },
+  {
+    "name": "Wagyu Yama Yakiniku & Seafood Shabu",
+    "neighborhood": "Queens (Flushing)",
+    "price_str": "$68-$100 AYCE",
+    "min_price": 68,
+    "pacing": "varies (AYCE 90-120min)",
+    "vibe": "A5 yakiniku + seafood shabu hybrid; AYCE BBQ + hotpot combo with sashimi rounds",
+    "format": "ayce_wagyu_hybrid"
+  },
+  {
+    "name": "Hiyake Omakase (Bowery)",
+    "neighborhood": "Manhattan (Lower East Side/Chinatown)",
+    "price_str": "$29-$49 AYCE / $88 omakase",
+    "min_price": 29,
+    "pacing": "varies (AYCE 90-120min)",
+    "vibe": "AYCE wagyu yakiniku with Uni Wagyu Handroll; despite the name, it's not counter omakase",
+    "format": "ayce_wagyu_hybrid"
+  },
+  {
+    "name": "Hiyake Omakase (Williamsburg)",
+    "neighborhood": "Brooklyn (Williamsburg)",
+    "price_str": "$48+ AYCE",
+    "min_price": 48,
+    "pacing": "varies (AYCE 90-120min)",
+    "vibe": "Brooklyn sister of Hiyake; AYCE wagyu yakiniku with sushi+sashimi rounds in private booths",
+    "format": "ayce_wagyu_hybrid"
+  },
+  {
+    "name": "Gyu-Ichiro",
+    "neighborhood": "Manhattan (Lower East Side/Chinatown)",
+    "price_str": "$29-$49 AYCE",
+    "min_price": 29,
+    "pacing": "varies (AYCE 90-120min)",
+    "vibe": "Same operator/space as Hiyake; markets unlimited wagyu + sushi combo",
+    "format": "ayce_wagyu_hybrid"
+  },
+  {
+    "name": "Nikushou Sakai",
+    "neighborhood": "Queens (Flushing)",
+    "price_str": "$55-$60 AYCE",
+    "min_price": 55,
+    "pacing": "varies (AYCE 90-120min)",
+    "vibe": "New 2025 Flushing AYCE wagyu yakiniku with sashimi inclusion (iPad ordering)",
+    "format": "ayce_wagyu_hybrid"
+  },
+  {
+    "name": "Umiya Sushi LIC",
+    "neighborhood": "Queens (Long Island City)",
+    "price_str": "$40 / $68 AYCE",
+    "min_price": 40,
+    "pacing": "varies (AYCE 90-120min)",
+    "vibe": "AYCE sushi bar with A5 Japanese Wagyu in Premium tier ($67.95)",
+    "format": "ayce_wagyu_hybrid"
+  },
+  {
+    "name": "Asuka Sushi",
+    "neighborhood": "Manhattan (Chelsea)",
+    "price_str": "$30-$45 AYCE",
+    "min_price": 30,
+    "pacing": "varies (AYCE 90-120min)",
+    "vibe": "Chelsea sushi bar with signature Big Mac (wagyu+uni+scallop+toro) and AYCE wagyu sushi",
+    "format": "ayce_wagyu_hybrid"
   }
 ]

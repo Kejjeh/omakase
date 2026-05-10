@@ -1022,5 +1022,83 @@
     "rating": 4.2,
     "review_count": 107,
     "google_name": "Honzen - Japanese Eatery"
+  },
+  "Wagyu Place": {
+    "rating": 4.6,
+    "review_count": 1686,
+    "google_name": "Wagyu Place BBQ \u548c\u725b\u516c\u9986",
+    "address": "135-29 37th Ave #2FL, Flushing, NY 11354, USA"
+  },
+  "Niku X NYC": {
+    "rating": 4.9,
+    "review_count": 2965,
+    "google_name": "NIKU X | Limitless Wagyu BBQ & Seafood",
+    "address": "21 W 35th St #2F, New York, NY 10001, USA"
+  },
+  "Mikiya Wagyu Shabu House (Flushing)": {
+    "rating": 4.7,
+    "review_count": 1147,
+    "google_name": "Mikiya Wagyu Shabu House \u5473\u559c\u5c4b | Flushing",
+    "address": "135-41 37th Ave, Flushing, NY 11354, USA"
+  },
+  "Mikiya Wagyu Shabu House (Manhattan)": {
+    "rating": 4.7,
+    "review_count": 345,
+    "google_name": "Mikiya Wagyu Shabu House | Manhattan",
+    "address": "954 2nd Ave, New York, NY 10022, USA"
+  },
+  "Chubby Cattle BBQ NYC": {
+    "rating": 4.9,
+    "review_count": 2382,
+    "google_name": "Chubby Cattle BBQ | New York",
+    "address": "206 Spring St, New York, NY 10012, USA"
+  },
+  "Y Space BBQ": {
+    "rating": 4.5,
+    "review_count": 1559,
+    "google_name": "Y Space BBQ \u70e4\u8089\u706b\u7131\u661f",
+    "address": "138-25 39th Ave, Flushing, NY 11354, USA"
+  },
+  "Wagyu Yama Yakiniku & Seafood Shabu": {
+    "rating": 4.7,
+    "review_count": 1147,
+    "google_name": "Mikiya Wagyu Shabu House \u5473\u559c\u5c4b | Flushing",
+    "address": "135-41 37th Ave, Flushing, NY 11354, USA"
+  },
+  "Hiyake Omakase (Bowery)": {
+    "rating": 4.8,
+    "review_count": 98,
+    "google_name": "Genki east omakase",
+    "address": "111 Stanton St, New York, NY 10002, USA"
+  },
+  "Hiyake Omakase (Williamsburg)": {
+    "rating": 4.3,
+    "review_count": 171,
+    "google_name": "Hiyake Yakiniku BBQ",
+    "address": "165 Bedford Ave, Brooklyn, NY 11211, USA"
+  },
+  "Gyu-Ichiro": {
+    "rating": 4,
+    "review_count": 353,
+    "google_name": "Gyu-Ichiro Japanese BBQ",
+    "address": "135 Bowery, New York, NY 10002, USA"
+  },
+  "Nikushou Sakai": {
+    "rating": 3.7,
+    "review_count": 264,
+    "google_name": "Nikushou Sakai \u8089\u5320\u5742\u4e95",
+    "address": "133-33 39th Ave FH19, 133-27 39th Ave, Flushing, NY 11354, USA"
+  },
+  "Umiya Sushi LIC": {
+    "rating": 4.7,
+    "review_count": 482,
+    "google_name": "Umiya Sushi",
+    "address": "22-22 Jackson Ave, Long Island City, NY 11101, USA"
+  },
+  "Asuka Sushi": {
+    "rating": 4.4,
+    "review_count": 1436,
+    "google_name": "Asuka Sushi",
+    "address": "300 W 23rd St, New York, NY 10011, USA"
   }
 }

@@ -9,7 +9,7 @@ scored = json.loads((ROOT / "scripts" / "scored_restaurants.json").read_text(enc
 
 # Fields to embed in the HTML (keep only what the page uses)
 KEEP = [
-    "name", "neighborhood", "price_str", "min_price", "pacing", "vibe",
+    "name", "neighborhood", "format", "price_str", "min_price", "pacing", "vibe",
     "parkchester_min", "parkslope_min", "time_diff",
     "raw_rating", "google_wilson", "review_count",
     "yelp_rating", "yelp_wilson", "yelp_count",
