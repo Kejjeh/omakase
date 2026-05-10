@@ -39,8 +39,8 @@ def main():
     for i, r in enumerate(restaurants, 2):
         row_data = [
             r["name"], r["neighborhood"], r["min_price"], r["pacing"], r["vibe"],
-            r["commute_parkchester"], r["commute_parkslope"], r["time_diff"],
-            r["raw_rating"], r["review_count"], r["adjusted_rating"],
+            r.get("commute_parkchester", ""), r.get("commute_parkslope", ""), r.get("time_diff", ""),
+            r["raw_rating"], r["review_count"], r.get("adjusted_rating") or r.get("composite_rating"),
             r.get("rating_percentile"), r["value_score"], r.get("value_percentile"),
             "Yes" if r["visited"] else "", r["google_name"],
         ]

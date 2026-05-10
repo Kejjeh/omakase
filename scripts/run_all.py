@@ -7,9 +7,11 @@ Usage:
 
 Steps:
   1. Read master Excel -> restaurants.json
-  2. Fetch Google ratings -> ratings_cache.json (cached, only fetches new restaurants)
-  3. Compute Bayesian-adjusted scores -> scored_restaurants.json
+  2. Fetch Google ratings -> ratings_cache.json
+  2b. Fetch Infatuation ratings -> infatuation_cache.json
+  3. Compute Wilson-adjusted scores + merge specialty data -> scored_restaurants.json
   4. Generate output Excel -> Omakase_Ratings.xlsx
+  5. Rebuild docs/index.html ALL_DATA block
 """
 
 import subprocess
@@ -19,10 +21,12 @@ import time
 
 SCRIPTS_DIR = os.path.dirname(os.path.abspath(__file__))
 STEPS = [
-    ("Step 1: Reading master spreadsheet", "step1_read_master.py"),
-    ("Step 2: Fetching Google ratings", "step2_fetch_ratings.py"),
-    ("Step 3: Computing value scores", "step3_compute_scores.py"),
-    ("Step 4: Generating output spreadsheet", "step4_generate_output.py"),
+    ("Step 1:  Reading master spreadsheet", "step1_read_master.py"),
+    ("Step 2:  Fetching Google ratings", "step2_fetch_ratings.py"),
+    ("Step 2b: Fetching Infatuation ratings", "step2b_fetch_infatuation.py"),
+    ("Step 3:  Computing value scores", "step3_compute_scores.py"),
+    ("Step 4:  Generating output spreadsheet", "step4_generate_output.py"),
+    ("Step 5:  Rebuilding docs/index.html data", "rebuild_html_data.py"),
 ]
 
 
@@ -43,7 +47,10 @@ def main():
         print(f"  {label}")
         print(f"{'─' * 60}")
         script_path = os.path.join(SCRIPTS_DIR, script)
-        result = subprocess.run([sys.executable, script_path], cwd=os.path.dirname(SCRIPTS_DIR))
+        env = os.environ.copy()
+        env.setdefault("PYTHONUTF8", "1")
+        env.setdefault("PYTHONIOENCODING", "utf-8")
+        result = subprocess.run([sys.executable, script_path], cwd=os.path.dirname(SCRIPTS_DIR), env=env)
         if result.returncode != 0:
             print(f"\n  FAILED at {script} (exit code {result.returncode})")
             sys.exit(1)

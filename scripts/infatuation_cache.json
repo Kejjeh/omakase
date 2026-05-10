@@ -711,5 +711,197 @@
     "neighborhood": "Lower East Side",
     "url": "https://www.theinfatuation.com/new-york/reviews/sushi-oku",
     "slug_used": "sushi-oku"
+  },
+  "Warabi Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Hayashi (Williamsburg)": {
+    "rating": null,
+    "not_found": true
+  },
+  "Toka Chef Kitchen": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Sho": {
+    "rating": 8.9,
+    "infatuation_name": "Sushi Sho",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-sho",
+    "slug_used": "sushi-sho"
+  },
+  "Muku": {
+    "rating": null,
+    "not_found": true
+  },
+  "Yamada": {
+    "rating": 8.2,
+    "infatuation_name": "Yamada",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/yamada",
+    "slug_used": "yamada"
+  },
+  "Odo East Village": {
+    "rating": 8.2,
+    "infatuation_name": "Odo East Village",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/odo-east-village",
+    "slug_used": "odo-east-village"
+  },
+  "Yoshoku": {
+    "rating": null,
+    "not_found": true
+  },
+  "Y\u016bgin": {
+    "rating": null,
+    "not_found": true
+  },
+  "Anb\u0101": {
+    "rating": null,
+    "not_found": true
+  },
+  "Enso Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Hear & There": {
+    "rating": null,
+    "not_found": true
+  },
+  "Kansha": {
+    "rating": null,
+    "not_found": true
+  },
+  "Ikigai": {
+    "rating": 8.2,
+    "infatuation_name": "Ikigai",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/ikigai",
+    "slug_used": "ikigai"
+  },
+  "Sushi Ichimura": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sushi Ishikawa": {
+    "rating": 8.1,
+    "infatuation_name": "Sushi Ishikawa",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/sushi-ishikawa",
+    "slug_used": "sushi-ishikawa"
+  },
+  "Nakaji": {
+    "rating": 7.8,
+    "infatuation_name": "Nakaji",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/nakaji",
+    "slug_used": "nakaji"
+  },
+  "Shion 69 Leonard Street": {
+    "rating": 8.8,
+    "infatuation_name": "Shion 69 Leonard Street",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/shion-69-leonard-street",
+    "slug_used": "shion-69-leonard-street"
+  },
+  "Shuko": {
+    "rating": 8.5,
+    "infatuation_name": "Shuko",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/shuko",
+    "slug_used": "shuko"
+  },
+  "Kurumazushi": {
+    "rating": null,
+    "not_found": true
+  },
+  "icca": {
+    "rating": null,
+    "not_found": true
+  },
+  "Masa": {
+    "rating": null,
+    "not_found": true
+  },
+  "Bar Masa": {
+    "rating": null,
+    "not_found": true
+  },
+  "Kappo Masa": {
+    "rating": null,
+    "not_found": true
+  },
+  "Togyushi": {
+    "rating": null,
+    "not_found": true
+  },
+  "Omi Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Himitsu Flushing": {
+    "rating": null,
+    "not_found": true
+  },
+  "Kakurega Sushi": {
+    "rating": null,
+    "not_found": true
+  },
+  "Kaizen (Wabi Nori Hand Roll Bar)": {
+    "rating": null,
+    "not_found": true
+  },
+  "Izakaya Nana": {
+    "rating": 8.0,
+    "infatuation_name": "Izakaya Nana",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/izakaya-nana",
+    "slug_used": "izakaya-nana"
+  },
+  "That Place Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Kaiyo Omakase": {
+    "rating": null,
+    "not_found": true
+  },
+  "Omakase Osuk\u0101\u0101 LIC": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sapps": {
+    "rating": 7.7,
+    "infatuation_name": "Sapps",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/sapps",
+    "slug_used": "sapps"
+  },
+  "Hibino LIC": {
+    "rating": null,
+    "not_found": true
+  },
+  "Bushniwa": {
+    "rating": 8.0,
+    "infatuation_name": "Bushniwa",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/bushniwa",
+    "slug_used": "bushniwa"
+  },
+  "Nigiri (by Honshu)": {
+    "rating": null,
+    "not_found": true
   }
 }

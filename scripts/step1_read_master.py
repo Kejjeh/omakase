@@ -33,19 +33,25 @@ def is_excluded(vibe, price_str):
 def main():
     print(f"Reading {INPUT_PATH}...")
 
+    existing = []
+    if os.path.exists(OUTPUT_PATH):
+        with open(OUTPUT_PATH, encoding="utf-8") as f:
+            existing = json.load(f)
+    existing_by_name = {r["name"]: r for r in existing}
+
     try:
         df = pd.read_excel(INPUT_PATH)
         print(f"Found {len(df)} restaurants in master file.")
     except Exception as e:
-        if os.path.exists(OUTPUT_PATH):
+        if existing:
             print(f"Could not read Excel ({e.__class__.__name__}). Using cached restaurants.json.")
             print("Tip: close the file in Excel and re-run to pick up any changes.")
             return
-        else:
-            raise RuntimeError(f"Cannot read {INPUT_PATH} and no cached restaurants.json exists.") from e
+        raise RuntimeError(f"Cannot read {INPUT_PATH} and no cached restaurants.json exists.") from e
 
-    restaurants = []
+    excel_records = []
     skipped = 0
+    excel_names = set()
 
     for _, row in df.iterrows():
         name = row["Restaurant Name"]
@@ -63,7 +69,8 @@ def main():
             skipped += 1
             continue
 
-        restaurants.append({
+        excel_names.add(name)
+        excel_records.append({
             "name": name,
             "neighborhood": hood if pd.notna(hood) else "",
             "price_str": price_str,
@@ -75,10 +82,17 @@ def main():
             "time_diff": timediff,
         })
 
-    with open(OUTPUT_PATH, "w") as f:
-        json.dump(restaurants, f, indent=2)
+    # Preserve records that exist in restaurants.json but not in Excel
+    # (e.g. candidates added by add_new_candidates.py from research)
+    extras = [r for r in existing if r["name"] not in excel_names]
 
-    print(f"Exported {len(restaurants)} restaurants ({skipped} excluded).")
+    restaurants = excel_records + extras
+
+    with open(OUTPUT_PATH, "w", encoding="utf-8") as f:
+        json.dump(restaurants, f, indent=2, ensure_ascii=False)
+
+    print(f"Exported {len(restaurants)} restaurants "
+          f"({len(excel_records)} from Excel, {len(extras)} preserved extras, {skipped} excluded).")
     print(f"Saved to {OUTPUT_PATH}")
 
 

@@ -17,7 +17,7 @@
   "Hoseki": {
     "rating": 4.7,
     "review_count": 64,
-    "google_name": "Hōseki"
+    "google_name": "H\u014dseki"
   },
   "Inase": {
     "rating": 4.6,
@@ -438,7 +438,7 @@
   "Yoshino": {
     "rating": 4.5,
     "review_count": 168,
-    "google_name": "YOSHINO • NEW YORK"
+    "google_name": "YOSHINO \u2022 NEW YORK"
   },
   "Zen Sushi Omakase": {
     "rating": 4.9,
@@ -748,7 +748,7 @@
   "Joji": {
     "rating": 4.5,
     "review_count": 128,
-    "google_name": "Jōji"
+    "google_name": "J\u014dji"
   },
   "Koete Omakase": {
     "rating": 4.8,
@@ -862,16 +862,16 @@
     "google_name": "Yoshoku",
     "address": "301 Park Ave, New York, NY 10022, USA"
   },
-  "Yūgin": {
+  "Y\u016bgin": {
     "rating": 4.9,
     "review_count": 74,
     "google_name": "YUGIN",
     "address": "767 5th Ave 37th Floor, New York, NY 10153, USA"
   },
-  "Anbā": {
+  "Anb\u0101": {
     "rating": 4.8,
     "review_count": 20,
-    "google_name": "Anbā",
+    "google_name": "Anb\u0101",
     "address": "92 Ludlow St, New York, NY 10002, USA"
   },
   "Enso Omakase": {
@@ -923,10 +923,10 @@
     "address": "7 E 47th St 2nd Floor, New York, NY 10017, USA"
   },
   "Masa": {
-    "rating": null,
-    "review_count": null,
-    "google_name": "",
-    "note": "Google does not surface Masa proper - bypass"
+    "rating": 4.2,
+    "review_count": 582,
+    "google_name": "Bar Masa",
+    "address": "The Shops at, 10 Columbus Cir Suite 401A, New York, NY 10019, USA"
   },
   "Bar Masa": {
     "rating": 4.2,
@@ -977,10 +977,10 @@
     "address": "141-28 Northern Blvd, Flushing, NY 11354, USA"
   },
   "That Place Omakase": {
-    "rating": null,
-    "review_count": null,
-    "google_name": "",
-    "note": "No reliable Google match"
+    "rating": 4.7,
+    "review_count": 106,
+    "google_name": "Omi Omakase",
+    "address": "133-42 39th Ave STE 210, Flushing, NY 11354, USA"
   },
   "Kaiyo Omakase": {
     "rating": 4.7,
@@ -988,7 +988,7 @@
     "google_name": "Kaiyo Omakase",
     "address": "47-38 Vernon Blvd, Long Island City, NY 11101, USA"
   },
-  "Omakase Osukāā LIC": {
+  "Omakase Osuk\u0101\u0101 LIC": {
     "rating": 4.7,
     "review_count": 83,
     "google_name": "Omakase OSUKAA LIC",
