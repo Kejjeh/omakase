@@ -18,6 +18,9 @@ KEEP = [
     "visited", "friend_suggested",
     "subway_walk_min", "nearest_456",
     "value_score", "rating_percentile", "value_percentile",
+    "wagyu_offered", "ayce_offered", "ayce_wagyu_offered",
+    "wagyu_notes", "ayce_notes", "ayce_wagyu_notes",
+    "premium_ingredients", "specialty_confidence", "closed", "caveat",
 ]
 
 rows = []

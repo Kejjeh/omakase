@@ -4,7 +4,7 @@
     "neighborhood": "Manhattan (Midtown East)",
     "price_str": "$112 / $130+",
     "min_price": 112,
-    "pacing": "60\u201390",
+    "pacing": "60–90",
     "vibe": "2-story, \"library\" feel; Historic Michelin rep."
   },
   {
@@ -12,7 +12,7 @@
     "neighborhood": "Manhattan (UES/UWS/Midtown)",
     "price_str": "95",
     "min_price": 95,
-    "pacing": "60\u201390",
+    "pacing": "60–90",
     "vibe": "Sleek, hushed; Kosher-certified Edomae."
   },
   {
@@ -20,7 +20,7 @@
     "neighborhood": "Manhattan (Midtown)",
     "price_str": "$100 / $140",
     "min_price": 100,
-    "pacing": "60\u201390",
+    "pacing": "60–90",
     "vibe": "Quiet, traditional; optimal for business lunches."
   },
   {
@@ -52,7 +52,7 @@
     "neighborhood": "Manhattan (UWS)",
     "price_str": "$49 / $89",
     "min_price": 89,
-    "pacing": "45\u201360",
+    "pacing": "45–60",
     "vibe": "Fast-casual, high-volume."
   },
   {
@@ -60,7 +60,7 @@
     "neighborhood": "Manhattan (Bryant Park)",
     "price_str": "<$30",
     "min_price": 30,
-    "pacing": "30\u201345",
+    "pacing": "30–45",
     "vibe": "Cozy Korean-Japanese fusion fast-casual."
   },
   {
@@ -100,7 +100,7 @@
     "neighborhood": "Manhattan (Midtown East)",
     "price_str": "$68 / $100 / $150",
     "min_price": 68,
-    "pacing": "60\u201375",
+    "pacing": "60–75",
     "vibe": "Very casual, social; energetic atmosphere."
   },
   {
@@ -116,7 +116,7 @@
     "neighborhood": "Manhattan (UWS)",
     "price_str": "115",
     "min_price": 115,
-    "pacing": "75\u201390",
+    "pacing": "75–90",
     "vibe": "Warm, inviting, hushed but conversational."
   },
   {
@@ -156,7 +156,7 @@
     "neighborhood": "Manhattan (UWS)",
     "price_str": "$56 / $98",
     "min_price": 56,
-    "pacing": "60\u201375",
+    "pacing": "60–75",
     "vibe": "Casual, unpretentious accessible everyday dining."
   },
   {
@@ -180,7 +180,7 @@
     "neighborhood": "Manhattan (Midtown West)",
     "price_str": "$100 / $150",
     "min_price": 100,
-    "pacing": "90\u2013120",
+    "pacing": "90–120",
     "vibe": "Modern, dark, social; molecular gastronomy."
   },
   {
@@ -196,7 +196,7 @@
     "neighborhood": "Manhattan (Midtown West)",
     "price_str": "$75 / $90 / $95",
     "min_price": 90,
-    "pacing": "60\u201375",
+    "pacing": "60–75",
     "vibe": "Counter-only, informal modern sushi."
   },
   {
@@ -212,7 +212,7 @@
     "neighborhood": "Manhattan (Times Sq/Midtown)",
     "price_str": "$60 / $130",
     "min_price": 60,
-    "pacing": "60\u201390",
+    "pacing": "60–90",
     "vibe": "Social, upbeat; theatrical smoke; stunning roof."
   },
   {
@@ -220,7 +220,7 @@
     "neighborhood": "Manhattan (Midtown East)",
     "price_str": "33",
     "min_price": 48,
-    "pacing": "45\u201360",
+    "pacing": "45–60",
     "vibe": "Extraordinary value commuter-secret (hidden)."
   },
   {
@@ -244,7 +244,7 @@
     "neighborhood": "Manhattan (Kips Bay / UES)",
     "price_str": "$48 / $58",
     "min_price": 58,
-    "pacing": "45\u201360",
+    "pacing": "45–60",
     "vibe": "Fast, casual, in-and-out budget counter."
   },
   {
@@ -300,7 +300,7 @@
     "neighborhood": "Manhattan (NoMad/Midtown)",
     "price_str": "24",
     "min_price": 24,
-    "pacing": "30\u201345",
+    "pacing": "30–45",
     "vibe": "Fast-paced, no-frills; handroll exclusive."
   },
   {
@@ -308,7 +308,7 @@
     "neighborhood": "Manhattan (East Village)",
     "price_str": "96",
     "min_price": 96,
-    "pacing": "75\u201390",
+    "pacing": "75–90",
     "vibe": "Cozy basement, 1984 East Village staple."
   },
   {
@@ -316,7 +316,7 @@
     "neighborhood": "Manhattan (East Village)",
     "price_str": "88",
     "min_price": 88,
-    "pacing": "75\u201390",
+    "pacing": "75–90",
     "vibe": "Tiny, warm, casual, chatty."
   },
   {
@@ -324,7 +324,7 @@
     "neighborhood": "Manhattan (Flatiron / UES)",
     "price_str": "$100 / $135",
     "min_price": 100,
-    "pacing": "75\u201390",
+    "pacing": "75–90",
     "vibe": "Modern minimalist; Michelin Plate."
   },
   {
@@ -340,7 +340,7 @@
     "neighborhood": "Brooklyn (Williamsburg)",
     "price_str": "$68 / $100 / $150",
     "min_price": 100,
-    "pacing": "60\u2013120",
+    "pacing": "60–120",
     "vibe": "Dim, romantic; interactive iPad fish education."
   },
   {
@@ -396,7 +396,7 @@
     "neighborhood": "Manhattan",
     "price_str": "32",
     "min_price": 76,
-    "pacing": "45\u201360",
+    "pacing": "45–60",
     "vibe": "Dark, sleek, bustling; LA import \"Trust Me\" menus."
   },
   {
@@ -404,7 +404,7 @@
     "neighborhood": "Manhattan",
     "price_str": "50",
     "min_price": 65,
-    "pacing": "30\u201360",
+    "pacing": "30–60",
     "vibe": "Laid-back, hip-hop, loud speakeasy chain."
   },
   {
@@ -476,7 +476,7 @@
     "neighborhood": "Manhattan & Brooklyn",
     "price_str": "$88 / $108",
     "min_price": 108,
-    "pacing": "75\u201390",
+    "pacing": "75–90",
     "vibe": "Relaxed and welcoming; complex dry-aging."
   },
   {
@@ -572,7 +572,7 @@
     "neighborhood": "Manhattan/Brooklyn",
     "price_str": "50",
     "min_price": 58,
-    "pacing": "30\u201345",
+    "pacing": "30–45",
     "vibe": "Inherently chaotic, loud originator of timed model."
   },
   {
@@ -620,7 +620,7 @@
     "neighborhood": "Manhattan (Murray Hill/Midtown)",
     "price_str": "$95 / $140",
     "min_price": 95,
-    "pacing": "60\u201390",
+    "pacing": "60–90",
     "vibe": "Calm, distraction-free, quiet traditional."
   },
   {
@@ -628,7 +628,7 @@
     "neighborhood": "Manhattan (SoHo)",
     "price_str": "$85 / $115 / $150",
     "min_price": 150,
-    "pacing": "75\u201390",
+    "pacing": "75–90",
     "vibe": "Bustling, iconic; Historic NYC institution (1995)."
   },
   {
@@ -636,7 +636,7 @@
     "neighborhood": "Manhattan (SoHo)",
     "price_str": "$60 / $95 / $195",
     "min_price": 90,
-    "pacing": "60\u201390",
+    "pacing": "60–90",
     "vibe": "Lighthearted; innovative global sourcing."
   },
   {
@@ -652,7 +652,7 @@
     "neighborhood": "Manhattan (SoHo)",
     "price_str": "150",
     "min_price": 150,
-    "pacing": "90\u2013120",
+    "pacing": "90–120",
     "vibe": "Modern, spacious; architectural pastry desserts."
   },
   {
@@ -660,7 +660,7 @@
     "neighborhood": "Manhattan (SoHo/West Village)",
     "price_str": "30",
     "min_price": 32,
-    "pacing": "45\u201360",
+    "pacing": "45–60",
     "vibe": "Bright, highly social; Michelin Bib Gourmand."
   },
   {
@@ -668,7 +668,7 @@
     "neighborhood": "Manhattan (South Village)",
     "price_str": "108",
     "min_price": 108,
-    "pacing": "60\u201375",
+    "pacing": "60–75",
     "vibe": "Comfortable and familiar dependable staple."
   },
   {
@@ -700,7 +700,7 @@
     "neighborhood": "Manhattan",
     "price_str": "35",
     "min_price": 90,
-    "pacing": "45\u201390",
+    "pacing": "45–90",
     "vibe": "Minimalist, serene; Sourced from Tsukiji."
   },
   {
@@ -708,7 +708,7 @@
     "neighborhood": "Manhattan (SoHo / Lower Manh.)",
     "price_str": "129",
     "min_price": 129,
-    "pacing": "90\u2013120",
+    "pacing": "90–120",
     "vibe": "Decidedly upscale; rare imports (Kuruma Ebi)."
   },
   {
@@ -716,7 +716,7 @@
     "neighborhood": "Manhattan (UES)",
     "price_str": "$85 / $95 / $115",
     "min_price": 85,
-    "pacing": "60\u201375",
+    "pacing": "60–75",
     "vibe": "Intimate counter, hushed but non-restrictive."
   },
   {
@@ -844,7 +844,7 @@
     "neighborhood": "Manhattan (Lower Manhattan)",
     "price_str": "120",
     "min_price": 120,
-    "pacing": "75\u201390",
+    "pacing": "75–90",
     "vibe": "Quiet, highly focused, measured 17-course menu."
   },
   {
@@ -900,7 +900,7 @@
     "neighborhood": "Manhattan",
     "price_str": "85",
     "min_price": 85,
-    "pacing": "60\u201375",
+    "pacing": "60–75",
     "vibe": "Intimate, humble high quality."
   },
   {
@@ -972,7 +972,7 @@
     "neighborhood": "Brooklyn (DUMBO)",
     "price_str": "95",
     "min_price": 95,
-    "pacing": "75\u201390",
+    "pacing": "75–90",
     "vibe": "Stunning industrial-chic torpedo factory."
   },
   {
@@ -1020,7 +1020,7 @@
     "neighborhood": "Brooklyn / Manhattan",
     "price_str": "60",
     "min_price": 77,
-    "pacing": "60\u201375",
+    "pacing": "60–75",
     "vibe": "Minimalist strict purists (no mayo/heavy soy)."
   },
   {
@@ -1092,7 +1092,7 @@
     "neighborhood": "Manhattan (Midtown East)",
     "price_str": "$325 / $450",
     "min_price": 325,
-    "pacing": "90\u2013120",
+    "pacing": "90–120",
     "vibe": "1 Michelin Star; sleek hidden room in One Vanderbilt."
   },
   {
@@ -1100,7 +1100,7 @@
     "neighborhood": "Manhattan (UES/Theater Dist.)",
     "price_str": "$65 / $118",
     "min_price": 118,
-    "pacing": "60\u201390",
+    "pacing": "60–90",
     "vibe": "Intimate, energetic; pre-theater efficiency."
   },
   {
@@ -1116,7 +1116,7 @@
     "neighborhood": "Manhattan (Midtown East)",
     "price_str": "$80 / $125",
     "min_price": 80,
-    "pacing": "60\u201390",
+    "pacing": "60–90",
     "vibe": "Hushed, respectful staple for business lunches."
   },
   {
@@ -1124,7 +1124,7 @@
     "neighborhood": "Manhattan (Upper Manhattan)",
     "price_str": "110",
     "min_price": 110,
-    "pacing": "60\u201375",
+    "pacing": "60–75",
     "vibe": "Comfortable, quiet hushed counter."
   },
   {
@@ -1148,7 +1148,7 @@
     "neighborhood": "Brooklyn (Bay Ridge)",
     "price_str": "$70 / $99",
     "min_price": 70,
-    "pacing": "60\u201375",
+    "pacing": "60–75",
     "vibe": "Casual family vibe; traditional family-run."
   },
   {
@@ -1172,7 +1172,7 @@
     "neighborhood": "Brooklyn (Park Slope)",
     "price_str": "85",
     "min_price": 85,
-    "pacing": "60\u201375",
+    "pacing": "60–75",
     "vibe": "Allows mixed formats (a la carte + omakase)."
   },
   {
@@ -1180,7 +1180,7 @@
     "neighborhood": "Brooklyn (Crown Heights)",
     "price_str": "$85 / $105",
     "min_price": 85,
-    "pacing": "75\u201390",
+    "pacing": "75–90",
     "vibe": "Quiet, highly respectful; Michelin Plate."
   },
   {
@@ -1206,5 +1206,301 @@
     "min_price": 85,
     "pacing": "75-90",
     "vibe": "Upscale counter inside old Scarr's Pizza space. Chef Kei Yoshino."
+  },
+  {
+    "name": "Warabi Omakase",
+    "neighborhood": "Queens (Long Island City)",
+    "price_str": "108",
+    "min_price": 108,
+    "pacing": "60-90",
+    "vibe": "$108 14-course AYCE/AYCD over 80min (LIC value omakase)"
+  },
+  {
+    "name": "Sushi Hayashi (Williamsburg)",
+    "neighborhood": "Brooklyn (Williamsburg)",
+    "price_str": "98",
+    "min_price": 98,
+    "pacing": "60-90",
+    "vibe": "$98/80min, 14-course omakase + 2 AYCE refill rounds (Williamsburg)"
+  },
+  {
+    "name": "Toka Chef Kitchen",
+    "neighborhood": "Manhattan (Lower East Side)",
+    "price_str": "58",
+    "min_price": 58,
+    "pacing": "60-90",
+    "vibe": "$58-$98, 14-18 course omakase + AYCE nigiri (from Matsunori team)"
+  },
+  {
+    "name": "Sushi Sho",
+    "neighborhood": "Manhattan (Midtown East (Andaz 5th Avenue))",
+    "price_str": "450",
+    "min_price": 450,
+    "pacing": "60-90",
+    "vibe": "3-Michelin Edomae from Tokyo legend Keiji Nakazawa, Andaz 5th Ave"
+  },
+  {
+    "name": "Muku",
+    "neighborhood": "Manhattan (Tribeca)",
+    "price_str": "295",
+    "min_price": 295,
+    "pacing": "60-90",
+    "vibe": "Tribeca kaiseki, 1 Michelin star in 2 months (Kuma Hospitality)"
+  },
+  {
+    "name": "Yamada",
+    "neighborhood": "Manhattan (Chinatown)",
+    "price_str": "300",
+    "min_price": 300,
+    "pacing": "60-90",
+    "vibe": "10-seat hinoki counter kaiseki from Isao Yamada (ex-Brushstroke)"
+  },
+  {
+    "name": "Odo East Village",
+    "neighborhood": "Manhattan (East Village)",
+    "price_str": "150",
+    "min_price": 150,
+    "pacing": "60-90",
+    "vibe": "Kaiseki-izakaya from 2-Michelin Hiroki Odo, late-night"
+  },
+  {
+    "name": "Yoshoku",
+    "neighborhood": "Manhattan (Midtown East (Waldorf Astoria))",
+    "price_str": "188",
+    "min_price": 188,
+    "pacing": "60-90",
+    "vibe": "Waldorf Astoria lobby kaiseki tasting; chef ex-Zero Bond"
+  },
+  {
+    "name": "Yūgin",
+    "neighborhood": "Manhattan (Midtown East (37th floor, GM Bldg))",
+    "price_str": "400",
+    "min_price": 400,
+    "pacing": "60-90",
+    "vibe": "Hidden in private club 37th floor; chef ex-Masa; 72 micro-seasons"
+  },
+  {
+    "name": "Anbā",
+    "neighborhood": "Manhattan (Lower East Side)",
+    "price_str": "220",
+    "min_price": 220,
+    "pacing": "60-90",
+    "vibe": "16-course kaiseki, female chef Ambrely Ouimette, dry-age fish program"
+  },
+  {
+    "name": "Enso Omakase",
+    "neighborhood": "Brooklyn (Williamsburg)",
+    "price_str": "195",
+    "min_price": 195,
+    "pacing": "60-90",
+    "vibe": "16-course chef Nick Wang (Ako/Amami); Eater Restaurants to Watch"
+  },
+  {
+    "name": "Hear & There",
+    "neighborhood": "Brooklyn (Williamsburg)",
+    "price_str": "105",
+    "min_price": 105,
+    "pacing": "60-90",
+    "vibe": "Behind sliding door in Williamsburg listening lounge, 22-seat counter"
+  },
+  {
+    "name": "Kansha",
+    "neighborhood": "Manhattan (Upper East Side (Carnegie Hill))",
+    "price_str": "145",
+    "min_price": 145,
+    "pacing": "60-90",
+    "vibe": "Carnegie Hill Nikkei (Japanese-Peruvian) from Sushi Noz alum"
+  },
+  {
+    "name": "Ikigai",
+    "neighborhood": "Brooklyn (Fort Greene)",
+    "price_str": "165",
+    "min_price": 165,
+    "pacing": "60-90",
+    "vibe": "12-seat subterranean kaiseki, all proceeds donated"
+  },
+  {
+    "name": "Sushi Ichimura",
+    "neighborhood": "Manhattan (Tribeca)",
+    "price_str": "425",
+    "min_price": 425,
+    "pacing": "60-90",
+    "vibe": "Eiji Ichimura's 20-course Edomae, signature uni+caviar monaka"
+  },
+  {
+    "name": "Sushi Ishikawa",
+    "neighborhood": "Manhattan (Upper East Side)",
+    "price_str": "135",
+    "min_price": 135,
+    "pacing": "60-90",
+    "vibe": "Truffle/caviar/gold-leaf/foie gras stacking, 17-course MATSU"
+  },
+  {
+    "name": "Nakaji",
+    "neighborhood": "Manhattan (Chinatown)",
+    "price_str": "365",
+    "min_price": 365,
+    "pacing": "60-90",
+    "vibe": "10-seat Edomae with comparative uni tasting from Toyosu auction"
+  },
+  {
+    "name": "Shion 69 Leonard Street",
+    "neighborhood": "Manhattan (Tribeca)",
+    "price_str": "480",
+    "min_price": 480,
+    "pacing": "60-90",
+    "vibe": "Edomae with rare Edo-period chinmi (CAVEAT: closed early 2026)"
+  },
+  {
+    "name": "Shuko",
+    "neighborhood": "Manhattan (Union Square)",
+    "price_str": "270",
+    "min_price": 270,
+    "pacing": "60-90",
+    "vibe": "Cult counter from Nick Kim/Jimmy Lau (ex-Masa); secret toro/uni/caviar toast"
+  },
+  {
+    "name": "Kurumazushi",
+    "neighborhood": "Manhattan (Midtown East)",
+    "price_str": "300",
+    "min_price": 300,
+    "pacing": "60-90",
+    "vibe": "Original toro-flight specialist (since 1977), 16-course omakase"
+  },
+  {
+    "name": "icca",
+    "neighborhood": "Manhattan (Tribeca)",
+    "price_str": "400",
+    "min_price": 400,
+    "pacing": "60-90",
+    "vibe": "8-seat counter with rare Edo chinmi + Italo-Japanese capellini bridge"
+  },
+  {
+    "name": "Masa",
+    "neighborhood": "Manhattan (Columbus Circle)",
+    "price_str": "950",
+    "min_price": 950,
+    "pacing": "60-90",
+    "vibe": "Only 3-Michelin Japanese in America; no Ã  la carte, no photos"
+  },
+  {
+    "name": "Bar Masa",
+    "neighborhood": "Manhattan (Columbus Circle)",
+    "price_str": "290",
+    "min_price": 290,
+    "pacing": "60-90",
+    "vibe": "Masa-family Ã  la carte + sushi tasting; toro tartare with caviar"
+  },
+  {
+    "name": "Kappo Masa",
+    "neighborhood": "Manhattan (Upper East Side)",
+    "price_str": "300",
+    "min_price": 300,
+    "pacing": "60-90",
+    "vibe": "Masa-family hybrid counter+tables UES; sukiyaki, caviar/truffle dishes"
+  },
+  {
+    "name": "Togyushi",
+    "neighborhood": "Manhattan (Midtown)",
+    "price_str": "200",
+    "min_price": 200,
+    "pacing": "60-90",
+    "vibe": "Wagyu kappo+omakase counter with exclusive G1 Zao Wagyu (Yamagata)"
+  },
+  {
+    "name": "Omi Omakase",
+    "neighborhood": "Queens (Flushing)",
+    "price_str": "109",
+    "min_price": 109,
+    "pacing": "60-90",
+    "vibe": "Flushing Edomae counter, $159 tier has A5 wagyu + Hokkaido uni"
+  },
+  {
+    "name": "Himitsu Flushing",
+    "neighborhood": "Queens (Flushing)",
+    "price_str": "150",
+    "min_price": 150,
+    "pacing": "60-90",
+    "vibe": "First speakeasy-style omakase in Queens, hidden inside Siam Thai"
+  },
+  {
+    "name": "Kakurega Sushi",
+    "neighborhood": "Queens (Flushing)",
+    "price_str": "145",
+    "min_price": 145,
+    "pacing": "60-90",
+    "vibe": "Flushing 7-seat counter, A5 wagyu nigiri add-on, fish flown from Japan"
+  },
+  {
+    "name": "Kaizen (Wabi Nori Hand Roll Bar)",
+    "neighborhood": "Queens (Flushing)",
+    "price_str": "55",
+    "min_price": 55,
+    "pacing": "60-90",
+    "vibe": "Hand-roll + omakase + izakaya hybrid in Flushing"
+  },
+  {
+    "name": "Izakaya Nana",
+    "neighborhood": "Queens (Flushing)",
+    "price_str": "80",
+    "min_price": 80,
+    "pacing": "60-90",
+    "vibe": "Flushing izakaya with sushi counter; signature Wagyu Foie Gras Uni nigiri"
+  },
+  {
+    "name": "That Place Omakase",
+    "neighborhood": "Queens (Flushing)",
+    "price_str": "98",
+    "min_price": 98,
+    "pacing": "60-90",
+    "vibe": "Less-publicized Flushing omakase, wagyu in upper tier"
+  },
+  {
+    "name": "Kaiyo Omakase",
+    "neighborhood": "Queens (Long Island City)",
+    "price_str": "130",
+    "min_price": 130,
+    "pacing": "60-90",
+    "vibe": "Reasonably-priced LIC counter omakase, 15- and 18-course tiers"
+  },
+  {
+    "name": "Omakase Osukāā LIC",
+    "neighborhood": "Queens (Long Island City)",
+    "price_str": "180",
+    "min_price": 180,
+    "pacing": "60-90",
+    "vibe": "LIC counter omakase; seasonal Japanese fish, wagyu in higher courses"
+  },
+  {
+    "name": "Sapps",
+    "neighborhood": "Queens (Long Island City)",
+    "price_str": "30",
+    "min_price": 30,
+    "pacing": "60-90",
+    "vibe": "LIC izakaya with $30 8-piece sushi omakase set + yakitori"
+  },
+  {
+    "name": "Hibino LIC",
+    "neighborhood": "Queens (Long Island City)",
+    "price_str": "48",
+    "min_price": 48,
+    "pacing": "60-90",
+    "vibe": "LIC izakaya with $48 omakase (+$15 uni upgrade), housemade tofu"
+  },
+  {
+    "name": "Bushniwa",
+    "neighborhood": "Brooklyn (Bushwick)",
+    "price_str": "60",
+    "min_price": 60,
+    "pacing": "60-90",
+    "vibe": "Bushwick brasserie with reservation-only full omakase, niche"
+  },
+  {
+    "name": "Nigiri (by Honshu)",
+    "neighborhood": "Jersey City, NJ",
+    "price_str": "140",
+    "min_price": 140,
+    "pacing": "60-90",
+    "vibe": "Jersey City counter omakase hidden behind Honshu Lounge"
   }
 ]

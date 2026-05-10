@@ -17,7 +17,7 @@
   "Hoseki": {
     "rating": 4.7,
     "review_count": 64,
-    "google_name": "H\u014dseki"
+    "google_name": "Hōseki"
   },
   "Inase": {
     "rating": 4.6,
@@ -42,7 +42,8 @@
   "Masuda Omakase": {
     "rating": null,
     "review_count": null,
-    "google_name": ""
+    "google_name": "",
+    "address": ""
   },
   "Nare Sushi": {
     "rating": 4.2,
@@ -437,7 +438,7 @@
   "Yoshino": {
     "rating": 4.5,
     "review_count": 168,
-    "google_name": "YOSHINO \u2022 NEW YORK"
+    "google_name": "YOSHINO • NEW YORK"
   },
   "Zen Sushi Omakase": {
     "rating": 4.9,
@@ -747,7 +748,7 @@
   "Joji": {
     "rating": 4.5,
     "review_count": 128,
-    "google_name": "J\u014dji"
+    "google_name": "Jōji"
   },
   "Koete Omakase": {
     "rating": 4.8,
@@ -818,5 +819,208 @@
     "rating": 4.8,
     "review_count": 67,
     "google_name": "Sushi Oku"
+  },
+  "Warabi Omakase": {
+    "rating": 4.9,
+    "review_count": 76,
+    "google_name": "Warabi Omakase",
+    "address": "42-15 Crescent St, Long Island City, NY 11101, USA"
+  },
+  "Sushi Hayashi (Williamsburg)": {
+    "rating": 5,
+    "review_count": 45,
+    "google_name": "Sushi Hayashi Williamsburg",
+    "address": "225 Grand St, Brooklyn, NY 11211, USA"
+  },
+  "Toka Chef Kitchen": {
+    "rating": 4.6,
+    "review_count": 291,
+    "google_name": "Toka chef kitchen",
+    "address": "201 Allen St, New York, NY 10002, USA"
+  },
+  "Muku": {
+    "rating": 4.8,
+    "review_count": 26,
+    "google_name": "Muku",
+    "address": "412 Greenwich St Penthouse B, New York, NY 10013, USA"
+  },
+  "Yamada": {
+    "rating": 4.9,
+    "review_count": 52,
+    "google_name": "Yamada",
+    "address": "16 Elizabeth St, New York, NY 10013, USA"
+  },
+  "Odo East Village": {
+    "rating": 4.8,
+    "review_count": 28,
+    "google_name": "Odo East Village",
+    "address": "536 E 5th St, New York, NY 10009, USA"
+  },
+  "Yoshoku": {
+    "rating": 4.2,
+    "review_count": 25,
+    "google_name": "Yoshoku",
+    "address": "301 Park Ave, New York, NY 10022, USA"
+  },
+  "Yūgin": {
+    "rating": 4.9,
+    "review_count": 74,
+    "google_name": "YUGIN",
+    "address": "767 5th Ave 37th Floor, New York, NY 10153, USA"
+  },
+  "Anbā": {
+    "rating": 4.8,
+    "review_count": 20,
+    "google_name": "Anbā",
+    "address": "92 Ludlow St, New York, NY 10002, USA"
+  },
+  "Enso Omakase": {
+    "rating": 4.7,
+    "review_count": 69,
+    "google_name": "Enso Omakase",
+    "address": "117 Berry St, Brooklyn, NY 11249, USA"
+  },
+  "Hear & There": {
+    "rating": 4.9,
+    "review_count": 67,
+    "google_name": "Hear & There",
+    "address": "109 S 6th St, Brooklyn, NY 11249, USA"
+  },
+  "Kansha": {
+    "rating": 4.8,
+    "review_count": 65,
+    "google_name": "Kansha",
+    "address": "1312 Madison Ave, New York, NY 10128, USA"
+  },
+  "Ikigai": {
+    "rating": 4.8,
+    "review_count": 133,
+    "google_name": "Ikigai",
+    "address": "87 Lafayette Ave, Brooklyn, NY 11217, USA"
+  },
+  "Sushi Ishikawa": {
+    "rating": 4.7,
+    "review_count": 462,
+    "google_name": "Sushi Ishikawa",
+    "address": "419 E 74th St, New York, NY 10021, USA"
+  },
+  "Nakaji": {
+    "rating": 4.4,
+    "review_count": 185,
+    "google_name": "Nakaji",
+    "address": "48 Bowery, New York, NY 10013, USA"
+  },
+  "Shion 69 Leonard Street": {
+    "rating": 4.5,
+    "review_count": 241,
+    "google_name": "69 Leonard Street",
+    "address": "69 Leonard St, New York, NY 10013, USA"
+  },
+  "Kurumazushi": {
+    "rating": 4.4,
+    "review_count": 185,
+    "google_name": "Kurumazushi",
+    "address": "7 E 47th St 2nd Floor, New York, NY 10017, USA"
+  },
+  "Masa": {
+    "rating": null,
+    "review_count": null,
+    "google_name": "",
+    "note": "Google does not surface Masa proper - bypass"
+  },
+  "Bar Masa": {
+    "rating": 4.2,
+    "review_count": 582,
+    "google_name": "Bar Masa",
+    "address": "The Shops at, 10 Columbus Cir Suite 401A, New York, NY 10019, USA"
+  },
+  "Kappo Masa": {
+    "rating": 4.2,
+    "review_count": 241,
+    "google_name": "Kappo Masa",
+    "address": "976 Madison Ave, New York, NY 10075, USA"
+  },
+  "Togyushi": {
+    "rating": 4.4,
+    "review_count": 89,
+    "google_name": "Togyushi",
+    "address": "37 W 37th St, New York, NY 10018, USA"
+  },
+  "Omi Omakase": {
+    "rating": 4.7,
+    "review_count": 106,
+    "google_name": "Omi Omakase",
+    "address": "133-42 39th Ave STE 210, Flushing, NY 11354, USA"
+  },
+  "Himitsu Flushing": {
+    "rating": 4.5,
+    "review_count": 58,
+    "google_name": "Himitsu - Omakase",
+    "address": "157-02 Northern Blvd, Flushing, NY 11354, USA"
+  },
+  "Kakurega Sushi": {
+    "rating": 4.4,
+    "review_count": 135,
+    "google_name": "Kakurega Sushi",
+    "address": "133-44 37th Ave, Flushing, NY 11354, USA"
+  },
+  "Kaizen (Wabi Nori Hand Roll Bar)": {
+    "rating": 4.6,
+    "review_count": 835,
+    "google_name": "Wabi Nori Queens",
+    "address": "33-70 Farrington St, Flushing, NY 11354, USA"
+  },
+  "Izakaya Nana": {
+    "rating": 4.6,
+    "review_count": 2093,
+    "google_name": "Izakaya Nana",
+    "address": "141-28 Northern Blvd, Flushing, NY 11354, USA"
+  },
+  "That Place Omakase": {
+    "rating": null,
+    "review_count": null,
+    "google_name": "",
+    "note": "No reliable Google match"
+  },
+  "Kaiyo Omakase": {
+    "rating": 4.7,
+    "review_count": 197,
+    "google_name": "Kaiyo Omakase",
+    "address": "47-38 Vernon Blvd, Long Island City, NY 11101, USA"
+  },
+  "Omakase Osukāā LIC": {
+    "rating": 4.7,
+    "review_count": 83,
+    "google_name": "Omakase OSUKAA LIC",
+    "address": "30-30 47th Ave #140, Long Island City, NY 11101, USA"
+  },
+  "Sapps": {
+    "rating": 4.5,
+    "review_count": 665,
+    "google_name": "Sapps",
+    "address": "27-26 Jackson Ave, Long Island City, NY 11101, USA"
+  },
+  "Hibino LIC": {
+    "rating": 4.5,
+    "review_count": 591,
+    "google_name": "Hibino LIC",
+    "address": "10-70 Jackson Ave, Long Island City, NY 11101, USA"
+  },
+  "Bushniwa": {
+    "rating": 4.4,
+    "review_count": 476,
+    "google_name": "Bushniwa",
+    "address": "250 Varet St, Brooklyn, NY 11206, USA"
+  },
+  "Nigiri (by Honshu)": {
+    "rating": 4.5,
+    "review_count": 50,
+    "google_name": "Nigiri",
+    "address": "95 Greene St, Jersey City, NJ 07302, USA"
+  },
+  "Honzen Japanese Eatery": {
+    "rating": 4.2,
+    "review_count": 107,
+    "google_name": "Honzen - Japanese Eatery"
   }
 }

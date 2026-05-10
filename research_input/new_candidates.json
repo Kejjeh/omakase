@@ -1,0 +1,484 @@
+[
+  {
+    "name": "Wagyu Place",
+    "neighborhood": "Queens — Flushing",
+    "tasting_format": "yakiniku+sushi (AYCE)",
+    "ayce_wagyu_offered": true,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Niku X NYC",
+    "neighborhood": "Manhattan — Midtown / Koreatown",
+    "tasting_format": "yakiniku+sushi (AYCE buffet hybrid)",
+    "ayce_wagyu_offered": true,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Mikiya Wagyu Shabu House (Flushing)",
+    "neighborhood": "Queens — Flushing",
+    "tasting_format": "yakiniku+sushi (shabu AYCE)",
+    "ayce_wagyu_offered": true,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Mikiya Wagyu Shabu House (Manhattan)",
+    "neighborhood": "Manhattan — Midtown East / Turtle Bay",
+    "tasting_format": "yakiniku+sushi (shabu AYCE)",
+    "ayce_wagyu_offered": true,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Chubby Cattle BBQ NYC",
+    "neighborhood": "Manhattan — SoHo",
+    "tasting_format": "yakiniku+sushi (AYCE)",
+    "ayce_wagyu_offered": true,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Y Space BBQ",
+    "neighborhood": "Queens — Flushing",
+    "tasting_format": "yakiniku+sushi (AYCE)",
+    "ayce_wagyu_offered": true,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Wagyu Yama Yakiniku & Seafood Shabu",
+    "neighborhood": "Queens — Flushing",
+    "tasting_format": "yakiniku+sushi (AYCE)",
+    "ayce_wagyu_offered": true,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Hiyake Omakase (Bowery)",
+    "neighborhood": "Manhattan — Lower East Side / Chinatown",
+    "tasting_format": "yakiniku+sushi (AYCE)",
+    "ayce_wagyu_offered": true,
+    "wagyu_offered": true,
+    "confidence": "med"
+  },
+  {
+    "name": "Hiyake Omakase (Williamsburg)",
+    "neighborhood": "Brooklyn — Williamsburg",
+    "tasting_format": "yakiniku+sushi (private booths)",
+    "ayce_wagyu_offered": true,
+    "wagyu_offered": true,
+    "confidence": "med"
+  },
+  {
+    "name": "Gyu-Ichiro",
+    "neighborhood": "Manhattan — Lower East Side / Chinatown",
+    "tasting_format": "yakiniku+sushi (AYCE)",
+    "ayce_wagyu_offered": true,
+    "wagyu_offered": true,
+    "confidence": "med"
+  },
+  {
+    "name": "Nikushou Sakai",
+    "neighborhood": "Queens — Flushing (Tangram Mall)",
+    "tasting_format": "yakiniku+sushi (AYCE, iPad ordering)",
+    "ayce_wagyu_offered": true,
+    "wagyu_offered": true,
+    "confidence": "med"
+  },
+  {
+    "name": "Warabi Omakase",
+    "neighborhood": "Queens — Long Island City",
+    "tasting_format": "hybrid (AYCE-style value omakase)",
+    "ayce_wagyu_offered": true,
+    "wagyu_offered": true,
+    "confidence": "med"
+  },
+  {
+    "name": "Sushi Hayashi (Williamsburg)",
+    "neighborhood": "Brooklyn — Williamsburg",
+    "tasting_format": "hybrid (omakase + AYCE refills)",
+    "ayce_wagyu_offered": true,
+    "ayce_wagyu_caveat": "wagyu in fixed portion, NOT in unlimited refills",
+    "wagyu_offered": true,
+    "confidence": "med"
+  },
+  {
+    "name": "Toka Chef Kitchen",
+    "neighborhood": "Manhattan — Lower East Side",
+    "tasting_format": "hybrid (counter omakase + AYCE nigiri)",
+    "ayce_wagyu_offered": true,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Umiya Sushi LIC",
+    "neighborhood": "Queens — Long Island City",
+    "tasting_format": "a la carte sushi bar (AYCE)",
+    "ayce_wagyu_offered": true,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Akino",
+    "neighborhood": "Queens — Elmhurst",
+    "tasting_format": "a la carte sushi bar (AYCE)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "Izakaya MEW",
+    "neighborhood": "Manhattan — Midtown West / Koreatown",
+    "tasting_format": "izakaya + AYCE sushi",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "med"
+  },
+  {
+    "name": "Kaiten Zushi Nomad",
+    "neighborhood": "Manhattan — NoMad",
+    "tasting_format": "conveyor belt AYCE",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "New Mizu Sushi",
+    "neighborhood": "Manhattan — East Village",
+    "tasting_format": "a la carte sushi bar (AYCE)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "Asuka Sushi",
+    "neighborhood": "Manhattan — Chelsea",
+    "tasting_format": "a la carte sushi bar (AYCE)",
+    "ayce_wagyu_offered": true,
+    "wagyu_offered": true,
+    "confidence": "med"
+  },
+  {
+    "name": "Yuka Japanese Restaurant",
+    "neighborhood": "Manhattan — Upper East Side / Yorkville",
+    "tasting_format": "a la carte sushi bar (AYCE)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "Kikoo Sushi",
+    "neighborhood": "Manhattan — East Village + Upper West Side",
+    "tasting_format": "a la carte sushi bar (AYCE)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "Rakuzen AYCE Sushi",
+    "neighborhood": "Brooklyn / Queens",
+    "tasting_format": "a la carte sushi bar (AYCE)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "Sushi Sho",
+    "neighborhood": "Manhattan — Midtown East (Andaz 5th Avenue)",
+    "tasting_format": "counter omakase + extensive okonomi",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "Muku",
+    "neighborhood": "Manhattan — Tribeca",
+    "tasting_format": "counter omakase (kaiseki)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Yamada",
+    "neighborhood": "Manhattan — Chinatown",
+    "tasting_format": "counter omakase (kaiseki)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "Odo East Village",
+    "neighborhood": "Manhattan — East Village",
+    "tasting_format": "izakaya+omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "Yoshoku",
+    "neighborhood": "Manhattan — Midtown East (Waldorf Astoria)",
+    "tasting_format": "hybrid (a la carte + kaiseki tasting)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "Yūgin",
+    "neighborhood": "Manhattan — Midtown East (37th floor, GM Bldg)",
+    "tasting_format": "counter omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "Anbā",
+    "neighborhood": "Manhattan — Lower East Side",
+    "tasting_format": "counter omakase (kaiseki)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Enso Omakase",
+    "neighborhood": "Brooklyn — Williamsburg",
+    "tasting_format": "counter omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "Hear & There",
+    "neighborhood": "Brooklyn — Williamsburg",
+    "tasting_format": "izakaya + omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Kansha",
+    "neighborhood": "Manhattan — Upper East Side (Carnegie Hill)",
+    "tasting_format": "hybrid (a la carte + upstairs omakase)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Next Door (by Wegmans)",
+    "neighborhood": "Manhattan — NoHo (inside Wegmans)",
+    "tasting_format": "hybrid (a la carte sushi bar + robatayaki)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "Ikigai",
+    "neighborhood": "Brooklyn — Fort Greene",
+    "tasting_format": "counter omakase (kaiseki)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "RokuNana",
+    "neighborhood": "Manhattan — Lower East Side",
+    "tasting_format": "izakaya + a la carte sushi",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Sushi Ichimura",
+    "neighborhood": "Manhattan — Tribeca",
+    "tasting_format": "counter omakase (20-course Edomae)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "Sushi Ishikawa",
+    "neighborhood": "Manhattan — Upper East Side",
+    "tasting_format": "counter omakase (17-course)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Nakaji",
+    "neighborhood": "Manhattan — Chinatown",
+    "tasting_format": "counter omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "Shion 69 Leonard Street",
+    "neighborhood": "Manhattan — Tribeca",
+    "tasting_format": "counter omakase (Edomae)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "med",
+    "caveat": "Chef departed late 2025, fire Dec 27 2025, closed early 2026"
+  },
+  {
+    "name": "Shuko",
+    "neighborhood": "Manhattan — Union Square",
+    "tasting_format": "counter omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Kurumazushi",
+    "neighborhood": "Manhattan — Midtown East",
+    "tasting_format": "counter omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "icca",
+    "neighborhood": "Manhattan — Tribeca",
+    "tasting_format": "counter omakase (8-seat)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "med"
+  },
+  {
+    "name": "Masa",
+    "neighborhood": "Manhattan — Columbus Circle",
+    "tasting_format": "counter omakase + table tasting",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Bar Masa",
+    "neighborhood": "Manhattan — Columbus Circle",
+    "tasting_format": "a la carte + sushi tasting",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Kappo Masa",
+    "neighborhood": "Manhattan — Upper East Side",
+    "tasting_format": "hybrid (omakase counter + a la carte)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Togyushi",
+    "neighborhood": "Manhattan — Midtown",
+    "tasting_format": "counter omakase (wagyu kappo)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Omi Omakase",
+    "neighborhood": "Queens — Flushing",
+    "tasting_format": "counter omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Himitsu Flushing",
+    "neighborhood": "Queens — Flushing",
+    "tasting_format": "counter omakase / a la carte sushi bar",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Kakurega Sushi",
+    "neighborhood": "Queens — Flushing",
+    "tasting_format": "counter omakase (7-seat)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Kaizen (Wabi Nori Hand Roll Bar)",
+    "neighborhood": "Queens — Flushing",
+    "tasting_format": "hybrid (counter omakase + izakaya tables)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Izakaya Nana",
+    "neighborhood": "Queens — Flushing",
+    "tasting_format": "izakaya+omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "That Place Omakase",
+    "neighborhood": "Queens — Flushing",
+    "tasting_format": "counter omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "med"
+  },
+  {
+    "name": "Kaiyo Omakase",
+    "neighborhood": "Queens — Long Island City",
+    "tasting_format": "counter omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Omakase Osukāā LIC",
+    "neighborhood": "Queens — Long Island City",
+    "tasting_format": "counter omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "med"
+  },
+  {
+    "name": "Honzen Japanese Eatery",
+    "neighborhood": "Queens — Astoria",
+    "tasting_format": "hybrid (honzen-ryori prix fixe)",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "high"
+  },
+  {
+    "name": "Sapps",
+    "neighborhood": "Queens — Long Island City",
+    "tasting_format": "izakaya+omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "med"
+  },
+  {
+    "name": "Hibino LIC",
+    "neighborhood": "Queens — Long Island City",
+    "tasting_format": "izakaya+omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "high"
+  },
+  {
+    "name": "Bushniwa",
+    "neighborhood": "Brooklyn — Bushwick",
+    "tasting_format": "izakaya+omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": false,
+    "confidence": "med"
+  },
+  {
+    "name": "Nigiri (by Honshu)",
+    "neighborhood": "Jersey City, NJ",
+    "tasting_format": "counter omakase",
+    "ayce_wagyu_offered": false,
+    "wagyu_offered": true,
+    "confidence": "med"
+  }
+]
