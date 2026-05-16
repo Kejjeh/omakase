@@ -6,6 +6,7 @@ import json, re, pathlib
 
 ROOT = pathlib.Path(__file__).parent.parent
 scored = json.loads((ROOT / "scripts" / "scored_restaurants.json").read_text(encoding="utf-8"))
+coords = json.loads((ROOT / "scripts" / "coords_cache.json").read_text(encoding="utf-8"))
 
 # Fields to embed in the HTML (keep only what the page uses)
 KEEP = [
@@ -21,11 +22,16 @@ KEEP = [
     "wagyu_offered", "ayce_offered", "ayce_wagyu_offered",
     "wagyu_notes", "ayce_notes", "ayce_wagyu_notes",
     "premium_ingredients", "specialty_confidence", "closed", "caveat",
+    "lat", "lng",
 ]
 
 rows = []
 for r in scored:
     row = {k: r.get(k) for k in KEEP}
+    c = coords.get(r.get("name"))
+    if c:
+        row["lat"] = c.get("lat")
+        row["lng"] = c.get("lng")
     rows.append(row)
 
 new_data_line = "const ALL_DATA = " + json.dumps(rows, ensure_ascii=False) + ";"
@@ -37,4 +43,5 @@ html = html_path.read_text(encoding="utf-8")
 html = re.sub(r"const ALL_DATA = \[.*?\];", new_data_line, html, count=1, flags=re.DOTALL)
 
 html_path.write_text(html, encoding="utf-8")
-print(f"Updated ALL_DATA with {len(rows)} restaurants (subway_walk_min included).")
+with_coords = sum(1 for r in rows if r.get("lat") and r.get("lng"))
+print(f"Updated ALL_DATA with {len(rows)} restaurants ({with_coords} with coords).")
