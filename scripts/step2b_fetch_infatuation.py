@@ -20,10 +20,11 @@ import requests
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.dirname(__file__))
+from shared import paths
 
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RESTAURANTS_PATH = os.path.join(PROJECT_ROOT, "scripts", "restaurants.json")
-CACHE_PATH = os.path.join(PROJECT_ROOT, "scripts", "infatuation_cache.json")
+CUISINE = paths.parse_cuisine_arg()
+RESTAURANTS_PATH = paths.restaurants_json(CUISINE)
+CACHE_PATH = paths.infatuation_cache(CUISINE)
 
 BASE_URL = "https://www.theinfatuation.com/new-york/reviews/"
 HEADERS = {

@@ -5,11 +5,13 @@ import json, os, sys, openpyxl
 from openpyxl.styles import Font, Alignment, PatternFill
 
 sys.path.insert(0, os.path.dirname(__file__))
-from config import OUTPUT_EXCEL, RATING_METHOD, WILSON_Z, BAYESIAN_M, GOOGLE_BIAS_CORRECTION, PRICE_EXPONENT
+from config import OUTPUT_EXCEL_PATTERN, RATING_METHOD, WILSON_Z, BAYESIAN_M, GOOGLE_BIAS_CORRECTION, PRICE_EXPONENT
+from shared import paths
 
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SCORED_PATH = os.path.join(PROJECT_ROOT, "scripts", "scored_restaurants.json")
-OUTPUT_PATH = os.path.join(PROJECT_ROOT, OUTPUT_EXCEL)
+CUISINE = paths.parse_cuisine_arg()
+PROJECT_ROOT = paths.PROJECT_ROOT
+SCORED_PATH = paths.scored_json(CUISINE)
+OUTPUT_PATH = PROJECT_ROOT / OUTPUT_EXCEL_PATTERN.format(cuisine=CUISINE.capitalize())
 
 HEADERS = [
     ("Restaurant Name", 30), ("Neighborhood", 30), ("Price ($)", 10),

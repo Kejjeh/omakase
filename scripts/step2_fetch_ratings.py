@@ -1,9 +1,9 @@
 """
-Step 2: Fetch Google Maps ratings for all restaurants via Places API.
-Uses a local cache (ratings_cache.json) to avoid re-fetching known restaurants.
-Only fetches ratings for restaurants not already in the cache.
+Step 2: Fetch Google Maps ratings via Places API for a given cuisine's restaurants.
 
-Outputs: scripts/ratings_cache.json
+Usage: python scripts/step2_fetch_ratings.py [--cuisine omakase]
+
+Uses a per-cuisine cache to avoid re-fetching.
 """
 
 import requests
@@ -13,11 +13,12 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
-from config import GOOGLE_API_KEY, RATINGS_CACHE
+from config import GOOGLE_API_KEY
+from shared import paths
 
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RESTAURANTS_PATH = os.path.join(PROJECT_ROOT, "scripts", "restaurants.json")
-CACHE_PATH = os.path.join(PROJECT_ROOT, RATINGS_CACHE)
+CUISINE = paths.parse_cuisine_arg()
+RESTAURANTS_PATH = paths.restaurants_json(CUISINE)
+CACHE_PATH = paths.ratings_cache(CUISINE)
 
 
 def load_cache():

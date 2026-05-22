@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Italian — The Restaurant Report</title>
+<style>
+:root {
+  --bg: #F7F3EC;
+  --text: #1a1612;
+  --text-secondary: #514d47;
+  --border: #D9D3C7;
+  --accent-primary: #B04A2C;
+  --card-bg: #FFFCF6;
+}
+html.dark-mode {
+  --bg: #15110d;
+  --text: #F7F3EC;
+  --text-secondary: #CFC9BF;
+  --border: #3a342c;
+  --accent-primary: #F08760;
+  --card-bg: #28221b;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica Neue, sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.placeholder {
+  max-width: 560px;
+  text-align: center;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 2px;
+  padding: 48px 32px;
+}
+h1 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-style: italic;
+  font-size: 2.4rem;
+  color: var(--accent-primary);
+  margin-bottom: 16px;
+}
+p { color: var(--text-secondary); margin-bottom: 12px; line-height: 1.6; }
+a { color: var(--accent-primary); text-decoration: none; font-weight: 600; }
+a:hover { text-decoration: underline; }
+.back { display: inline-block; margin-top: 24px; font-size: 0.85rem; letter-spacing: 0.08em; text-transform: uppercase; }
+</style>
+</head>
+<body>
+<div class="placeholder">
+  <h1>Italian</h1>
+  <p>Scaffolded but no data yet.</p>
+  <p>Drop a list of Italian restaurants into <code>scripts/data/italian/master.xlsx</code> (same column shape as Omakase), then run <code>python scripts/run_all.py --cuisine italian</code>.</p>
+  <a href="../" class="back">← Back to all cuisines</a>
+</div>
+<script>
+const saved = localStorage.getItem('theme-mode');
+if (saved === 'dark' || (!saved && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+  document.documentElement.classList.add('dark-mode');
+}
+</script>
+</body>
+</html>

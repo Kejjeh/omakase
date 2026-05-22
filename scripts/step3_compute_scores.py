@@ -50,16 +50,17 @@ from config import (
     RATING_METHOD, WILSON_Z, BAYESIAN_M, GOOGLE_BIAS_CORRECTION,
     PRICE_EXPONENT, MAX_PRICE, VISITED,
 )
+from shared import paths
 
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-RESTAURANTS_PATH = os.path.join(PROJECT_ROOT, "scripts", "restaurants.json")
-RATINGS_CACHE_PATH = os.path.join(PROJECT_ROOT, "scripts", "ratings_cache.json")
-YELP_CACHE_PATH = os.path.join(PROJECT_ROOT, "scripts", "yelp_cache.json")
-INFATUATION_CACHE_PATH = os.path.join(PROJECT_ROOT, "scripts", "infatuation_cache.json")
-SPECIALTIES_151_PATH = os.path.join(PROJECT_ROOT, "research_input", "specialties_151.json")
-NEW_CANDIDATES_PATH = os.path.join(PROJECT_ROOT, "research_input", "new_candidates_omakase.json")
-HYBRID_CANDIDATES_PATH = os.path.join(PROJECT_ROOT, "research_input", "new_candidates_ayce_wagyu_hybrid.json")
-OUTPUT_PATH = os.path.join(PROJECT_ROOT, "scripts", "scored_restaurants.json")
+CUISINE = paths.parse_cuisine_arg()
+RESTAURANTS_PATH = paths.restaurants_json(CUISINE)
+RATINGS_CACHE_PATH = paths.ratings_cache(CUISINE)
+YELP_CACHE_PATH = paths.yelp_cache(CUISINE)
+INFATUATION_CACHE_PATH = paths.infatuation_cache(CUISINE)
+OUTPUT_PATH = paths.scored_json(CUISINE)
+
+# Optional specialty files for this cuisine (any *.json under research_input/<cuisine>/)
+RESEARCH_DIR = paths.research_dir(CUISINE)
 
 
 # ---------------------------------------------------------------------------
@@ -132,13 +133,14 @@ def main():
     prev_scored = load_json(OUTPUT_PATH, [])
     prev_by_name = {r["name"]: r for r in prev_scored}
 
-    # Specialty data (optional)
-    specialty_records = (
-        load_json(SPECIALTIES_151_PATH, [])
-        + load_json(NEW_CANDIDATES_PATH, [])
-        + load_json(HYBRID_CANDIDATES_PATH, [])
-    )
-    specialty_by_name = {r["name"]: r for r in specialty_records}
+    # Specialty data (optional): merge every *.json in research_input/<cuisine>/
+    specialty_records = []
+    if RESEARCH_DIR.exists():
+        for f in sorted(RESEARCH_DIR.glob("*.json")):
+            data = load_json(str(f), [])
+            if isinstance(data, list):
+                specialty_records.extend(data)
+    specialty_by_name = {r["name"]: r for r in specialty_records if isinstance(r, dict) and "name" in r}
 
     # First pass: compute corrected ratings + Wilson scores
     rows = []

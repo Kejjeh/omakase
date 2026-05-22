@@ -11,11 +11,14 @@ Idempotent: skips names already in restaurants.json.
 
 Run from the repo root: python scripts/add_new_candidates.py
 """
-import json, pathlib, re
+import json, pathlib, re, sys
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
+from shared import paths
 
-ROOT = pathlib.Path(__file__).parent.parent
+CUISINE = "omakase"  # this script is omakase-specific
+ROOT = paths.PROJECT_ROOT
 
-candidates = json.loads((ROOT / "research_input" / "new_candidates_omakase.json").read_text(encoding="utf-8"))
+candidates = json.loads((paths.research_dir(CUISINE) / "new_candidates_omakase.json").read_text(encoding="utf-8"))
 
 # Full price/vibe info pulled from the original 60-entry research doc
 PRICE_VIBE = {
@@ -89,7 +92,7 @@ for c in candidates:
 
 # Also build records for AYCE-Wagyu hybrid candidates (yakiniku/shabu/AYCE sushi).
 # Their JSON already carries price/vibe/format so we use that directly.
-hybrid_path = ROOT / "research_input" / "new_candidates_ayce_wagyu_hybrid.json"
+hybrid_path = paths.research_dir(CUISINE) / "new_candidates_ayce_wagyu_hybrid.json"
 if hybrid_path.exists():
     hybrids = json.loads(hybrid_path.read_text(encoding="utf-8"))
     for h in hybrids:
@@ -104,7 +107,7 @@ if hybrid_path.exists():
         })
 
 # Merge into restaurants.json (skip names already present)
-restaurants_path = ROOT / "scripts" / "restaurants.json"
+restaurants_path = paths.restaurants_json(CUISINE)
 existing = json.loads(restaurants_path.read_text(encoding="utf-8"))
 existing_names = {r["name"] for r in existing}
 added = 0

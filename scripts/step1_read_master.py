@@ -1,6 +1,7 @@
 """
-Step 1: Read the master Omakase.xlsx and extract restaurant data.
-Outputs: scripts/restaurants.json
+Step 1: Read the master Excel for a given cuisine and extract restaurant data.
+
+Usage: python scripts/step1_read_master.py [--cuisine omakase]
 """
 
 import pandas as pd
@@ -10,11 +11,12 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
-from config import MASTER_EXCEL, EXCLUDE_KEYWORDS, MAX_PRICE
+from config import EXCLUDE_KEYWORDS, MAX_PRICE
+from shared import paths
 
-PROJECT_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-INPUT_PATH = os.path.join(PROJECT_ROOT, MASTER_EXCEL)
-OUTPUT_PATH = os.path.join(PROJECT_ROOT, "scripts", "restaurants.json")
+CUISINE = paths.parse_cuisine_arg()
+INPUT_PATH = paths.master_xlsx(CUISINE)
+OUTPUT_PATH = paths.restaurants_json(CUISINE)
 
 
 def parse_min_price(price_str):

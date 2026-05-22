@@ -1,11 +1,16 @@
 """
-Regenerates the ALL_DATA block in docs/index.html from scored_restaurants.json.
-Run from the repo root: python scripts/rebuild_html_data.py
-"""
-import json, re, pathlib
+Regenerates the ALL_DATA block in docs/<cuisine>/index.html from the cuisine's
+scored_restaurants.json.
 
-ROOT = pathlib.Path(__file__).parent.parent
-scored = json.loads((ROOT / "scripts" / "scored_restaurants.json").read_text(encoding="utf-8"))
+Usage: python scripts/rebuild_html_data.py [--cuisine omakase]
+"""
+import json, re, pathlib, sys
+
+sys.path.insert(0, str(pathlib.Path(__file__).parent))
+from shared import paths
+
+CUISINE = paths.parse_cuisine_arg()
+scored = json.loads(paths.scored_json(CUISINE).read_text(encoding="utf-8"))
 
 # Fields to embed in the HTML (keep only what the page uses)
 KEEP = [
@@ -30,11 +35,11 @@ for r in scored:
 
 new_data_line = "const ALL_DATA = " + json.dumps(rows, ensure_ascii=False) + ";"
 
-html_path = ROOT / "docs" / "index.html"
+html_path = paths.dashboard_html(CUISINE)
 html = html_path.read_text(encoding="utf-8")
 
 # Replace the ALL_DATA assignment line (it's one long line)
 html = re.sub(r"const ALL_DATA = \[.*?\];", new_data_line, html, count=1, flags=re.DOTALL)
 
 html_path.write_text(html, encoding="utf-8")
-print(f"Updated ALL_DATA with {len(rows)} restaurants (subway_walk_min included).")
+print(f"[{CUISINE}] Updated ALL_DATA with {len(rows)} restaurants.")
