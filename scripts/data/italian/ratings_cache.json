@@ -1,0 +1,926 @@
+{
+  "Via Carota": {
+    "rating": 4.4,
+    "review_count": 3254,
+    "google_name": "Via Carota",
+    "address": "51 Grove St, New York, NY 10014, USA"
+  },
+  "Don Angie": {
+    "rating": 4.6,
+    "review_count": 1778,
+    "google_name": "Don Angie",
+    "address": "103 Greenwich Ave, New York, NY 10014, USA"
+  },
+  "San Sabino": {
+    "rating": 4.4,
+    "review_count": 402,
+    "google_name": "San Sabino",
+    "address": "113 Greenwich Ave, New York, NY 10014, USA"
+  },
+  "L'Artusi": {
+    "rating": 4.6,
+    "review_count": 2582,
+    "google_name": "L'Artusi",
+    "address": "228 W 10th St, New York, NY 10014, USA"
+  },
+  "I Sodi": {
+    "rating": 4.2,
+    "review_count": 1050,
+    "google_name": "I Sodi",
+    "address": "314 Bleecker St, New York, NY 10014, USA"
+  },
+  "Bar Pisellino": {
+    "rating": 4.1,
+    "review_count": 942,
+    "google_name": "Bar Pisellino",
+    "address": "52 Grove Street, 7th Ave S at, New York, NY 10014, USA"
+  },
+  "Gene's Restaurant": {
+    "rating": 4.4,
+    "review_count": 326,
+    "google_name": "Gene's",
+    "address": "73 W 11th St, New York, NY 10011, USA"
+  },
+  "Villa Mosconi": {
+    "rating": 4.5,
+    "review_count": 414,
+    "google_name": "Villa Mosconi Restaurant",
+    "address": "69 MacDougal St, New York, NY 10012, USA"
+  },
+  "Babbo Ristorante": {
+    "rating": 4.3,
+    "review_count": 1798,
+    "google_name": "Babbo",
+    "address": "110 Waverly Pl, New York, NY 10011, USA"
+  },
+  "Lupa": {
+    "rating": 4.4,
+    "review_count": 1826,
+    "google_name": "Nami Nori West Village",
+    "address": "33 Carmine St, New York, NY 10014, USA"
+  },
+  "Carbone": {
+    "rating": 4.3,
+    "review_count": 2611,
+    "google_name": "Carbone New York",
+    "address": "181 Thompson St, New York, NY 10012, USA"
+  },
+  "Emilio's Ballato": {
+    "rating": 4.1,
+    "review_count": 1660,
+    "google_name": "Emilio's Ballato",
+    "address": "55 E Houston St, New York, NY 10012, USA"
+  },
+  "Rubirosa": {
+    "rating": 4.6,
+    "review_count": 7099,
+    "google_name": "Rubirosa",
+    "address": "235 Mulberry St, New York, NY 10012, USA"
+  },
+  "Torrisi Bar & Restaurant": {
+    "rating": 4.5,
+    "review_count": 927,
+    "google_name": "Torrisi",
+    "address": "275 Mulberry St, New York, NY 10012, USA"
+  },
+  "Roscioli": {
+    "rating": 4.4,
+    "review_count": 724,
+    "google_name": "Roscioli NYC",
+    "address": "43 MacDougal St, New York, NY 10012, USA"
+  },
+  "Bar Pitti": {
+    "rating": 3.8,
+    "review_count": 1779,
+    "google_name": "Bar Pitti",
+    "address": "268 6th Ave, New York, NY 10014, USA"
+  },
+  "Sant Ambroeus West Village": {
+    "rating": 4.4,
+    "review_count": 757,
+    "google_name": "Sant Ambroeus West Village",
+    "address": "259 W 4th St, New York, NY 10014, USA"
+  },
+  "Malaparte": {
+    "rating": 4.5,
+    "review_count": 1031,
+    "google_name": "Malaparte",
+    "address": "753 Washington St, New York, NY 10014, USA"
+  },
+  "Da Toscano": {
+    "rating": 4.7,
+    "review_count": 633,
+    "google_name": "da Toscano",
+    "address": "49 W 44th St, New York, NY 10036, USA"
+  },
+  "Fiaschetteria Pistoia": {
+    "rating": 4.4,
+    "review_count": 672,
+    "google_name": "Fiaschetteria \u201cPistoia\u201d",
+    "address": "114 Christopher St, New York, NY 10014, USA"
+  },
+  "Osteria Nonnino": {
+    "rating": 4.8,
+    "review_count": 3966,
+    "google_name": "Osteria Nonnino",
+    "address": "637 Hudson St, New York, NY 10014, USA"
+  },
+  "Arthur & Sons NY Italian": {
+    "rating": 4.9,
+    "review_count": 442,
+    "google_name": "Mido Omakase - West Village",
+    "address": "88 W 3rd St, New York, NY 10012, USA"
+  },
+  "Frankies 570 Spuntino": {
+    "rating": 4,
+    "review_count": 263,
+    "google_name": "Frankies 570 Spuntino",
+    "address": "570 Hudson St, New York, NY 10014, USA"
+  },
+  "Da Andrea": {
+    "rating": 4.6,
+    "review_count": 2617,
+    "google_name": "Da Andrea Greenwich Village",
+    "address": "35 W 13th St, New York, NY 10011, USA"
+  },
+  "Il Mulino New York": {
+    "rating": 4.5,
+    "review_count": 627,
+    "google_name": "Il Mulino - Downtown (West 3rd)",
+    "address": "86 W 3rd St, New York, NY 10012, USA"
+  },
+  "Olio e Pi\u00f9": {
+    "rating": 4.7,
+    "review_count": 11220,
+    "google_name": "OLIO E PI\u00d9",
+    "address": "3 Greenwich Ave, New York, NY 10014, USA"
+  },
+  "Lavagna": {
+    "rating": 4.5,
+    "review_count": 468,
+    "google_name": "Lavagna",
+    "address": "545 E 5th St, New York, NY 10009, USA"
+  },
+  "Il Posto Accanto": {
+    "rating": 4.6,
+    "review_count": 612,
+    "google_name": "Il Posto Accanto",
+    "address": "190 E 2nd St, New York, NY 10009, USA"
+  },
+  "Supper": {
+    "rating": 4.6,
+    "review_count": 876,
+    "google_name": "Zutto Japanese Ramen Sushi Bar",
+    "address": "384 Broome St, New York, NY 10013, USA"
+  },
+  "Cacio e Pepe": {
+    "rating": 4.5,
+    "review_count": 887,
+    "google_name": "KYU NYC",
+    "address": "324 Lafayette St, New York, NY 10012, USA"
+  },
+  "John's of 12th Street": {
+    "rating": 4.4,
+    "review_count": 1353,
+    "google_name": "John's of 12th Street",
+    "address": "302 E 12th St, New York, NY 10003, USA"
+  },
+  "Forsythia": {
+    "rating": 4.4,
+    "review_count": 436,
+    "google_name": "Forsythia NYC",
+    "address": "9 Stanton St, New York, NY 10002, USA"
+  },
+  "Una Pizza Napoletana": {
+    "rating": 4.3,
+    "review_count": 912,
+    "google_name": "Una Pizza Napoletana",
+    "address": "175 Orchard St, New York, NY 10002, USA"
+  },
+  "Scarr's Pizza": {
+    "rating": 4.4,
+    "review_count": 4713,
+    "google_name": "Scarr's Pizza",
+    "address": "35 Orchard St, New York, NY 10002, USA"
+  },
+  "Altro Paradiso": {
+    "rating": 4.4,
+    "review_count": 910,
+    "google_name": "Altro Paradiso",
+    "address": "234 Spring St, New York, NY 10013, USA"
+  },
+  "Pasquale Jones": {
+    "rating": 4.5,
+    "review_count": 1248,
+    "google_name": "Pasquale Jones",
+    "address": "187 Mulberry St, New York, NY 10012, USA"
+  },
+  "Lodi": {
+    "rating": 4,
+    "review_count": 235,
+    "google_name": "TOKIODELIC",
+    "address": "177 Lafayette St, New York, NY 10013, USA"
+  },
+  "Sandro's": {
+    "rating": 4.7,
+    "review_count": 312,
+    "google_name": "Sandro's",
+    "address": "322 East 86th St, New York, NY 10028, USA"
+  },
+  "Gelso & Grand": {
+    "rating": 4.4,
+    "review_count": 3346,
+    "google_name": "Gelso & Grand",
+    "address": "186 Grand St, New York, NY 10013, USA"
+  },
+  "Parm": {
+    "rating": 4.6,
+    "review_count": 1428,
+    "google_name": "Momoya SoHo",
+    "address": "47 Prince St, New York, NY 10012, USA"
+  },
+  "Caf\u00e9 Mars": {
+    "rating": 4.6,
+    "review_count": 175,
+    "google_name": "Caf\u00e9 Mars",
+    "address": "272 3rd Ave, Brooklyn, NY 11215, USA"
+  },
+  "Olmo": {
+    "rating": 4.7,
+    "review_count": 279,
+    "google_name": "O Ramen & Dim Sum M Yuki Sushi",
+    "address": "37 Allen St, New York, NY 10002, USA"
+  },
+  "Locanda Verde": {
+    "rating": 4.4,
+    "review_count": 2336,
+    "google_name": "Locanda Verde Tribeca",
+    "address": "377 Greenwich St, New York, NY 10013, USA"
+  },
+  "Borgo": {
+    "rating": 4.4,
+    "review_count": 256,
+    "google_name": "Borgo",
+    "address": "124 E 27th St, New York, NY 10016, USA"
+  },
+  "Briscola Trattoria": {
+    "rating": 4.7,
+    "review_count": 334,
+    "google_name": "Briscola Trattoria",
+    "address": "798a Franklin Ave, Brooklyn, NY 11238, USA"
+  },
+  "Maialino Vicino": {
+    "rating": null,
+    "review_count": null,
+    "google_name": "",
+    "address": ""
+  },
+  "Rezd\u00f4ra": {
+    "rating": 4.2,
+    "review_count": 1683,
+    "google_name": "Rezd\u00f4ra",
+    "address": "27 E 20th St, New York, NY 10003, USA"
+  },
+  "La Pecora Bianca": {
+    "rating": 4.7,
+    "review_count": 6174,
+    "google_name": "La Pecora Bianca NoMad",
+    "address": "1133 Broadway, New York, NY 10010, USA"
+  },
+  "Bar Primi": {
+    "rating": 4.2,
+    "review_count": 508,
+    "google_name": "Bar Primi Penn District",
+    "address": "349 W 33rd St, New York, NY 10001, USA"
+  },
+  "Il Mulino Prime": {
+    "rating": 4.4,
+    "review_count": 347,
+    "google_name": "Il Mulino Prime",
+    "address": "331 W Broadway, New York, NY 10013, USA"
+  },
+  "Ai Fiori": {
+    "rating": 4.4,
+    "review_count": 1813,
+    "google_name": "Ai Fiori",
+    "address": "400 5th Ave #2, New York, NY 10018, USA"
+  },
+  "Marea": {
+    "rating": 4.5,
+    "review_count": 3037,
+    "google_name": "Marea",
+    "address": "240 Central Park S, New York, NY 10019, USA"
+  },
+  "Quality Italian": {
+    "rating": 4.3,
+    "review_count": 1238,
+    "google_name": "Kaiten Zushi Nomad | AYCE Conveyor Belt Sushi, AYCE Sushi, Japanese Restaurant in NYC",
+    "address": "276 5th Ave, New York, NY 10001, USA"
+  },
+  "Patsy's": {
+    "rating": 4.9,
+    "review_count": 99,
+    "google_name": "Patsy's",
+    "address": "23 Lexington Ave, New York, NY 10010, USA"
+  },
+  "Massara": {
+    "rating": 4.4,
+    "review_count": 207,
+    "google_name": "Massara On Park",
+    "address": "48 E 26th St, New York, NY 10010, USA"
+  },
+  "Bad Roman": {
+    "rating": 4.2,
+    "review_count": 1474,
+    "google_name": "Bad Roman",
+    "address": "3rd floor, 10 Columbus Cir, New York, NY 10019, USA"
+  },
+  "Giulietta": {
+    "rating": 4.9,
+    "review_count": 933,
+    "google_name": "Giulietta",
+    "address": "200 Park Ave, New York, NY 10166, USA"
+  },
+  "Ci Siamo": {
+    "rating": 4.6,
+    "review_count": 2233,
+    "google_name": "Ci Siamo",
+    "address": "440 W 33rd St Suite #100, New York, NY 10001, USA"
+  },
+  "Bar Tulia": {
+    "rating": 4.6,
+    "review_count": 422,
+    "google_name": "Sushi By Bou - NOMAD NYC @ Hotel32|32",
+    "address": "32 E 32nd St, New York, NY 10016, USA"
+  },
+  "Santi": {
+    "rating": 4.6,
+    "review_count": 422,
+    "google_name": "Sushi By Bou - NOMAD NYC @ Hotel32|32",
+    "address": "32 E 32nd St, New York, NY 10016, USA"
+  },
+  "Ribalta": {
+    "rating": 4.4,
+    "review_count": 2721,
+    "google_name": "Ribalta",
+    "address": "48 E 12th St, New York, NY 10003, USA"
+  },
+  "Don Antonio": {
+    "rating": 4.8,
+    "review_count": 309,
+    "google_name": "Domo omakase",
+    "address": "109 E 29th St, New York, NY 10016, USA"
+  },
+  "Kest\u00e9 Pizza & Vino": {
+    "rating": 4.6,
+    "review_count": 3349,
+    "google_name": "Kest\u00e9 Pizza e Vino",
+    "address": "77 Fulton St, New York, NY 10038, USA"
+  },
+  "Rao's": {
+    "rating": 4.4,
+    "review_count": 660,
+    "google_name": "Rao's",
+    "address": "455 E 114th St, New York, NY 10029, USA"
+  },
+  "Elio's": {
+    "rating": 4.2,
+    "review_count": 541,
+    "google_name": "Elio's",
+    "address": "1621 2nd Ave, New York, NY 10028, USA"
+  },
+  "Sant Ambroeus UES": {
+    "rating": 4.3,
+    "review_count": 984,
+    "google_name": "Sant Ambroeus Madison",
+    "address": "1000 Madison Ave, New York, NY 10075, USA"
+  },
+  "Sempre Oggi": {
+    "rating": 4.7,
+    "review_count": 489,
+    "google_name": "Sempre Oggi",
+    "address": "164 W 75th St, New York, NY 10023, USA"
+  },
+  "Cafe Fiorello": {
+    "rating": 4.4,
+    "review_count": 2358,
+    "google_name": "Cafe Fiorello",
+    "address": "1900 Broadway, New York, NY 10023, USA"
+  },
+  "Lincoln Ristorante": {
+    "rating": 4.3,
+    "review_count": 529,
+    "google_name": "Lincoln Ristorante",
+    "address": "142 W 65th St, New York, NY 10023, USA"
+  },
+  "Tarallucci e Vino": {
+    "rating": 4.5,
+    "review_count": 1015,
+    "google_name": "Tarallucci e Vino Upper West Side",
+    "address": "475 Columbus Ave, New York, NY 10024, USA"
+  },
+  "Patsy's Pizzeria": {
+    "rating": 4.1,
+    "review_count": 587,
+    "google_name": "Patsy's Pizzeria",
+    "address": "1279 1st Ave, New York, NY 10065, USA"
+  },
+  "Sottocasa Harlem": {
+    "rating": 4.7,
+    "review_count": 1563,
+    "google_name": "Sottocasa Pizzeria Harlem",
+    "address": "227 Malcolm X Blvd, New York, NY 10027, USA"
+  },
+  "Lilia": {
+    "rating": 4.3,
+    "review_count": 2277,
+    "google_name": "Lilia",
+    "address": "567 Union Ave, Brooklyn, NY 11211, USA"
+  },
+  "Misi": {
+    "rating": 4.3,
+    "review_count": 1850,
+    "google_name": "Misi",
+    "address": "329 Kent Ave, Brooklyn, NY 11249, USA"
+  },
+  "I Cavallini": {
+    "rating": 4.5,
+    "review_count": 132,
+    "google_name": "I Cavallini",
+    "address": "284 Grand St, Brooklyn, NY 11211, USA"
+  },
+  "Bamonte's": {
+    "rating": 4.5,
+    "review_count": 1322,
+    "google_name": "Bamonte's",
+    "address": "32 Withers St, Brooklyn, NY 11211, USA"
+  },
+  "Aurora": {
+    "rating": 4.5,
+    "review_count": 1598,
+    "google_name": "Aurora Brooklyn",
+    "address": "70 Grand St, Brooklyn, NY 11249, USA"
+  },
+  "Fabbrica": {
+    "rating": 4.5,
+    "review_count": 440,
+    "google_name": "Sapporo Ichiban",
+    "address": "622 Manhattan Ave, Brooklyn, NY 11222, USA"
+  },
+  "Sauced": {
+    "rating": 4.4,
+    "review_count": 434,
+    "google_name": "Sauced",
+    "address": "331 Bedford Ave, Brooklyn, NY 11211, USA"
+  },
+  "Sottocasa Greenpoint": {
+    "rating": 4.5,
+    "review_count": 440,
+    "google_name": "Sapporo Ichiban",
+    "address": "622 Manhattan Ave, Brooklyn, NY 11222, USA"
+  },
+  "Frankies 457 Spuntino": {
+    "rating": 4.5,
+    "review_count": 1465,
+    "google_name": "Frankies 457 Spuntino",
+    "address": "457 Court St, Brooklyn, NY 11231, USA"
+  },
+  "F&F Pizzeria": {
+    "rating": 4.5,
+    "review_count": 683,
+    "google_name": "F&F Pizzeria",
+    "address": "459 Court St, Brooklyn, NY 11231, USA"
+  },
+  "Cafe Spaghetti": {
+    "rating": 4.7,
+    "review_count": 597,
+    "google_name": "Cafe Spaghetti",
+    "address": "126 Union St, Brooklyn, NY 11231, USA"
+  },
+  "Cremini's": {
+    "rating": 4.9,
+    "review_count": 419,
+    "google_name": "Cremini's",
+    "address": "521 Court St, Brooklyn, NY 11231, USA"
+  },
+  "Lucali": {
+    "rating": 4.2,
+    "review_count": 3059,
+    "google_name": "Lucali",
+    "address": "575 Henry St, Brooklyn, NY 11231, USA"
+  },
+  "Marco Polo Ristorante": {
+    "rating": 4.6,
+    "review_count": 673,
+    "google_name": "Marco Polo",
+    "address": "345 Court St, Brooklyn, NY 11231, USA"
+  },
+  "Ferdinando's Focacceria / Bar Ferdinando": {
+    "rating": 4.6,
+    "review_count": 535,
+    "google_name": "Bar Ferdinando",
+    "address": "151 Union St, Brooklyn, NY 11231, USA"
+  },
+  "Noodle Pudding": {
+    "rating": 4.4,
+    "review_count": 285,
+    "google_name": "SOBOKU",
+    "address": "276 Smith St, Brooklyn, NY 11231, USA"
+  },
+  "River Deli": {
+    "rating": 5,
+    "review_count": 90,
+    "google_name": "Koju",
+    "address": "252 Schermerhorn St, Brooklyn, NY 11217, USA"
+  },
+  "al di l\u00e0 Trattoria": {
+    "rating": 4.8,
+    "review_count": 422,
+    "google_name": "Sushi Lin Park Slope",
+    "address": "335 Flatbush Ave, Brooklyn, NY 11217, USA"
+  },
+  "Lillo Cucina Italiana": {
+    "rating": 4.8,
+    "review_count": 525,
+    "google_name": "Lillo Cucina Italiana",
+    "address": "331 Henry St, Brooklyn, NY 11201, USA"
+  },
+  "Roberta's": {
+    "rating": 4.4,
+    "review_count": 2137,
+    "google_name": "Roberta's",
+    "address": "261 Moore St, Brooklyn, NY 11206, USA"
+  },
+  "Faro": {
+    "rating": 4.2,
+    "review_count": 41,
+    "google_name": "The Faro Sports Bar",
+    "address": "3247 Fulton St, Brooklyn, NY 11208, USA"
+  },
+  "Saraghina": {
+    "rating": 4.5,
+    "review_count": 2313,
+    "google_name": "Saraghina Pizzeria",
+    "address": "350 Lewis Ave, Brooklyn, NY 11233, USA"
+  },
+  "Gargiulo's": {
+    "rating": 4.4,
+    "review_count": 1632,
+    "google_name": "Gargiulo's",
+    "address": "2911 W 15th St, Brooklyn, NY 11224, USA"
+  },
+  "L&B Spumoni Gardens": {
+    "rating": 4.6,
+    "review_count": 11345,
+    "google_name": "L&B Spumoni Gardens",
+    "address": "2725 86th St, Brooklyn, NY 11223, USA"
+  },
+  "Tommaso's": {
+    "rating": 4.5,
+    "review_count": 392,
+    "google_name": "Tommaso",
+    "address": "6916 18th Ave, Brooklyn, NY 11204, USA"
+  },
+  "Il Colosseo": {
+    "rating": 4.5,
+    "review_count": 774,
+    "google_name": "Il Colosseo Ristorante | Brooklyn",
+    "address": "7704 18th Ave, Brooklyn, NY 11214, USA"
+  },
+  "Ortobello's": {
+    "rating": 4.6,
+    "review_count": 541,
+    "google_name": "Ortobello's",
+    "address": "6401 Bay Pkwy, Brooklyn, NY 11204, USA"
+  },
+  "Randazzo's Clam Bar": {
+    "rating": 4.3,
+    "review_count": 2884,
+    "google_name": "Randazzo's Clam Bar",
+    "address": "2017 Emmons Ave, Brooklyn, NY 11235, USA"
+  },
+  "Michael's of Brooklyn": {
+    "rating": 4.7,
+    "review_count": 1736,
+    "google_name": "Michael\u2019s",
+    "address": "2929 Avenue R, Brooklyn, NY 11229, USA"
+  },
+  "Di Fara Pizza": {
+    "rating": 4.2,
+    "review_count": 4643,
+    "google_name": "Di Fara Pizza",
+    "address": "1424 Avenue J, Brooklyn, NY 11230, USA"
+  },
+  "Ponte Vecchio": {
+    "rating": 4.5,
+    "review_count": 616,
+    "google_name": "Ponte Vecchio",
+    "address": "8810 4th Ave, Brooklyn, NY 11209, USA"
+  },
+  "Gino's of Bay Ridge": {
+    "rating": 4.6,
+    "review_count": 2380,
+    "google_name": "Gino's",
+    "address": "7414 5th Ave, Brooklyn, NY 11209, USA"
+  },
+  "Positano Restaurant": {
+    "rating": 4.5,
+    "review_count": 1336,
+    "google_name": "Positano",
+    "address": "10018 4th Ave, Brooklyn, NY 11209, USA"
+  },
+  "Lombardo's of Bay Ridge": {
+    "rating": 4.4,
+    "review_count": 643,
+    "google_name": "Bayridge Sushi",
+    "address": "6914 3rd Ave #1, Brooklyn, NY 11209, USA"
+  },
+  "Greenhouse Cafe": {
+    "rating": 4.5,
+    "review_count": 756,
+    "google_name": "Greenhouse Cafe",
+    "address": "7717 3rd Ave, Brooklyn, NY 11209, USA"
+  },
+  "La Nonna": {
+    "rating": 4.4,
+    "review_count": 1049,
+    "google_name": "La Nonna Ristorante & Bar - Williamsburg, Brooklyn",
+    "address": "184 Kent Ave, Brooklyn, NY 11249, USA"
+  },
+  "LaRina Pastificio & Vino": {
+    "rating": 4.7,
+    "review_count": 1217,
+    "google_name": "LaRina Pastificio & Vino",
+    "address": "387 Myrtle Ave, Brooklyn, NY 11205, USA"
+  },
+  "Locanda Vini & Olii": {
+    "rating": 4.5,
+    "review_count": 797,
+    "google_name": "Locanda Vini & Olii",
+    "address": "129 Gates Ave, Brooklyn, NY 11238, USA"
+  },
+  "Cecconi's DUMBO": {
+    "rating": 4.1,
+    "review_count": 3165,
+    "google_name": "Cecconi's DUMBO",
+    "address": "55 Water St, Brooklyn, NY 11201, USA"
+  },
+  "Juliana's Pizza": {
+    "rating": 4.6,
+    "review_count": 6811,
+    "google_name": "Juliana\u2019s",
+    "address": "19 Old Fulton St, Brooklyn, NY 11201, USA"
+  },
+  "Grimaldi's": {
+    "rating": 4.2,
+    "review_count": 9611,
+    "google_name": "Grimaldi's Pizzeria",
+    "address": "1 Front St, Brooklyn, NY 11201, USA"
+  },
+  "Park Side Restaurant": {
+    "rating": 4.6,
+    "review_count": 3310,
+    "google_name": "Park Side Restaurant",
+    "address": "107-01 Corona Ave., Corona, NY 11368, USA"
+  },
+  "Trattoria L'Incontro": {
+    "rating": 4.7,
+    "review_count": 1492,
+    "google_name": "L\u2019incontro by Rocco",
+    "address": "1572 2nd Ave, New York, NY 10028, USA"
+  },
+  "Don Peppe": {
+    "rating": 4.5,
+    "review_count": 1549,
+    "google_name": "Don Peppe",
+    "address": "135-58 Lefferts Blvd, South Ozone Park, NY 11420, USA"
+  },
+  "Manducatis": {
+    "rating": 4.6,
+    "review_count": 480,
+    "google_name": "Manducatis",
+    "address": "13-27 Jackson Ave, Long Island City, NY 11101, USA"
+  },
+  "Manducatis Rustica": {
+    "rating": 4.5,
+    "review_count": 575,
+    "google_name": "Manducatis Rustica VIG",
+    "address": "46-35 Vernon Blvd, Long Island City, NY 11101, USA"
+  },
+  "Vesta Trattoria & Wine Bar": {
+    "rating": 4.6,
+    "review_count": 1146,
+    "google_name": "Watawa Sushi",
+    "address": "33-10 Ditmars Blvd, Astoria, NY 11105, USA"
+  },
+  "Il Bambino": {
+    "rating": 4.6,
+    "review_count": 676,
+    "google_name": "Il Bambino",
+    "address": "34-08 31st Ave, Astoria, NY 11106, USA"
+  },
+  "Vite Vinosteria": {
+    "rating": 4.7,
+    "review_count": 3068,
+    "google_name": "What the fish",
+    "address": "47-15 Northern Blvd, Long Island City, NY 11101, USA"
+  },
+  "Via Trenta": {
+    "rating": 4.4,
+    "review_count": 731,
+    "google_name": "Via Trenta Osteria & Wine Bar",
+    "address": "Via Trenta Osteria & Wine Bar, 36-19 30th Ave., Astoria, NY 11103, USA"
+  },
+  "Via Vai": {
+    "rating": 4.3,
+    "review_count": 243,
+    "google_name": "VIA VAI",
+    "address": "31-09 23rd Ave, Astoria, NY 11105, USA"
+  },
+  "Sac's Place": {
+    "rating": 4.5,
+    "review_count": 597,
+    "google_name": "Sac's Place",
+    "address": "35-11 35th Ave, Astoria, NY 11106, USA"
+  },
+  "Rialto Ristorante": {
+    "rating": 4.9,
+    "review_count": 130,
+    "google_name": "Rialto Ristorante",
+    "address": "28-11 Astoria Blvd, Astoria, NY 11102, USA"
+  },
+  "Il Poeta": {
+    "rating": 4.4,
+    "review_count": 611,
+    "google_name": "Il Poeta",
+    "address": "98-04 Metropolitan Ave, Forest Hills, NY 11375, USA"
+  },
+  "Bruno Ristorante": {
+    "rating": 4.7,
+    "review_count": 1019,
+    "google_name": "Bruno",
+    "address": "158-22 Cross Bay Blvd, Howard Beach, NY 11414, USA"
+  },
+  "Vetro by Russo's on the Bay": {
+    "rating": 4.6,
+    "review_count": 1773,
+    "google_name": "Vetro Restaurant & Lounge",
+    "address": "164-49 Cross Bay Blvd, Howard Beach, NY 11414, USA"
+  },
+  "Lenny's Clam Bar": {
+    "rating": 4.4,
+    "review_count": 3285,
+    "google_name": "Lenny's Clam Bar",
+    "address": "161-03 Cross Bay Blvd, Howard Beach, NY 11414, USA"
+  },
+  "Matteo's of Howard Beach": {
+    "rating": 4.4,
+    "review_count": 1064,
+    "google_name": "Matteo's of Howard Beach",
+    "address": "92-10 Shore Pkwy, Howard Beach, NY 11414, USA"
+  },
+  "Riviera Ristorante": {
+    "rating": 4,
+    "review_count": 931,
+    "google_name": "River Japanese Cuisine - Flushing",
+    "address": "37-18 Main St, Flushing, NY 11354, USA"
+  },
+  "Il Bacco": {
+    "rating": 4.4,
+    "review_count": 1298,
+    "google_name": "Il Bacco",
+    "address": "253-24 Northern Blvd, Little Neck, NY 11362, USA"
+  },
+  "Rosa's Pizza": {
+    "rating": 4.4,
+    "review_count": 579,
+    "google_name": "Rosa's Pizza",
+    "address": "75-59 Metropolitan Ave #1, Middle Village, NY 11379, USA"
+  },
+  "Il Nonno": {
+    "rating": 4.7,
+    "review_count": 118,
+    "google_name": "Il Nonno",
+    "address": "25-17 Astoria Blvd, Astoria, NY 11102, USA"
+  },
+  "Sotto La Luna": {
+    "rating": 4.5,
+    "review_count": 893,
+    "google_name": "Sotto la Luna",
+    "address": "34-39 31st St, Astoria, NY 11106, USA"
+  },
+  "Macoletta": {
+    "rating": 4.9,
+    "review_count": 4111,
+    "google_name": "Macoletta",
+    "address": "28-15 24th Ave, Long Island City, NY 11102, USA"
+  },
+  "Palermo Restaurant": {
+    "rating": 4.4,
+    "review_count": 707,
+    "google_name": "Palermo",
+    "address": "23-92 21st St, Astoria, NY 11105, USA"
+  },
+  "Roberto's": {
+    "rating": 4.5,
+    "review_count": 555,
+    "google_name": "Roberto's",
+    "address": "603 Crescent Ave #605, Bronx, NY 10458, USA"
+  },
+  "Dominick's": {
+    "rating": 4.5,
+    "review_count": 972,
+    "google_name": "Dominick's",
+    "address": "2335 Arthur Ave, Bronx, NY 10458, USA"
+  },
+  "Mario's": {
+    "rating": 4.4,
+    "review_count": 1046,
+    "google_name": "Mario's Restaurant of Arthur Avenue",
+    "address": "2342 Arthur Ave, Bronx, NY 10458, USA"
+  },
+  "Zero Otto Nove (Trattoria)": {
+    "rating": 4.5,
+    "review_count": 1561,
+    "google_name": "Zero Otto Nove Bronx",
+    "address": "2357 Arthur Ave, Bronx, NY 10458, USA"
+  },
+  "Tra di Noi": {
+    "rating": 4.3,
+    "review_count": 546,
+    "google_name": "Tra Di Noi",
+    "address": "622 E 187th St, Bronx, NY 10458, USA"
+  },
+  "Enzo's of Arthur Ave": {
+    "rating": 4.4,
+    "review_count": 1959,
+    "google_name": "Enzo's of Arthur Avenue",
+    "address": "2339 Arthur Ave, Bronx, NY 10458, USA"
+  },
+  "Antonio's Trattoria": {
+    "rating": 4.6,
+    "review_count": 1606,
+    "google_name": "Antonio's Trattoria",
+    "address": "2370 Belmont Ave, Bronx, NY 10458, USA"
+  },
+  "Pasquale's Rigoletto": {
+    "rating": 4.3,
+    "review_count": 639,
+    "google_name": "Pasquale's Rigoletto",
+    "address": "2311 Arthur Ave, Bronx, NY 10458, USA"
+  },
+  "Emilia's": {
+    "rating": 4.6,
+    "review_count": 685,
+    "google_name": "Emilia's",
+    "address": "2331 Arthur Ave, Bronx, NY 10458, USA"
+  },
+  "Ann & Tony's": {
+    "rating": 4.4,
+    "review_count": 429,
+    "google_name": "Ann & Tony\u2019s Restaurant",
+    "address": "2407 Arthur Ave, Bronx, NY 10458, USA"
+  },
+  "Patricia's of Morris Park": {
+    "rating": 4.3,
+    "review_count": 433,
+    "google_name": "Patricia's of Morris Park",
+    "address": "1082 Morris Park Ave, Bronx, NY 10461, USA"
+  },
+  "Emilio's of Morris Park": {
+    "rating": 4.2,
+    "review_count": 1327,
+    "google_name": "Emilio's of Morris Park",
+    "address": "1051 Morris Park Ave, Bronx, NY 10461, USA"
+  },
+  "F&J Pine Restaurant": {
+    "rating": 4.5,
+    "review_count": 4784,
+    "google_name": "Pine Restaurant",
+    "address": "1913 Bronxdale Ave, Bronx, NY 10462, USA"
+  },
+  "Louie & Ernie's Pizza": {
+    "rating": 4.6,
+    "review_count": 1821,
+    "google_name": "Louie & Ernie's Pizza",
+    "address": "1300 Crosby Ave, Bronx, NY 10461, USA"
+  },
+  "Sammy's Fish Box / Shrimp Box": {
+    "rating": 4.3,
+    "review_count": 10743,
+    "google_name": "Sammy's Fish Box",
+    "address": "41 City Island Ave, Bronx, NY 10464, USA"
+  },
+  "Beccofino": {
+    "rating": 4.5,
+    "review_count": 365,
+    "google_name": "Beccofino",
+    "address": "5704 Mosholu Ave, Bronx, NY 10471, USA"
+  },
+  "Fratelli": {
+    "rating": 4.6,
+    "review_count": 641,
+    "google_name": "Fratelli Italian Restaurant",
+    "address": "2507 Eastchester Rd, Bronx, NY 10469, USA"
+  }
+}

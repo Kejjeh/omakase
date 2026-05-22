@@ -1,0 +1,942 @@
+{
+  "Via Carota": {
+    "rating": 9.5,
+    "infatuation_name": "Via Carota",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/via-carota",
+    "slug_used": "via-carota"
+  },
+  "Don Angie": {
+    "rating": 8.4,
+    "infatuation_name": "Don Angie",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/don-angie",
+    "slug_used": "don-angie"
+  },
+  "San Sabino": {
+    "rating": 8.2,
+    "infatuation_name": "San Sabino",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/san-sabino",
+    "slug_used": "san-sabino"
+  },
+  "L'Artusi": {
+    "rating": 8.5,
+    "infatuation_name": "L'Artusi",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/lartusi",
+    "slug_used": "lartusi"
+  },
+  "I Sodi": {
+    "rating": 8.5,
+    "infatuation_name": "I Sodi",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/i-sodi",
+    "slug_used": "i-sodi"
+  },
+  "Bar Pisellino": {
+    "rating": 9.5,
+    "infatuation_name": "Bar Pisellino",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/bar-pisellino",
+    "slug_used": "bar-pisellino"
+  },
+  "Gene's Restaurant": {
+    "rating": 7.8,
+    "infatuation_name": "Gene's Restaurant",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/genes-restaurant",
+    "slug_used": "genes-restaurant"
+  },
+  "Villa Mosconi": {
+    "rating": 7.7,
+    "infatuation_name": "Villa Mosconi",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/villa-mosconi",
+    "slug_used": "villa-mosconi"
+  },
+  "Babbo Ristorante": {
+    "rating": null,
+    "not_found": true
+  },
+  "Lupa": {
+    "rating": 7.2,
+    "infatuation_name": "Lupa",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/lupa",
+    "slug_used": "lupa"
+  },
+  "Carbone": {
+    "rating": 8.2,
+    "infatuation_name": "Carbone",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/carbone",
+    "slug_used": "carbone"
+  },
+  "Emilio's Ballato": {
+    "rating": 8.8,
+    "infatuation_name": "Emilio\u2019s Ballato",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/emilios-ballato",
+    "slug_used": "emilios-ballato"
+  },
+  "Rubirosa": {
+    "rating": 8.3,
+    "infatuation_name": "Rubirosa",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/rubirosa",
+    "slug_used": "rubirosa"
+  },
+  "Torrisi Bar & Restaurant": {
+    "rating": null,
+    "not_found": true
+  },
+  "Roscioli": {
+    "rating": 8.2,
+    "infatuation_name": "Roscioli",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/roscioli-nyc",
+    "slug_used": "roscioli-nyc"
+  },
+  "Bar Pitti": {
+    "rating": 7.8,
+    "infatuation_name": "Bar Pitti",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/bar-pitti",
+    "slug_used": "bar-pitti"
+  },
+  "Sant Ambroeus West Village": {
+    "rating": null,
+    "not_found": true
+  },
+  "Malaparte": {
+    "rating": 8.1,
+    "infatuation_name": "Malaparte",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/malaparte",
+    "slug_used": "malaparte"
+  },
+  "Da Toscano": {
+    "rating": 8.4,
+    "infatuation_name": "Da Toscano",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/da-toscano",
+    "slug_used": "da-toscano"
+  },
+  "Fiaschetteria Pistoia": {
+    "rating": 7.6,
+    "infatuation_name": "Fiaschetteria Pistoia",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/fiaschetteria-pistoia",
+    "slug_used": "fiaschetteria-pistoia"
+  },
+  "Osteria Nonnino": {
+    "rating": null,
+    "not_found": true
+  },
+  "Arthur & Sons NY Italian": {
+    "rating": null,
+    "not_found": true
+  },
+  "Frankies 570 Spuntino": {
+    "rating": 8.1,
+    "infatuation_name": "Frankies (570) Spuntino",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/frankies-570-spuntino",
+    "slug_used": "frankies-570-spuntino"
+  },
+  "Da Andrea": {
+    "rating": null,
+    "not_found": true
+  },
+  "Il Mulino New York": {
+    "rating": null,
+    "not_found": true
+  },
+  "Olio e Pi\u00f9": {
+    "rating": null,
+    "not_found": true
+  },
+  "Lavagna": {
+    "rating": null,
+    "not_found": true
+  },
+  "Il Posto Accanto": {
+    "rating": 7.6,
+    "infatuation_name": "Il Posto Accanto",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/il-posto-accanto",
+    "slug_used": "il-posto-accanto"
+  },
+  "Supper": {
+    "rating": 7.6,
+    "infatuation_name": "Supper",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/supper",
+    "slug_used": "supper"
+  },
+  "Cacio e Pepe": {
+    "rating": null,
+    "not_found": true
+  },
+  "John's of 12th Street": {
+    "rating": 7.4,
+    "infatuation_name": "John's of 12th Street",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/johns-of-12th-street",
+    "slug_used": "johns-of-12th-street"
+  },
+  "Forsythia": {
+    "rating": 8.2,
+    "infatuation_name": "Forsythia",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/forsythia-nyc",
+    "slug_used": "forsythia-nyc"
+  },
+  "Una Pizza Napoletana": {
+    "rating": null,
+    "not_found": true
+  },
+  "Scarr's Pizza": {
+    "rating": 8.1,
+    "infatuation_name": "Scarr's Pizza",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/scarrs-pizza",
+    "slug_used": "scarrs-pizza"
+  },
+  "Altro Paradiso": {
+    "rating": null,
+    "not_found": true
+  },
+  "Pasquale Jones": {
+    "rating": null,
+    "not_found": true
+  },
+  "Lodi": {
+    "rating": 8.4,
+    "infatuation_name": "Lodi",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/lodi",
+    "slug_used": "lodi"
+  },
+  "Sandro's": {
+    "rating": 7.8,
+    "infatuation_name": "Sandro's",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/sandros",
+    "slug_used": "sandros"
+  },
+  "Gelso & Grand": {
+    "rating": null,
+    "not_found": true
+  },
+  "Parm": {
+    "rating": 8.3,
+    "infatuation_name": "Parm",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/parm",
+    "slug_used": "parm"
+  },
+  "Caf\u00e9 Mars": {
+    "rating": null,
+    "not_found": true
+  },
+  "Olmo": {
+    "rating": 7.8,
+    "infatuation_name": "Olmo",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/olmo",
+    "slug_used": "olmo"
+  },
+  "Locanda Verde": {
+    "rating": 7.7,
+    "infatuation_name": "Locanda Verde",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/locanda-verde",
+    "slug_used": "locanda-verde"
+  },
+  "Borgo": {
+    "rating": 8.6,
+    "infatuation_name": "Borgo",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/borgo",
+    "slug_used": "borgo"
+  },
+  "Briscola Trattoria": {
+    "rating": 8.2,
+    "infatuation_name": "Briscola Trattoria",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/briscola-trattoria",
+    "slug_used": "briscola-trattoria"
+  },
+  "Maialino Vicino": {
+    "rating": 8.0,
+    "infatuation_name": "Maialino",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/maialino-vicino",
+    "slug_used": "maialino-vicino"
+  },
+  "Rezd\u00f4ra": {
+    "rating": null,
+    "not_found": true
+  },
+  "La Pecora Bianca": {
+    "rating": null,
+    "not_found": true
+  },
+  "Bar Primi": {
+    "rating": 7.7,
+    "infatuation_name": "Bar Primi",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/bar-primi",
+    "slug_used": "bar-primi"
+  },
+  "Il Mulino Prime": {
+    "rating": null,
+    "not_found": true
+  },
+  "Ai Fiori": {
+    "rating": 7.6,
+    "infatuation_name": "Ai Fiori",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/ai-fiori",
+    "slug_used": "ai-fiori"
+  },
+  "Marea": {
+    "rating": 8.5,
+    "infatuation_name": "Marea",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/marea",
+    "slug_used": "marea"
+  },
+  "Quality Italian": {
+    "rating": 7.8,
+    "infatuation_name": "Quality Italian",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/quality-italian",
+    "slug_used": "quality-italian"
+  },
+  "Patsy's": {
+    "rating": null,
+    "not_found": true
+  },
+  "Massara": {
+    "rating": 8.5,
+    "infatuation_name": "Massara On Park",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/massara",
+    "slug_used": "massara"
+  },
+  "Bad Roman": {
+    "rating": 7.6,
+    "infatuation_name": "Bad Roman",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/bad-roman",
+    "slug_used": "bad-roman"
+  },
+  "Giulietta": {
+    "rating": 7.2,
+    "infatuation_name": "Giulietta",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/giulietta",
+    "slug_used": "giulietta"
+  },
+  "Ci Siamo": {
+    "rating": 8.5,
+    "infatuation_name": "Ci Siamo",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/ci-siamo",
+    "slug_used": "ci-siamo"
+  },
+  "Bar Tulia": {
+    "rating": null,
+    "not_found": true
+  },
+  "Santi": {
+    "rating": 8.4,
+    "infatuation_name": "Santi",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/santi-nyc",
+    "slug_used": "santi"
+  },
+  "Ribalta": {
+    "rating": 8.3,
+    "infatuation_name": "Ribalta",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/ribalta",
+    "slug_used": "ribalta"
+  },
+  "Don Antonio": {
+    "rating": 8.0,
+    "infatuation_name": "Don Antonio",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/don-antonio",
+    "slug_used": "don-antonio"
+  },
+  "Kest\u00e9 Pizza & Vino": {
+    "rating": null,
+    "not_found": true
+  },
+  "Rao's": {
+    "rating": 8.3,
+    "infatuation_name": "Rao's",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/raos",
+    "slug_used": "raos"
+  },
+  "Elio's": {
+    "rating": 8.2,
+    "infatuation_name": "Elio's",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/elios",
+    "slug_used": "elios"
+  },
+  "Sant Ambroeus UES": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sempre Oggi": {
+    "rating": 7.9,
+    "infatuation_name": "Sempre Oggi",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/sempre-oggi",
+    "slug_used": "sempre-oggi"
+  },
+  "Cafe Fiorello": {
+    "rating": 7.6,
+    "infatuation_name": "Cafe Fiorello",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/cafe-fiorello",
+    "slug_used": "cafe-fiorello"
+  },
+  "Lincoln Ristorante": {
+    "rating": null,
+    "not_found": true
+  },
+  "Tarallucci e Vino": {
+    "rating": null,
+    "not_found": true
+  },
+  "Patsy's Pizzeria": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sottocasa Harlem": {
+    "rating": 7.9,
+    "infatuation_name": "Sottocasa Pizzeria",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/sottocasa-harlem",
+    "slug_used": "sottocasa-harlem"
+  },
+  "Lilia": {
+    "rating": 8.9,
+    "infatuation_name": "Lilia",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/lilia",
+    "slug_used": "lilia"
+  },
+  "Misi": {
+    "rating": 8.6,
+    "infatuation_name": "Misi",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/misi",
+    "slug_used": "misi"
+  },
+  "I Cavallini": {
+    "rating": 8.5,
+    "infatuation_name": "I Cavallini",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/i-cavallini",
+    "slug_used": "i-cavallini"
+  },
+  "Bamonte's": {
+    "rating": 8.0,
+    "infatuation_name": "Bamonte's",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/bamontes",
+    "slug_used": "bamontes"
+  },
+  "Aurora": {
+    "rating": 9.7,
+    "infatuation_name": "Top Rated Spots",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews",
+    "slug_used": "aurora"
+  },
+  "Fabbrica": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sauced": {
+    "rating": 8.1,
+    "infatuation_name": "Sauced",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/sauced",
+    "slug_used": "sauced"
+  },
+  "Sottocasa Greenpoint": {
+    "rating": null,
+    "not_found": true
+  },
+  "Frankies 457 Spuntino": {
+    "rating": 8.4,
+    "infatuation_name": "Frankies (457) Spuntino",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/frankies-457-spuntino",
+    "slug_used": "frankies-457-spuntino"
+  },
+  "F&F Pizzeria": {
+    "rating": 8.4,
+    "infatuation_name": "F&F Pizzeria",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/ff-pizzeria",
+    "slug_used": "ff-pizzeria"
+  },
+  "Cafe Spaghetti": {
+    "rating": 8.0,
+    "infatuation_name": "Cafe Spaghetti",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/cafe-spaghetti",
+    "slug_used": "cafe-spaghetti"
+  },
+  "Cremini's": {
+    "rating": 8.4,
+    "infatuation_name": "Cremini\u2019s",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/creminis",
+    "slug_used": "creminis"
+  },
+  "Lucali": {
+    "rating": 8.9,
+    "infatuation_name": "Lucali",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/lucali",
+    "slug_used": "lucali"
+  },
+  "Marco Polo Ristorante": {
+    "rating": null,
+    "not_found": true
+  },
+  "Ferdinando's Focacceria / Bar Ferdinando": {
+    "rating": null,
+    "not_found": true
+  },
+  "Noodle Pudding": {
+    "rating": 8.1,
+    "infatuation_name": "Noodle Pudding",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/noodle-pudding",
+    "slug_used": "noodle-pudding"
+  },
+  "River Deli": {
+    "rating": null,
+    "not_found": true
+  },
+  "al di l\u00e0 Trattoria": {
+    "rating": null,
+    "not_found": true
+  },
+  "Lillo Cucina Italiana": {
+    "rating": null,
+    "not_found": true
+  },
+  "Roberta's": {
+    "rating": 8.0,
+    "infatuation_name": "Roberta's",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/robertas",
+    "slug_used": "robertas"
+  },
+  "Faro": {
+    "rating": 8.0,
+    "infatuation_name": "Faro",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/faro",
+    "slug_used": "faro"
+  },
+  "Saraghina": {
+    "rating": 7.9,
+    "infatuation_name": "Saraghina",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/saraghina",
+    "slug_used": "saraghina"
+  },
+  "Gargiulo's": {
+    "rating": null,
+    "not_found": true
+  },
+  "L&B Spumoni Gardens": {
+    "rating": 9.0,
+    "infatuation_name": "L&B Spumoni Gardens",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/lb-spumoni-gardens",
+    "slug_used": "lb-spumoni-gardens"
+  },
+  "Tommaso's": {
+    "rating": null,
+    "not_found": true
+  },
+  "Il Colosseo": {
+    "rating": null,
+    "not_found": true
+  },
+  "Ortobello's": {
+    "rating": 8.4,
+    "infatuation_name": "Ortobello's",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/ortobellos",
+    "slug_used": "ortobellos"
+  },
+  "Randazzo's Clam Bar": {
+    "rating": 7.8,
+    "infatuation_name": "Randazzo's Clam Bar",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/randazzos-clam-bar",
+    "slug_used": "randazzos-clam-bar"
+  },
+  "Michael's of Brooklyn": {
+    "rating": 8.1,
+    "infatuation_name": "Michael's of Brooklyn",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/michaels-of-brooklyn",
+    "slug_used": "michaels-of-brooklyn"
+  },
+  "Di Fara Pizza": {
+    "rating": 8.7,
+    "infatuation_name": "Di Fara Pizza",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/di-fara-pizza",
+    "slug_used": "di-fara-pizza"
+  },
+  "Ponte Vecchio": {
+    "rating": null,
+    "not_found": true
+  },
+  "Gino's of Bay Ridge": {
+    "rating": 7.9,
+    "infatuation_name": "Gino\u2019s of Bay Ridge",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/ginos-of-bay-ridge",
+    "slug_used": "ginos-of-bay-ridge"
+  },
+  "Positano Restaurant": {
+    "rating": null,
+    "not_found": true
+  },
+  "Lombardo's of Bay Ridge": {
+    "rating": 7.7,
+    "infatuation_name": "Lombardo\u2019s of Bay Ridge",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/lombardos-of-bay-ridge",
+    "slug_used": "lombardos-of-bay-ridge"
+  },
+  "Greenhouse Cafe": {
+    "rating": null,
+    "not_found": true
+  },
+  "La Nonna": {
+    "rating": null,
+    "not_found": true
+  },
+  "LaRina Pastificio & Vino": {
+    "rating": 8.3,
+    "infatuation_name": "LaRina Pastificio & Vino",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/larina-pastificio-vino",
+    "slug_used": "larina-pastificio-vino"
+  },
+  "Locanda Vini & Olii": {
+    "rating": null,
+    "not_found": true
+  },
+  "Cecconi's DUMBO": {
+    "rating": null,
+    "not_found": true
+  },
+  "Juliana's Pizza": {
+    "rating": 7.7,
+    "infatuation_name": "Juliana's Pizza",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/julianas-pizza",
+    "slug_used": "julianas-pizza"
+  },
+  "Grimaldi's": {
+    "rating": 7.3,
+    "infatuation_name": "Grimaldi's",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/grimaldis",
+    "slug_used": "grimaldis"
+  },
+  "Park Side Restaurant": {
+    "rating": 7.6,
+    "infatuation_name": "Park Side",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/park-side-restaurant",
+    "slug_used": "park-side-restaurant"
+  },
+  "Trattoria L'Incontro": {
+    "rating": null,
+    "not_found": true
+  },
+  "Don Peppe": {
+    "rating": 8.2,
+    "infatuation_name": "Don Peppe",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/don-peppe",
+    "slug_used": "don-peppe"
+  },
+  "Manducatis": {
+    "rating": null,
+    "not_found": true
+  },
+  "Manducatis Rustica": {
+    "rating": null,
+    "not_found": true
+  },
+  "Vesta Trattoria & Wine Bar": {
+    "rating": 8.3,
+    "infatuation_name": "Vesta Trattoria & Wine Bar",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/vesta-trattoria-wine-bar",
+    "slug_used": "vesta-trattoria-wine-bar"
+  },
+  "Il Bambino": {
+    "rating": 7.9,
+    "infatuation_name": "Il Bambino",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/il-bambino",
+    "slug_used": "il-bambino"
+  },
+  "Vite Vinosteria": {
+    "rating": null,
+    "not_found": true
+  },
+  "Via Trenta": {
+    "rating": null,
+    "not_found": true
+  },
+  "Via Vai": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sac's Place": {
+    "rating": null,
+    "not_found": true
+  },
+  "Rialto Ristorante": {
+    "rating": null,
+    "not_found": true
+  },
+  "Il Poeta": {
+    "rating": null,
+    "not_found": true
+  },
+  "Bruno Ristorante": {
+    "rating": null,
+    "not_found": true
+  },
+  "Vetro by Russo's on the Bay": {
+    "rating": null,
+    "not_found": true
+  },
+  "Lenny's Clam Bar": {
+    "rating": 8.1,
+    "infatuation_name": "Lenny\u2019s Clam Bar",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/lennys-clam-bar",
+    "slug_used": "lennys-clam-bar"
+  },
+  "Matteo's of Howard Beach": {
+    "rating": null,
+    "not_found": true
+  },
+  "Riviera Ristorante": {
+    "rating": null,
+    "not_found": true
+  },
+  "Il Bacco": {
+    "rating": null,
+    "not_found": true
+  },
+  "Rosa's Pizza": {
+    "rating": null,
+    "not_found": true
+  },
+  "Il Nonno": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sotto La Luna": {
+    "rating": null,
+    "not_found": true
+  },
+  "Macoletta": {
+    "rating": 7.5,
+    "infatuation_name": "Macoletta",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/macoletta",
+    "slug_used": "macoletta"
+  },
+  "Palermo Restaurant": {
+    "rating": null,
+    "not_found": true
+  },
+  "Roberto's": {
+    "rating": null,
+    "not_found": true
+  },
+  "Dominick's": {
+    "rating": null,
+    "not_found": true
+  },
+  "Mario's": {
+    "rating": null,
+    "not_found": true
+  },
+  "Zero Otto Nove (Trattoria)": {
+    "rating": null,
+    "not_found": true
+  },
+  "Tra di Noi": {
+    "rating": 8.2,
+    "infatuation_name": "Tra Di Noi",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/tra-di-noi",
+    "slug_used": "tra-di-noi"
+  },
+  "Enzo's of Arthur Ave": {
+    "rating": null,
+    "not_found": true
+  },
+  "Antonio's Trattoria": {
+    "rating": 8.8,
+    "infatuation_name": "Antonio's Trattoria",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/antonios-trattoria",
+    "slug_used": "antonios-trattoria"
+  },
+  "Pasquale's Rigoletto": {
+    "rating": null,
+    "not_found": true
+  },
+  "Emilia's": {
+    "rating": null,
+    "not_found": true
+  },
+  "Ann & Tony's": {
+    "rating": null,
+    "not_found": true
+  },
+  "Patricia's of Morris Park": {
+    "rating": null,
+    "not_found": true
+  },
+  "Emilio's of Morris Park": {
+    "rating": null,
+    "not_found": true
+  },
+  "F&J Pine Restaurant": {
+    "rating": null,
+    "not_found": true
+  },
+  "Louie & Ernie's Pizza": {
+    "rating": 8.2,
+    "infatuation_name": "Louie & Ernie's Pizza",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/new-york/reviews/louie-ernies-pizza",
+    "slug_used": "louie-ernies-pizza"
+  },
+  "Sammy's Fish Box / Shrimp Box": {
+    "rating": null,
+    "not_found": true
+  },
+  "Beccofino": {
+    "rating": null,
+    "not_found": true
+  },
+  "Fratelli": {
+    "rating": null,
+    "not_found": true
+  }
+}

@@ -23,9 +23,14 @@ KEEP = [
     "visited", "friend_suggested",
     "subway_walk_min", "nearest_456",
     "value_score", "rating_percentile", "value_percentile",
+    # omakase-specific
     "wagyu_offered", "ayce_offered", "ayce_wagyu_offered",
     "wagyu_notes", "ayce_notes", "ayce_wagyu_notes",
     "premium_ingredients", "specialty_confidence", "closed", "caveat",
+    # italian-specific
+    "subtype", "famous_for", "tasting_format", "price_level", "typical_dinner_pp",
+    "pasta_program", "pizza_program", "vintage", "reservation", "michelin",
+    "address",
 ]
 
 rows = []
