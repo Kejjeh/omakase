@@ -1,0 +1,5 @@
+# Dashboard fetches data.json at load time; file:// is not supported
+
+The pipeline writes `docs/<cuisine>/data.json` and `index.html` fetches it asynchronously on load. This replaces the previous pattern where `rebuild_html_data.py` used `re.sub` to rewrite an inline `const ALL_DATA = [...]` literal inside an 820-line HTML file. The Restaurant data schema is now a JSON file the Cuisine adapter explicitly projects via `dashboard_fields()`, rather than an implicit contract between the pipeline and a single-line regex.
+
+The tradeoff: opening `docs/<cuisine>/index.html` directly from disk no longer works — modern browsers block `fetch()` from `file://` origins. The canonical viewer is GitHub Pages; local development uses `python -m http.server` from `docs/`. Do not re-inline the dataset to "fix" the file:// experience — that would reintroduce the regex problem and the implicit schema. If a single-file deliverable is ever required, write a build step that bakes `data.json` into a `<script type="application/json">` tag, rather than reverting to the embedded JS literal.

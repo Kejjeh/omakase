@@ -1,0 +1,5 @@
+# Composite rating uses weighted blend (Google 0.35 / Yelp 0.45 / Infatuation 0.20), not equal mean
+
+For its entire shipped life the pipeline computed the Composite rating as a plain mean of available adjusted Readings (`sum(parts) / len(parts)` in step3), even though the README documented a weighted blend with renormalization. During the A/B/C/D/E refactor we treated the README as the spec and the equal mean as a bug: Yelp earns more weight than Google because it's harder to game with hype, and Infatuation earns less because it's a single editorial 1–10 score rather than an aggregate. The Scorer now applies weights from `ScoringConfig.weights` and renormalizes when a Rating source has no Reading for a Restaurant.
+
+This is a real change in product behavior, not just a code refactor — top-N rankings shift. A reader git-blaming the new code who finds the old equal-mean line should not "fix" it back. If the weights themselves need to change in the future, edit `ScoringConfig` defaults; do not revert to plain mean.
