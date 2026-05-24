@@ -657,12 +657,22 @@ function updateStats() {
   document.getElementById('stat-best-value').textContent = best.name;
 }
 
+function priceJitter(r) {
+  // Spread tier-bucketed prices visually using a deterministic offset per restaurant.
+  // Width scales with the tier so $130 places jitter wider than $18 places.
+  if (!r.min_price) return 0;
+  let h = 0;
+  for (const ch of (r.name || '')) h = (h * 31 + ch.charCodeAt(0)) | 0;
+  const width = Math.max(3, r.min_price * 0.08);
+  return r.min_price + ((h % 1000) / 999 - 0.5) * 2 * width;
+}
+
 function updateChart() {
   const accentPos = cssVar('--accent-positive');
   const cardBg = cssVar('--card-bg');
   const datasets = [{
     data: filtered.map(r => ({
-      x: r.min_price || 0,
+      x: priceJitter(r),
       y: r.composite_rating || 0,
       r: Math.max(4, Math.min(25, Math.sqrt(r.review_count || 50) * 1.5)),
       label: r.name,
