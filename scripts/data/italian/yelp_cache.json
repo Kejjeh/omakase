@@ -1,0 +1,1061 @@
+{
+  "Via Carota": {
+    "yelp_rating": 4.3,
+    "review_count": 1219,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/via-carota-new-york-4",
+    "yelp_name": "Via Carota"
+  },
+  "L'Artusi": {
+    "yelp_rating": 4.3,
+    "review_count": 2711,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/l-artusi-new-york",
+    "yelp_name": "L'Artusi"
+  },
+  "Don Angie": {
+    "yelp_rating": 4.4,
+    "review_count": 1137,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/don-angie-new-york",
+    "yelp_name": "Don Angie"
+  },
+  "I Sodi": {
+    "yelp_rating": 4.5,
+    "review_count": 663,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/i-sodi-new-york",
+    "yelp_name": "I Sodi"
+  },
+  "Carbone": {
+    "yelp_rating": 4.5,
+    "review_count": 2095,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/carbone-new-york",
+    "yelp_name": "Carbone"
+  },
+  "Babbo Ristorante": {
+    "yelp_rating": 4.3,
+    "review_count": 2713,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/babbo-new-york",
+    "yelp_name": "Babbo"
+  },
+  "Lupa": {
+    "yelp_rating": 3.9,
+    "review_count": 1818,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/lupa-new-york",
+    "yelp_name": "Lupa"
+  },
+  "Rubirosa": {
+    "yelp_rating": 4.3,
+    "review_count": 3762,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/rubirosa-new-york-2",
+    "yelp_name": "Rubirosa"
+  },
+  "Bar Pitti": {
+    "yelp_rating": 4.0,
+    "review_count": 1372,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/bar-pitti-new-york",
+    "yelp_name": "Bar Pitti"
+  },
+  "Bar Pisellino": {
+    "yelp_rating": 4.0,
+    "review_count": 246,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/bar-pisellino-new-york-city",
+    "yelp_name": "Bar Pisellino"
+  },
+  "Emilio's Ballato": {
+    "yelp_rating": 4.3,
+    "review_count": 739,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/emilios-ballato-new-york",
+    "yelp_name": "Emilios Ballato"
+  },
+  "Locanda Verde": {
+    "yelp_rating": 3.9,
+    "review_count": 1968,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/locanda-verde-new-york-6",
+    "yelp_name": "Locanda Verde"
+  },
+  "Una Pizza Napoletana": {
+    "yelp_rating": 3.6,
+    "review_count": 257,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/una-pizza-napoletana-new-york-2",
+    "yelp_name": "Una Pizza Napoletana"
+  },
+  "Scarr's Pizza": {
+    "yelp_rating": 3.9,
+    "review_count": 1250,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/scarrs-pizza-new-york",
+    "yelp_name": "Scarr's Pizza"
+  },
+  "Rao's": {
+    "yelp_rating": 4.3,
+    "review_count": 232,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/raos-new-york",
+    "yelp_name": "Rao's"
+  },
+  "Lilia": {
+    "yelp_rating": 3.9,
+    "review_count": 1428,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/lilia-brooklyn",
+    "yelp_name": "Lilia"
+  },
+  "L&B Spumoni Gardens": {
+    "yelp_rating": 4.2,
+    "review_count": 5046,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/l-and-b-spumoni-gardens-brooklyn",
+    "yelp_name": "L & B Spumoni Gardens"
+  },
+  "Juliana's Pizza": {
+    "yelp_rating": 4.4,
+    "review_count": 2977,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/julianas-brooklyn-3",
+    "yelp_name": "Juliana's"
+  },
+  "Di Fara Pizza": {
+    "yelp_rating": 4.0,
+    "review_count": 4176,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/di-fara-pizza-brooklyn",
+    "yelp_name": "Di Fara Pizza"
+  },
+  "Gene's Restaurant": {
+    "yelp_rating": 3.9,
+    "review_count": 143,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/genes-restaurant-new-york",
+    "yelp_name": "Gene's Restaurant"
+  },
+  "San Sabino": {
+    "yelp_rating": 4.5,
+    "review_count": 187,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/san-sabino-new-york-2",
+    "yelp_name": "San Sabino"
+  },
+  "Villa Mosconi": {
+    "yelp_rating": 4.0,
+    "review_count": 239,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/villa-mosconi-new-york",
+    "yelp_name": "Villa Mosconi",
+    "note": "Marked CLOSED on Yelp."
+  },
+  "Torrisi Bar & Restaurant": {
+    "yelp_rating": 4.0,
+    "review_count": 431,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/torrisi-new-york-2",
+    "yelp_name": "Torrisi"
+  },
+  "Roscioli": {
+    "yelp_rating": 4.0,
+    "review_count": 194,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/roscioli-new-york-2",
+    "yelp_name": "Roscioli"
+  },
+  "Sant Ambroeus West Village": {
+    "yelp_rating": 4.0,
+    "review_count": 339,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/sant-ambroeus-west-village-new-york",
+    "yelp_name": "Sant Ambroeus West Village"
+  },
+  "Malaparte": {
+    "yelp_rating": 4.0,
+    "review_count": 472,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/malaparte-new-york",
+    "yelp_name": "Malaparte"
+  },
+  "Da Toscano": {
+    "yelp_rating": 4.0,
+    "review_count": 254,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/da-toscano-new-york",
+    "yelp_name": "Da Toscano",
+    "note": "Relocated March 2, 2026 from 24 Minetta Lane to 49 W 44th St."
+  },
+  "Fiaschetteria Pistoia": {
+    "yelp_rating": 4.5,
+    "review_count": 237,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/fiaschetteria-pistoia-new-york-2",
+    "yelp_name": "Fiaschetteria Pistoia"
+  },
+  "Osteria Nonnino": {
+    "yelp_rating": 4.5,
+    "review_count": 240,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/osteria-nonnino-new-york",
+    "yelp_name": "Osteria Nonnino"
+  },
+  "Arthur & Sons NY Italian": {
+    "yelp_rating": 4.0,
+    "review_count": 537,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/arthur-and-sons-ny-italian-new-york",
+    "yelp_name": "Arthur & Sons NY Italian"
+  },
+  "Da Andrea": {
+    "yelp_rating": 4.5,
+    "review_count": 2760,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/da-andrea-greenwich-village-new-york-2",
+    "yelp_name": "Da Andrea - Greenwich Village"
+  },
+  "Il Mulino New York": {
+    "yelp_rating": 4.0,
+    "review_count": 577,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/il-mulino-new-york-downtown-new-york-2",
+    "yelp_name": "Il Mulino New York - Downtown"
+  },
+  "Olio e Più": {
+    "yelp_rating": 4.5,
+    "review_count": 7387,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/olio-e-pi%C3%B9-new-york-7",
+    "yelp_name": "Olio e Più"
+  },
+  "Lavagna": {
+    "yelp_rating": 4.5,
+    "review_count": 471,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/lavagna-new-york",
+    "yelp_name": "Lavagna"
+  },
+  "Il Posto Accanto": {
+    "yelp_rating": 4.5,
+    "review_count": 380,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/il-posto-accanto-new-york",
+    "yelp_name": "Il Posto Accanto"
+  },
+  "Supper": {
+    "yelp_rating": 4.0,
+    "review_count": 1565,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/supper-new-york",
+    "yelp_name": "Supper"
+  },
+  "Cacio e Pepe": {
+    "yelp_rating": 3.5,
+    "review_count": 789,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/cacio-e-pepe-new-york",
+    "yelp_name": "Cacio E Pepe"
+  },
+  "John's of 12th Street": {
+    "yelp_rating": 4.0,
+    "review_count": 950,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/johns-of-12th-street-new-york-2",
+    "yelp_name": "John's of 12th Street"
+  },
+  "Forsythia": {
+    "yelp_rating": 4.5,
+    "review_count": 224,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/forsythia-new-york-3",
+    "yelp_name": "Forsythia"
+  },
+  "Altro Paradiso": {
+    "yelp_rating": 4.0,
+    "review_count": 294,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/altro-paradiso-new-york",
+    "yelp_name": "Altro Paradiso"
+  },
+  "Pasquale Jones": {
+    "yelp_rating": 3.5,
+    "review_count": 379,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/pasquale-jones-new-york",
+    "yelp_name": "Pasquale Jones"
+  },
+  "Sandro's": {
+    "yelp_rating": 4.0,
+    "review_count": 137,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/sandros-new-york",
+    "yelp_name": "Sandro's"
+  },
+  "Gelso & Grand": {
+    "yelp_rating": 4.0,
+    "review_count": 1677,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/gelso-and-grand-new-york",
+    "yelp_name": "Gelso & Grand"
+  },
+  "Parm": {
+    "yelp_rating": 4.0,
+    "review_count": 1029,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/parm-new-york",
+    "yelp_name": "Parm"
+  },
+  "Café Mars": {
+    "yelp_rating": 4.5,
+    "review_count": 54,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/cafe-mars-brooklyn",
+    "yelp_name": "Cafe Mars"
+  },
+  "Borgo": {
+    "yelp_rating": 4.0,
+    "review_count": 70,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/borgo-new-york",
+    "yelp_name": "Borgo"
+  },
+  "Briscola Trattoria": {
+    "yelp_rating": 4.5,
+    "review_count": 37,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/briscola-trattoria-brooklyn",
+    "yelp_name": "Briscola Trattoria"
+  },
+  "Maialino Vicino": {
+    "yelp_rating": 3.5,
+    "review_count": 1442,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/maialino-new-york-3",
+    "yelp_name": "Maialino"
+  },
+  "Rezdôra": {
+    "yelp_rating": 4.5,
+    "review_count": 906,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/rezd%C3%B4ra-new-york-4",
+    "yelp_name": "Rezdôra"
+  },
+  "La Pecora Bianca": {
+    "yelp_rating": 4.0,
+    "review_count": 1248,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/la-pecora-bianca-nomad-new-york",
+    "yelp_name": "La Pecora Bianca NoMad"
+  },
+  "Bar Primi": {
+    "yelp_rating": 4.0,
+    "review_count": 900,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/bar-primi-bowery-new-york-3",
+    "yelp_name": "Bar Primi Bowery",
+    "note": "Marked TEMP. CLOSED on Yelp."
+  },
+  "Il Mulino Prime": {
+    "yelp_rating": 4.0,
+    "review_count": 200,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/il-mulino-prime-soho-new-york",
+    "yelp_name": "Il Mulino Prime - Soho"
+  },
+  "Ai Fiori": {
+    "yelp_rating": 4.0,
+    "review_count": 1568,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/ai-fiori-new-york",
+    "yelp_name": "Ai Fiori"
+  },
+  "Marea": {
+    "yelp_rating": 4.0,
+    "review_count": 2537,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/marea-new-york",
+    "yelp_name": "Marea"
+  },
+  "Quality Italian": {
+    "yelp_rating": 4.0,
+    "review_count": 1670,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/quality-italian-new-york",
+    "yelp_name": "Quality Italian"
+  },
+  "Patsy's": {
+    "yelp_rating": 4.0,
+    "review_count": 1384,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/patsys-italian-restaurant-new-york",
+    "yelp_name": "Patsy's Italian Restaurant"
+  },
+  "Massara": {
+    "yelp_rating": 4.5,
+    "review_count": 134,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/massara-new-york",
+    "yelp_name": "Massara"
+  },
+  "Bad Roman": {
+    "yelp_rating": 4.0,
+    "review_count": 957,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/bad-roman-new-york",
+    "yelp_name": "Bad Roman"
+  },
+  "Giulietta": {
+    "yelp_rating": 4.0,
+    "review_count": 37,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/giulietta-new-york",
+    "yelp_name": "Giulietta"
+  },
+  "Ci Siamo": {
+    "yelp_rating": 4.5,
+    "review_count": 840,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/ci-siamo-new-york-5",
+    "yelp_name": "Ci Siamo"
+  },
+  "Santi": {
+    "yelp_rating": 4.5,
+    "review_count": 80,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/santi-new-york-2",
+    "yelp_name": "Santi"
+  },
+  "Ribalta": {
+    "yelp_rating": 4.0,
+    "review_count": 931,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/ribalta-pizza-new-york",
+    "yelp_name": "Ribalta"
+  },
+  "Don Antonio": {
+    "yelp_rating": 4.0,
+    "review_count": 1868,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/don-antonio-new-york-5",
+    "yelp_name": "Don Antonio"
+  },
+  "Kesté Pizza & Vino": {
+    "yelp_rating": 4.0,
+    "review_count": 2034,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/kest%C3%A9-pizza-and-vino-new-york-5",
+    "yelp_name": "Kesté Pizza & Vino"
+  },
+  "Elio's": {
+    "yelp_rating": 3.5,
+    "review_count": 376,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/elios-new-york",
+    "yelp_name": "Elio's"
+  },
+  "Sant Ambroeus UES": {
+    "yelp_rating": 4.0,
+    "review_count": 607,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/sant-ambroeus-new-york",
+    "yelp_name": "Sant Ambroeus Madison"
+  },
+  "Sempre Oggi": {
+    "yelp_rating": 4.5,
+    "review_count": 102,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/sempre-oggi-new-york",
+    "yelp_name": "Sempre Oggi"
+  },
+  "Cafe Fiorello": {
+    "yelp_rating": 3.5,
+    "review_count": 1089,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/cafe-fiorello-new-york",
+    "yelp_name": "Cafe Fiorello"
+  },
+  "Lincoln Ristorante": {
+    "yelp_rating": 4.0,
+    "review_count": 639,
+    "price_level": "$$$$",
+    "yelp_url": "https://www.yelp.com/biz/lincoln-ristorante-new-york",
+    "yelp_name": "Lincoln Ristorante"
+  },
+  "Tarallucci e Vino": {
+    "yelp_rating": 3.5,
+    "review_count": 218,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/tarallucci-e-vino-upper-west-side-new-york",
+    "yelp_name": "Tarallucci e Vino Upper West Side"
+  },
+  "Patsy's Pizzeria": {
+    "yelp_rating": 4.0,
+    "review_count": 1033,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/patsys-pizzeria-new-york-7",
+    "yelp_name": "Patsy's Pizzeria"
+  },
+  "Sottocasa Harlem": {
+    "yelp_rating": 4.0,
+    "review_count": 392,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/sottocasa-pizzeria-harlem-new-york",
+    "yelp_name": "Sottocasa Pizzeria - Harlem"
+  },
+  "Misi": {
+    "yelp_rating": 4.0,
+    "review_count": 947,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/misi-brooklyn",
+    "yelp_name": "Misi"
+  },
+  "I Cavallini": {
+    "yelp_rating": 4.5,
+    "review_count": 21,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/i-cavallini-brooklyn-2",
+    "yelp_name": "I Cavallini"
+  },
+  "Bamonte's": {
+    "yelp_rating": 4.0,
+    "review_count": 524,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/bamontes-brooklyn",
+    "yelp_name": "Bamonte's"
+  },
+  "Aurora": {
+    "yelp_rating": 4.0,
+    "review_count": 926,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/aurora-brooklyn",
+    "yelp_name": "Aurora"
+  },
+  "Fabbrica": {
+    "yelp_rating": 4.0,
+    "review_count": 353,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/fabbrica-restaurant-and-bar-brooklyn",
+    "yelp_name": "Fabbrica Restaurant & Bar",
+    "note": "Marked CLOSED on Yelp."
+  },
+  "Sauced": {
+    "yelp_rating": 4.0,
+    "review_count": 108,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/sauced-brooklyn",
+    "yelp_name": "Sauced"
+  },
+  "Sottocasa Greenpoint": {
+    "yelp_rating": 4.0,
+    "review_count": 769,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/sottocasa-pizzeria-brooklyn-3",
+    "yelp_name": "Sottocasa Pizzeria",
+    "note": "Boerum Hill page used as fallback; no Greenpoint page exists."
+  },
+  "Frankies 457 Spuntino": {
+    "yelp_rating": 4.0,
+    "review_count": 972,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/frankies-457-spuntino-brooklyn-3",
+    "yelp_name": "Frankies 457 Spuntino"
+  },
+  "F&F Pizzeria": {
+    "yelp_rating": 4.0,
+    "review_count": 192,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/f-and-f-pizzeria-brooklyn",
+    "yelp_name": "F & F Pizzeria"
+  },
+  "Cafe Spaghetti": {
+    "yelp_rating": 4.0,
+    "review_count": 179,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/cafe-spaghetti-brooklyn",
+    "yelp_name": "Cafe Spaghetti"
+  },
+  "Cremini's": {
+    "yelp_rating": 4.5,
+    "review_count": 89,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/creminis-aperitivo-and-kitchen-brooklyn",
+    "yelp_name": "Cremini's - Aperitivo & Kitchen"
+  },
+  "Lucali": {
+    "yelp_rating": 4.5,
+    "review_count": 2261,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/lucali-brooklyn-3",
+    "yelp_name": "Lucali"
+  },
+  "Marco Polo Ristorante": {
+    "yelp_rating": 4.0,
+    "review_count": 212,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/marco-polo-ristorante-brooklyn",
+    "yelp_name": "Marco Polo Ristorante"
+  },
+  "Ferdinando's Focacceria / Bar Ferdinando": {
+    "yelp_rating": 4.0,
+    "review_count": 237,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/ferdinandos-focacceria-brooklyn-4",
+    "yelp_name": "Ferdinando's Focacceria",
+    "note": "Marked CLOSED on Yelp."
+  },
+  "Noodle Pudding": {
+    "yelp_rating": 4.0,
+    "review_count": 647,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/noodle-pudding-brooklyn",
+    "yelp_name": "Noodle Pudding"
+  },
+  "River Deli": {
+    "yelp_rating": 4.0,
+    "review_count": 235,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/river-deli-brooklyn",
+    "yelp_name": "River Deli"
+  },
+  "al di là Trattoria": {
+    "yelp_rating": 4.0,
+    "review_count": 1006,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/al-di-la-trattoria-brooklyn",
+    "yelp_name": "Al Di La Trattoria"
+  },
+  "Lillo Cucina Italiana": {
+    "yelp_rating": 4.5,
+    "review_count": 258,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/lillo-cucina-italiana-brooklyn",
+    "yelp_name": "Lillo Cucina Italiana"
+  },
+  "Roberta's": {
+    "yelp_rating": 4.0,
+    "review_count": 3443,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/robertas-brooklyn-2",
+    "yelp_name": "Roberta's"
+  },
+  "Faro": {
+    "yelp_rating": 4.5,
+    "review_count": 331,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/faro-brooklyn",
+    "yelp_name": "Faro",
+    "note": "Marked CLOSED on Yelp."
+  },
+  "Saraghina": {
+    "yelp_rating": 4.0,
+    "review_count": 1108,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/saraghina-restaurant-brooklyn",
+    "yelp_name": "Saraghina Restaurant"
+  },
+  "Gargiulo's": {
+    "yelp_rating": 4.0,
+    "review_count": 332,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/gargiulos-brooklyn-3",
+    "yelp_name": "Gargiulo's"
+  },
+  "Tommaso's": {
+    "yelp_rating": 4.0,
+    "review_count": 154,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/tommaso-restaurant-brooklyn-2",
+    "yelp_name": "Tommaso Restaurant"
+  },
+  "Il Colosseo": {
+    "yelp_rating": 4.5,
+    "review_count": 267,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/il-colosseo-brooklyn",
+    "yelp_name": "Il Colosseo"
+  },
+  "Ortobello's": {
+    "yelp_rating": 4.0,
+    "review_count": 347,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/ortobello-restaurant-brooklyn",
+    "yelp_name": "Ortobello Restaurant"
+  },
+  "Randazzo's Clam Bar": {
+    "yelp_rating": 3.5,
+    "review_count": 861,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/randazzos-clam-bar-brooklyn",
+    "yelp_name": "Randazzo's Clam Bar"
+  },
+  "Michael's of Brooklyn": {
+    "yelp_rating": 4.0,
+    "review_count": 529,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/michaels-brooklyn-14",
+    "yelp_name": "Michael's"
+  },
+  "Ponte Vecchio": {
+    "yelp_rating": 3.5,
+    "review_count": 245,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/ponte-vecchio-restaurant-brooklyn",
+    "yelp_name": "Ponte Vecchio Restaurant"
+  },
+  "Gino's of Bay Ridge": {
+    "yelp_rating": 4.0,
+    "review_count": 958,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/ginos-restaurant-brooklyn-2",
+    "yelp_name": "Gino's Restaurant"
+  },
+  "Positano Restaurant": {
+    "yelp_rating": 4.0,
+    "review_count": 657,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/positano-restaurant-brooklyn",
+    "yelp_name": "Positano Restaurant"
+  },
+  "Lombardo's of Bay Ridge": {
+    "yelp_rating": 4.0,
+    "review_count": 199,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/lombardos-of-bay-ridge-brooklyn-2",
+    "yelp_name": "Lombardo's of Bay Ridge",
+    "note": "Marked CLOSED on Yelp."
+  },
+  "Greenhouse Cafe": {
+    "yelp_rating": 3.5,
+    "review_count": 200,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/greenhouse-cafe-brooklyn",
+    "yelp_name": "Greenhouse Cafe"
+  },
+  "La Nonna": {
+    "yelp_rating": 4.0,
+    "review_count": 503,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/la-nonna-ristorante-and-bar-brooklyn",
+    "yelp_name": "La Nonna Ristorante & Bar"
+  },
+  "LaRina Pastificio & Vino": {
+    "yelp_rating": 4.0,
+    "review_count": 295,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/larina-pastificio-and-vino-brooklyn",
+    "yelp_name": "LaRina Pastificio & Vino"
+  },
+  "Locanda Vini & Olii": {
+    "yelp_rating": 4.0,
+    "review_count": 371,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/locanda-vini-e-olii-brooklyn-4",
+    "yelp_name": "Locanda Vini e Olii"
+  },
+  "Cecconi's DUMBO": {
+    "yelp_rating": 4.0,
+    "review_count": 1284,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/cecconis-dumbo-brooklyn",
+    "yelp_name": "Cecconi's Dumbo"
+  },
+  "Grimaldi's": {
+    "yelp_rating": 3.5,
+    "review_count": 5148,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/grimaldis-pizzeria-brooklyn-4",
+    "yelp_name": "Grimaldi's Pizzeria"
+  },
+  "Park Side Restaurant": {
+    "yelp_rating": 4.0,
+    "review_count": 1128,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/park-side-restaurant-corona-2",
+    "yelp_name": "Park Side Restaurant"
+  },
+  "Trattoria L'Incontro": {
+    "yelp_rating": 4.0,
+    "review_count": 1143,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/trattoria-l-incontro-astoria-6",
+    "yelp_name": "Trattoria L'Incontro",
+    "note": "Marked CLOSED on Yelp."
+  },
+  "Don Peppe": {
+    "yelp_rating": 4.0,
+    "review_count": 812,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/don-peppe-south-ozone-park-2",
+    "yelp_name": "Don Peppe"
+  },
+  "Manducatis": {
+    "yelp_rating": 4.0,
+    "review_count": 209,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/manducatis-long-island-city",
+    "yelp_name": "Manducatis"
+  },
+  "Manducatis Rustica": {
+    "yelp_rating": 4.0,
+    "review_count": 296,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/manducatis-rustica-long-island-city",
+    "yelp_name": "Manducatis Rustica"
+  },
+  "Vesta Trattoria & Wine Bar": {
+    "yelp_rating": 4.0,
+    "review_count": 786,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/vesta-astoria",
+    "yelp_name": "Vesta"
+  },
+  "Il Bambino": {
+    "yelp_rating": 4.5,
+    "review_count": 1373,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/il-bambino-astoria",
+    "yelp_name": "Il Bambino"
+  },
+  "Vite Vinosteria": {
+    "yelp_rating": 4.5,
+    "review_count": 749,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/vite-vinosteria-astoria",
+    "yelp_name": "Vite Vinosteria"
+  },
+  "Via Trenta": {
+    "yelp_rating": 4.5,
+    "review_count": 557,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/via-trenta-osteria-astoria-2",
+    "yelp_name": "Via Trenta Osteria"
+  },
+  "Via Vai": {
+    "yelp_rating": 4.5,
+    "review_count": 271,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/via-vai-astoria-2",
+    "yelp_name": "Via Vai"
+  },
+  "Sac's Place": {
+    "yelp_rating": 4.0,
+    "review_count": 594,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/sacs-place-astoria",
+    "yelp_name": "Sac's Place"
+  },
+  "Rialto Ristorante": {
+    "yelp_rating": 4.5,
+    "review_count": 19,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/rialto-ristorante-astoria",
+    "yelp_name": "Rialto Ristorante"
+  },
+  "Il Poeta": {
+    "yelp_rating": 4.5,
+    "review_count": 360,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/il-poeta-forest-hills",
+    "yelp_name": "Il Poeta"
+  },
+  "Bruno Ristorante": {
+    "yelp_rating": 4.0,
+    "review_count": 396,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/bruno-ristorante-howard-beach",
+    "yelp_name": "Bruno Ristorante"
+  },
+  "Vetro by Russo's on the Bay": {
+    "yelp_rating": 4.5,
+    "review_count": 472,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/vetro-restaurant-and-lounge-howard-beach-2",
+    "yelp_name": "Vetro Restaurant & Lounge"
+  },
+  "Lenny's Clam Bar": {
+    "yelp_rating": 4.0,
+    "review_count": 744,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/lennys-clam-bar-howard-beach",
+    "yelp_name": "Lenny's Clam Bar"
+  },
+  "Matteo's of Howard Beach": {
+    "yelp_rating": 4.0,
+    "review_count": 247,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/matteos-howard-beach-howard-beach-4",
+    "yelp_name": "Matteo's Howard Beach"
+  },
+  "Riviera Ristorante": {
+    "yelp_rating": 4.0,
+    "review_count": 232,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/riviera-ristorante-whitestone",
+    "yelp_name": "Riviera Ristorante"
+  },
+  "Il Bacco": {
+    "yelp_rating": 4.0,
+    "review_count": 381,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/il-bacco-ristorante-little-neck-3",
+    "yelp_name": "Il Bacco Ristorante"
+  },
+  "Rosa's Pizza": {
+    "yelp_rating": 4.0,
+    "review_count": 506,
+    "price_level": "$",
+    "yelp_url": "https://www.yelp.com/biz/rosas-pizza-maspeth-2",
+    "yelp_name": "Rosa's Pizza"
+  },
+  "Il Nonno": {
+    "yelp_rating": 4.5,
+    "review_count": 54,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/il-nonno-astoria",
+    "yelp_name": "Il Nonno"
+  },
+  "Sotto La Luna": {
+    "yelp_rating": 4.5,
+    "review_count": 179,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/sotto-la-luna-astoria-2",
+    "yelp_name": "Sotto La Luna"
+  },
+  "Macoletta": {
+    "yelp_rating": 4.0,
+    "review_count": 275,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/macoletta-astoria-3",
+    "yelp_name": "Macoletta"
+  },
+  "Palermo Restaurant": {
+    "yelp_rating": 4.0,
+    "review_count": 344,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/palermo-restaurant-and-bar-astoria-2",
+    "yelp_name": "Palermo Restaurant & Bar"
+  },
+  "Roberto's": {
+    "yelp_rating": 4.0,
+    "review_count": 336,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/robertos-bronx",
+    "yelp_name": "Roberto's"
+  },
+  "Dominick's": {
+    "yelp_rating": 4.0,
+    "review_count": 498,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/dominicks-restaurant-bronx",
+    "yelp_name": "Dominick's Restaurant"
+  },
+  "Mario's": {
+    "yelp_rating": 4.0,
+    "review_count": 386,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/marios-bronx-4",
+    "yelp_name": "Mario's"
+  },
+  "Zero Otto Nove (Trattoria)": {
+    "yelp_rating": 4.0,
+    "review_count": 1002,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/trattoria-zero-otto-nove-bronx",
+    "yelp_name": "Trattoria Zero Otto Nove"
+  },
+  "Tra di Noi": {
+    "yelp_rating": 4.0,
+    "review_count": 245,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/trattoria-tra-di-noi-bronx",
+    "yelp_name": "Trattoria Tra di Noi"
+  },
+  "Enzo's of Arthur Ave": {
+    "yelp_rating": 4.0,
+    "review_count": 597,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/enzos-bronx-2",
+    "yelp_name": "Enzo's"
+  },
+  "Antonio's Trattoria": {
+    "yelp_rating": 4.5,
+    "review_count": 1197,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/antonios-trattoria-bronx",
+    "yelp_name": "Antonio's Trattoria"
+  },
+  "Pasquale's Rigoletto": {
+    "yelp_rating": 4.0,
+    "review_count": 235,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/rigoletto-pasquale-bronx",
+    "yelp_name": "Pasquale Rigoletto Restaurant"
+  },
+  "Emilia's": {
+    "yelp_rating": 4.0,
+    "review_count": 283,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/emilias-restaurant-bronx",
+    "yelp_name": "Emilia's Restaurant"
+  },
+  "Ann & Tony's": {
+    "yelp_rating": 4.0,
+    "review_count": 156,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/ann-and-tonys-restaurant-bronx",
+    "yelp_name": "Ann & Tony's Restaurant"
+  },
+  "Patricia's of Morris Park": {
+    "yelp_rating": 4.0,
+    "review_count": 727,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/patricias-of-morris-park-bronx",
+    "yelp_name": "Patricia's of Morris Park"
+  },
+  "Emilio's of Morris Park": {
+    "yelp_rating": 4.0,
+    "review_count": 267,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/emilios-of-morris-park-bronx",
+    "yelp_name": "Emilio's of Morris Park"
+  },
+  "F&J Pine Restaurant": {
+    "yelp_rating": 4.0,
+    "review_count": 807,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/f-and-j-pine-bronx",
+    "yelp_name": "F & J Pine"
+  },
+  "Louie & Ernie's Pizza": {
+    "yelp_rating": 4.5,
+    "review_count": 447,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/louie-and-ernies-pizza-bronx-2",
+    "yelp_name": "Louie & Ernie's Pizza"
+  },
+  "Sammy's Fish Box / Shrimp Box": {
+    "yelp_rating": 3.5,
+    "review_count": 1122,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/sammys-fish-box-bronx-3",
+    "yelp_name": "Sammys Fish Box"
+  },
+  "Beccofino": {
+    "yelp_rating": 4.0,
+    "review_count": 178,
+    "price_level": "$$$",
+    "yelp_url": "https://www.yelp.com/biz/beccofino-bronx",
+    "yelp_name": "Beccofino"
+  },
+  "Fratelli": {
+    "yelp_rating": 4.0,
+    "review_count": 144,
+    "price_level": "$$",
+    "yelp_url": "https://www.yelp.com/biz/fratelli-bronx",
+    "yelp_name": "Fratelli"
+  }
+}
