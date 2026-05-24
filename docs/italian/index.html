@@ -803,21 +803,6 @@ initTheme();
   document.getElementById(id).addEventListener('input', applyFilters);
 });
 
-// Attach table header click listeners for sorting
-document.querySelectorAll('th[data-col]').forEach(th => {
-  th.addEventListener('click', () => {
-    const col = th.getAttribute('data-col');
-    if (sortCol === col) {
-      sortAsc = !sortAsc;
-    } else {
-      sortCol = col;
-      sortAsc = false;
-    }
-    document.querySelectorAll('th').forEach(t => t.classList.remove('sorted-asc', 'sorted-desc'));
-    th.classList.add(sortAsc ? 'sorted-asc' : 'sorted-desc');
-    updateTable();
-  });
-});
 
 // Fetch dashboard data and initialize
 fetch('data.json')
