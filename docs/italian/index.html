@@ -5,19 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Italian Report</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js">
-// Fetch dashboard data and initialize
-fetch('data.json')
-  .then(r => r.json())
-  .then(data => {
-    ALL_DATA = data;
-    populateNeighborhoods();
-    applyFilters();
-  })
-  .catch(err => {
-    console.error('Failed to load data.json:', err);
-    document.body.insertAdjacentHTML('afterbegin',
-      '<p style="padding:1em;background:#fee;color:#900">Failed to load data.json. If opening locally, run <code>python -m http.server</code> in <code>docs/</code> and visit <code>http://localhost:8000/italian/</code>.</p>');
-  });
 </script>
 <style>
 :root {
@@ -826,6 +813,20 @@ document.querySelectorAll('th[data-col]').forEach(th => {
     updateTable();
   });
 });
+
+// Fetch dashboard data and initialize
+fetch('data.json')
+  .then(r => r.json())
+  .then(data => {
+    ALL_DATA = data;
+    populateNeighborhoods();
+    applyFilters();
+  })
+  .catch(err => {
+    console.error('Failed to load data.json:', err);
+    document.body.insertAdjacentHTML('afterbegin',
+      '<p style="padding:1em;background:#fee;color:#900">Failed to load data.json. If opening locally, run <code>python -m http.server</code> in <code>docs/</code> and visit <code>http://localhost:8000/italian/</code>.</p>');
+  });
 </script>
 
 </body>
