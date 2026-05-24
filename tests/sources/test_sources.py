@@ -100,6 +100,13 @@ def test_yelp_refresh_raises_pointing_at_prompt_file():
         src.refresh([{"name": "R1"}])
 
 
+def test_entry_returns_raw_cache_dict():
+    cache = {"R1": {"yelp_rating": 4.0, "review_count": 50, "price_level": "$$"}}
+    src = YelpSource(cache=cache)
+    assert src.entry("R1") == {"yelp_rating": 4.0, "review_count": 50, "price_level": "$$"}
+    assert src.entry("Ghost") is None
+
+
 def test_cache_loads_from_path_at_construction(tmp_path):
     import json as _json
 

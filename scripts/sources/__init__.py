@@ -39,11 +39,16 @@ def _load_cache(cache_path: str | None, cache: dict | None) -> dict:
         return json.load(f)
 
 
-class GoogleSource:
-    name = "google"
-
+class _BaseSource:
     def __init__(self, *, cache_path: str | None = None, cache: dict | None = None):
         self._cache = _load_cache(cache_path, cache)
+
+    def entry(self, restaurant_name: str) -> dict | None:
+        return self._cache.get(restaurant_name)
+
+
+class GoogleSource(_BaseSource):
+    name = "google"
 
     def read(self, restaurant_name: str) -> AdjustedReading | None:
         entry = self._cache.get(restaurant_name)
@@ -60,11 +65,8 @@ class GoogleSource:
         raise NotImplementedError("Google refresh not yet lifted from step2_fetch_ratings.py")
 
 
-class YelpSource:
+class YelpSource(_BaseSource):
     name = "yelp"
-
-    def __init__(self, *, cache_path: str | None = None, cache: dict | None = None):
-        self._cache = _load_cache(cache_path, cache)
 
     def read(self, restaurant_name: str) -> AdjustedReading | None:
         entry = self._cache.get(restaurant_name)
@@ -83,11 +85,8 @@ class YelpSource:
         )
 
 
-class InfatuationSource:
+class InfatuationSource(_BaseSource):
     name = "infatuation"
-
-    def __init__(self, *, cache_path: str | None = None, cache: dict | None = None):
-        self._cache = _load_cache(cache_path, cache)
 
     def read(self, restaurant_name: str) -> AdjustedReading | None:
         entry = self._cache.get(restaurant_name)

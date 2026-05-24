@@ -1,0 +1,607 @@
+{
+  "Hatsuhana": {
+    "subway_walk_min": 7,
+    "nearest_456": "51st St (Lex)"
+  },
+  "Akimori": {
+    "subway_walk_min": 6,
+    "nearest_456": "68th St-Hunter College"
+  },
+  "Gosuke": {
+    "subway_walk_min": 17,
+    "nearest_456": "33rd St (Park)"
+  },
+  "Hoseki": {
+    "subway_walk_min": 8,
+    "nearest_456": "51st St (Lex)"
+  },
+  "Inase": {
+    "subway_walk_min": 12,
+    "nearest_456": "86th St (Lex)"
+  },
+  "Kizuna Omakase": {
+    "subway_walk_min": 8,
+    "nearest_456": "77th St (Lex)"
+  },
+  "Kun Tsuki Omakase": {
+    "subway_walk_min": 31,
+    "nearest_456": "Grand Central-42nd St"
+  },
+  "Mari.ne Handroll": {
+    "subway_walk_min": 13,
+    "nearest_456": "Grand Central-42nd St"
+  },
+  "Nare Sushi": {
+    "subway_walk_min": 4,
+    "nearest_456": "51st St (Lex)"
+  },
+  "Omakase 33": {
+    "subway_walk_min": 5,
+    "nearest_456": "33rd St (Park)"
+  },
+  "Shihou Omakase": {
+    "subway_walk_min": 7,
+    "nearest_456": "51st St (Lex)"
+  },
+  "Shogun Omakase": {
+    "subway_walk_min": 3,
+    "nearest_456": "Grand Central-42nd St"
+  },
+  "Sushi Beauu": {
+    "subway_walk_min": 6,
+    "nearest_456": "33rd St (Park)"
+  },
+  "Sushi Kaito": {
+    "subway_walk_min": 35,
+    "nearest_456": "68th St-Hunter College"
+  },
+  "Sushi Masu": {
+    "subway_walk_min": 28,
+    "nearest_456": "68th St-Hunter College"
+  },
+  "Sushi Yasuda": {
+    "subway_walk_min": 6,
+    "nearest_456": "Grand Central-42nd St"
+  },
+  "Sushi You": {
+    "subway_walk_min": 6,
+    "nearest_456": "51st St (Lex)"
+  },
+  "Trust Bae": {
+    "subway_walk_min": 8,
+    "nearest_456": "28th St (Park)"
+  },
+  "Uka Omakase": {
+    "subway_walk_min": 5,
+    "nearest_456": "59th St (Lex)"
+  },
+  "Uogashi": {
+    "subway_walk_min": 25,
+    "nearest_456": "51st St (Lex)"
+  },
+  "Zama Omakase": {
+    "subway_walk_min": 26,
+    "nearest_456": "51st St (Lex)"
+  },
+  "Chemistry Room": {
+    "subway_walk_min": 14,
+    "nearest_456": "Grand Central-42nd St"
+  },
+  "Korami Omakase": {
+    "subway_walk_min": 27,
+    "nearest_456": "Grand Central-42nd St"
+  },
+  "Mojo Omakase": {
+    "subway_walk_min": 12,
+    "nearest_456": "Spring St (Lex)"
+  },
+  "Sushiichi": {
+    "subway_walk_min": 30,
+    "nearest_456": "Grand Central-42nd St"
+  },
+  "Sushi Lab": {
+    "subway_walk_min": 14,
+    "nearest_456": "Grand Central-42nd St"
+  },
+  "Sendo": {
+    "subway_walk_min": 10,
+    "nearest_456": "33rd St (Park)"
+  },
+  "Sushi Sasabune": {
+    "subway_walk_min": 12,
+    "nearest_456": "77th St (Lex)"
+  },
+  "Omakase Sushi Dairo": {
+    "subway_walk_min": 7,
+    "nearest_456": "14th St-Union Sq"
+  },
+  "Tsumo": {
+    "subway_walk_min": 4,
+    "nearest_456": "28th St (Park)"
+  },
+  "One Bite Omakase": {
+    "visited": true,
+    "subway_walk_min": 32,
+    "nearest_456": "77th St (Lex)"
+  },
+  "ROKI": {
+    "subway_walk_min": 7,
+    "nearest_456": "28th St (Park)"
+  },
+  "Shinn East": {
+    "visited": true,
+    "subway_walk_min": 12,
+    "nearest_456": "Astor Place"
+  },
+  "Sushi Blossoms": {
+    "subway_walk_min": 20,
+    "nearest_456": "28th St (Park)"
+  },
+  "Sushi Suite 1001": {
+    "subway_walk_min": 1,
+    "nearest_456": "33rd St (Park)"
+  },
+  "Tokyo Bar": {
+    "subway_walk_min": 12,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "KazuNori": {
+    "subway_walk_min": 7,
+    "nearest_456": "28th St (Park)"
+  },
+  "Hasaki": {
+    "subway_walk_min": 3,
+    "nearest_456": "Astor Place"
+  },
+  "KAWA Omakase": {
+    "subway_walk_min": 7,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Kissaki": {
+    "subway_walk_min": 7,
+    "nearest_456": "23rd St (Park)"
+  },
+  "Mayanoki": {
+    "subway_walk_min": 19,
+    "nearest_456": "Astor Place"
+  },
+  "Mido Omakase": {
+    "subway_walk_min": 57,
+    "nearest_456": "Nevins St"
+  },
+  "Moko": {
+    "subway_walk_min": 6,
+    "nearest_456": "Astor Place"
+  },
+  "Omakase by Teisui": {
+    "subway_walk_min": 5,
+    "nearest_456": "28th St (Park)"
+  },
+  "Robataya": {
+    "subway_walk_min": 8,
+    "nearest_456": "Astor Place"
+  },
+  "Sanyuu West": {
+    "subway_walk_min": 19,
+    "nearest_456": "14th St-Union Sq"
+  },
+  "Shinzo Omakase": {
+    "subway_walk_min": 11,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "SourAji": {
+    "visited": true,
+    "subway_walk_min": 18,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Sugarfish": {
+    "subway_walk_min": 4,
+    "nearest_456": "23rd St (Park)"
+  },
+  "Sushi by Bou": {
+    "subway_walk_min": 8,
+    "nearest_456": "Astor Place"
+  },
+  "Sushi by M": {
+    "subway_walk_min": 8,
+    "nearest_456": "Astor Place"
+  },
+  "Sushi Dojo": {
+    "subway_walk_min": 10,
+    "nearest_456": "Astor Place"
+  },
+  "Sushi Seki": {
+    "subway_walk_min": 11,
+    "nearest_456": "59th St (Lex)"
+  },
+  "Thirteen Water": {
+    "subway_walk_min": 20,
+    "nearest_456": "Astor Place"
+  },
+  "Domodomo": {
+    "subway_walk_min": 11,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Genki Omakase": {
+    "subway_walk_min": 8,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Kanoyama": {
+    "subway_walk_min": 7,
+    "nearest_456": "Astor Place"
+  },
+  "Kazumi Omakase": {
+    "subway_walk_min": 12,
+    "nearest_456": "Astor Place"
+  },
+  "Nozomi NYC": {
+    "subway_walk_min": 51,
+    "nearest_456": "Astor Place"
+  },
+  "Saishin": {
+    "subway_walk_min": 25,
+    "nearest_456": "14th St-Union Sq"
+  },
+  "Shota Omakase": {
+    "subway_walk_min": 48,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Sushi Yashin": {
+    "subway_walk_min": 56,
+    "nearest_456": "Astor Place"
+  },
+  "U Omakase": {
+    "subway_walk_min": 53,
+    "nearest_456": "23rd St (Park)"
+  },
+  "Bondi Sushi": {
+    "subway_walk_min": 6,
+    "nearest_456": "Grand Central-42nd St"
+  },
+  "Douska": {
+    "subway_walk_min": 11,
+    "nearest_456": "Spring St (Lex)"
+  },
+  "Matsunori": {
+    "subway_walk_min": 47,
+    "nearest_456": "51st St (Lex)"
+  },
+  "Mishik": {
+    "subway_walk_min": 17,
+    "nearest_456": "Spring St (Lex)"
+  },
+  "Sushi 456": {
+    "subway_walk_min": 20,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Sushi Hayashi": {
+    "subway_walk_min": 56,
+    "nearest_456": "Astor Place"
+  },
+  "Sushi Nakazawa": {
+    "subway_walk_min": 18,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Sushi on Jones": {
+    "subway_walk_min": 21,
+    "nearest_456": "Astor Place"
+  },
+  "Sushi On Me": {
+    "subway_walk_min": 55,
+    "nearest_456": "Nevins St"
+  },
+  "Takumi Omakase": {
+    "subway_walk_min": 14,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Ume Williamsburg": {
+    "subway_walk_min": 46,
+    "nearest_456": "Astor Place"
+  },
+  "Yoshino": {
+    "subway_walk_min": 4,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Zen Sushi Omakase": {
+    "subway_walk_min": 9,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Sushi Ryusei": {
+    "subway_walk_min": 9,
+    "nearest_456": "Grand Central-42nd St"
+  },
+  "Blue Ribbon Sushi": {
+    "subway_walk_min": 11,
+    "nearest_456": "Spring St (Lex)"
+  },
+  "Kintsugi": {
+    "subway_walk_min": 11,
+    "nearest_456": "Spring St (Lex)"
+  },
+  "Maaser Omakase": {
+    "subway_walk_min": 20,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Momoya": {
+    "subway_walk_min": 3,
+    "nearest_456": "Spring St (Lex)"
+  },
+  "Nami Nori": {
+    "subway_walk_min": 15,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Sekai Omakase": {
+    "subway_walk_min": 8,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Shiki Omakase": {
+    "visited": true,
+    "subway_walk_min": 7,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Sushi by Bae": {
+    "subway_walk_min": 11,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Sushi Ikumi": {
+    "subway_walk_min": 11,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Sushi Lin": {
+    "subway_walk_min": 12,
+    "nearest_456": "Spring St (Lex)"
+  },
+  "Sushi Ouji": {
+    "subway_walk_min": 12,
+    "nearest_456": "Spring St (Lex)"
+  },
+  "Atto Omakase": {
+    "subway_walk_min": 4,
+    "nearest_456": "51st St (Lex)"
+  },
+  "Noz Market": {
+    "subway_walk_min": 3,
+    "nearest_456": "77th St (Lex)"
+  },
+  "Oyishi Sushi": {
+    "subway_walk_min": 6,
+    "nearest_456": "77th St (Lex)"
+  },
+  "Sushi Jin": {
+    "subway_walk_min": 9,
+    "nearest_456": "86th St (Lex)"
+  },
+  "Sushi Koya": {
+    "subway_walk_min": 31,
+    "nearest_456": "68th St-Hunter College"
+  },
+  "Sushi Yolo": {
+    "subway_walk_min": 27,
+    "nearest_456": "59th St (Lex)"
+  },
+  "Tatsuda Omakase": {
+    "subway_walk_min": 24,
+    "nearest_456": "Grand Central-42nd St"
+  },
+  "Fuku Omakase": {
+    "subway_walk_min": 15,
+    "nearest_456": "Astor Place"
+  },
+  "Hatsu Omakase": {
+    "subway_walk_min": 11,
+    "nearest_456": "Astor Place"
+  },
+  "Kinzan Omakase": {
+    "subway_walk_min": 14,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Kyuubi Omakase": {
+    "subway_walk_min": 11,
+    "nearest_456": "Astor Place"
+  },
+  "Mitsuru": {
+    "subway_walk_min": 14,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Mojo East": {
+    "subway_walk_min": 12,
+    "nearest_456": "Spring St (Lex)"
+  },
+  "Mori": {
+    "subway_walk_min": 11,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Nobu Downtown": {
+    "subway_walk_min": 4,
+    "nearest_456": "Fulton St"
+  },
+  "Omakase by No Name": {
+    "subway_walk_min": 11,
+    "nearest_456": "Spring St (Lex)"
+  },
+  "Saikou": {
+    "subway_walk_min": 2,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Sake Kawa": {
+    "subway_walk_min": 57,
+    "nearest_456": "77th St (Lex)"
+  },
+  "SHHH Omakase": {
+    "subway_walk_min": 14,
+    "nearest_456": "Canal St (Lex)"
+  },
+  "Shinsen": {
+    "subway_walk_min": 7,
+    "nearest_456": "Canal St (Lex)"
+  },
+  "Shirokuro": {
+    "subway_walk_min": 6,
+    "nearest_456": "Astor Place"
+  },
+  "Shoshin": {
+    "subway_walk_min": 9,
+    "nearest_456": "Spring St (Lex)"
+  },
+  "Sushi Daizen": {
+    "subway_walk_min": 3,
+    "nearest_456": "Fulton St"
+  },
+  "Sushi Kai": {
+    "subway_walk_min": 17,
+    "nearest_456": "Astor Place"
+  },
+  "Sushi Makoto": {
+    "subway_walk_min": 17,
+    "nearest_456": "14th St-Union Sq"
+  },
+  "Taikun": {
+    "subway_walk_min": 12,
+    "nearest_456": "Spring St (Lex)"
+  },
+  "Towa": {
+    "subway_walk_min": 9,
+    "nearest_456": "28th St (Park)"
+  },
+  "Unique Omakase": {
+    "subway_walk_min": 9,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Yokox Omakase": {
+    "subway_walk_min": 19,
+    "nearest_456": "Bleecker St (Lex)"
+  },
+  "Sushi Tsushima": {
+    "subway_walk_min": 7,
+    "nearest_456": "Grand Central-42nd St"
+  },
+  "Iwak Sushi": {
+    "subway_walk_min": 59,
+    "nearest_456": "Nevins St"
+  },
+  "Junsui Omakase": {
+    "subway_walk_min": 21,
+    "nearest_456": "Borough Hall"
+  },
+  "Kinjo": {
+    "subway_walk_min": 23,
+    "nearest_456": "Borough Hall"
+  },
+  "Luya Omakase": {
+    "subway_walk_min": 12,
+    "nearest_456": "Bergen St"
+  },
+  "Miro Sushi": {
+    "subway_walk_min": 116,
+    "nearest_456": "Flatbush Ave-Brooklyn College"
+  },
+  "Neta Shari": {
+    "subway_walk_min": 96,
+    "nearest_456": "Flatbush Ave-Brooklyn College"
+  },
+  "Omakase by Hiro": {
+    "subway_walk_min": 87,
+    "nearest_456": "Flatbush Ave-Brooklyn College"
+  },
+  "Sora": {
+    "subway_walk_min": 94,
+    "nearest_456": "Flatbush Ave-Brooklyn College"
+  },
+  "Sushi Katsuei": {
+    "subway_walk_min": 15,
+    "nearest_456": "Astor Place"
+  },
+  "Sushi Uesugi": {
+    "subway_walk_min": 64,
+    "nearest_456": "Grand Army Plaza"
+  },
+  "Yamashiro": {
+    "subway_walk_min": 22,
+    "nearest_456": "Nevins St"
+  },
+  "E Sushi II": {
+    "subway_walk_min": 84,
+    "nearest_456": "Flatbush Ave-Brooklyn College"
+  },
+  "KIMYO": {
+    "subway_walk_min": 2,
+    "nearest_456": "Bergen St"
+  },
+  "Ki Sushi": {
+    "subway_walk_min": 10,
+    "nearest_456": "Borough Hall"
+  },
+  "Koma Sushi": {
+    "subway_walk_min": 32,
+    "nearest_456": "Flatbush Ave-Brooklyn College"
+  },
+  "Sushi Koju": {
+    "subway_walk_min": 5,
+    "nearest_456": "Nevins St"
+  },
+  "Hanaya Omakase": {
+    "subway_walk_min": 25,
+    "nearest_456": "Grand Central-42nd St"
+  },
+  "Joji": {
+    "subway_walk_min": 2,
+    "nearest_456": "Grand Central-42nd St"
+  },
+  "Koete Omakase": {
+    "subway_walk_min": 20,
+    "nearest_456": "51st St (Lex)"
+  },
+  "Shinpi": {
+    "subway_walk_min": 3,
+    "nearest_456": "33rd St (Park)"
+  },
+  "Sushi Ann": {
+    "subway_walk_min": 4,
+    "nearest_456": "51st St (Lex)"
+  },
+  "Sushi Goda": {
+    "subway_walk_min": 4,
+    "nearest_456": "86th St (Lex)"
+  },
+  "Sushi W": {
+    "subway_walk_min": 36,
+    "nearest_456": "103rd St (Lex)"
+  },
+  "Sushi Yugen": {
+    "subway_walk_min": 6,
+    "nearest_456": "59th St (Lex)"
+  },
+  "Gohan Sushi": {
+    "subway_walk_min": 116,
+    "nearest_456": "Flatbush Ave-Brooklyn College"
+  },
+  "Idashi Omakase": {
+    "nearest_456": "Bergen St"
+  },
+  "Ishi Omakase": {
+    "subway_walk_min": 3,
+    "nearest_456": "Bergen St"
+  },
+  "Oita Sushi": {
+    "subway_walk_min": 8,
+    "nearest_456": "Grand Army Plaza"
+  },
+  "Uotora": {
+    "subway_walk_min": 15,
+    "nearest_456": "Franklin Ave (4/5)"
+  },
+  "Tanoshi Sushi": {
+    "subway_walk_min": 15,
+    "nearest_456": "77th St (Lex)"
+  },
+  "Kaki": {
+    "friend_suggested": true,
+    "subway_walk_min": 16,
+    "nearest_456": "Spring St (Lex)"
+  },
+  "Sushi Oku": {
+    "friend_suggested": true,
+    "subway_walk_min": 14,
+    "nearest_456": "Canal St (Lex)"
+  }
+}
