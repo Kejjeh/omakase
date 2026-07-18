@@ -1,0 +1,80 @@
+{
+  "_README": [
+    "Hand-pinned Google Places matches. step2_fetch_ratings.py looks these up by",
+    "id via the Place Details API instead of searching by name, so the match is",
+    "deterministic and cannot drift to another business.",
+    "",
+    "A null place_id means the restaurant has no Google listing of its own and",
+    "must NOT be searched — a name search would land on a neighbour and recreate",
+    "the collision this file exists to fix.",
+    "",
+    "Every entry here was researched and adversarially verified. See",
+    "docs/adr/0006-place-id-is-the-google-join-key.md."
+  ],
+
+  "Mojo East": {
+    "place_id": "ChIJc42kcwBZwokRLn1OA6qgeXY",
+    "note": "85 Stanton St, LES. Legitimate owner of this id; the sibling 'Mojo Omakase' row was matching it after the Chelsea original closed."
+  },
+  "Sushi by Bou": {
+    "place_id": "ChIJJVLmplRZwokRfydM9XI41u8",
+    "note": "320 E 11th St. Already correct, pinned so the closed 'Robataya' row cannot drift onto it again."
+  },
+  "Sushi Hayashi": {
+    "place_id": "ChIJ2YbKoLdZwokRjrGy0WYGIS0",
+    "note": "225 Grand St, Williamsburg. This is the row to keep; 'Sushi Hayashi (Williamsburg)' is a duplicate of it."
+  },
+  "Momoya": {
+    "place_id": "ChIJ4Rw7sVhZwokRJuSZSI0jb4A",
+    "note": "Momoya SoHo, 47 Prince St. The closed 'Sushi by Bae' row was matching this."
+  },
+  "Omakase by No Name": {
+    "place_id": "ChIJN2PbiKZZwokRDOFfD66hznY",
+    "note": "114 Eldridge St. 13-course $89 / 17-course $129 matches the row's $88/$128."
+  },
+  "Yūgin": {
+    "place_id": "ChIJ9wuzp1lZwokRMf_mNcelo0s",
+    "note": "YUGIN. Distinct from the 'Sushi Yugen' row, which is closed and has no listing."
+  },
+  "Bar Masa": {
+    "place_id": "ChIJM26HnlhYwokR4IfXFz-AuCA",
+    "note": "10 Columbus Circle. Verified via barmasanyc.com / (212) 823-9802. Masa next door has no listing and was matching this."
+  },
+  "Masa": {
+    "place_id": null,
+    "note": "OPEN and operating (masanyc.com, (212) 823-9807) but has no Google Places listing, so a name search falls through to Bar Masa next door. Detached deliberately. Do NOT mark this row closed - absence from Places is not closure, and this is the 3-Michelin flagship."
+  },
+  "Omi Omakase": {
+    "place_id": "ChIJYUDw3D5hwokR1vk2JjxBe2k",
+    "note": "Correct match. The closed 'That Place Omakase' row was matching this."
+  },
+  "Gyu-Ichiro": {
+    "place_id": "ChIJZ58XtZ1ZwokR5GvF-V5qUP0",
+    "note": "135 Bowery. Current name of the business formerly branded Hiyake Omakase; same phone (917) 596-2414. The 'Hiyake Omakase (Bowery)' row is that old name."
+  },
+
+  "Sushi by Bae": {
+    "place_id": "ChIJ1amWNJ9ZwokRxcWi8bKvNWg",
+    "note": "Closed, but its own listing survives flagged CLOSED_PERMANENTLY - pinning it is better than detaching, since the closure then derives and the address/coords are right. Chef Oona Tempest's 6-seat counter at 118A E 15th St; shut during COVID. Was matching Momoya SoHo."
+  },
+  "Robataya": {
+    "place_id": null,
+    "note": "Robataya NY, 231 E 9th St, closed permanently 30 Dec 2017; space became Sakagura East Village. The only listing bearing the name is a ratingless, statusless stub that must NOT be pinned. Was matching Sushi by Bou."
+  },
+  "Sushi Yugen": {
+    "place_id": null,
+    "note": "Closed Edomae counter at 1144 First Ave (Lenox Hill, not Upper Manhattan as the row says). No listing of its own; name search fell through to YUGIN, a different restaurant."
+  },
+  "That Place Omakase": {
+    "place_id": null,
+    "note": "Closed. Real restaurant (14-course $98 matches the row) but no surviving listing; name search fell through to Omi Omakase in Flushing."
+  },
+  "Mojo Omakase": {
+    "place_id": null,
+    "note": "Chelsea original at 177 9th Ave; the space and its Google listing are now SourAji West under the same owner, so no Mojo Omakase id exists. Do NOT repoint at SourAji West - different concept, and the dataset already has a separate SourAji row. Was matching its sibling Mojo East."
+  },
+  "Masuda Omakase": {
+    "place_id": null,
+    "note": "Kosher omakase pop-up inside AO Bowl at 1385 Broadway; ran June 2023 to 31 March 2024, now catering only. No listing by name, phone, or 120m address sweep."
+  }
+}

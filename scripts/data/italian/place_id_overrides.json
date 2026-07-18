@@ -1,0 +1,19 @@
+{
+  "_README": [
+    "Hand-pinned Google Places matches. step2_fetch_ratings.py looks these up by",
+    "id via the Place Details API instead of searching by name, so the match is",
+    "deterministic and cannot drift to another business.",
+    "",
+    "A null place_id means the restaurant has no Google listing of its own and",
+    "must NOT be searched. See docs/adr/0006-place-id-is-the-google-join-key.md."
+  ],
+
+  "Lodi": {
+    "place_id": "ChIJtY_Cr9VZwokR86t_xHCuZjc",
+    "note": "Ignacio Mattos all-day Italian at Rockefeller Center. Its own listing exists and is flagged CLOSED_PERMANENTLY, so pinning it lets the closure derive correctly instead of the row matching OLIO E PIU."
+  },
+  "Maialino Vicino": {
+    "place_id": null,
+    "note": "No standalone listing; the name search matched a related but different Maialino entity. Closure asserted separately in research_input/italian/closures_verified.json."
+  }
+}
