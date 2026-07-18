@@ -388,6 +388,24 @@ tbody tr:hover {
 
 .row-closed { opacity: 0.45; }
 
+/* Temporarily dark is not the same as gone — distinct badge, and the row is
+   only half-dimmed because the restaurant may well reopen. */
+.temp-badge {
+  background: var(--accent-secondary);
+  color: var(--card-bg);
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-left: 4px;
+}
+
+.row-temp-closed { opacity: 0.7; }
+
+/* A closure asserted by hand rather than derived from Google. */
+.closed-badge[data-source="manual"] { outline: 1px dashed var(--text-dim); }
+
 .format-badge {
   background: var(--bg-secondary);
   color: var(--accent-secondary);
@@ -499,7 +517,7 @@ tbody tr:hover {
 <span class="section-label">Filters</span>
 <div class="filters-section">
   <div class="filters-grid">
-    <div class="filter-group"><label>Borough</label><select id="f-borough"><option value="">All</option><option value="Manhattan">Manhattan</option><option value="Brooklyn">Brooklyn</option><option value="Queens">Queens</option><option value="Bronx">Bronx</option></select></div>
+    <div class="filter-group"><label>Borough</label><select id="f-borough"><option value="">All</option></select></div>
     <div class="filter-group"><label>Neighborhood</label><select id="f-neighborhood"><option value="">All</option></select></div>
     <div class="filter-group"><label>Min Price ($pp)</label><input type="number" id="f-price-min" placeholder="0" min="0"></div>
     <div class="filter-group"><label>Max Price ($pp)</label><input type="number" id="f-price-max" placeholder="any" min="0"></div>
@@ -512,6 +530,7 @@ tbody tr:hover {
     <div class="filter-group"><label>Subtype</label><select id="f-subtype"><option value="">All</option></select></div>
     <div class="filter-group"><label>Michelin</label><select id="f-michelin"><option value="">All</option><option value="any">Any (incl. Bib)</option><option value="bib-gourmand">Bib Gourmand+</option><option value="1-star">1 Star+</option></select></div>
     <div class="filter-group"><label>Vintage</label><select id="f-vintage"><option value="">All</option><option value="institution">Institution (20+)</option><option value="established">Established (5-20)</option><option value="recent">Recent (&lt;5)</option><option value="new">New (2024-26)</option></select></div>
+    <div class="filter-group"><label>Hide closed</label><select id="f-closed"><option value="yes">Yes</option><option value="">Show all</option></select></div>
   </div>
 </div>
 
@@ -537,7 +556,7 @@ tbody tr:hover {
       <thead>
         <tr>
           <th data-col="name">Restaurant</th>
-          <th data-col="neighborhood">Neighborhood</th>
+          <th data-col="_hood">Neighborhood</th>
           <th data-col="min_price">Price</th>
           <th data-col="composite_rating">Composite</th>
           <th data-col="google_wilson">Google</th>
@@ -567,11 +586,16 @@ let sortCol = 'composite_rating';
 let sortAsc = false;
 let chart;
 
-function getBorough(n) {
-  if (!n) return '';
-  if (n.includes('Manhattan')) return 'Manhattan';
-  if (n.includes('Brooklyn')) return 'Brooklyn';
-  if (n.includes('Queens')) return 'Queens';
+// Mirrors display() in scripts/shared/geo.py — keep the two in step.
+// Neighborhood is derived from the restaurant's coordinates via NYC NTA
+// boundaries. A restaurant we could not place (outside NYC, or not found on
+// Google) still shows its hand-typed label, but marked: that label was wrong
+// often enough that it must never read as verified.
+const UNVERIFIED_SUFFIX = ' (unverified)';
+
+function hoodLabel(r) {
+  if (r.borough && r.nta_name) return `${r.borough} (${r.nta_name})`;
+  if (r.neighborhood_raw) return r.neighborhood_raw + UNVERIFIED_SUFFIX;
   return '';
 }
 
@@ -586,9 +610,17 @@ function getColor(r) {
   return cssVar('--text-dim');
 }
 
+// Boroughs come from the data now rather than a hardcoded list, so the filter
+// can't drift from what the dataset actually contains.
+function populateBoroughs() {
+  const sel = document.getElementById('f-borough');
+  const boroughs = [...new Set(ALL_DATA.map(r => r.borough).filter(Boolean))].sort();
+  boroughs.forEach(b => { const o = document.createElement('option'); o.value = b; o.textContent = b; sel.appendChild(o); });
+}
+
 function populateNeighborhoods() {
   const sel = document.getElementById('f-neighborhood');
-  const hoods = [...new Set(ALL_DATA.map(r => r.neighborhood).filter(Boolean))].sort();
+  const hoods = [...new Set(ALL_DATA.map(r => r._hood).filter(Boolean))].sort();
   hoods.forEach(h => { const o = document.createElement('option'); o.value = h; o.textContent = h; sel.appendChild(o); });
   const ssel = document.getElementById('f-subtype');
   const subs = [...new Set(ALL_DATA.map(r => r.subtype).filter(Boolean))].sort();
@@ -611,10 +643,12 @@ function applyFilters() {
   const subtype = document.getElementById('f-subtype').value;
   const michelin = document.getElementById('f-michelin').value;
   const vintage = document.getElementById('f-vintage').value;
+  const hideClosed = document.getElementById('f-closed').value === 'yes';
 
   filtered = ALL_DATA.filter(r => {
-    if (borough && getBorough(r.neighborhood) !== borough) return false;
-    if (hood && r.neighborhood !== hood) return false;
+    if (hideClosed && r.closed) return false;
+    if (borough && r.borough !== borough) return false;
+    if (hood && r._hood !== hood) return false;
     const price = r.min_price || 0;
     if (price < pMin || price > pMax) return false;
     if (priceLevel && r.price_level !== priceLevel) return false;
@@ -651,7 +685,12 @@ function updateStats() {
   const avgR = filtered.reduce((s,r) => s + (r.composite_rating||0), 0) / filtered.length;
   const withPrice = filtered.filter(r => r.min_price);
   const avgP = withPrice.length ? withPrice.reduce((s,r) => s + r.min_price, 0) / withPrice.length : 0;
-  const best = filtered.reduce((a,b) => (a.value_score||0) > (b.value_score||0) ? a : b);
+  // Value score rewards cheap, so a single unverified rating can top the list
+  // on one source alone. Require corroboration; fall back to the whole set
+  // only if the filters leave nothing corroborated.
+  const corroborated = filtered.filter(r => (r.n_sources||0) >= 2);
+  const pool = corroborated.length ? corroborated : filtered;
+  const best = pool.reduce((a,b) => (a.value_score||0) > (b.value_score||0) ? a : b);
   document.getElementById('stat-avg-rating').textContent = avgR.toFixed(2);
   document.getElementById('stat-avg-price').textContent = '$' + Math.round(avgP);
   document.getElementById('stat-best-value').textContent = best.name;
@@ -743,9 +782,14 @@ function updateTable() {
     if (m === '1-star' || m === '2-star' || m === '3-star') michBadge = `<span class="spec-badge spec-aw" title="Michelin ${m}">★</span>`;
     else if (m === 'bib-gourmand') michBadge = `<span class="spec-badge spec-a" title="Michelin Bib Gourmand">BIB</span>`;
     else if (m === 'recommended') michBadge = `<span class="spec-badge spec-w" title="Michelin Recommended">REC</span>`;
-    return `<tr>
-      <td>${r.name}${r.visited ? ' <span class="visited-badge">✓</span>' : ''}</td>
-      <td>${r.neighborhood || ''}</td>
+    const manualClose = r.closed_override !== null && r.closed_override !== undefined;
+    const closedTag = r.closed
+      ? ` <span class="closed-badge" data-source="${manualClose ? 'manual' : 'google'}" title="${manualClose ? 'Marked closed by hand' : 'Google reports permanently closed'}">CLOSED</span>`
+      : (r.temporarily_closed ? ' <span class="temp-badge" title="Google reports temporarily closed">TEMP CLOSED</span>' : '');
+    const rowClass = r.closed ? ' class="row-closed"' : (r.temporarily_closed ? ' class="row-temp-closed"' : '');
+    return `<tr${rowClass}>
+      <td>${r.name}${r.visited ? ' <span class="visited-badge">✓</span>' : ''}${closedTag}</td>
+      <td>${r._hood || ''}</td>
       <td>$${r.min_price || '?'}</td>
       <td><strong>${r.composite_rating ? r.composite_rating.toFixed(2) : '-'}</strong></td>
       <td>${r.google_wilson ? r.google_wilson.toFixed(2) : '-'}</td>
@@ -808,7 +852,7 @@ initTheme();
 
 // Initialize the app
 // Attach filter listeners
-['f-borough', 'f-neighborhood', 'f-price-min', 'f-price-max', 'f-price-level', 'f-sources', 'f-visited', 'f-pctl-min', 'f-rating-min', 'f-walk-max', 'f-subtype', 'f-michelin', 'f-vintage'].forEach(id => {
+['f-borough', 'f-neighborhood', 'f-price-min', 'f-price-max', 'f-price-level', 'f-sources', 'f-visited', 'f-pctl-min', 'f-rating-min', 'f-walk-max', 'f-subtype', 'f-michelin', 'f-vintage', 'f-closed'].forEach(id => {
   document.getElementById(id).addEventListener('change', applyFilters);
   document.getElementById(id).addEventListener('input', applyFilters);
 });
@@ -816,9 +860,23 @@ initTheme();
 
 // Fetch dashboard data and initialize
 fetch('data.json')
-  .then(r => r.json())
+  .then(r => {
+    // Stamp the masthead from the data file's own Last-Modified rather than a
+    // hardcoded month — a date typed by hand goes stale the next time the
+    // pipeline runs, and this page gets shared.
+    const lm = r.headers.get('Last-Modified');
+    if (lm) {
+      const when = new Date(lm).toLocaleDateString('en-US', {month: 'long', year: 'numeric'});
+      const meta = document.querySelector('.masthead-meta');
+      if (meta) meta.textContent = meta.textContent.replace(/[A-Z][a-z]+ \d{4}$/, when);
+    }
+    return r.json();
+  })
   .then(data => {
-    ALL_DATA = data;
+    // Compose the display label once so filtering, rendering and the
+    // sort-by-column path (which reads r[col]) all share one value.
+    ALL_DATA = data.map(r => ({ ...r, _hood: hoodLabel(r) }));
+    populateBoroughs();
     populateNeighborhoods();
     applyFilters();
   })

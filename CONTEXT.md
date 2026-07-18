@@ -16,6 +16,34 @@ _Avoid_: category, genre, type.
 An external provider of a numeric rating + review count for a restaurant. Three exist today: Google Maps, Yelp, The Infatuation. Each source has its own raw scale, freshness story, and trust weight.
 _Avoid_: provider, site, platform.
 
+**Region**:
+A city's neighborhood boundary set, plus the property names it is keyed by (`scripts/shared/geo.py`). Each Cuisine is scoped to at most one Region: `omakase` and `italian` use NYC's 2020 NTA boundaries; the Philadelphia cuisines (`philly`, `kensington`) have none yet and derive nothing.
+_Avoid_: city, map, boundaries.
+
+**Derived neighborhood**:
+Where a Restaurant actually is, resolved by point-in-polygon of its coordinates against its Cuisine's Region. Stored as structured parts — `borough`, `nta_code`, `nta_name` — and composed into a display string at the edges (dashboard, Excel), never stored pre-composed. This is the only neighborhood anything is allowed to filter on. See ADR 0003.
+_Avoid_: neighborhood (ambiguous — say which), hood, area.
+
+**Raw neighborhood**:
+The hand-typed label from the Master sheet (or an Italian research file), preserved as `neighborhood_raw`. Reference only. It was wrong in both directions often enough that it is never filtered on and never displayed without an `(unverified)` marker.
+_Avoid_: the neighborhood, the real neighborhood.
+
+**Trusted match**:
+Whether a Restaurant's Google Places result actually describes that Restaurant (`scripts/shared/places.py`). Places substitutes a similarly-named operating business when a Restaurant has closed, so an untrusted match's fields — status, coordinates, rating — belong to someone else. Requires a `place_id`, no `place_id` collision with another Restaurant, and a name similarity ≥ 0.80. Nothing is derived from an untrusted match.
+_Avoid_: good match, valid match, verified.
+
+**Override**:
+A deliberate hand assertion that beats a derived value — `closed_override`, and a pinned `place_id`. Distinct from an absent value: `None` means nobody has ruled, which is what a defaulted `closed: False` always really meant. Overrides exist so external data can be overruled without arguing with the pipeline — see ADR 0005 and ADR 0006.
+_Avoid_: manual flag, hardcoded value.
+
+**Pin**:
+A hand-set `place_id` in `scripts/data/<cuisine>/place_id_overrides.json` that makes a Restaurant's Google lookup deterministic — fetched by id rather than searched by name, so it cannot drift to another business. A null pin asserts the Restaurant has no Google listing at all and must not be searched (Masa, which sits next door to Bar Masa). Every pin carries a note; a test enforces it. See ADR 0006.
+_Avoid_: hardcoded id, mapping.
+
+**Collision**:
+Two Restaurants carrying the same `place_id`. Proof that at least one is matched to the wrong business, and a far better signal than name similarity. Reported on every pipeline run; `run.py --strict` exits non-zero on one.
+_Avoid_: duplicate, conflict.
+
 **Reading**:
 What a single Rating source returns for a single Restaurant — at minimum a rating and a review count. A Restaurant can have a Reading from zero, one, two, or three sources.
 _Avoid_: data point, record, score (score means something else).
