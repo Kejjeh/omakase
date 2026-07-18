@@ -115,8 +115,11 @@ def test_dashboard_fields_differ_between_cuisines():
     o = OmakaseCuisine().dashboard_fields()
     i = ItalianCuisine().dashboard_fields()
 
-    # Both share scoring + identity fields
-    common = {"name", "neighborhood", "composite_rating", "value_score", "sources"}
+    # Both share scoring + identity fields. Neighborhood ships as structured
+    # parts (derived from coordinates) rather than one hand-typed string; the
+    # dashboards compose the display label from them.
+    common = {"name", "borough", "nta_name", "nta_code", "neighborhood_raw",
+              "composite_rating", "value_score", "sources"}
     assert common <= set(o)
     assert common <= set(i)
 

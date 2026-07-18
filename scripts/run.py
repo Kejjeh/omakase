@@ -20,11 +20,22 @@ from scripts.cuisines import _REGISTRY, get_cuisine
 ALL_STEPS = ("score", "output")
 
 
-def run(cuisine_name: str, steps: list[str]) -> None:
+def run(cuisine_name: str, steps: list[str], strict: bool = False) -> None:
     print(f"=== {cuisine_name} ===")
     cuisine = get_cuisine(cuisine_name)
     restaurants = pipeline.read(cuisine)
     print(f"  read: {len(restaurants)} restaurants")
+
+    # A duplicate place_id is proof that a restaurant carries another business's
+    # rating, coordinates and derived neighborhood. Report it every run rather
+    # than leaving it to an ad-hoc script to notice.
+    report = pipeline.collision_report(cuisine, restaurants)
+    if report:
+        print("  WARNING: " + report.replace("\n", "\n  "))
+        if strict:
+            raise SystemExit(
+                f"{cuisine_name}: place_id collisions present and --strict was given."
+            )
 
     scored: dict = {}
     if "score" in steps:
@@ -48,6 +59,8 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--all", action="store_true", help="run all registered cuisines")
     p.add_argument("--steps", default=",".join(ALL_STEPS),
                    help=f"comma-separated subset of {ALL_STEPS} (default: all)")
+    p.add_argument("--strict", action="store_true",
+                   help="exit non-zero on place_id collisions (for CI)")
     args = p.parse_args(argv)
 
     steps = [s.strip() for s in args.steps.split(",") if s.strip()]
@@ -57,7 +70,7 @@ def main(argv: list[str] | None = None) -> int:
 
     cuisines = list(_REGISTRY) if args.all else [args.cuisine]
     for c in cuisines:
-        run(c, steps)
+        run(c, steps, strict=args.strict)
     return 0
 
 

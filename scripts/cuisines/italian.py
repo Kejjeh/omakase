@@ -45,7 +45,8 @@ class ItalianCuisine:
 
     def dashboard_fields(self) -> list[str]:
         return [
-            "name", "neighborhood", "format", "price_str", "min_price",
+            "name", "borough", "nta_name", "nta_code", "neighborhood_raw",
+            "format", "price_str", "min_price",
             "vibe", "address",
             "raw_rating", "google_wilson", "review_count",
             "yelp_rating", "yelp_wilson", "yelp_count",
@@ -57,5 +58,6 @@ class ItalianCuisine:
             "subtype", "famous_for", "tasting_format", "price_level",
             "typical_dinner_pp", "pasta_program", "pizza_program",
             "vintage", "reservation", "michelin",
-            "closed", "caveat",
+            "closed", "closed_override", "temporarily_closed", "business_status",
+            "caveat",
         ]

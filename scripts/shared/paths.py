@@ -5,10 +5,12 @@ a new cuisine = adding a folder, not editing path strings everywhere.
 Layout:
   scripts/data/<cuisine>/master.xlsx           input
   scripts/data/<cuisine>/restaurants.json      after step 1
-  scripts/data/<cuisine>/ratings_cache.json    Google
+  scripts/data/<cuisine>/ratings_cache.json    Google: ratings + location
+  scripts/data/<cuisine>/place_id_overrides.json  pinned Google matches
   scripts/data/<cuisine>/yelp_cache.json
   scripts/data/<cuisine>/infatuation_cache.json
   scripts/data/<cuisine>/scored_restaurants.json
+  scripts/data/geo/                            neighborhood boundaries (shared)
   research_input/<cuisine>/                    optional specialty data
   docs/<cuisine>/index.html                    dashboard
 """
@@ -17,7 +19,7 @@ import os, pathlib
 PROJECT_ROOT = pathlib.Path(__file__).resolve().parent.parent.parent
 
 # Supported cuisines (extend as new ones are added)
-CUISINES = ["omakase", "italian"]
+CUISINES = ["omakase", "italian", "philly", "kensington"]
 DEFAULT_CUISINE = "omakase"
 
 
@@ -46,8 +48,8 @@ def yelp_cache(cuisine):
 def infatuation_cache(cuisine):
     return data_dir(cuisine) / "infatuation_cache.json"
 
-def coords_cache(cuisine):
-    return data_dir(cuisine) / "coords_cache.json"
+def place_id_overrides(cuisine):
+    return data_dir(cuisine) / "place_id_overrides.json"
 
 def scored_json(cuisine):
     return data_dir(cuisine) / "scored_restaurants.json"

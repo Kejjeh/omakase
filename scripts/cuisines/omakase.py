@@ -43,7 +43,8 @@ class OmakaseCuisine:
 
     def dashboard_fields(self) -> list[str]:
         return [
-            "name", "neighborhood", "format", "price_str", "min_price",
+            "name", "borough", "nta_name", "nta_code", "neighborhood_raw",
+            "format", "price_str", "min_price",
             "pacing", "vibe",
             "commute_parkchester", "commute_parkslope", "time_diff",
             "raw_rating", "google_wilson", "review_count",
@@ -56,5 +57,6 @@ class OmakaseCuisine:
             "wagyu_offered", "ayce_offered", "ayce_wagyu_offered",
             "wagyu_notes", "ayce_notes", "ayce_wagyu_notes",
             "premium_ingredients", "specialty_confidence",
-            "closed", "caveat",
+            "closed", "closed_override", "temporarily_closed", "business_status",
+            "caveat",
         ]

@@ -11,10 +11,28 @@ import json
 from pathlib import Path
 
 from scripts.scoring import ScoringConfig, score
+from scripts.shared import geo, places
 
 
 def read(cuisine) -> list[dict]:
     return cuisine.read_restaurants()
+
+
+_DEFAULT_RESOLVER = object()
+
+
+def area_resolver(cuisine):
+    """Resolve coordinates to a neighborhood for this cuisine's city.
+
+    Returned as a callable so enrich() stays free of file I/O and tests can
+    substitute a stub. Returns None for a cuisine whose city has no boundary
+    set (the Philadelphia cuisines) — meaning "don't derive", which leaves
+    their hand-entered labels untouched rather than blanking them.
+    """
+    region = geo.region_for(cuisine.name)
+    if region is None:
+        return None
+    return lambda lat, lng: geo.lookup(lat, lng, region)
 
 
 def score_step(cuisine, restaurants: list[dict], config: ScoringConfig | None = None) -> dict:
@@ -27,10 +45,48 @@ def score_step(cuisine, restaurants: list[dict], config: ScoringConfig | None = 
     return score(rows, adjusted, cfg)
 
 
-def enrich(cuisine, restaurants: list[dict], scored: dict, user_state: dict) -> list[dict]:
+def collision_report(cuisine, restaurants: list[dict]) -> str:
+    """Describe any place_id shared by two restaurants; empty when clean."""
+    google = next((s for s in cuisine.sources if s.name == "google"), None)
+    if google is None:
+        return ""
+    return places.describe_collisions(
+        google.entries(), {r["name"] for r in restaurants}
+    )
+
+
+def trust_resolver(cuisine, restaurants: list[dict]):
+    """Resolve a restaurant name to whether its Places match can be trusted.
+
+    Returned as a callable for the same reason as area_resolver: enrich() stays
+    free of I/O and tests can substitute a stub.
+    """
+    google = next((s for s in cuisine.sources if s.name == "google"), None)
+    if google is None:
+        return lambda name: False
+    cache = google.entries()
+    on_sheet = {r["name"] for r in restaurants}
+    colliding = places.colliding_place_ids(cache, on_sheet)
+    return lambda name: places.is_trustworthy(name, cache.get(name), colliding)
+
+
+def enrich(cuisine, restaurants: list[dict], scored: dict, user_state: dict,
+           resolve_area=_DEFAULT_RESOLVER, is_trusted=_DEFAULT_RESOLVER) -> list[dict]:
     """Compose restaurant base records with per-source readings, composite scoring,
-    free-form specialty data, and preserved user_state. Pure function -- no I/O."""
+    free-form specialty data, and preserved user_state. Pure function -- no I/O.
+
+    resolve_area is a (lat, lng) -> Area | None callable; pass one in to keep
+    this free of I/O. Defaults to the cuisine's real region resolver. Passing
+    None skips neighborhood derivation entirely.
+
+    is_trusted is a (name) -> bool callable gating anything derived from a
+    Places field. Passing None treats every match as untrusted, so nothing is
+    derived and hand values stand.
+    """
     specialties = cuisine.load_specialties()
+    resolve = area_resolver(cuisine) if resolve_area is _DEFAULT_RESOLVER else resolve_area
+    trusted = (trust_resolver(cuisine, restaurants)
+               if is_trusted is _DEFAULT_RESOLVER else (is_trusted or (lambda name: False)))
     enriched: list[dict] = []
     for r in restaurants:
         name = r["name"]
@@ -39,9 +95,62 @@ def enrich(cuisine, restaurants: list[dict], scored: dict, user_state: dict) -> 
         _merge_scoring(rec, scored.get(name))
         rec.update(specialties.get(name, {}))
         _merge_user_state(rec, user_state.get(name, {}))
+        _merge_geo(rec, resolve)
+        _merge_closed(rec, trusted(name))
         _finalize_legacy_shape(rec)
         enriched.append(rec)
     return enriched
+
+
+def _merge_closed(rec: dict, match_trusted: bool) -> None:
+    """Decide whether a Restaurant is closed: explicit assertion beats Google.
+
+    Two different things used to share the `closed` field: a deliberate "this
+    place has shut" from a research file, and the pipeline's default False,
+    which only ever meant "nobody said". Google's business_status can fill in
+    the second without touching the first, so an assertion is preserved as
+    `closed_override` and always wins.
+
+    That ordering is load-bearing. Every restaurant where Google says
+    OPERATIONAL but a research file says closed turned out to have a wrong
+    Places match — the restaurant shut, Places substituted a similarly-named
+    operating business (ROKI -> "RokuNana"), and its status described the
+    substitute. Deriving over the override would have reopened all seven.
+
+    Temporary closures are tracked separately: a restaurant that is dark this
+    month is not the same as one that is gone, and collapsing them loses that.
+    """
+    override = rec.pop("closed", None)
+    rec["closed_override"] = override
+    status = rec.get("business_status")
+
+    # An untrusted match's status belongs to some other business; ignore it.
+    derived_permanent = status == "CLOSED_PERMANENTLY" if match_trusted else None
+    derived_temporary = status == "CLOSED_TEMPORARILY" if match_trusted else None
+
+    rec["closed"] = override if override is not None else bool(derived_permanent)
+    rec["temporarily_closed"] = bool(derived_temporary) and not rec["closed"]
+
+
+def _merge_geo(rec: dict, resolve) -> None:
+    """Derive the neighborhood from coordinates, demoting the hand label.
+
+    The master sheet's `neighborhood` was hand-typed and disagreed with reality
+    in both directions, so it is preserved as `neighborhood_raw` for reference
+    and never used for filtering. A restaurant Google could not locate keeps a
+    null derived label rather than falling back to the untrustworthy one.
+
+    With no resolver (a city we have no boundaries for), the hand label is left
+    exactly where it was — deriving nothing is better than blanking the only
+    label those cuisines have.
+    """
+    if resolve is None:
+        return
+    rec["neighborhood_raw"] = rec.pop("neighborhood", None)
+    area = resolve(rec.get("lat"), rec.get("lng"))
+    rec["borough"] = area.borough if area else None
+    rec["nta_code"] = area.code if area else None
+    rec["nta_name"] = area.name if area else None
 
 
 _ROUND_3DP = (
@@ -63,6 +172,7 @@ def _finalize_legacy_shape(rec: dict) -> None:
     # Specialty files use "confidence"; legacy dashboard reads "specialty_confidence".
     if "confidence" in rec:
         rec["specialty_confidence"] = rec.pop("confidence")
+    # `closed` is set by _merge_closed; this only covers a cuisine that skips it.
     rec.setdefault("closed", False)
 
 
@@ -75,6 +185,10 @@ def _merge_source_fields(rec: dict, name: str, sources: list) -> None:
             rec["review_count"] = entry.get("review_count") if entry else None
             rec["google_name"] = entry.get("google_name", "") if entry else ""
             rec["google_wilson"] = reading.value if reading else None
+            # Places is the source of location truth; the neighborhood label is
+            # derived from these downstream in _merge_geo.
+            for field in ("lat", "lng", "address", "place_id", "business_status"):
+                rec[field] = entry.get(field) if entry else None
         elif s.name == "yelp":
             rec["yelp_rating"] = entry.get("yelp_rating") if entry else None
             rec["yelp_count"] = entry.get("review_count") if entry else None
@@ -171,7 +285,10 @@ def write_excel(cuisine, enriched: list[dict], out_path: str | Path | None = Non
         ws.column_dimensions[openpyxl.utils.get_column_letter(col)].width = width
     for i, r in enumerate(enriched, 2):
         row_data = [
-            r.get("name"), r.get("neighborhood"), r.get("min_price"),
+            r.get("name"),
+            geo.display(r.get("borough"), r.get("nta_name"),
+                        unverified_fallback=r.get("neighborhood_raw")),
+            r.get("min_price"),
             r.get("pacing"), r.get("vibe"),
             r.get("commute_parkchester", ""), r.get("commute_parkslope", ""), r.get("time_diff", ""),
             r.get("raw_rating"), r.get("review_count"),

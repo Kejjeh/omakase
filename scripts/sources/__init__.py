@@ -46,6 +46,10 @@ class _BaseSource:
     def entry(self, restaurant_name: str) -> dict | None:
         return self._cache.get(restaurant_name)
 
+    def entries(self) -> dict:
+        """Whole cache, for checks that span restaurants (e.g. duplicate place_id)."""
+        return self._cache
+
 
 class GoogleSource(_BaseSource):
     name = "google"
