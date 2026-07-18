@@ -1,0 +1,15 @@
+# Neighborhood is derived from coordinates, not hand-typed on the master sheet
+
+For its entire shipped life, a Restaurant's `neighborhood` was a freeform string typed into the master sheet (and, for Italian, sometimes overridden by a research file). Nothing ever checked it against the restaurant's actual location, and it drifted badly in both directions: Atto Omakase sits at 875 3rd Ave (East Midtown) but was labelled `Manhattan (UES)`; One Bite Omakase is at 411b Amsterdam Ave — unambiguously Upper West Side — but was labelled `Manhattan (UES / Lower Manh.)`; Uka Omakase, at 238 E 60th St, is genuinely Upper East Side but was labelled `Manhattan (UWS)`. Filtering the dashboard by neighborhood therefore returned answers that were confidently wrong, which is worse than returning nothing.
+
+Neighborhood is now derived by point-in-polygon lookup of the restaurant's coordinates against NYC's 2020 Neighborhood Tabulation Area boundaries (vendored at `scripts/data/geo/nyc_nta_2020.geojson`, resolved by `scripts/shared/geo.py`). It is stored as structured parts — `borough`, `nta_code`, `nta_name` — and the display string is composed at the edges (dashboard JS, Excel writer) rather than stored. The hand label is preserved as `neighborhood_raw` for reference and is never used for filtering.
+
+Three consequences worth knowing before changing this:
+
+**The coordinates come from Google Places, not a separate geocoder.** Places Text Search already returned `geometry.location`, `formatted_address`, `place_id` and `business_status` on the call the pipeline was already making; step2 simply discarded them. There was also a `coords_cache.json` with no producer anywhere in the repo and no consumer — a stale point-in-time artifact covering 151 of 201 restaurants. It has been deleted. Do not reintroduce a standalone geocoding step; capture what Places already returns.
+
+**Derived is only as good as the Places match.** Point-in-polygon is exact, but it is fed a coordinate from a name-based lookup that can match the wrong restaurant — so a derived label can still be wrong (see ADR 0004 on search terms). Two restaurants resolving to the same `place_id` is a reliable signal of a bad match; name similarity is not (`Mario's` → `Mario's Restaurant of Arthur Avenue` is correct).
+
+**An underived restaurant is not an error.** A restaurant outside the boundary set (Nigiri (by Honshu) is in Jersey City) or one Places cannot find keeps null derived fields. Those show their hand label suffixed `(unverified)` — shown because it may well be right, marked because nothing checked it. Do not "fix" this by silently falling back to `neighborhood_raw`; passing an unchecked label off as derived is the bug this ADR exists to prevent.
+
+Cuisines are city-scoped via `REGION_BY_CUISINE`. `philly` and `kensington` are Philadelphia and have no boundary set, so they resolve to None and their hand labels are left untouched rather than blanked. Adding Philadelphia means registering an OpenDataPhilly `Region`, not editing lookup logic.
