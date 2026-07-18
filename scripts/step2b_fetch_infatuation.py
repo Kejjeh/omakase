@@ -20,15 +20,30 @@ import requests
 from bs4 import BeautifulSoup
 
 sys.path.insert(0, os.path.dirname(__file__))
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from shared import paths
+from scripts.shared.cities import city_for
 
 CUISINE = paths.parse_cuisine_arg()
 RESTAURANTS_PATH = paths.restaurants_json(CUISINE)
 CACHE_PATH = paths.infatuation_cache(CUISINE)
 
-# City configuration
-INFATUATION_CITY = "philadelphia" if CUISINE == "philly" else "new-york"
-BASE_URL = f"https://www.theinfatuation.com/{INFATUATION_CITY}/reviews/"
+# Which city this cuisine covers — resolved from one table rather than a
+# ternary, which previously meant "anything not named philly is New York" and
+# would have scraped Philadelphia restaurants from the New York section.
+CITY = city_for(CUISINE)
+BASE_URL = f"https://www.theinfatuation.com/{CITY.infatuation_slug}/reviews/"
+
+# Category words worth adding to or stripping from a slug when guessing a URL.
+# Per-cuisine: trying "-omakase" on a Philadelphia Thai restaurant just burns a
+# request. Empty is fine — the bare slug and the city-tagged variants still run.
+CATEGORY_TERMS_BY_CUISINE = {
+    "omakase": ("omakase", "sushi"),
+    "italian": (),
+    "philly": (),
+    "kensington": (),
+}
+CATEGORY_TERMS = CATEGORY_TERMS_BY_CUISINE.get(CUISINE, ())
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
@@ -57,21 +72,26 @@ def name_to_slugs(name):
 
     variants = [slug]
 
-    # If name ends with "Omakase", try without it
-    if slug.endswith("-omakase"):
-        variants.append(slug.replace("-omakase", ""))
-    # If name doesn't end with "omakase", try with it
-    elif "omakase" not in slug:
-        variants.append(slug + "-omakase")
+    # A restaurant may be listed with or without its category word — "Sushi
+    # Noz" as "sushi-noz" or "noz". Which words are worth trying depends on the
+    # cuisine: this ran the omakase rules for every cuisine, so it spent a
+    # request asking The Infatuation for "kalaya-omakase", a Thai restaurant in
+    # Philadelphia. At a 2-second delay per attempt that is not free.
+    for term in CATEGORY_TERMS:
+        if slug.endswith(f"-{term}"):
+            variants.append(slug[: -len(term) - 1])
+        elif slug.startswith(f"{term}-"):
+            variants.append(slug[len(term) + 1:])
+        elif term not in slug:
+            variants.append(f"{slug}-{term}")
 
-    # If name starts with "Sushi ", try without "sushi-"
-    if slug.startswith("sushi-"):
-        variants.append(slug[6:])
+    # Restaurants are often listed with a city tag ("sushi-noz-nyc"). Which tag
+    # depends on the city — appending "-nyc" to a Philadelphia restaurant, as
+    # this did unconditionally, finds nothing.
+    variants.extend(f"{slug}-{suffix}" for suffix in CITY.slug_suffixes)
 
-    # Try with "nyc" suffix
-    variants.append(slug + "-nyc")
-
-    return variants
+    # Preserve order (first match wins) while dropping duplicates.
+    return list(dict.fromkeys(variants))
 
 
 def fetch_rating(slug):

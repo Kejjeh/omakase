@@ -25,6 +25,9 @@ sys.path.insert(0, os.path.dirname(__file__))
 from config import GOOGLE_API_KEY
 from shared import paths
 
+sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from scripts.shared.cities import city_for
+
 CUISINE = paths.parse_cuisine_arg()
 RESTAURANTS_PATH = paths.restaurants_json(CUISINE)
 CACHE_PATH = paths.ratings_cache(CUISINE)
@@ -45,27 +48,29 @@ if hasattr(sys.stdout, "reconfigure"):
 # predates the geo work and needs a repair fetch.
 GEO_FIELDS = ("lat", "lng", "address", "place_id")
 
-# Search configuration per cuisine. This was a `CUISINE == "philly"` ternary
-# defaulting everything else to sushi-in-NYC, which silently mismatched every
-# cuisine added afterwards: Italian restaurants were searched as "<name> sushi
-# New York City" (Lupa matched "Shin Takumi Omakase"), and Kensington — which
-# is in Philadelphia — was searched in New York. A cuisine must state its own
-# terms rather than inherit omakase's by default.
-SEARCH_CONFIG = {
-    "omakase": {"city": "New York City", "type": "sushi"},
-    "italian": {"city": "New York City", "type": "italian restaurant"},
-    "philly": {"city": "Philadelphia", "type": "happy hour bar"},
-    "kensington": {"city": "Philadelphia", "type": "restaurant"},
+# What kind of place this cuisine is about. Per-cuisine, not per-city: two
+# cuisines in the same city can want different search terms. This was a
+# `CUISINE == "philly"` ternary defaulting everything else to sushi, which
+# meant Italian restaurants were searched as "<name> sushi New York City"
+# (Lupa matched "Shin Takumi Omakase"). A cuisine must state its own type
+# rather than inherit omakase's.
+SEARCH_TYPE_BY_CUISINE = {
+    "omakase": "sushi",
+    "italian": "italian restaurant",
+    "philly": "happy hour bar",
+    "kensington": "restaurant",
 }
 
-if CUISINE not in SEARCH_CONFIG:
+if CUISINE not in SEARCH_TYPE_BY_CUISINE:
     raise SystemExit(
-        f"No search config for cuisine '{CUISINE}'. Add an entry to SEARCH_CONFIG "
-        f"in {os.path.basename(__file__)} — a wrong default silently matches the "
-        f"wrong restaurants."
+        f"No search type for cuisine '{CUISINE}'. Add an entry to "
+        f"SEARCH_TYPE_BY_CUISINE in {os.path.basename(__file__)} — a wrong "
+        f"default silently matches the wrong restaurants."
     )
-SEARCH_CITY = SEARCH_CONFIG[CUISINE]["city"]
-SEARCH_TYPE = SEARCH_CONFIG[CUISINE]["type"]
+SEARCH_TYPE = SEARCH_TYPE_BY_CUISINE[CUISINE]
+# The city comes from the shared table so it cannot disagree with the one the
+# Infatuation scraper and the geo lookup use.
+SEARCH_CITY = city_for(CUISINE).places_query
 
 
 def load_cache():

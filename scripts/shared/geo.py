@@ -7,9 +7,10 @@ filters by neighborhood needs a label derived from geometry, not typing.
 
 A Region bundles a boundary file with the property names it uses, so a second
 city can be added by registering another Region rather than editing lookup
-logic. NYC's NTA boundaries are vendored under `scripts/data/geo/`; the two
-Philadelphia cuisines (`philly`, `kensington`) have no Region yet and resolve
-to None until an OpenDataPhilly boundary set is added.
+logic. NYC's NTA boundaries are vendored under `scripts/data/geo/`. Which
+cuisine uses which Region is decided in `scripts/shared/cities.py`; the two
+Philadelphia cuisines have no Region until an OpenDataPhilly boundary set is
+added, and derive no neighborhood in the meantime.
 
 Point-in-polygon is hand-rolled ray casting rather than shapely: the project
 ships no dependency manifest, and a compiled geo stack is a steep price for
@@ -56,14 +57,9 @@ NYC = Region(
     borough_prop="boroname",
 )
 
-# Cuisines are city-scoped. philly/kensington are Philadelphia and have no
-# boundary set yet — they resolve to None rather than silently borrowing NYC's.
-REGION_BY_CUISINE = {
-    "omakase": NYC,
-    "italian": NYC,
-    "philly": None,
-    "kensington": None,
-}
+# Which cuisine uses which Region lives in scripts/shared/cities.py, together
+# with everything else that varies by city. This module owns boundaries and
+# point-in-polygon only.
 
 
 def _in_ring(x: float, y: float, ring: list) -> bool:
@@ -135,8 +131,6 @@ def lookup(lat: float | None, lng: float | None, region: Region | None) -> Area 
     return None
 
 
-def region_for(cuisine_name: str) -> Region | None:
-    return REGION_BY_CUISINE.get(cuisine_name)
 
 
 UNVERIFIED_SUFFIX = " (unverified)"

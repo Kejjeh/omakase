@@ -1,7 +1,8 @@
 import pytest
 
 from scripts.shared import geo
-from scripts.shared.geo import Area, Region, _in_polygon, display, lookup, region_for
+from scripts.shared.cities import region_for
+from scripts.shared.geo import Area, Region, _in_polygon, display, lookup
 
 
 # --- point-in-polygon primitives (synthetic, no boundary file needed) ---
@@ -88,7 +89,7 @@ def test_no_region_resolves_to_none():
     assert lookup(40.76142, -73.96473, None) is None
 
 
-# --- region registry ---
+# --- region registry (owned by cities.py) ---
 
 def test_nyc_cuisines_map_to_the_nyc_region():
     assert region_for("omakase") is geo.NYC

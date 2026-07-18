@@ -11,7 +11,7 @@ import json
 from pathlib import Path
 
 from scripts.scoring import ScoringConfig, score
-from scripts.shared import geo, places
+from scripts.shared import cities, geo, places
 
 
 def read(cuisine) -> list[dict]:
@@ -29,7 +29,7 @@ def area_resolver(cuisine):
     set (the Philadelphia cuisines) — meaning "don't derive", which leaves
     their hand-entered labels untouched rather than blanking them.
     """
-    region = geo.region_for(cuisine.name)
+    region = cities.region_for(cuisine.name)
     if region is None:
         return None
     return lambda lat, lng: geo.lookup(lat, lng, region)
