@@ -1,0 +1,242 @@
+{
+  "Little Walter's": {
+    "rating": 4.5,
+    "review_count": 275,
+    "google_name": "Little Walter\u2019s",
+    "address": "2049 E Hagert St, Philadelphia, PA 19125, USA",
+    "lat": 39.9839997,
+    "lng": -75.128006,
+    "place_id": "ChIJ5R7rKBvJxokReEpkqP4umiI",
+    "business_status": "OPERATIONAL"
+  },
+  "Osteria": {
+    "rating": 4.5,
+    "review_count": 1499,
+    "google_name": "Osteria",
+    "address": "640 N Broad St, Philadelphia, PA 19130, USA",
+    "lat": 39.9650099,
+    "lng": -75.161102,
+    "place_id": "ChIJZUvdSdHHxokRQ7KBGh-BHr0",
+    "business_status": "OPERATIONAL"
+  },
+  "Post Haste": {
+    "rating": 4.7,
+    "review_count": 175,
+    "google_name": "Post Haste",
+    "address": "2519 Frankford Ave, Philadelphia, PA 19125, USA",
+    "lat": 39.9835267,
+    "lng": -75.12518949999999,
+    "place_id": "ChIJN65h1CPJxokR-O5SYLfp5zs",
+    "business_status": "OPERATIONAL"
+  },
+  "Solar Myth": {
+    "rating": 4.7,
+    "review_count": 256,
+    "google_name": "Solar Myth",
+    "address": "1131 S Broad St, Philadelphia, PA 19147, USA",
+    "lat": 39.9368353,
+    "lng": -75.1665541,
+    "place_id": "ChIJOboclhHHxokRr-cuioAhMS8",
+    "business_status": "OPERATIONAL"
+  },
+  "Double Knot": {
+    "rating": 4.6,
+    "review_count": 2788,
+    "google_name": "Double Knot",
+    "address": "120 S 13th St, Philadelphia, PA 19107, USA",
+    "lat": 39.9496356,
+    "lng": -75.1621019,
+    "place_id": "ChIJBdUeZi_GxokR2uEUM6HYpJ4",
+    "business_status": "OPERATIONAL"
+  },
+  "Bob & Barbara's": {
+    "rating": 4.6,
+    "review_count": 626,
+    "google_name": "Bob and Barbara's Lounge",
+    "address": "1509 South St, Philadelphia, PA 19146, USA",
+    "lat": 39.94405099999999,
+    "lng": -75.1675551,
+    "place_id": "ChIJi995vjzGxokRIbxCa4BprWg",
+    "business_status": "OPERATIONAL"
+  },
+  "Talula's Garden": {
+    "rating": 4.8,
+    "review_count": 3029,
+    "google_name": "Talula's Garden",
+    "address": "210 W Washington Square, Philadelphia, PA 19106, USA",
+    "lat": 39.9472602,
+    "lng": -75.1535347,
+    "place_id": "ChIJqyD-RZ3IxokRlperfPwPx9M",
+    "business_status": "OPERATIONAL"
+  },
+  "Loco Pez": {
+    "rating": 4.4,
+    "review_count": 1797,
+    "google_name": "Loco Pez",
+    "address": "2401 E Norris St, Philadelphia, PA 19125, USA",
+    "lat": 39.97683480000001,
+    "lng": -75.1272262,
+    "place_id": "ChIJ_cOVHj_IxokRre9EPY1KNkY",
+    "business_status": "OPERATIONAL"
+  },
+  "Frankford Hall": {
+    "rating": 4.5,
+    "review_count": 3249,
+    "google_name": "Frankford Hall",
+    "address": "1210 Frankford Ave, Philadelphia, PA 19125, USA",
+    "lat": 39.9694246,
+    "lng": -75.1346794,
+    "place_id": "ChIJT9djeWnIxokRxyha0UeH4-8",
+    "business_status": "OPERATIONAL"
+  },
+  "SouthGate": {
+    "rating": 4.5,
+    "review_count": 535,
+    "google_name": "SouthGate",
+    "address": "1801 Lombard St, Philadelphia, PA 19146, USA",
+    "lat": 39.945599,
+    "lng": -75.171786,
+    "place_id": "ChIJJSU8_DvGxokRFnFMWo2gJqI",
+    "business_status": "OPERATIONAL"
+  },
+  "Trestle Inn": {
+    "rating": 4.5,
+    "review_count": 636,
+    "google_name": "The Trestle Inn",
+    "address": "339 N 11th St, Philadelphia, PA 19107, USA",
+    "lat": 39.958828,
+    "lng": -75.1565018,
+    "place_id": "ChIJ0z8yMNXHxokRHbbrE0-lyAQ",
+    "business_status": "OPERATIONAL"
+  },
+  "Urban Village Brewing": {
+    "rating": 4.5,
+    "review_count": 939,
+    "google_name": "Urban Village Brewing Company",
+    "address": "1001 N 2nd St, Philadelphia, PA 19123, USA",
+    "lat": 39.9669197,
+    "lng": -75.1398486,
+    "place_id": "ChIJYbaneG_IxokRTI9HwRFiUOM",
+    "business_status": "OPERATIONAL"
+  },
+  "Sampan / Graffiti Bar": {
+    "rating": 4.4,
+    "review_count": 2373,
+    "google_name": "Sampan",
+    "address": "124 S 13th St, Philadelphia, PA 19107, USA",
+    "lat": 39.9495395,
+    "lng": -75.16223839999999,
+    "place_id": "ChIJQ3RRZi_GxokRa55i5Tz53OI",
+    "business_status": "OPERATIONAL"
+  },
+  "Franky Bradley's": {
+    "rating": 4.4,
+    "review_count": 1102,
+    "google_name": "Franky Bradley's | B.West",
+    "address": "1320 Chancellor St, Philadelphia, PA 19107, USA",
+    "lat": 39.9485097,
+    "lng": -75.1631112,
+    "place_id": "ChIJ7RPTgiXGxokRCX_Q0Aq6pNY",
+    "business_status": "OPERATIONAL"
+  },
+  "Strangelove's": {
+    "rating": 4.4,
+    "review_count": 1070,
+    "google_name": "Strangelove's",
+    "address": "216 S 11th St, Philadelphia, PA 19107, USA",
+    "lat": 39.9480844,
+    "lng": -75.1592075,
+    "place_id": "ChIJGbc0GCbGxokR5KZTCdW3Pyc",
+    "business_status": "OPERATIONAL"
+  },
+  "Bar Lesieur": {
+    "rating": 4.4,
+    "review_count": 149,
+    "google_name": "The Lesieur",
+    "address": "1523 Sansom St, Philadelphia, PA 19102, USA",
+    "lat": 39.9504997,
+    "lng": -75.1666931,
+    "place_id": "ChIJx540zf_HxokRJFnX_eTNZoM",
+    "business_status": "OPERATIONAL"
+  },
+  "Lloyd Whiskey Bar": {
+    "rating": 4.6,
+    "review_count": 460,
+    "google_name": "Lloyd",
+    "address": "529 E Girard Ave, Philadelphia, PA 19125, USA",
+    "lat": 39.9713791,
+    "lng": -75.127635,
+    "place_id": "ChIJDbBODkHIxokRLWW3cXgtI28",
+    "business_status": "OPERATIONAL"
+  },
+  "Harp & Crown": {
+    "rating": 4.5,
+    "review_count": 2440,
+    "google_name": "Harp & Crown",
+    "address": "1525 Sansom St, Philadelphia, PA 19102, USA",
+    "lat": 39.9505176,
+    "lng": -75.16680319999999,
+    "place_id": "ChIJQa1JHDDGxokRGExiHLDYVOA",
+    "business_status": "OPERATIONAL"
+  },
+  "McGillin's": {
+    "rating": 4.4,
+    "review_count": 4945,
+    "google_name": "McGillin's Olde Ale House",
+    "address": "1310 Drury St, Philadelphia, PA 19107, USA",
+    "lat": 39.9501664,
+    "lng": -75.16261039999999,
+    "place_id": "ChIJoYSfci_GxokRR3o-DdW78bo",
+    "business_status": "OPERATIONAL"
+  },
+  "Yanaga Kappo": {
+    "rating": 4.7,
+    "review_count": 182,
+    "google_name": "Yanaga Kappo Izakaya",
+    "address": "637 N 3rd St, Philadelphia, PA 19123, USA",
+    "lat": 39.9622062,
+    "lng": -75.14292019999999,
+    "place_id": "ChIJ8WFysm3JxokROk0L9fMzvLI",
+    "business_status": "OPERATIONAL"
+  },
+  "Bar-Ly Chinatown": {
+    "rating": 4.5,
+    "review_count": 2166,
+    "google_name": "Bar-Ly Chinatown",
+    "address": "101 N 11th St, Philadelphia, PA 19107, USA",
+    "lat": 39.954167,
+    "lng": -75.157671,
+    "place_id": "ChIJoZyjzSvGxokRAKzvKknrtrQ",
+    "business_status": "OPERATIONAL"
+  },
+  "Tattooed Mom": {
+    "rating": 4.6,
+    "review_count": 2744,
+    "google_name": "Tattooed Mom",
+    "address": "530 South St, Philadelphia, PA 19147, USA",
+    "lat": 39.9418799,
+    "lng": -75.15183429999999,
+    "place_id": "ChIJ0ccPY57IxokRXIe8dz-wiwk",
+    "business_status": "OPERATIONAL"
+  },
+  "Mission Taqueria": {
+    "rating": 4.5,
+    "review_count": 1645,
+    "google_name": "Mission Taqueria",
+    "address": "Above Oyster House, 1516 Sansom St 2nd Floor, Philadelphia, PA 19102, USA",
+    "lat": 39.9502216,
+    "lng": -75.1665529,
+    "place_id": "ChIJL7KgHDDGxokRHpPNs28xCfY",
+    "business_status": "OPERATIONAL"
+  },
+  "Bleu Martini": {
+    "rating": 3.9,
+    "review_count": 1002,
+    "google_name": "Bleu Martini",
+    "address": "24 S 2nd St, Philadelphia, PA 19106, USA",
+    "lat": 39.9493361,
+    "lng": -75.14409359999999,
+    "place_id": "ChIJXawgnIXIxokRcVwo_6GsT-8",
+    "business_status": "OPERATIONAL"
+  }
+}

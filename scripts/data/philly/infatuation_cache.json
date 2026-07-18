@@ -1,0 +1,154 @@
+{
+  "Little Walter's": {
+    "rating": 7.8,
+    "infatuation_name": "Little Walter's",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/philadelphia/reviews/little-walters",
+    "slug_used": "little-walters"
+  },
+  "Osteria": {
+    "rating": 8.3,
+    "infatuation_name": "Osteria",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/philadelphia/reviews/osteria",
+    "slug_used": "osteria"
+  },
+  "Post Haste": {
+    "rating": 8.2,
+    "infatuation_name": "Post Haste",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/philadelphia/reviews/post-haste",
+    "slug_used": "post-haste"
+  },
+  "Solar Myth": {
+    "rating": 7.7,
+    "infatuation_name": "Solar Myth",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/philadelphia/reviews/solar-myth",
+    "slug_used": "solar-myth"
+  },
+  "Double Knot": {
+    "rating": 8.0,
+    "infatuation_name": "Double Knot",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/philadelphia/reviews/double-knot",
+    "slug_used": "double-knot"
+  },
+  "Bob & Barbara's": {
+    "rating": null,
+    "not_found": true
+  },
+  "Talula's Garden": {
+    "rating": 8.1,
+    "infatuation_name": "Talula's Garden",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/philadelphia/reviews/talulas-garden",
+    "slug_used": "talulas-garden"
+  },
+  "Loco Pez": {
+    "rating": 9.0,
+    "infatuation_name": "Loco Pez",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/philadelphia/reviews/loco-pez",
+    "slug_used": "loco-pez"
+  },
+  "Frankford Hall": {
+    "rating": 7.5,
+    "infatuation_name": "Frankford Hall",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/philadelphia/reviews/frankford-hall",
+    "slug_used": "frankford-hall"
+  },
+  "SouthGate": {
+    "rating": null,
+    "not_found": true
+  },
+  "Trestle Inn": {
+    "rating": null,
+    "not_found": true
+  },
+  "Urban Village Brewing": {
+    "rating": null,
+    "not_found": true
+  },
+  "Sampan / Graffiti Bar": {
+    "rating": null,
+    "not_found": true
+  },
+  "Franky Bradley's": {
+    "rating": 7.5,
+    "infatuation_name": "Franky Bradley's",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/philadelphia/reviews/franky-bradleys",
+    "slug_used": "franky-bradleys"
+  },
+  "Strangelove's": {
+    "rating": null,
+    "not_found": true
+  },
+  "Bar Lesieur": {
+    "rating": 6.4,
+    "infatuation_name": "Bar Lesieur",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/philadelphia/reviews/bar-lesieur",
+    "slug_used": "bar-lesieur"
+  },
+  "Lloyd Whiskey Bar": {
+    "rating": 8.0,
+    "infatuation_name": "Lloyd Whiskey Bar",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/philadelphia/reviews/lloyd-whiskey-bar",
+    "slug_used": "lloyd-whiskey-bar"
+  },
+  "Harp & Crown": {
+    "rating": 7.5,
+    "infatuation_name": "Harp & Crown",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/philadelphia/reviews/harp-crown",
+    "slug_used": "harp-crown"
+  },
+  "McGillin's": {
+    "rating": null,
+    "not_found": true
+  },
+  "Yanaga Kappo": {
+    "rating": null,
+    "not_found": true
+  },
+  "Bar-Ly Chinatown": {
+    "rating": 7.2,
+    "infatuation_name": "Bar Ly Chinatown",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/philadelphia/reviews/bar-ly-chinatown",
+    "slug_used": "bar-ly-chinatown"
+  },
+  "Tattooed Mom": {
+    "rating": null,
+    "not_found": true
+  },
+  "Mission Taqueria": {
+    "rating": 7.8,
+    "infatuation_name": "Mission Taqueria",
+    "cuisine": [],
+    "neighborhood": null,
+    "url": "https://www.theinfatuation.com/philadelphia/reviews/mission-taqueria",
+    "slug_used": "mission-taqueria"
+  },
+  "Bleu Martini": {
+    "rating": null,
+    "not_found": true
+  }
+}

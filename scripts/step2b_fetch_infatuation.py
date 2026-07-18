@@ -26,7 +26,9 @@ CUISINE = paths.parse_cuisine_arg()
 RESTAURANTS_PATH = paths.restaurants_json(CUISINE)
 CACHE_PATH = paths.infatuation_cache(CUISINE)
 
-BASE_URL = "https://www.theinfatuation.com/new-york/reviews/"
+# City configuration
+INFATUATION_CITY = "philadelphia" if CUISINE == "philly" else "new-york"
+BASE_URL = f"https://www.theinfatuation.com/{INFATUATION_CITY}/reviews/"
 HEADERS = {
     "User-Agent": (
         "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "

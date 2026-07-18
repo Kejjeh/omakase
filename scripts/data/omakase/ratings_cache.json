@@ -1,69 +1,133 @@
 {
   "Hatsuhana": {
     "rating": 4.6,
-    "review_count": 1471,
-    "google_name": "Hatsuhana"
+    "review_count": 1496,
+    "google_name": "Hatsuhana",
+    "address": "17 E 48th St, New York, NY 10017, USA",
+    "lat": 40.75701600000001,
+    "lng": -73.9769152,
+    "place_id": "ChIJw47zKvxYwokRgD1Zt5Licyo",
+    "business_status": "OPERATIONAL"
   },
   "Akimori": {
     "rating": 4.7,
-    "review_count": 87,
-    "google_name": "AKIMORI"
+    "review_count": 98,
+    "google_name": "AKIMORI",
+    "address": "858 Lexington Ave, New York, NY 10065, USA",
+    "lat": 40.7658058,
+    "lng": -73.9658192,
+    "place_id": "ChIJNSEUTU9ZwokRyxzObSHsO3Y",
+    "business_status": "OPERATIONAL"
   },
   "Gosuke": {
-    "rating": 4.5,
-    "review_count": 223,
-    "google_name": "Gosuke"
+    "rating": 4.4,
+    "review_count": 234,
+    "google_name": "Gosuke",
+    "address": "235 W 35th St, New York, NY 10001, USA",
+    "lat": 40.7523623,
+    "lng": -73.9912944,
+    "place_id": "ChIJzaOP23xZwokRgQjbCyF5dtc",
+    "business_status": "OPERATIONAL"
   },
   "Hoseki": {
     "rating": 4.7,
     "review_count": 64,
-    "google_name": "H\u014dseki"
+    "google_name": "H\u014dseki",
+    "address": "611 5th Ave, New York, NY 10022, USA",
+    "lat": 40.7581047,
+    "lng": -73.9769487,
+    "place_id": "ChIJKfbxu2RZwokRZhsCZq_HYTg",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Inase": {
-    "rating": 4.6,
-    "review_count": 137,
-    "google_name": "Inase"
+    "rating": 4.7,
+    "review_count": 271,
+    "google_name": "Omakase Shihou - Upper West Side (Lunch Available)",
+    "address": "285 Columbus Ave 2nd Floor, New York, NY 10023, USA",
+    "lat": 40.7782965,
+    "lng": -73.9779183,
+    "place_id": "ChIJyehmYMRZwokRSpXtKzIT4Do",
+    "business_status": "OPERATIONAL"
   },
   "Kizuna Omakase": {
     "rating": 5,
-    "review_count": 98,
-    "google_name": "Kizuna"
+    "review_count": 108,
+    "google_name": "Kizuna",
+    "address": "341 E 76th St, New York, NY 10021, USA",
+    "lat": 40.7710884,
+    "lng": -73.95552049999999,
+    "place_id": "ChIJWfMzYr9YwokRmMrRADYWp6E",
+    "business_status": "OPERATIONAL"
   },
   "Kun Tsuki Omakase": {
-    "rating": 4.8,
-    "review_count": 194,
-    "google_name": "Omakase by Kun Tsuki"
+    "rating": 4.9,
+    "review_count": 215,
+    "google_name": "Omakase by Kun Tsuki",
+    "address": "Matte Dark Store Front SELLS ALCOHOL (75 Min, 464 W 51st St, New York, NY 10019, USA",
+    "lat": 40.7650077,
+    "lng": -73.99099509999999,
+    "place_id": "ChIJ5f4-XjNZwokRXfGKAEanCh0",
+    "business_status": "OPERATIONAL"
   },
   "Mari.ne Handroll": {
     "rating": 4.5,
-    "review_count": 359,
-    "google_name": "Mari.ne Handroll"
+    "review_count": 379,
+    "google_name": "Mari.ne Handroll",
+    "address": "135 W 41st St, New York, NY 10036, USA",
+    "lat": 40.754814,
+    "lng": -73.9857693,
+    "place_id": "ChIJH5aItUZZwokRlZOBBhZnEBI",
+    "business_status": "OPERATIONAL"
   },
   "Masuda Omakase": {
     "rating": null,
     "review_count": null,
     "google_name": "",
-    "address": ""
+    "address": "",
+    "lat": null,
+    "lng": null,
+    "place_id": null,
+    "business_status": null
   },
   "Nare Sushi": {
     "rating": 4.2,
-    "review_count": 426,
-    "google_name": "Nare Sushi"
+    "review_count": 429,
+    "google_name": "Nare Sushi",
+    "address": "875 3rd Ave, Lower Level, ATTO SUSHI, 875 3rd Ave, New York, NY 10022, USA",
+    "lat": 40.757194,
+    "lng": -73.96918579999999,
+    "place_id": "ChIJ3VhbOeVYwokRck8jQGsiwec",
+    "business_status": "OPERATIONAL"
   },
   "Omakase 33": {
-    "rating": 4.7,
-    "review_count": 275,
-    "google_name": "Omakase 33"
+    "rating": 4.8,
+    "review_count": 289,
+    "google_name": "Omakase 33",
+    "address": "157 E 33rd St, New York, NY 10016, USA",
+    "lat": 40.7455718,
+    "lng": -73.9792764,
+    "place_id": "ChIJP4PSptBZwokR6CQkCAGUbDI",
+    "business_status": "OPERATIONAL"
   },
   "Shihou Omakase": {
     "rating": 4.7,
-    "review_count": 163,
-    "google_name": "Omakase Shihou (Shiro) - Midtown"
+    "review_count": 166,
+    "google_name": "Omakase Shihou (Shiro) - Midtown",
+    "address": "988 2nd Ave 2nd Floor, New York, NY 10022, USA",
+    "lat": 40.7562472,
+    "lng": -73.96728159999999,
+    "place_id": "ChIJj0r-v3dZwokRxYSlPRnOVaM",
+    "business_status": "OPERATIONAL"
   },
   "Shogun Omakase": {
     "rating": 4.7,
-    "review_count": 415,
-    "google_name": "SHOGUN OMAKASE | Manhattan Sushi Restaurant"
+    "review_count": 428,
+    "google_name": "SHOGUN OMAKASE | Manhattan Sushi Restaurant",
+    "address": "295 Madison Ave #101G, New York, NY 10017, USA",
+    "lat": 40.751834,
+    "lng": -73.97929119999999,
+    "place_id": "ChIJKd8EGv1ZwokRtzxTHd6RpjI",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Amane": {
     "rating": 4.6,
@@ -72,8 +136,13 @@
   },
   "Sushi Beauu": {
     "rating": 4.6,
-    "review_count": 74,
-    "google_name": "Sushi Beauu"
+    "review_count": 78,
+    "google_name": "Sushi Beauu",
+    "address": "Empire State Building, 15 W 33rd St, New York, NY 10118, USA",
+    "lat": 40.7482817,
+    "lng": -73.985811,
+    "place_id": "ChIJt7y8ZZlZwokRCtnrZY-TxXc",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Ginza Onodera": {
     "rating": 4.6,
@@ -82,158 +151,313 @@
   },
   "Sushi Kaito": {
     "rating": 4.7,
-    "review_count": 235,
-    "google_name": "Sushi Kaito"
+    "review_count": 237,
+    "google_name": "Sushi Kaito",
+    "address": "244 W 72nd St, New York, NY 10023, USA",
+    "lat": 40.77917739999999,
+    "lng": -73.9836409,
+    "place_id": "ChIJJ9wU5WFYwokRVALDnKh7z3A",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Masu": {
-    "rating": 4.6,
-    "review_count": 149,
-    "google_name": "Sushi Masu"
+    "rating": 4.7,
+    "review_count": 164,
+    "google_name": "Sushi Masu",
+    "address": "286 Columbus Ave, New York, NY 10023, USA",
+    "lat": 40.7785494,
+    "lng": -73.9782185,
+    "place_id": "ChIJBaxS1pVZwokRrlAgmAu4M48",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Sho": {
-    "rating": 4.6,
-    "review_count": 88,
-    "google_name": "Sushi Sho"
+    "rating": 4.7,
+    "review_count": 98,
+    "google_name": "Sushi Sho",
+    "address": "3 E 41st St, New York, NY 10017, USA",
+    "lat": 40.7526643,
+    "lng": -73.9807136,
+    "place_id": "ChIJT_JHTgFZwokRXleXHadsVaE",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Yasuda": {
     "rating": 4.4,
-    "review_count": 1563,
-    "google_name": "Sushi Yasuda"
+    "review_count": 1573,
+    "google_name": "Sushi Yasuda",
+    "address": "204 E 43rd St, New York, NY 10017, USA",
+    "lat": 40.7511139,
+    "lng": -73.97350829999999,
+    "place_id": "ChIJ0Zb6HANZwokRnGIntPyqjLQ",
+    "business_status": "OPERATIONAL"
   },
   "Sushi You": {
     "rating": 4.8,
-    "review_count": 92,
-    "google_name": "Sushi You"
+    "review_count": 96,
+    "google_name": "Sushi You",
+    "address": "246 E 51st St, New York, NY 10022, USA",
+    "lat": 40.755562,
+    "lng": -73.9687464,
+    "place_id": "ChIJ0fSa9PZZwokRuOIQVXEb5us",
+    "business_status": "OPERATIONAL"
   },
   "Trust Bae": {
     "rating": 4.6,
     "review_count": 63,
-    "google_name": "Trust Bae"
+    "google_name": "Trust Bae",
+    "address": "1204 Broadway, New York, NY 10001, USA",
+    "lat": 40.746336,
+    "lng": -73.98830029999999,
+    "place_id": "ChIJIzklr6hZwokR5abftMiEZN8",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Uka Omakase": {
-    "rating": 4.8,
-    "review_count": 762,
-    "google_name": "Uka Omakase"
+    "rating": 4.9,
+    "review_count": 2444,
+    "google_name": "Uka Omakase",
+    "address": "238 E 60th St, New York, NY 10022, USA",
+    "lat": 40.7614232,
+    "lng": -73.9647277,
+    "place_id": "ChIJldVrs9lZwokRfhzV-CTUW4w",
+    "business_status": "OPERATIONAL"
   },
   "Uogashi": {
     "rating": 4.4,
     "review_count": 158,
-    "google_name": "UOGASHI"
+    "google_name": "UOGASHI",
+    "address": "318 W 51st St, New York, NY 10019, USA",
+    "lat": 40.76331709999999,
+    "lng": -73.986885,
+    "place_id": "ChIJ03JXKllZwokRdL8HMVY_6A0",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Zama Omakase": {
     "rating": 4.9,
-    "review_count": 142,
-    "google_name": "Zama Omakase"
+    "review_count": 181,
+    "google_name": "Zama Omakase",
+    "address": "346 W 52nd St, New York, NY 10019, USA",
+    "lat": 40.7640415,
+    "lng": -73.9868497,
+    "place_id": "ChIJnVeZ5ShZwokRK-1BJd-AFDw",
+    "business_status": "OPERATIONAL"
   },
   "Chemistry Room": {
     "rating": 4.4,
-    "review_count": 238,
-    "google_name": "The Chemistry Room"
+    "review_count": 245,
+    "google_name": "The Chemistry Room",
+    "address": "130 W 47th St, New York, NY 10036, USA",
+    "lat": 40.7583541,
+    "lng": -73.9832143,
+    "place_id": "ChIJXfY71YJZwokR_aH1rm-Ipjo",
+    "business_status": "OPERATIONAL"
   },
   "Korami Omakase": {
     "rating": 4.8,
-    "review_count": 654,
-    "google_name": "Omakase by korami"
+    "review_count": 672,
+    "google_name": "Omakase by korami",
+    "address": "400 W 50th St, New York, NY 10019, USA",
+    "lat": 40.7635424,
+    "lng": -73.98928459999999,
+    "place_id": "ChIJi-yPlFVZwokRsZ53xoCapQg",
+    "business_status": "OPERATIONAL"
   },
   "Mojo Omakase": {
-    "rating": 4.7,
-    "review_count": 326,
-    "google_name": "Mojo East"
+    "rating": null,
+    "review_count": null,
+    "google_name": "",
+    "address": "",
+    "lat": null,
+    "lng": null,
+    "place_id": null,
+    "business_status": null
   },
   "Sushiichi": {
     "rating": 4.8,
-    "review_count": 187,
-    "google_name": "Sushiichi"
+    "review_count": 193,
+    "google_name": "Sushiichi",
+    "address": "640 10th Ave, New York, NY 10036, USA",
+    "lat": 40.7616441,
+    "lng": -73.9936575,
+    "place_id": "ChIJ53Lg8qlZwokRqEREpjQxmro",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Lab": {
     "rating": 4.2,
-    "review_count": 1135,
-    "google_name": "Sushi Lab Rooftop"
+    "review_count": 1188,
+    "google_name": "Sushi Lab Rooftop",
+    "address": "132 W 47th St, New York, NY 10036, USA",
+    "lat": 40.7584855,
+    "lng": -73.983205,
+    "place_id": "ChIJscH4RxpZwokRFIrk37HvBT8",
+    "business_status": "OPERATIONAL"
   },
   "Sendo": {
     "rating": 4.6,
-    "review_count": 631,
-    "google_name": "Sendo"
+    "review_count": 713,
+    "google_name": "Sendo",
+    "address": "876 6th Ave 2nd Floor, New York, NY 10001, USA",
+    "lat": 40.7479626,
+    "lng": -73.9889288,
+    "place_id": "ChIJ147VsupZwokRC6Jn6kFXQPU",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Sasabune": {
     "rating": 4.5,
-    "review_count": 195,
-    "google_name": "Sushi Sasabune"
+    "review_count": 196,
+    "google_name": "Sushi Sasabune",
+    "address": "401 E 73rd St, New York, NY 10021, USA",
+    "lat": 40.7684175,
+    "lng": -73.9550312,
+    "place_id": "ChIJxeHh4cBYwokRrnTTpHq-6fM",
+    "business_status": "OPERATIONAL"
   },
   "Omakase Sushi Dairo": {
     "rating": 4.8,
-    "review_count": 297,
-    "google_name": "Omakase SUSHI DAIRO"
+    "review_count": 303,
+    "google_name": "Omakase SUSHI DAIRO",
+    "address": "208 3rd Ave, New York, NY 10003, USA",
+    "lat": 40.7360252,
+    "lng": -73.98543450000001,
+    "place_id": "ChIJub3k-H9ZwokReqic2hvVbgE",
+    "business_status": "OPERATIONAL"
   },
   "Tsumo": {
     "rating": 4.7,
-    "review_count": 619,
-    "google_name": "Tsumo Omakase"
+    "review_count": 645,
+    "google_name": "Tsumo Omakase",
+    "address": "132 E 28th St, New York, NY 10016, USA",
+    "lat": 40.7423438,
+    "lng": -73.9822386,
+    "place_id": "ChIJmZV9tspZwokRuWygf84Sy8k",
+    "business_status": "OPERATIONAL"
   },
   "One Bite Omakase": {
     "rating": 4.8,
-    "review_count": 221,
-    "google_name": "One Bite Omakase"
+    "review_count": 237,
+    "google_name": "One Bite Omakase",
+    "address": "411b Amsterdam Ave, New York, NY 10024, USA",
+    "lat": 40.78348580000001,
+    "lng": -73.9777797,
+    "place_id": "ChIJndAIDQBZwokRDL4Ik8dq7xI",
+    "business_status": "OPERATIONAL"
   },
   "ROKI": {
-    "rating": 4.4,
-    "review_count": 110,
-    "google_name": "ROKI Le Izakaya"
+    "rating": 4.8,
+    "review_count": 128,
+    "google_name": "RokuNana",
+    "address": "67 Clinton St, New York, NY 10002, USA",
+    "lat": 40.7194463,
+    "lng": -73.9850185,
+    "place_id": "ChIJi6xbNIZZwokR_3evmHpkSFQ",
+    "business_status": "OPERATIONAL"
   },
   "Shinn East": {
     "rating": 4.6,
-    "review_count": 574,
-    "google_name": "SHINN EAST"
+    "review_count": 576,
+    "google_name": "SHINN EAST",
+    "address": "119 E 7th St, New York, NY 10009, USA",
+    "lat": 40.7265685,
+    "lng": -73.9842899,
+    "place_id": "ChIJPaP9wCJZwokRwcYpugUpdIY",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Blossoms": {
     "rating": 4.8,
-    "review_count": 442,
-    "google_name": "Sushi Blossoms - Omakase Sushi in Chelsea NYC"
+    "review_count": 452,
+    "google_name": "Sushi Blossoms - Omakase Sushi in Chelsea NYC",
+    "address": "334 8th Ave, New York, NY 10001, USA",
+    "lat": 40.7475312,
+    "lng": -73.99665150000001,
+    "place_id": "ChIJP8byBydZwokRvjbUeB0lkHU",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Suite 1001": {
     "rating": 4.6,
-    "review_count": 421,
-    "google_name": "Sushi By Bou - NOMAD NYC @ Hotel32|32"
+    "review_count": 435,
+    "google_name": "Sushi By Bou - NOMAD NYC @ Hotel32|32",
+    "address": "32 E 32nd St, New York, NY 10016, USA",
+    "lat": 40.7461068,
+    "lng": -73.9834229,
+    "place_id": "ChIJM-U6m2VZwokRxFWJrVZ8F_c",
+    "business_status": "OPERATIONAL"
   },
   "Tokyo Bar": {
-    "rating": 4.1,
-    "review_count": 469,
-    "google_name": "Tokyo Record Bar"
+    "rating": 4.7,
+    "review_count": 832,
+    "google_name": "Sushi Tokyo Manhattan",
+    "address": "660 Amsterdam Ave, New York, NY 10025, USA",
+    "lat": 40.7917536,
+    "lng": -73.9723652,
+    "place_id": "ChIJZUpGubxZwokRBqQDwCK1BoA",
+    "business_status": "OPERATIONAL"
   },
   "KazuNori": {
     "rating": 4.7,
-    "review_count": 3088,
-    "google_name": "KazuNori: The Original Hand Roll Bar"
+    "review_count": 3144,
+    "google_name": "KazuNori: The Original Hand Roll Bar",
+    "address": "15 W 28th St, New York, NY 10001, USA",
+    "lat": 40.7451884,
+    "lng": -73.988237,
+    "place_id": "ChIJsaYZEKZZwokRThIP62r39zQ",
+    "business_status": "OPERATIONAL"
   },
   "Hasaki": {
     "rating": 4.4,
-    "review_count": 442,
-    "google_name": "Hasaki"
+    "review_count": 450,
+    "google_name": "Hasaki",
+    "address": "210 E 9th St, New York, NY 10003, USA",
+    "lat": 40.72969990000001,
+    "lng": -73.98881349999999,
+    "place_id": "ChIJ3cUFdpxZwokR6oOwbesBRXQ",
+    "business_status": "OPERATIONAL"
   },
   "KAWA Omakase": {
     "rating": 4.9,
-    "review_count": 157,
-    "google_name": "KAWA Omakase"
+    "review_count": 168,
+    "google_name": "KAWA Omakase",
+    "address": "37 E 1st St, New York, NY 10003, USA",
+    "lat": 40.72386729999999,
+    "lng": -73.99025739999999,
+    "place_id": "ChIJZ4RWjv5ZwokRS9HgXBVRzFo",
+    "business_status": "OPERATIONAL"
   },
   "Kissaki": {
-    "rating": 4.5,
-    "review_count": 171,
-    "google_name": "Kissaki Japanese Restaurant"
+    "rating": 4.1,
+    "review_count": 415,
+    "google_name": "Sushi Seki",
+    "address": "1143 1st Ave, New York, NY 10065, USA",
+    "lat": 40.761917,
+    "lng": -73.9605357,
+    "place_id": "ChIJ0yaoCehYwokRlS40yjTFyKY",
+    "business_status": "OPERATIONAL"
   },
   "Mayanoki": {
     "rating": 4.8,
     "review_count": 73,
-    "google_name": "Mayanoki"
+    "google_name": "Mayanoki",
+    "address": "620 E 6th St, New York, NY 10009, USA",
+    "lat": 40.72403329999999,
+    "lng": -73.98080279999999,
+    "place_id": "ChIJk3YFrIFZwokRHW1tYsjnhyA",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Mido Omakase": {
     "rating": 5,
-    "review_count": 868,
-    "google_name": "Mido - Omakase Room"
+    "review_count": 917,
+    "google_name": "Mido - Omakase Room",
+    "address": "221 S 1st St, Brooklyn, NY 11211, USA",
+    "lat": 40.713031,
+    "lng": -73.95900999999999,
+    "place_id": "ChIJsxs1HB5ZwokRufNcB16P-7c",
+    "business_status": "OPERATIONAL"
   },
   "Moko": {
     "rating": 4.2,
-    "review_count": 855,
-    "google_name": "Moko"
+    "review_count": 860,
+    "google_name": "Moko",
+    "address": "138 2nd Ave, New York, NY 10003, USA",
+    "lat": 40.7287621,
+    "lng": -73.987158,
+    "place_id": "ChIJKcTI8OxZwokRtK-tImLBAcc",
+    "business_status": "OPERATIONAL"
   },
   "Noda": {
     "rating": 4.7,
@@ -251,59 +475,114 @@
     "google_name": "odo"
   },
   "Omakase by Teisui": {
-    "rating": 4.5,
-    "review_count": 198,
-    "google_name": "OMAKASE by TEISUI"
+    "rating": 5,
+    "review_count": 59,
+    "google_name": "Omakase By Tento",
+    "address": "106 Avenue B, New York, NY 10009, USA",
+    "lat": 40.7249905,
+    "lng": -73.9814234,
+    "place_id": "ChIJydN6X7NZwokRvX7Eazs-7Zk",
+    "business_status": "OPERATIONAL"
   },
   "Robataya": {
-    "rating": 4.7,
-    "review_count": 34,
-    "google_name": "Sushi By Bou - East Village NYC"
+    "rating": null,
+    "review_count": null,
+    "google_name": "",
+    "address": "",
+    "lat": null,
+    "lng": null,
+    "place_id": null,
+    "business_status": null
   },
   "Sanyuu West": {
     "rating": 4.7,
-    "review_count": 273,
-    "google_name": "Sanyuu West"
+    "review_count": 285,
+    "google_name": "Sanyuu West",
+    "address": "228 W 18th St, New York, NY 10011, USA",
+    "lat": 40.7414977,
+    "lng": -73.9993703,
+    "place_id": "ChIJeTRXkt1ZwokRzC-G7wRz4X0",
+    "business_status": "OPERATIONAL"
   },
   "Shinzo Omakase": {
     "rating": 4.9,
-    "review_count": 967,
-    "google_name": "Shinzo Omakase"
+    "review_count": 996,
+    "google_name": "Shinzo Omakase",
+    "address": "89 E 2nd St, New York, NY 10009, USA",
+    "lat": 40.7237006,
+    "lng": -73.98769639999999,
+    "place_id": "ChIJnYh7RINZwokR-PjRtFNkw7M",
+    "business_status": "OPERATIONAL"
   },
   "SourAji": {
     "rating": 4.4,
-    "review_count": 768,
-    "google_name": "SourAji"
+    "review_count": 796,
+    "google_name": "SourAji",
+    "address": "23 Avenue B, New York, NY 10009, USA",
+    "lat": 40.7221675,
+    "lng": -73.9831145,
+    "place_id": "ChIJOw7xqgZZwokRO2ReYlnHxJw",
+    "business_status": "OPERATIONAL"
   },
   "Sugarfish": {
     "rating": 4.5,
-    "review_count": 2038,
-    "google_name": "SUGARFISH by sushi nozawa"
+    "review_count": 2063,
+    "google_name": "SUGARFISH by sushi nozawa",
+    "address": "33 E 20th St, New York, NY 10003, USA",
+    "lat": 40.73900099999999,
+    "lng": -73.9888323,
+    "place_id": "ChIJK_rtfaFZwokRRCOUQwA-A28",
+    "business_status": "OPERATIONAL"
   },
   "Sushi by Bou": {
     "rating": 4.7,
-    "review_count": 34,
-    "google_name": "Sushi By Bou - East Village NYC"
+    "review_count": 41,
+    "google_name": "Sushi By Bou - East Village NYC",
+    "address": "320 E 11th St, New York, NY 10003, USA",
+    "lat": 40.7297817,
+    "lng": -73.9853292,
+    "place_id": "ChIJJVLmplRZwokRfydM9XI41u8",
+    "business_status": "OPERATIONAL"
   },
   "Sushi by M": {
     "rating": 4.5,
-    "review_count": 951,
-    "google_name": "Sushi by M-East 5th st"
+    "review_count": 975,
+    "google_name": "Sushi by M-East 5th st",
+    "address": "300 E 5th St, New York, NY 10003, USA",
+    "lat": 40.72660260000001,
+    "lng": -73.98881089999999,
+    "place_id": "ChIJk2lnfqxZwokR33xBYJtyR_E",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Dojo": {
     "rating": 4.2,
-    "review_count": 432,
-    "google_name": "Sushi Dojo"
+    "review_count": 430,
+    "google_name": "Sushi Dojo",
+    "address": "110 1st Ave, New York, NY 10009, USA",
+    "lat": 40.7266572,
+    "lng": -73.98569839999999,
+    "place_id": "ChIJeaXCJp1ZwokRL8asiigH-UM",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Sushi Seki": {
     "rating": 4.4,
-    "review_count": 359,
-    "google_name": "Sushi Seki"
+    "review_count": 364,
+    "google_name": "Sushi Seki",
+    "address": "208 W 23rd St, New York, NY 10011, USA",
+    "lat": 40.7442022,
+    "lng": -73.996465,
+    "place_id": "ChIJcaGPGLtZwokRLQQl4p_5zCc",
+    "business_status": "OPERATIONAL"
   },
   "Thirteen Water": {
     "rating": 4.6,
-    "review_count": 436,
-    "google_name": "Thirteen Water"
+    "review_count": 445,
+    "google_name": "Thirteen Water",
+    "address": "208 E 7th St, New York, NY 10009, USA",
+    "lat": 40.7243157,
+    "lng": -73.97999759999999,
+    "place_id": "ChIJsTmHXltZwokRXisc2lNWYrE",
+    "business_status": "OPERATIONAL"
   },
   "Tsukimi": {
     "rating": 4.6,
@@ -317,78 +596,153 @@
   },
   "Domodomo": {
     "rating": 4.5,
-    "review_count": 1467,
-    "google_name": "DOMODOMO New York"
+    "review_count": 1507,
+    "google_name": "DOMODOMO New York",
+    "address": "140 W Houston St, New York, NY 10012, USA",
+    "lat": 40.7280131,
+    "lng": -74.00161779999999,
+    "place_id": "ChIJKas69o1ZwokRzUumZ0jK0rk",
+    "business_status": "OPERATIONAL"
   },
   "Genki Omakase": {
     "rating": 4.8,
-    "review_count": 1401,
-    "google_name": "Genki Omakase"
+    "review_count": 1408,
+    "google_name": "Genki Omakase | Sushi \u2022 Japanese",
+    "address": "552 LaGuardia Pl Store 4, New York, NY 10012, USA",
+    "lat": 40.729163,
+    "lng": -73.9982903,
+    "place_id": "ChIJx232mt9ZwokR7MuLz8Vpqr0",
+    "business_status": "OPERATIONAL"
   },
   "Kanoyama": {
     "rating": 4.3,
-    "review_count": 656,
-    "google_name": "Kanoyama"
+    "review_count": 661,
+    "google_name": "Kanoyama",
+    "address": "175 2nd Ave, New York, NY 10003, USA",
+    "lat": 40.7306669,
+    "lng": -73.98647919999999,
+    "place_id": "ChIJQzryKJxZwokRYH9Qt5wh3ZY",
+    "business_status": "OPERATIONAL"
   },
   "Kazumi Omakase": {
     "rating": 4.9,
-    "review_count": 330,
-    "google_name": "Kazumi Omakase"
+    "review_count": 361,
+    "google_name": "Kazumi Omakase",
+    "address": "31 W 8th St, New York, NY 10011, USA",
+    "lat": 40.7330727,
+    "lng": -73.99790829999999,
+    "place_id": "ChIJ1foP1jNZwokR7Kc8wAThdbU",
+    "business_status": "OPERATIONAL"
   },
   "Nozomi NYC": {
     "rating": 4.9,
-    "review_count": 438,
-    "google_name": "Nozomi NYC @Williamsburg"
+    "review_count": 528,
+    "google_name": "Nozomi NYC @Williamsburg",
+    "address": "130 Grand St CU2, Brooklyn, NY 11249, USA",
+    "lat": 40.7148433,
+    "lng": -73.9626569,
+    "place_id": "ChIJAb_lmHVZwokRVgs44dVnIlg",
+    "business_status": "OPERATIONAL"
   },
   "Saishin": {
-    "rating": 4.1,
-    "review_count": 95,
-    "google_name": "Saishin at Gansevoort Rooftop"
+    "rating": 4,
+    "review_count": 97,
+    "google_name": "Saishin at Gansevoort Rooftop",
+    "address": "18 9th Ave, New York, NY 10014, USA",
+    "lat": 40.7397494,
+    "lng": -74.0058121,
+    "place_id": "ChIJe4mGMCdZwokRFII2GCJ_HPA",
+    "business_status": "OPERATIONAL"
   },
   "Shota Omakase": {
     "rating": 4.6,
-    "review_count": 161,
-    "google_name": "Shota omakase"
+    "review_count": 178,
+    "google_name": "Shota omakase",
+    "address": "50 S 3rd St, Brooklyn, NY 11249, USA",
+    "lat": 40.71352,
+    "lng": -73.96615729999999,
+    "place_id": "ChIJ34eY6E5ZwokRvof_huM7t3U",
+    "business_status": "OPERATIONAL"
   },
   "Shuko": {
     "rating": 4.5,
     "review_count": 383,
-    "google_name": "Shuko"
+    "google_name": "Shuko",
+    "address": "47 E 12th St, New York, NY 10003, USA",
+    "lat": 40.7336156,
+    "lng": -73.9916539,
+    "place_id": "ChIJe8WrB5lZwokREBs3DZYJyKc",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Sushi Yashin": {
-    "rating": 5,
-    "review_count": 39,
-    "google_name": "Sushi Hayashi Williamsburg"
+    "rating": 4.3,
+    "review_count": 266,
+    "google_name": "Sushi Yashin",
+    "address": "381 5th Ave, Brooklyn, NY 11215, USA",
+    "lat": 40.6708557,
+    "lng": -73.98473249999999,
+    "place_id": "ChIJSdgc3f1awokRq3dr7RS4D4g",
+    "business_status": "OPERATIONAL"
   },
   "U Omakase": {
-    "rating": 4.9,
-    "review_count": 197,
-    "google_name": "U Omakase"
+    "rating": 4.8,
+    "review_count": 208,
+    "google_name": "U Omakase",
+    "address": "173 Greenpoint Ave, Brooklyn, NY 11222, USA",
+    "lat": 40.7305079,
+    "lng": -73.9527435,
+    "place_id": "ChIJl6gWMxpZwokR2jvrV4VUlVQ",
+    "business_status": "OPERATIONAL"
   },
   "Bondi Sushi": {
-    "rating": 4.4,
-    "review_count": 271,
-    "google_name": "Bondi Sushi"
+    "rating": 4.5,
+    "review_count": 325,
+    "google_name": "Bondi Sushi",
+    "address": "156 N 4th St, Brooklyn, NY 11211, USA",
+    "lat": 40.7159217,
+    "lng": -73.9592808,
+    "place_id": "ChIJ98vzWodZwokRE5QEu7iiWeI",
+    "business_status": "OPERATIONAL"
   },
   "Douska": {
     "rating": 4.5,
-    "review_count": 309,
-    "google_name": "Douska"
+    "review_count": 325,
+    "google_name": "Douska",
+    "address": "63 Delancey St, New York, NY 10002, USA",
+    "lat": 40.7190784,
+    "lng": -73.9907757,
+    "place_id": "ChIJN2P817hZwokRy8cUeMS_ETk",
+    "business_status": "OPERATIONAL"
   },
   "icca": {
     "rating": 4.5,
-    "review_count": 137,
-    "google_name": "icca"
+    "review_count": 142,
+    "google_name": "icca",
+    "address": "20 Warren St, New York, NY 10007, USA",
+    "lat": 40.7143008,
+    "lng": -74.0076845,
+    "place_id": "ChIJyRIhC_dbwokRqGoh89KPQME",
+    "business_status": "OPERATIONAL"
   },
   "Matsunori": {
-    "rating": 4.9,
-    "review_count": 211,
-    "google_name": "Matsunori Handroll Bar"
+    "rating": 4.8,
+    "review_count": 230,
+    "google_name": "Matsunori Handroll Bar",
+    "address": "27-09 Thomson Ave, Long Island City, NY 11101, USA",
+    "lat": 40.7465358,
+    "lng": -73.9427434,
+    "place_id": "ChIJKYSwRQRZwokRrQ427R4G4BQ",
+    "business_status": "OPERATIONAL"
   },
   "Mishik": {
     "rating": 4.6,
-    "review_count": 209,
-    "google_name": "Mishik"
+    "review_count": 221,
+    "google_name": "Mishik",
+    "address": "259A Hudson St, New York, NY 10013, USA",
+    "lat": 40.7249077,
+    "lng": -74.0079398,
+    "place_id": "ChIJSx4uSy5ZwokRwqbvtErf43M",
+    "business_status": "OPERATIONAL"
   },
   "Shion 69 Leonard": {
     "rating": 4.5,
@@ -397,68 +751,133 @@
   },
   "Sushi 456": {
     "rating": 4.6,
-    "review_count": 216,
-    "google_name": "Sushi 456"
+    "review_count": 222,
+    "google_name": "Sushi 456",
+    "address": "456 Hudson St, New York, NY 10014, USA",
+    "lat": 40.7314551,
+    "lng": -74.0064215,
+    "place_id": "ChIJM9us3vBZwokR0__qX5GS_5A",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Hayashi": {
-    "rating": 5,
-    "review_count": 39,
-    "google_name": "Sushi Hayashi Williamsburg"
+    "rating": 4.9,
+    "review_count": 59,
+    "google_name": "Sushi Hayashi Williamsburg",
+    "address": "225 Grand St, Brooklyn, NY 11211, USA",
+    "lat": 40.7138694,
+    "lng": -73.9594506,
+    "place_id": "ChIJ2YbKoLdZwokRjrGy0WYGIS0",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Ichimura": {
     "rating": 4.5,
     "review_count": 74,
-    "google_name": "Sushi Ichimura"
+    "google_name": "Sushi Ichimura",
+    "address": "412 Greenwich St, New York, NY 10013, USA",
+    "lat": 40.7218848,
+    "lng": -74.0099346,
+    "place_id": "ChIJU10X_TJZwokRuSfnHw4dhQE",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Sushi Nakazawa": {
     "rating": 4.5,
-    "review_count": 1939,
-    "google_name": "Sushi Nakazawa"
+    "review_count": 1958,
+    "google_name": "Sushi Nakazawa",
+    "address": "23 Commerce St, New York, NY 10014, USA",
+    "lat": 40.7318046,
+    "lng": -74.0045493,
+    "place_id": "ChIJsw80F5NZwokRcDtxajLLOeA",
+    "business_status": "OPERATIONAL"
   },
   "Sushi on Jones": {
     "rating": 4.1,
     "review_count": 365,
-    "google_name": "Sushi on Jones"
+    "google_name": "Sushi on Jones",
+    "address": "210 W 10th St, New York, NY 10014, USA",
+    "lat": 40.7339776,
+    "lng": -74.0042481,
+    "place_id": "ChIJSYgFhZRZwokRdJ_SHWmaIfs",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Sushi On Me": {
-    "rating": 4.5,
-    "review_count": 142,
-    "google_name": "Sushi On Me - Williamsburg"
+    "rating": 4.8,
+    "review_count": 552,
+    "google_name": "Sushi On Me",
+    "address": "71-26 Roosevelt Ave, Jackson Heights, NY 11372, USA",
+    "lat": 40.7463808,
+    "lng": -73.8939802,
+    "place_id": "ChIJya9SkEZfwokRER22OiahUrY",
+    "business_status": "OPERATIONAL"
   },
   "Takumi Omakase": {
     "rating": 4.8,
-    "review_count": 716,
-    "google_name": "TAKUMI OMAKASE"
+    "review_count": 1076,
+    "google_name": "TAKUMI OMAKASE",
+    "address": "181 Essex St, New York, NY 10002, USA",
+    "lat": 40.7219761,
+    "lng": -73.9866667,
+    "place_id": "ChIJo0o2w_pZwokRYBdodUn16IQ",
+    "business_status": "OPERATIONAL"
   },
   "Ume Williamsburg": {
     "rating": 4.3,
-    "review_count": 724,
-    "google_name": "Ume"
+    "review_count": 742,
+    "google_name": "Ume",
+    "address": "237 Kent Ave, Brooklyn, NY 11249, USA",
+    "lat": 40.7165456,
+    "lng": -73.9655186,
+    "place_id": "ChIJ64q9nXNZwokRCt5KB8WXT6M",
+    "business_status": "OPERATIONAL"
   },
   "Yoshino": {
     "rating": 4.5,
-    "review_count": 168,
-    "google_name": "YOSHINO \u2022 NEW YORK"
+    "review_count": 173,
+    "google_name": "YOSHINO \u2022 NEW YORK",
+    "address": "342 Bowery, New York, NY 10012, USA",
+    "lat": 40.7262286,
+    "lng": -73.9921624,
+    "place_id": "ChIJ6WTjLENZwokRsU3IurxvnCI",
+    "business_status": "OPERATIONAL"
   },
   "Zen Sushi Omakase": {
     "rating": 4.9,
-    "review_count": 370,
-    "google_name": "Zen Sushi Omakase"
+    "review_count": 397,
+    "google_name": "Zen Sushi Omakase",
+    "address": "235 Eldridge St, New York, NY 10002, USA",
+    "lat": 40.7224441,
+    "lng": -73.98998470000001,
+    "place_id": "ChIJ7TYwOABZwokRGOFFMhKZb1Q",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Ryusei": {
     "rating": 4.6,
-    "review_count": 329,
-    "google_name": "Sushi Ryusei"
+    "review_count": 350,
+    "google_name": "Sushi Ryusei",
+    "address": "216 E 39th St, New York, NY 10016, USA",
+    "lat": 40.7483656,
+    "lng": -73.97520899999999,
+    "place_id": "ChIJqTLS3nJZwokRGdkiM6Hj-BU",
+    "business_status": "OPERATIONAL"
   },
   "Blue Ribbon Sushi": {
     "rating": 4.6,
-    "review_count": 1867,
-    "google_name": "Blue Ribbon Sushi"
+    "review_count": 1896,
+    "google_name": "Blue Ribbon Sushi",
+    "address": "119 Sullivan St, New York, NY 10012, USA",
+    "lat": 40.726092,
+    "lng": -74.00240819999999,
+    "place_id": "ChIJS7q7to1ZwokRWbN1t_AXYME",
+    "business_status": "OPERATIONAL"
   },
   "Kintsugi": {
     "rating": 4.2,
     "review_count": 200,
-    "google_name": "Kintsugi Omakase"
+    "google_name": "Kintsugi Omakase",
+    "address": "28 Grand St, New York, NY 10013, USA",
+    "lat": 40.72296240000001,
+    "lng": -74.0046244,
+    "place_id": "ChIJcyECnWFZwokRgQRyikwtiOo",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Kosaka": {
     "rating": 4.5,
@@ -467,556 +886,1043 @@
   },
   "Maaser Omakase": {
     "rating": 4.7,
-    "review_count": 291,
-    "google_name": "Omakase room by Maaser"
+    "review_count": 306,
+    "google_name": "Omakase room by Maaser",
+    "address": "321 Bleecker St, New York, NY 10014, USA",
+    "lat": 40.733199,
+    "lng": -74.0039242,
+    "place_id": "ChIJGx9AcFlZwokRC_wt479CJSg",
+    "business_status": "OPERATIONAL"
   },
   "Momoya": {
     "rating": 4.6,
-    "review_count": 1373,
-    "google_name": "Momoya SoHo"
+    "review_count": 1546,
+    "google_name": "Momoya SoHo",
+    "address": "47 Prince St, New York, NY 10012, USA",
+    "lat": 40.7235132,
+    "lng": -73.9958467,
+    "place_id": "ChIJ4Rw7sVhZwokRJuSZSI0jb4A",
+    "business_status": "OPERATIONAL"
   },
   "Nami Nori": {
     "rating": 4.4,
-    "review_count": 1812,
-    "google_name": "Nami Nori West Village"
+    "review_count": 1867,
+    "google_name": "Nami Nori West Village",
+    "address": "33 Carmine St, New York, NY 10014, USA",
+    "lat": 40.7302914,
+    "lng": -74.0032496,
+    "place_id": "ChIJcfbyqFNZwokRUoBP92II4c0",
+    "business_status": "OPERATIONAL"
   },
   "Sekai Omakase": {
     "rating": 4.6,
-    "review_count": 189,
-    "google_name": "Sekai Omakase"
+    "review_count": 193,
+    "google_name": "Sekai Omakase",
+    "address": "96 W Houston St, New York, NY 10012, USA",
+    "lat": 40.7272843,
+    "lng": -74.00015069999999,
+    "place_id": "ChIJ5UUoy2BZwokRK8h44snIYIw",
+    "business_status": "OPERATIONAL"
   },
   "Shiki Omakase": {
     "rating": 4.5,
-    "review_count": 458,
-    "google_name": "Shiki Omakase"
+    "review_count": 480,
+    "google_name": "Shiki Omakase",
+    "address": "71 W Houston St, New York, NY 10012, USA",
+    "lat": 40.7264588,
+    "lng": -73.9995183,
+    "place_id": "ChIJGRfZp4FZwokRc5bLX3yR5wI",
+    "business_status": "OPERATIONAL"
   },
   "Sushi by Bae": {
-    "rating": 4.8,
-    "review_count": 91,
-    "google_name": "Rei Restaurant"
+    "rating": 4.5,
+    "review_count": 70,
+    "google_name": "Sushi By Bae",
+    "address": "118A E 15th St, New York, NY 10003, USA",
+    "lat": 40.7346461,
+    "lng": -73.98876990000001,
+    "place_id": "ChIJ1amWNJ9ZwokRxcWi8bKvNWg",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Sushi Ikumi": {
     "rating": 4.6,
-    "review_count": 104,
-    "google_name": "Sushi Ikumi"
+    "review_count": 107,
+    "google_name": "Sushi Ikumi",
+    "address": "135 Sullivan St, New York, NY 10012, USA",
+    "lat": 40.7266756,
+    "lng": -74.0018095,
+    "place_id": "ChIJczHrvxxZwokRQP4sZs4ahxs",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Lin": {
-    "rating": 4.6,
-    "review_count": 179,
-    "google_name": "Sushi Lin SoHo"
+    "rating": 4.8,
+    "review_count": 98,
+    "google_name": "Sushi Lin Upper West Side",
+    "address": "170 Amsterdam Ave, New York, NY 10023, USA",
+    "lat": 40.7760596,
+    "lng": -73.98379849999999,
+    "place_id": "ChIJ1Y5tA6NZwokRSBckRDxevJw",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Ouji": {
     "rating": 4.8,
-    "review_count": 205,
-    "google_name": "Sushi Ouji"
+    "review_count": 222,
+    "google_name": "Sushi Ouji",
+    "address": "196 Prince St, New York, NY 10012, USA",
+    "lat": 40.7265209,
+    "lng": -74.0027331,
+    "place_id": "ChIJiXCfJk9ZwokRaUvhHlQpido",
+    "business_status": "OPERATIONAL"
   },
   "Atto Omakase": {
     "rating": 4.8,
-    "review_count": 249,
-    "google_name": "Atto Sushi"
+    "review_count": 260,
+    "google_name": "Atto Sushi",
+    "address": "875 3rd Ave Lower Level, New York, NY 10022, USA",
+    "lat": 40.757194,
+    "lng": -73.96918579999999,
+    "place_id": "ChIJybJS5Q5ZwokRU_ENl27tuHg",
+    "business_status": "OPERATIONAL"
   },
   "Noz Market": {
     "rating": 4.4,
-    "review_count": 177,
-    "google_name": "Noz Market"
+    "review_count": 188,
+    "google_name": "Noz Market",
+    "address": "1374 3rd Ave, New York, NY 10075, USA",
+    "lat": 40.773822,
+    "lng": -73.9579557,
+    "place_id": "ChIJdbHkHtJZwokRDWARlBEgBMA",
+    "business_status": "OPERATIONAL"
   },
   "Oyishi Sushi": {
     "rating": 5,
-    "review_count": 521,
-    "google_name": "Oyishi Sushi 80 ST"
+    "review_count": 558,
+    "google_name": "Oyishi Sushi 80 ST",
+    "address": "230 E 80th St, New York, NY 10075, USA",
+    "lat": 40.7742851,
+    "lng": -73.9554818,
+    "place_id": "ChIJe3SYwOZZwokRCGLDy6iVfUc",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Jin": {
     "rating": 4.9,
-    "review_count": 167,
-    "google_name": "Sushi jin"
+    "review_count": 170,
+    "google_name": "Sushi jin",
+    "address": "316 E 84th St, New York, NY 10028, USA",
+    "lat": 40.7761485,
+    "lng": -73.9519696,
+    "place_id": "ChIJ4-kkyVdZwokRc4pwM44G53s",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Koya": {
     "rating": 4.8,
-    "review_count": 222,
-    "google_name": "Sushi Koya"
+    "review_count": 229,
+    "google_name": "Sushi Koya",
+    "address": "163 W 71st St, New York, NY 10023, USA",
+    "lat": 40.7777473,
+    "lng": -73.9812353,
+    "place_id": "ChIJj6uYetJZwokRVDssll1T_1g",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Yolo": {
     "rating": 4.9,
-    "review_count": 231,
-    "google_name": "Sushi YOLO"
+    "review_count": 240,
+    "google_name": "Sushi YOLO",
+    "address": "348 W 57th St, New York, NY 10019, USA",
+    "lat": 40.7674543,
+    "lng": -73.98510279999999,
+    "place_id": "ChIJz9w6bOFZwokR6M93DO6_0xw",
+    "business_status": "OPERATIONAL"
   },
   "Tatsuda Omakase": {
     "rating": 4.8,
-    "review_count": 315,
-    "google_name": "Tatsuda Omakase"
+    "review_count": 345,
+    "google_name": "Tatsuda Omakase",
+    "address": "354 W 44th St #6, New York, NY 10036, USA",
+    "lat": 40.7591987,
+    "lng": -73.99130160000001,
+    "place_id": "ChIJa6MvoQdZwokRZ4gArGw2orw",
+    "business_status": "OPERATIONAL"
   },
   "Fuku Omakase": {
     "rating": 4.8,
-    "review_count": 334,
-    "google_name": "Fuku Omakase"
+    "review_count": 339,
+    "google_name": "Fuku Omakase",
+    "address": "BYOB (No Corkage Fee), 60 Min Per Session, 104 W Washington Pl, New York, NY 10014, USA",
+    "lat": 40.7324225,
+    "lng": -74.00095979999999,
+    "place_id": "ChIJPftWhjZZwokR1pXMYeU768k",
+    "business_status": "OPERATIONAL"
   },
   "Hatsu Omakase": {
     "rating": 4.4,
-    "review_count": 138,
-    "google_name": "Hatsu Omakase"
+    "review_count": 163,
+    "google_name": "Hatsu Omakase",
+    "address": "133 E 4th St, New York, NY 10003, USA",
+    "lat": 40.7254255,
+    "lng": -73.9873013,
+    "place_id": "ChIJ8RcVdgBZwokRbeGTfYpIz3s",
+    "business_status": "OPERATIONAL"
   },
   "Kinzan Omakase": {
     "rating": 4.7,
-    "review_count": 444,
-    "google_name": "Kinzan Omakase"
+    "review_count": 457,
+    "google_name": "Kinzan Omakase",
+    "address": "259 6th Ave, New York, NY 10014, USA",
+    "lat": 40.729223,
+    "lng": -74.002788,
+    "place_id": "ChIJE-QSfaVZwokRMNqrsBqnwzk",
+    "business_status": "OPERATIONAL"
   },
   "Kyuubi Omakase": {
-    "rating": 4.7,
-    "review_count": 208,
-    "google_name": "Kyuubi Sushi Omakase"
+    "rating": 4.8,
+    "review_count": 227,
+    "google_name": "Kyuubi Sushi Omakase",
+    "address": "102 St Marks Pl, New York, NY 10009, USA",
+    "lat": 40.7271611,
+    "lng": -73.9846307,
+    "place_id": "ChIJe--7K8FZwokRNI2pAfIpVUI",
+    "business_status": "OPERATIONAL"
   },
   "Mitsuru": {
     "rating": 4.5,
-    "review_count": 83,
-    "google_name": "Mitsuru"
+    "review_count": 85,
+    "google_name": "Mitsuru",
+    "address": "149 W 4th St, New York, NY 10012, USA",
+    "lat": 40.7316444,
+    "lng": -74.00044820000001,
+    "place_id": "ChIJ53izUQBZwokRJTNgBT_Et_o",
+    "business_status": "OPERATIONAL"
   },
   "Mojo East": {
     "rating": 4.7,
-    "review_count": 326,
-    "google_name": "Mojo East"
+    "review_count": 371,
+    "google_name": "Mojo East",
+    "address": "85 Stanton St, New York, NY 10002, USA",
+    "lat": 40.7213853,
+    "lng": -73.9888221,
+    "place_id": "ChIJc42kcwBZwokRLn1OA6qgeXY",
+    "business_status": "OPERATIONAL"
   },
   "Mori": {
     "rating": 4.9,
-    "review_count": 254,
-    "google_name": "Mori"
+    "review_count": 298,
+    "google_name": "Mori",
+    "address": "144 Sullivan St, New York, NY 10012, USA",
+    "lat": 40.7271264,
+    "lng": -74.002033,
+    "place_id": "ChIJTzkZaC9ZwokRq_FgMF4lgac",
+    "business_status": "OPERATIONAL"
   },
   "Nobu Downtown": {
     "rating": 4.4,
-    "review_count": 1968,
-    "google_name": "Nobu Downtown"
+    "review_count": 2004,
+    "google_name": "Nobu Downtown",
+    "address": "195 Broadway, New York, NY 10007, USA",
+    "lat": 40.7107732,
+    "lng": -74.00958039999999,
+    "place_id": "ChIJZc-EthlawokRIRUvwpkpltI",
+    "business_status": "OPERATIONAL"
   },
   "Omakase by No Name": {
     "rating": 4.8,
-    "review_count": 218,
-    "google_name": "Omakase Sushi by No name"
+    "review_count": 236,
+    "google_name": "Omakase Sushi by No name",
+    "address": "114 Eldridge St, New York, NY 10002, USA",
+    "lat": 40.7181287,
+    "lng": -73.9917449,
+    "place_id": "ChIJN2PbiKZZwokRDOFfD66hznY",
+    "business_status": "OPERATIONAL"
   },
   "Saikou": {
     "rating": 4.9,
-    "review_count": 277,
-    "google_name": "Sushi Saikou"
+    "review_count": 288,
+    "google_name": "Sushi Saikou",
+    "address": "301 Elizabeth St, New York, NY 10012, USA",
+    "lat": 40.7249597,
+    "lng": -73.9934249,
+    "place_id": "ChIJ93dzfX1ZwokR_izof8S0uTI",
+    "business_status": "OPERATIONAL"
   },
   "Sake Kawa": {
     "rating": 4.4,
-    "review_count": 295,
-    "google_name": "Sake Kawa"
+    "review_count": 257,
+    "google_name": "Kawa Sushi",
+    "address": "24 8th Ave, New York, NY 10014, USA",
+    "lat": 40.7377062,
+    "lng": -74.00438520000002,
+    "place_id": "ChIJPSuOb5VZwokRbHBUWnS6KNw",
+    "business_status": "OPERATIONAL"
   },
   "SHHH Omakase": {
     "rating": 4.8,
-    "review_count": 82,
-    "google_name": "Shh omakase"
+    "review_count": 86,
+    "google_name": "Shh omakase",
+    "address": "113 Division St, New York, NY 10002, USA",
+    "lat": 40.7142632,
+    "lng": -73.9921627,
+    "place_id": "ChIJtSAs_yhawokRPKVz3eX14_0",
+    "business_status": "OPERATIONAL"
   },
   "Shinsen": {
     "rating": 4.2,
-    "review_count": 344,
-    "google_name": "Shinsen oMAXkase & Lounge"
+    "review_count": 352,
+    "google_name": "Shinsen oMAXkase & Lounge",
+    "address": "44 Bowery, New York, NY 10013, USA",
+    "lat": 40.7156148,
+    "lng": -73.99677009999999,
+    "place_id": "ChIJ__8OsCdawokRLgMZI2Ja0Mw",
+    "business_status": "OPERATIONAL"
   },
   "Shirokuro": {
     "rating": 4.3,
-    "review_count": 293,
-    "google_name": "Shirokuro"
+    "review_count": 314,
+    "google_name": "Shirokuro",
+    "address": "103 2nd Ave, New York, NY 10003, USA",
+    "lat": 40.727587,
+    "lng": -73.9886731,
+    "place_id": "ChIJY-AxVQBZwokRQa-hQDzy7o0",
+    "business_status": "OPERATIONAL"
   },
   "Shoshin": {
     "rating": 4.8,
-    "review_count": 354,
-    "google_name": "SHOSHIN 68"
+    "review_count": 370,
+    "google_name": "SHOSHIN 68",
+    "address": "68 Thompson St, New York, NY 10012, USA",
+    "lat": 40.7243781,
+    "lng": -74.0028762,
+    "place_id": "ChIJ1UtKrDFZwokR5Yslqazm448",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Daizen": {
     "rating": 4.7,
-    "review_count": 695,
-    "google_name": "Otani"
+    "review_count": 761,
+    "google_name": "Otani",
+    "address": "59 Nassau St, New York, NY 10038, USA",
+    "lat": 40.7093113,
+    "lng": -74.0088552,
+    "place_id": "ChIJb198a_lbwokRyJ4xmOr8kQE",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Kai": {
     "rating": 4.7,
-    "review_count": 212,
-    "google_name": "Sushi Kai - West Village"
+    "review_count": 238,
+    "google_name": "Sushi Kai - West Village",
+    "address": "11 Barrow St, New York, NY 10014, USA",
+    "lat": 40.732638,
+    "lng": -74.00237299999999,
+    "place_id": "ChIJlYMM2-RZwokRtkldCVtmqEM",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Makoto": {
     "rating": 4.8,
-    "review_count": 361,
-    "google_name": "Sushi Makoto - Omakase"
+    "review_count": 373,
+    "google_name": "Sushi Makoto - Omakase",
+    "address": "208 W 14th St, New York, NY 10011, USA",
+    "lat": 40.7387236,
+    "lng": -74.0005884,
+    "place_id": "ChIJJUHxyANZwokRwY2wufXXMbk",
+    "business_status": "OPERATIONAL"
   },
   "Taikun": {
     "rating": 4.9,
-    "review_count": 127,
-    "google_name": "Taikun Sushi"
+    "review_count": 129,
+    "google_name": "Taikun Sushi",
+    "address": "79 Delancey St, New York, NY 10002, USA",
+    "lat": 40.7188054,
+    "lng": -73.9900792,
+    "place_id": "ChIJ5bij9GNZwokR8ZXniuKzdr0",
+    "business_status": "OPERATIONAL"
   },
   "Towa": {
     "rating": 4.6,
-    "review_count": 298,
-    "google_name": "TOWA"
+    "review_count": 305,
+    "google_name": "TOWA",
+    "address": "36 W 26th St, New York, NY 10010, USA",
+    "lat": 40.7442413,
+    "lng": -73.9906129,
+    "place_id": "ChIJAW-8oGVZwokR7qplivJwXvQ",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Unique Omakase": {
-    "rating": 4.9,
-    "review_count": 370,
-    "google_name": "Zen Sushi Omakase"
+    "rating": 4.8,
+    "review_count": 236,
+    "google_name": "Omakase Sushi by No name",
+    "address": "114 Eldridge St, New York, NY 10002, USA",
+    "lat": 40.7181287,
+    "lng": -73.9917449,
+    "place_id": "ChIJN2PbiKZZwokRDOFfD66hznY",
+    "business_status": "OPERATIONAL"
   },
   "Yokox Omakase": {
-    "rating": 4.8,
-    "review_count": 166,
-    "google_name": "Yokox Omakase"
+    "rating": 4.7,
+    "review_count": 176,
+    "google_name": "Yokox Omakase",
+    "address": "41 Avenue B, New York, NY 10009, USA",
+    "lat": 40.7228146,
+    "lng": -73.98255619999999,
+    "place_id": "ChIJlSiSJzlZwokR4pYcclLwBGA",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Tsushima": {
     "rating": 4.2,
-    "review_count": 474,
-    "google_name": "Tsushima"
+    "review_count": 478,
+    "google_name": "Tsushima",
+    "address": "210 E 44th St, New York, NY 10017, USA",
+    "lat": 40.7516422,
+    "lng": -73.9728019,
+    "place_id": "ChIJe0Zw0yP9ZUAR9BhsehAD-qo",
+    "business_status": "OPERATIONAL"
   },
   "Iwak Sushi": {
     "rating": 4.8,
-    "review_count": 576,
-    "google_name": "IWAK Sushi + Kitchen"
+    "review_count": 583,
+    "google_name": "IWAK Sushi + Kitchen",
+    "address": "340 Grand St, Brooklyn, NY 11211, USA",
+    "lat": 40.7124022,
+    "lng": -73.9562567,
+    "place_id": "ChIJz8PvWZFZwokRcgRqa-r0Thc",
+    "business_status": "OPERATIONAL"
   },
   "Junsui Omakase": {
     "rating": 4.6,
     "review_count": 62,
-    "google_name": "Junsui Omakase"
+    "google_name": "Junsui Omakase",
+    "address": "65 Jay St, Brooklyn, NY 11201, USA",
+    "lat": 40.7028597,
+    "lng": -73.98642339999999,
+    "place_id": "ChIJX4IbiBtbwokR7jWVoiRcnhI",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Kinjo": {
-    "rating": 4.9,
-    "review_count": 145,
-    "google_name": "Kinjo"
+    "rating": 4.8,
+    "review_count": 166,
+    "google_name": "Kinjo",
+    "address": "11 Adams St, Brooklyn, NY 11201, USA",
+    "lat": 40.7041896,
+    "lng": -73.9883555,
+    "place_id": "ChIJQ2auS5ZbwokRZo6tE1p-kTA",
+    "business_status": "OPERATIONAL"
   },
   "Luya Omakase": {
     "rating": 4.9,
-    "review_count": 143,
-    "google_name": "LUYA Omakase & Wine Bar"
+    "review_count": 163,
+    "google_name": "LUYA Omakase & Wine Bar",
+    "address": "219 5th Ave, Brooklyn, NY 11215, USA",
+    "lat": 40.6759305,
+    "lng": -73.9805311,
+    "place_id": "ChIJhZzI079bwokRa6zrQWzL9Uw",
+    "business_status": "OPERATIONAL"
   },
   "Miro Sushi": {
     "rating": 4.9,
-    "review_count": 112,
-    "google_name": "Miro Sushi"
+    "review_count": 133,
+    "google_name": "Miro Sushi",
+    "address": "533 86th St, Brooklyn, NY 11209, USA",
+    "lat": 40.6211147,
+    "lng": -74.02513309999999,
+    "place_id": "ChIJH_vpJJ5FwokR5G42-Fy6vsc",
+    "business_status": "OPERATIONAL"
   },
   "Neta Shari": {
     "rating": 4.7,
-    "review_count": 157,
-    "google_name": "Neta Shari"
+    "review_count": 156,
+    "google_name": "Neta Shari",
+    "address": "1718 86th St, Brooklyn, NY 11214, USA",
+    "lat": 40.6082077,
+    "lng": -74.004492,
+    "place_id": "ChIJ7VOxKVBFwokRO4Zf1ESGNAE",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Omakase by Hiro": {
     "rating": 4.8,
-    "review_count": 269,
-    "google_name": "Omakase sushi by hiro"
+    "review_count": 278,
+    "google_name": "Omakase sushi by hiro",
+    "address": "1328 Sheepshead Bay Rd, Brooklyn, NY 11235, USA",
+    "lat": 40.5876233,
+    "lng": -73.9553657,
+    "place_id": "ChIJsWBSJBZFwokRG9zEnwSvRg0",
+    "business_status": "OPERATIONAL"
   },
   "Sora": {
     "rating": 4.6,
-    "review_count": 93,
-    "google_name": "SORA"
+    "review_count": 94,
+    "google_name": "SORA",
+    "address": "713 61st St, Brooklyn, NY 11220, USA",
+    "lat": 40.6359962,
+    "lng": -74.0117485,
+    "place_id": "ChIJF-MfNfhFwokR11TzwLwpMcE",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Katsuei": {
     "rating": 4.5,
-    "review_count": 809,
-    "google_name": "Sushi Katsuei"
+    "review_count": 813,
+    "google_name": "Sushi Katsuei",
+    "address": "210 7th Ave, Brooklyn, NY 11215, USA",
+    "lat": 40.670801,
+    "lng": -73.97861879999999,
+    "place_id": "ChIJn9gJXgFbwokRzt5qlV7quqw",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Uesugi": {
     "rating": 4.3,
-    "review_count": 92,
-    "google_name": "Sushi Uesugi"
+    "review_count": 93,
+    "google_name": "Sushi Uesugi",
+    "address": "267 36th St, Brooklyn, NY 11232, USA",
+    "lat": 40.6560877,
+    "lng": -74.0067076,
+    "place_id": "ChIJ18dtorVbwokRRi8wJdC2WW8",
+    "business_status": "CLOSED_TEMPORARILY"
   },
   "Yamashiro": {
     "rating": 4.5,
-    "review_count": 477,
-    "google_name": "Yamashiro"
+    "review_count": 487,
+    "google_name": "Yamashiro",
+    "address": "466 Myrtle Ave, Brooklyn, NY 11205, USA",
+    "lat": 40.6932491,
+    "lng": -73.9666192,
+    "place_id": "ChIJzXcOobhbwokRKEp8_36OKYc",
+    "business_status": "OPERATIONAL"
   },
   "E Sushi II": {
     "rating": 4.2,
-    "review_count": 1007,
-    "google_name": "E Sushi II"
+    "review_count": 1018,
+    "google_name": "E Sushi II",
+    "address": "2971 Ocean Ave, Brooklyn, NY 11235, USA",
+    "lat": 40.5888465,
+    "lng": -73.9491577,
+    "place_id": "ChIJQdooxllDwokR0slzWjBMCxc",
+    "business_status": "OPERATIONAL"
   },
   "KIMYO": {
-    "rating": 4.4,
-    "review_count": 376,
-    "google_name": "Koi Omakase"
+    "rating": 5,
+    "review_count": 1,
+    "google_name": "Kimyo omakase",
+    "address": "55 5th Ave, Brooklyn, NY 11217, USA",
+    "lat": 40.6810537,
+    "lng": -73.9770571,
+    "place_id": "ChIJzzjbcQBbwokRxsKzxN1tu3Y",
+    "business_status": "OPERATIONAL"
   },
   "Ki Sushi": {
     "rating": 4.7,
-    "review_count": 607,
-    "google_name": "Ki Sushi"
+    "review_count": 617,
+    "google_name": "Ki Sushi",
+    "address": "282 Flatbush Ave, Brooklyn, NY 11217, USA",
+    "lat": 40.678491,
+    "lng": -73.973705,
+    "place_id": "ChIJZ7-63ahbwokRw5iSwweqMm8",
+    "business_status": "OPERATIONAL"
   },
   "Koma Sushi": {
     "rating": 4.6,
-    "review_count": 395,
-    "google_name": "KOMA Sushi"
+    "review_count": 417,
+    "google_name": "KOMA Sushi",
+    "address": "1618 Avenue M, Brooklyn, NY 11230, USA",
+    "lat": 40.6180133,
+    "lng": -73.9584441,
+    "place_id": "ChIJLwYcc_FFwokRxlcwql5WsGs",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Koju": {
-    "rating": 5,
-    "review_count": 80,
-    "google_name": "Koju"
+    "rating": 4.9,
+    "review_count": 119,
+    "google_name": "Koju",
+    "address": "252 Schermerhorn St, Brooklyn, NY 11217, USA",
+    "lat": 40.6878762,
+    "lng": -73.9838418,
+    "place_id": "ChIJy3FTXBxbwokRCHSjwq2kZTg",
+    "business_status": "OPERATIONAL"
   },
   "Hanaya Omakase": {
     "rating": 4.9,
-    "review_count": 209,
-    "google_name": "Hanaya Omakase"
+    "review_count": 229,
+    "google_name": "Hanaya Omakase",
+    "address": "630 9th Ave, New York, NY 10036, USA",
+    "lat": 40.759987,
+    "lng": -73.9912338,
+    "place_id": "ChIJL6IRjZFZwokRI23jWcC3-C0",
+    "business_status": "OPERATIONAL"
   },
   "Joji": {
     "rating": 4.5,
-    "review_count": 128,
-    "google_name": "J\u014dji"
+    "review_count": 133,
+    "google_name": "J\u014dji",
+    "address": "1 Vanderbilt Ave, New York, NY 10017, USA",
+    "lat": 40.7530825,
+    "lng": -73.9786543,
+    "place_id": "ChIJBchQ93pZwokR5AtYEzo6p1o",
+    "business_status": "OPERATIONAL"
   },
   "Koete Omakase": {
     "rating": 4.8,
-    "review_count": 205,
-    "google_name": "Koete Omakase"
+    "review_count": 220,
+    "google_name": "Koete Omakase",
+    "address": "1695 Broadway, New York, NY 10019, USA",
+    "lat": 40.763682,
+    "lng": -73.9829405,
+    "place_id": "ChIJ8ViNvI1ZwokR8FYHM9KRk_c",
+    "business_status": "OPERATIONAL"
   },
   "Shinpi": {
     "rating": 4.6,
-    "review_count": 186,
-    "google_name": "Shinpi Omakase"
+    "review_count": 202,
+    "google_name": "Shinpi Omakase",
+    "address": "121 Madison Ave #3, New York, NY 10016, USA",
+    "lat": 40.7453849,
+    "lng": -73.98454720000001,
+    "place_id": "ChIJvVNU0HpZwokRN_IjZBkNk60",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Ann": {
     "rating": 4.3,
-    "review_count": 278,
-    "google_name": "Sushi Ann"
+    "review_count": 286,
+    "google_name": "Sushi Ann",
+    "address": "38 E 51st St, New York, NY 10022, USA",
+    "lat": 40.7579092,
+    "lng": -73.974326,
+    "place_id": "ChIJZ9VmYvxYwokRxTMyUoH3dKM",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Goda": {
     "rating": 4.6,
-    "review_count": 185,
-    "google_name": "Sushi Goda"
+    "review_count": 194,
+    "google_name": "Sushi Goda",
+    "address": "1576 3rd Ave, New York, NY 10128, USA",
+    "lat": 40.7805616,
+    "lng": -73.9529963,
+    "place_id": "ChIJM_t1kYpZwokRfJS9jGe1I04",
+    "business_status": "OPERATIONAL"
   },
   "Sushi W": {
-    "rating": 4.8,
-    "review_count": 618,
-    "google_name": "Sushi W - UWS"
+    "rating": 4.6,
+    "review_count": 117,
+    "google_name": "Sushi W - East Village",
+    "address": "506 E 13th St, New York, NY 10009, USA",
+    "lat": 40.7293155,
+    "lng": -73.9803701,
+    "place_id": "ChIJcVudjU9ZwokRYJuJnH_npuY",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Yugen": {
-    "rating": 4.9,
-    "review_count": 74,
-    "google_name": "YUGIN"
+    "rating": null,
+    "review_count": null,
+    "google_name": "",
+    "address": "",
+    "lat": null,
+    "lng": null,
+    "place_id": null,
+    "business_status": null
   },
   "Gohan Sushi": {
     "rating": 4.7,
     "review_count": 137,
-    "google_name": "GOHAN SUSHI INC"
+    "google_name": "GOHAN SUSHI INC",
+    "address": "533 86th St, Brooklyn, NY 11209, USA",
+    "lat": 40.6211218,
+    "lng": -74.0251531,
+    "place_id": "ChIJXwPNsJJFwokRmnDKg-q-WCE",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Idashi Omakase": {
     "rating": 4.9,
-    "review_count": 238,
-    "google_name": "idashi Omakase"
+    "review_count": 253,
+    "google_name": "idashi Omakase",
+    "address": "ALCOHOL & BYOB, 90 Min Per Session Please Be On Time, White Store, 464 Bergen St Front, Brooklyn, NY 11217, USA",
+    "lat": 40.6808901,
+    "lng": -73.9759669,
+    "place_id": "ChIJca2ebQBbwokRTjTkh72DWPE",
+    "business_status": "OPERATIONAL"
   },
   "Ishi Omakase": {
     "rating": 4.8,
-    "review_count": 214,
-    "google_name": "Ishi Omakase Sushi & Premium Sake"
+    "review_count": 219,
+    "google_name": "Ishi Omakase Sushi & Premium Sake",
+    "address": "70 5th Ave, Brooklyn, NY 11217, USA",
+    "lat": 40.68100949999999,
+    "lng": -73.9775621,
+    "place_id": "ChIJR-QxWc1bwokRng-BnRaDhPE",
+    "business_status": "OPERATIONAL"
   },
   "Oita Sushi": {
     "rating": 4.6,
-    "review_count": 473,
-    "google_name": "Oita Sushi"
+    "review_count": 481,
+    "google_name": "Oita Sushi",
+    "address": "833 Union St, Brooklyn, NY 11215, USA",
+    "lat": 40.6749883,
+    "lng": -73.9762258,
+    "place_id": "ChIJF__hBepYwokRAhJBfNLHBMQ",
+    "business_status": "OPERATIONAL"
   },
   "Uotora": {
     "rating": 4.6,
-    "review_count": 284,
-    "google_name": "Uotora"
+    "review_count": 283,
+    "google_name": "Uotora",
+    "address": "1075 Bergen St, Brooklyn, NY 11216, USA",
+    "lat": 40.6763307,
+    "lng": -73.950512,
+    "place_id": "ChIJkVcmgJxbwokRIqAid-4ZjFs",
+    "business_status": "OPERATIONAL"
   },
   "Tanoshi Sushi": {
     "rating": 4.7,
-    "review_count": 654,
-    "google_name": "Tanoshi Sushi Sake Bar"
+    "review_count": 657,
+    "google_name": "Tanoshi Sushi Sake Bar",
+    "address": "1372 York Ave, New York, NY 10021, USA",
+    "lat": 40.767601,
+    "lng": -73.9529735,
+    "place_id": "ChIJd35w0MZYwokR7LgKqfX4tXM",
+    "business_status": "OPERATIONAL"
   },
   "Kaki": {
     "rating": 4.9,
-    "review_count": 219,
-    "google_name": "Kaki"
+    "review_count": 232,
+    "google_name": "Kaki",
+    "address": "129 Rivington St C, New York, NY 10002, USA",
+    "lat": 40.7195346,
+    "lng": -73.98697729999999,
+    "place_id": "ChIJlYnmS69ZwokR8tL10tG3b6Q",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Oku": {
     "rating": 4.8,
-    "review_count": 67,
-    "google_name": "Sushi Oku"
+    "review_count": 74,
+    "google_name": "Sushi Oku",
+    "address": "22 Orchard St, New York, NY 10002, USA",
+    "lat": 40.7153411,
+    "lng": -73.991428,
+    "place_id": "ChIJ45FUYptbwokR1AvGBrX_6Io",
+    "business_status": "OPERATIONAL"
   },
   "Warabi Omakase": {
-    "rating": 4.9,
-    "review_count": 76,
+    "rating": 4.7,
+    "review_count": 127,
     "google_name": "Warabi Omakase",
-    "address": "42-15 Crescent St, Long Island City, NY 11101, USA"
+    "address": "42-15 Crescent St, Long Island City, NY 11101, USA",
+    "lat": 40.7502645,
+    "lng": -73.940704,
+    "place_id": "ChIJ8Qoy8xVZwokRy22ts2j_PnE",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Hayashi (Williamsburg)": {
-    "rating": 5,
-    "review_count": 45,
+    "rating": 4.9,
+    "review_count": 59,
     "google_name": "Sushi Hayashi Williamsburg",
-    "address": "225 Grand St, Brooklyn, NY 11211, USA"
+    "address": "225 Grand St, Brooklyn, NY 11211, USA",
+    "lat": 40.7138694,
+    "lng": -73.9594506,
+    "place_id": "ChIJ2YbKoLdZwokRjrGy0WYGIS0",
+    "business_status": "OPERATIONAL"
   },
   "Toka Chef Kitchen": {
-    "rating": 4.6,
-    "review_count": 291,
+    "rating": 4.5,
+    "review_count": 288,
     "google_name": "Toka chef kitchen",
-    "address": "201 Allen St, New York, NY 10002, USA"
+    "address": "201 Allen St, New York, NY 10002, USA",
+    "lat": 40.7226793,
+    "lng": -73.9890599,
+    "place_id": "ChIJ8WWNHQBZwokRzo5fFeIIBNU",
+    "business_status": "OPERATIONAL"
   },
   "Muku": {
     "rating": 4.8,
-    "review_count": 26,
+    "review_count": 29,
     "google_name": "Muku",
-    "address": "412 Greenwich St Penthouse B, New York, NY 10013, USA"
+    "address": "412 Greenwich St Penthouse B, New York, NY 10013, USA",
+    "lat": 40.7218848,
+    "lng": -74.0099346,
+    "place_id": "ChIJYTKtj2dZwokR3IYU3st5VuA",
+    "business_status": "OPERATIONAL"
   },
   "Yamada": {
     "rating": 4.9,
-    "review_count": 52,
+    "review_count": 56,
     "google_name": "Yamada",
-    "address": "16 Elizabeth St, New York, NY 10013, USA"
+    "address": "16 Elizabeth St, New York, NY 10013, USA",
+    "lat": 40.7159317,
+    "lng": -73.9972602,
+    "place_id": "ChIJSdFphJdbwokRG3R5uMCxFt4",
+    "business_status": "OPERATIONAL"
   },
   "Odo East Village": {
-    "rating": 4.8,
-    "review_count": 28,
+    "rating": 4.7,
+    "review_count": 38,
     "google_name": "Odo East Village",
-    "address": "536 E 5th St, New York, NY 10009, USA"
+    "address": "536 E 5th St, New York, NY 10009, USA",
+    "lat": 40.7240318,
+    "lng": -73.9829146,
+    "place_id": "ChIJoyIUFwBZwokRH0uTY_J5rcM",
+    "business_status": "OPERATIONAL"
   },
   "Yoshoku": {
     "rating": 4.2,
-    "review_count": 25,
+    "review_count": 28,
     "google_name": "Yoshoku",
-    "address": "301 Park Ave, New York, NY 10022, USA"
+    "address": "301 Park Ave, New York, NY 10022, USA",
+    "lat": 40.7564821,
+    "lng": -73.97341329999999,
+    "place_id": "ChIJyQhaL5JZwokRByPI70Mlj4Y",
+    "business_status": "OPERATIONAL"
   },
   "Y\u016bgin": {
-    "rating": 4.9,
-    "review_count": 74,
+    "rating": 4.8,
+    "review_count": 79,
     "google_name": "YUGIN",
-    "address": "767 5th Ave 37th Floor, New York, NY 10153, USA"
+    "address": "767 5th Ave 37th Floor, New York, NY 10153, USA",
+    "lat": 40.7636669,
+    "lng": -73.9719729,
+    "place_id": "ChIJ9wuzp1lZwokRMf_mNcelo0s",
+    "business_status": "OPERATIONAL"
   },
   "Anb\u0101": {
     "rating": 4.8,
     "review_count": 20,
     "google_name": "Anb\u0101",
-    "address": "92 Ludlow St, New York, NY 10002, USA"
+    "address": "92 Ludlow St, New York, NY 10002, USA",
+    "lat": 40.7183228,
+    "lng": -73.98895209999999,
+    "place_id": "ChIJXbAI5F5ZwokRlDDHi_sl1R4",
+    "business_status": "OPERATIONAL"
   },
   "Enso Omakase": {
     "rating": 4.7,
-    "review_count": 69,
+    "review_count": 70,
     "google_name": "Enso Omakase",
-    "address": "117 Berry St, Brooklyn, NY 11249, USA"
+    "address": "117 Berry St, Brooklyn, NY 11249, USA",
+    "lat": 40.7187509,
+    "lng": -73.9586636,
+    "place_id": "ChIJHSJ36dxZwokR6p8zakiCSRA",
+    "business_status": "OPERATIONAL"
   },
   "Hear & There": {
     "rating": 4.9,
     "review_count": 67,
     "google_name": "Hear & There",
-    "address": "109 S 6th St, Brooklyn, NY 11249, USA"
+    "address": "109 S 6th St, Brooklyn, NY 11249, USA",
+    "lat": 40.7108069,
+    "lng": -73.9642076,
+    "place_id": "ChIJ7QZhoXxbwokR9594XbHZmF8",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Kansha": {
     "rating": 4.8,
-    "review_count": 65,
+    "review_count": 81,
     "google_name": "Kansha",
-    "address": "1312 Madison Ave, New York, NY 10128, USA"
+    "address": "1312 Madison Ave, New York, NY 10128, USA",
+    "lat": 40.7852711,
+    "lng": -73.95581849999999,
+    "place_id": "ChIJR2XObwBZwokRLGE85c1lz5Q",
+    "business_status": "OPERATIONAL"
   },
   "Ikigai": {
     "rating": 4.8,
-    "review_count": 133,
+    "review_count": 137,
     "google_name": "Ikigai",
-    "address": "87 Lafayette Ave, Brooklyn, NY 11217, USA"
+    "address": "87 Lafayette Ave, Brooklyn, NY 11217, USA",
+    "lat": 40.6873937,
+    "lng": -73.9748979,
+    "place_id": "ChIJfYQncQBbwokR36qibWvQRTA",
+    "business_status": "OPERATIONAL"
   },
   "Sushi Ishikawa": {
     "rating": 4.7,
-    "review_count": 462,
+    "review_count": 466,
     "google_name": "Sushi Ishikawa",
-    "address": "419 E 74th St, New York, NY 10021, USA"
+    "address": "419 E 74th St, New York, NY 10021, USA",
+    "lat": 40.7688801,
+    "lng": -73.9540789,
+    "place_id": "ChIJ9brg0cBYwokRxWwvwC-cG30",
+    "business_status": "OPERATIONAL"
   },
   "Nakaji": {
     "rating": 4.4,
-    "review_count": 185,
+    "review_count": 186,
     "google_name": "Nakaji",
-    "address": "48 Bowery, New York, NY 10013, USA"
+    "address": "48 Bowery, New York, NY 10013, USA",
+    "lat": 40.7157817,
+    "lng": -73.99666859999999,
+    "place_id": "ChIJX20rB1VbwokRM2mtS1kd9u0",
+    "business_status": "OPERATIONAL"
   },
   "Shion 69 Leonard Street": {
     "rating": 4.5,
-    "review_count": 241,
+    "review_count": 240,
     "google_name": "69 Leonard Street",
-    "address": "69 Leonard St, New York, NY 10013, USA"
+    "address": "69 Leonard St, New York, NY 10013, USA",
+    "lat": 40.7176901,
+    "lng": -74.0053795,
+    "place_id": "ChIJnbEEPiBawokRN3BGCWpw2nE",
+    "business_status": "OPERATIONAL"
   },
   "Kurumazushi": {
     "rating": 4.4,
-    "review_count": 185,
+    "review_count": 187,
     "google_name": "Kurumazushi",
-    "address": "7 E 47th St 2nd Floor, New York, NY 10017, USA"
+    "address": "7 E 47th St 2nd Floor, New York, NY 10017, USA",
+    "lat": 40.7565634,
+    "lng": -73.97776069999999,
+    "place_id": "ChIJWbiHfP5YwokRrASkORRH1fQ",
+    "business_status": "OPERATIONAL"
   },
   "Masa": {
-    "rating": 4.2,
-    "review_count": 582,
-    "google_name": "Bar Masa",
-    "address": "The Shops at, 10 Columbus Cir Suite 401A, New York, NY 10019, USA"
+    "rating": null,
+    "review_count": null,
+    "google_name": "",
+    "address": "",
+    "lat": null,
+    "lng": null,
+    "place_id": null,
+    "business_status": null
   },
   "Bar Masa": {
     "rating": 4.2,
-    "review_count": 582,
+    "review_count": 586,
     "google_name": "Bar Masa",
-    "address": "The Shops at, 10 Columbus Cir Suite 401A, New York, NY 10019, USA"
+    "address": "The Shops at, 10 Columbus Cir Suite 401A, New York, NY 10019, USA",
+    "lat": 40.7685526,
+    "lng": -73.9831866,
+    "place_id": "ChIJM26HnlhYwokR4IfXFz-AuCA",
+    "business_status": "OPERATIONAL"
   },
   "Kappo Masa": {
     "rating": 4.2,
-    "review_count": 241,
+    "review_count": 246,
     "google_name": "Kappo Masa",
-    "address": "976 Madison Ave, New York, NY 10075, USA"
+    "address": "976 Madison Ave, New York, NY 10075, USA",
+    "lat": 40.774589,
+    "lng": -73.9635749,
+    "place_id": "ChIJ9w07X5RYwokR5eolQAZ49C4",
+    "business_status": "OPERATIONAL"
   },
   "Togyushi": {
-    "rating": 4.4,
-    "review_count": 89,
-    "google_name": "Togyushi",
-    "address": "37 W 37th St, New York, NY 10018, USA"
+    "rating": 5,
+    "review_count": 6,
+    "google_name": "Sushi Yoshi Time Square",
+    "address": "617A 9th Ave, New York, NY 10036, USA",
+    "lat": 40.75961700000001,
+    "lng": -73.99209379999999,
+    "place_id": "ChIJ3UT1p7hZwokRJpBdeAErELE",
+    "business_status": "OPERATIONAL"
   },
   "Omi Omakase": {
-    "rating": 4.7,
-    "review_count": 106,
+    "rating": 4.6,
+    "review_count": 122,
     "google_name": "Omi Omakase",
-    "address": "133-42 39th Ave STE 210, Flushing, NY 11354, USA"
+    "address": "133-42 39th Ave Ste 210, Flushing, NY 11354, USA",
+    "lat": 40.7592419,
+    "lng": -73.8325608,
+    "place_id": "ChIJYUDw3D5hwokR1vk2JjxBe2k",
+    "business_status": "OPERATIONAL"
   },
   "Himitsu Flushing": {
     "rating": 4.5,
     "review_count": 58,
     "google_name": "Himitsu - Omakase",
-    "address": "157-02 Northern Blvd, Flushing, NY 11354, USA"
+    "address": "157-02 Northern Blvd, Flushing, NY 11354, USA",
+    "lat": 40.7635277,
+    "lng": -73.80812689999999,
+    "place_id": "ChIJiY8SwOphwokRJeiOVLgCahY",
+    "business_status": "OPERATIONAL"
   },
   "Kakurega Sushi": {
     "rating": 4.4,
-    "review_count": 135,
+    "review_count": 137,
     "google_name": "Kakurega Sushi",
-    "address": "133-44 37th Ave, Flushing, NY 11354, USA"
+    "address": "133-44 37th Ave, Flushing, NY 11354, USA",
+    "lat": 40.7605556,
+    "lng": -73.83333329999999,
+    "place_id": "ChIJOfM--Q5gwokR1KiU6Vlt1eY",
+    "business_status": "OPERATIONAL"
   },
   "Kaizen (Wabi Nori Hand Roll Bar)": {
     "rating": 4.6,
-    "review_count": 835,
+    "review_count": 865,
     "google_name": "Wabi Nori Queens",
-    "address": "33-70 Farrington St, Flushing, NY 11354, USA"
+    "address": "33-70 Farrington St, Flushing, NY 11354, USA",
+    "lat": 40.7650265,
+    "lng": -73.8322898,
+    "place_id": "ChIJW2b2LhlhwokRfix8u5jWof8",
+    "business_status": "OPERATIONAL"
   },
   "Izakaya Nana": {
     "rating": 4.6,
-    "review_count": 2093,
+    "review_count": 2174,
     "google_name": "Izakaya Nana",
-    "address": "141-28 Northern Blvd, Flushing, NY 11354, USA"
+    "address": "141-28 Northern Blvd, Flushing, NY 11354, USA",
+    "lat": 40.7642443,
+    "lng": -73.8248229,
+    "place_id": "ChIJN3_05ZZhwokREYnnAOsOKhs",
+    "business_status": "OPERATIONAL"
   },
   "That Place Omakase": {
-    "rating": 4.7,
-    "review_count": 106,
-    "google_name": "Omi Omakase",
-    "address": "133-42 39th Ave STE 210, Flushing, NY 11354, USA"
+    "rating": null,
+    "review_count": null,
+    "google_name": "",
+    "address": "",
+    "lat": null,
+    "lng": null,
+    "place_id": null,
+    "business_status": null
   },
   "Kaiyo Omakase": {
     "rating": 4.7,
-    "review_count": 197,
+    "review_count": 202,
     "google_name": "Kaiyo Omakase",
-    "address": "47-38 Vernon Blvd, Long Island City, NY 11101, USA"
+    "address": "47-38 Vernon Blvd, Long Island City, NY 11101, USA",
+    "lat": 40.7444486,
+    "lng": -73.953688,
+    "place_id": "ChIJ0ZASOWJZwokRX36VssJXvoY",
+    "business_status": "OPERATIONAL"
   },
   "Omakase Osuk\u0101\u0101 LIC": {
-    "rating": 4.7,
-    "review_count": 83,
-    "google_name": "Omakase OSUKAA LIC",
-    "address": "30-30 47th Ave #140, Long Island City, NY 11101, USA"
+    "rating": 4.8,
+    "review_count": 159,
+    "google_name": "Omakase OSUKAA",
+    "address": "30-30 47th Ave #140, Long Island City, NY 11101, USA",
+    "lat": 40.7426062,
+    "lng": -73.9361814,
+    "place_id": "ChIJm6ldHwBZwokRmxozXkFUZCI",
+    "business_status": "OPERATIONAL"
   },
   "Sapps": {
     "rating": 4.5,
-    "review_count": 665,
+    "review_count": 677,
     "google_name": "Sapps",
-    "address": "27-26 Jackson Ave, Long Island City, NY 11101, USA"
+    "address": "27-26 Jackson Ave, Long Island City, NY 11101, USA",
+    "lat": 40.7476691,
+    "lng": -73.9400959,
+    "place_id": "ChIJlXecQSpZwokRrNscE92hBzQ",
+    "business_status": "OPERATIONAL"
   },
   "Hibino LIC": {
     "rating": 4.5,
-    "review_count": 591,
+    "review_count": 602,
     "google_name": "Hibino LIC",
-    "address": "10-70 Jackson Ave, Long Island City, NY 11101, USA"
+    "address": "10-70 Jackson Ave, Long Island City, NY 11101, USA",
+    "lat": 40.7426265,
+    "lng": -73.95201180000001,
+    "place_id": "ChIJHVOB8iRZwokRFaWagG8Ti4U",
+    "business_status": "OPERATIONAL"
   },
   "Bushniwa": {
     "rating": 4.4,
-    "review_count": 476,
+    "review_count": 484,
     "google_name": "Bushniwa",
-    "address": "250 Varet St, Brooklyn, NY 11206, USA"
+    "address": "250 Varet St, Brooklyn, NY 11206, USA",
+    "lat": 40.7039412,
+    "lng": -73.93343329999999,
+    "place_id": "ChIJgzy1KGhdwokRTkAu0t_R8gw",
+    "business_status": "OPERATIONAL"
   },
   "Nigiri (by Honshu)": {
     "rating": 4.5,
-    "review_count": 50,
+    "review_count": 54,
     "google_name": "Nigiri",
-    "address": "95 Greene St, Jersey City, NJ 07302, USA"
+    "address": "95 Greene St, Jersey City, NJ 07302, USA",
+    "lat": 40.71552,
+    "lng": -74.0360501,
+    "place_id": "ChIJaSEM4jZRwokRCTXtNH7PmSw",
+    "business_status": "OPERATIONAL"
   },
   "Honzen Japanese Eatery": {
     "rating": 4.2,
@@ -1025,80 +1931,132 @@
   },
   "Wagyu Place": {
     "rating": 4.6,
-    "review_count": 1686,
+    "review_count": 1724,
     "google_name": "Wagyu Place BBQ \u548c\u725b\u516c\u9986",
-    "address": "135-29 37th Ave #2FL, Flushing, NY 11354, USA"
+    "address": "135-29 37th Ave #2FL, Flushing, NY 11354, USA",
+    "lat": 40.7613175,
+    "lng": -73.832056,
+    "place_id": "ChIJJQnLaj9hwokRMP6QrjSO5Gk",
+    "business_status": "OPERATIONAL"
   },
   "Niku X NYC": {
-    "rating": 4.9,
-    "review_count": 2965,
+    "rating": 4.8,
+    "review_count": 3026,
     "google_name": "NIKU X | Limitless Wagyu BBQ & Seafood",
-    "address": "21 W 35th St #2F, New York, NY 10001, USA"
+    "address": "21 W 35th St Floor 2, New York, NY 10001, USA",
+    "lat": 40.7497382,
+    "lng": -73.9851911,
+    "place_id": "ChIJb_rRNQBZwokR9ftcR3zQzMM",
+    "business_status": "OPERATIONAL"
   },
   "Mikiya Wagyu Shabu House (Flushing)": {
-    "rating": 4.7,
-    "review_count": 1147,
+    "rating": 4.6,
+    "review_count": 1163,
     "google_name": "Mikiya Wagyu Shabu House \u5473\u559c\u5c4b | Flushing",
-    "address": "135-41 37th Ave, Flushing, NY 11354, USA"
+    "address": "135-41 37th Ave, Flushing, NY 11354, USA",
+    "lat": 40.76158,
+    "lng": -73.8317369,
+    "place_id": "ChIJ9-33KgBhwokR9GdodUniiLg",
+    "business_status": "OPERATIONAL"
   },
   "Mikiya Wagyu Shabu House (Manhattan)": {
     "rating": 4.7,
-    "review_count": 345,
+    "review_count": 350,
     "google_name": "Mikiya Wagyu Shabu House | Manhattan",
-    "address": "954 2nd Ave, New York, NY 10022, USA"
+    "address": "954 2nd Ave, New York, NY 10022, USA",
+    "lat": 40.755089,
+    "lng": -73.9679693,
+    "place_id": "ChIJSZLeeo1ZwokR8cNwimMuHDE",
+    "business_status": "OPERATIONAL"
   },
   "Chubby Cattle BBQ NYC": {
     "rating": 4.9,
-    "review_count": 2382,
+    "review_count": 2841,
     "google_name": "Chubby Cattle BBQ | New York",
-    "address": "206 Spring St, New York, NY 10012, USA"
+    "address": "206 Spring St, New York, NY 10012, USA",
+    "lat": 40.7251549,
+    "lng": -74.00384079999999,
+    "place_id": "ChIJ82C5uURZwokRgCm9U5LSEjk",
+    "business_status": "OPERATIONAL"
   },
   "Y Space BBQ": {
     "rating": 4.5,
-    "review_count": 1559,
+    "review_count": 1635,
     "google_name": "Y Space BBQ \u70e4\u8089\u706b\u7131\u661f",
-    "address": "138-25 39th Ave, Flushing, NY 11354, USA"
+    "address": "138-25 39th Ave, Flushing, NY 11354, USA",
+    "lat": 40.7609319,
+    "lng": -73.8280482,
+    "place_id": "ChIJ06SDlH9hwokRYXdf6VBxbBI",
+    "business_status": "OPERATIONAL"
   },
   "Wagyu Yama Yakiniku & Seafood Shabu": {
-    "rating": 4.7,
-    "review_count": 1147,
-    "google_name": "Mikiya Wagyu Shabu House \u5473\u559c\u5c4b | Flushing",
-    "address": "135-41 37th Ave, Flushing, NY 11354, USA"
+    "rating": 4.6,
+    "review_count": 408,
+    "google_name": "Wagyu Yama Yakiniku & Seafood Shabu \u725b\u5e2e\u4e3b\u548c\u725b\u70e4\u8089\u6d77\u9c9c\u706b\u9505\u81ea\u52a9",
+    "address": "136-20 Roosevelt Ave #3m, Flushing, NY 11354, USA",
+    "lat": 40.7593046,
+    "lng": -73.82913429999999,
+    "place_id": "ChIJ1zxwQiJhwokRVvupwW88D6M",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Hiyake Omakase (Bowery)": {
-    "rating": 4.8,
-    "review_count": 98,
-    "google_name": "Genki east omakase",
-    "address": "111 Stanton St, New York, NY 10002, USA"
+    "rating": 4,
+    "review_count": 359,
+    "google_name": "Gyu-Ichiro Japanese BBQ",
+    "address": "135 Bowery, New York, NY 10002, USA",
+    "lat": 40.718651,
+    "lng": -73.9942349,
+    "place_id": "ChIJZ58XtZ1ZwokR5GvF-V5qUP0",
+    "business_status": "OPERATIONAL"
   },
   "Hiyake Omakase (Williamsburg)": {
     "rating": 4.3,
     "review_count": 171,
     "google_name": "Hiyake Yakiniku BBQ",
-    "address": "165 Bedford Ave, Brooklyn, NY 11211, USA"
+    "address": "165 Bedford Ave, Brooklyn, NY 11211, USA",
+    "lat": 40.7184019,
+    "lng": -73.9569229,
+    "place_id": "ChIJS4d0mrRZwokRdC5SJ1NvFgs",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Gyu-Ichiro": {
     "rating": 4,
-    "review_count": 353,
+    "review_count": 359,
     "google_name": "Gyu-Ichiro Japanese BBQ",
-    "address": "135 Bowery, New York, NY 10002, USA"
+    "address": "135 Bowery, New York, NY 10002, USA",
+    "lat": 40.718651,
+    "lng": -73.9942349,
+    "place_id": "ChIJZ58XtZ1ZwokR5GvF-V5qUP0",
+    "business_status": "OPERATIONAL"
   },
   "Nikushou Sakai": {
-    "rating": 3.7,
-    "review_count": 264,
-    "google_name": "Nikushou Sakai \u8089\u5320\u5742\u4e95",
-    "address": "133-33 39th Ave FH19, 133-27 39th Ave, Flushing, NY 11354, USA"
+    "rating": 3.8,
+    "review_count": 256,
+    "google_name": "Nikushou Sakai",
+    "address": "133-33 39th Ave FH19, 133-27 39th Ave, Flushing, NY 11354, USA",
+    "lat": 40.7596804,
+    "lng": -73.8335486,
+    "place_id": "ChIJbX3JYZJhwokRk4b3ShCZIFE",
+    "business_status": "CLOSED_PERMANENTLY"
   },
   "Umiya Sushi LIC": {
     "rating": 4.7,
-    "review_count": 482,
+    "review_count": 584,
     "google_name": "Umiya Sushi",
-    "address": "22-22 Jackson Ave, Long Island City, NY 11101, USA"
+    "address": "22-22 Jackson Ave, Long Island City, NY 11101, USA",
+    "lat": 40.7448631,
+    "lng": -73.94643669999999,
+    "place_id": "ChIJT-oL9WlZwokRe1rko9KjRW0",
+    "business_status": "OPERATIONAL"
   },
   "Asuka Sushi": {
     "rating": 4.4,
-    "review_count": 1436,
+    "review_count": 1449,
     "google_name": "Asuka Sushi",
-    "address": "300 W 23rd St, New York, NY 10011, USA"
+    "address": "300 W 23rd St, New York, NY 10011, USA",
+    "lat": 40.7453424,
+    "lng": -73.9990165,
+    "place_id": "ChIJ9QDTS7pZwokRIvmI06SFf9o",
+    "business_status": "OPERATIONAL"
   }
 }
