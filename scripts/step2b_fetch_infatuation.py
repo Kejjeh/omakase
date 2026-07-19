@@ -15,6 +15,7 @@ import json
 import os
 import re
 import sys
+import unicodedata
 import time
 import requests
 from bs4 import BeautifulSoup
@@ -22,7 +23,7 @@ from bs4 import BeautifulSoup
 sys.path.insert(0, os.path.dirname(__file__))
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from shared import paths
-from scripts.shared.cities import city_for
+from scripts.shared.cities import city_for, neighborhood_slugs
 
 CUISINE = paths.parse_cuisine_arg()
 RESTAURANTS_PATH = paths.restaurants_json(CUISINE)
@@ -51,26 +52,43 @@ HEADERS = {
         "Chrome/120.0.0.0 Safari/537.36"
     )
 }
-REQUEST_DELAY = 2  # seconds between requests — be respectful
+REQUEST_DELAY = 2  # seconds between restaurants — be respectful
+# Between slug variants for one restaurant. Raised from 0.5s: each restaurant
+# now tries more variants (name, ampersand form, neighborhood, city tag), and
+# probing at 1s/request drew a 503. A miss costs only time; being blocked
+# costs the whole run.
+VARIANT_DELAY = 1.5
+THROTTLE_BACKOFF = 30  # seconds to wait out a 429/503 before moving on
 
 
-def name_to_slugs(name):
-    """
-    Convert a restaurant name to possible Infatuation URL slugs.
-    Returns a list of slug variants to try.
-    """
-    # Base slug: lowercase, strip special chars, spaces to hyphens
-    slug = name.lower()
-    # Remove possessives
-    slug = slug.replace("'s", "s").replace("'s", "s")
-    # Remove ampersands and special characters (not hyphens)
-    slug = re.sub(r'[&+@#$%^*()!?,.:;\'"]+', '', slug)
-    # Replace spaces and multiple hyphens with single hyphen
+def _slugify(text, ampersand=""):
+    """Lowercase ASCII slug. `ampersand` is what '&' becomes."""
+    # Fold accents: The Infatuation slugs are ASCII, so "Forîn" is "forin" and
+    # "Gilda Café" is "gilda-cafe". Without this they were never findable.
+    text = unicodedata.normalize("NFKD", text).encode("ascii", "ignore").decode()
+    slug = text.lower()
+    slug = slug.replace("'s", "s").replace("’s", "s")
+    slug = slug.replace("&", f" {ampersand} " if ampersand else " ")
+    slug = re.sub(r'[+@#$%^*()!?,.:;\'"’]+', '', slug)
     slug = re.sub(r'[\s_]+', '-', slug)
     slug = re.sub(r'-+', '-', slug)
-    slug = slug.strip('-')
+    return slug.strip('-')
+
+
+def name_to_slugs(name, neighborhood=None):
+    """
+    Convert a restaurant name to possible Infatuation URL slugs.
+    Returns a list of slug variants to try, in preference order.
+    """
+    slug = _slugify(name, ampersand="and")
+    # "&" appears both ways in their URLs — "gilda-cafe-and-market" exists, but
+    # so do slugs that simply drop it. Try the spelled-out form first since
+    # that is what the sampled Philadelphia reviews use.
+    dropped = _slugify(name)
 
     variants = [slug]
+    if dropped != slug:
+        variants.append(dropped)
 
     # A restaurant may be listed with or without its category word — "Sushi
     # Noz" as "sushi-noz" or "noz". Which words are worth trying depends on the
@@ -85,6 +103,12 @@ def name_to_slugs(name):
         elif term not in slug:
             variants.append(f"{slug}-{term}")
 
+    # The Infatuation disambiguates by neighborhood — Kalaya is "kalaya-fishtown",
+    # not "kalaya". Tried before the city tag because it proved more productive
+    # on a live sample of the Philadelphia set.
+    for hood in neighborhood_slugs(neighborhood, CITY):
+        variants.append(f"{slug}-{hood}")
+
     # Restaurants are often listed with a city tag ("sushi-noz-nyc"). Which tag
     # depends on the city — appending "-nyc" to a Philadelphia restaurant, as
     # this did unconditionally, finds nothing.
@@ -94,16 +118,31 @@ def name_to_slugs(name):
     return list(dict.fromkeys(variants))
 
 
+class TransientError(Exception):
+    """The site was reachable but declined to answer — throttling, or a 5xx.
+
+    Distinct from a 404, which is real information ("no such review"). Caching
+    a throttle as "not reviewed" makes a temporary blip permanent, which is
+    what happened to Yuhiro when probing drew a 503.
+    """
+
+
+RETRYABLE_STATUS = {408, 429, 500, 502, 503, 504}
+
+
 def fetch_rating(slug):
     """
     Fetch The Infatuation rating for a given URL slug.
-    Returns dict with rating info, or None if not found.
+    Returns dict with rating info, or None if genuinely not found.
+    Raises TransientError if the site declined to answer.
     """
     url = BASE_URL + slug
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15, allow_redirects=True)
         if resp.status_code == 404:
             return None
+        if resp.status_code in RETRYABLE_STATUS:
+            raise TransientError(f"status {resp.status_code} for {slug}")
         if resp.status_code != 200:
             print(f"    Unexpected status {resp.status_code} for {slug}")
             return None
@@ -180,20 +219,32 @@ def main():
             continue
 
         print(f"[{i+1}/{total}] {name}")
-        slugs = name_to_slugs(name)
+        slugs = name_to_slugs(name, r.get("neighborhood"))
 
         result = None
+        throttled = False
         for slug in slugs:
             print(f"    Trying: {slug}")
-            result = fetch_rating(slug)
+            try:
+                result = fetch_rating(slug)
+            except TransientError as e:
+                print(f"    Throttled ({e}); backing off")
+                throttled = True
+                time.sleep(THROTTLE_BACKOFF)
+                break
             if result is not None:
                 print(f"    FOUND: {result['rating']}/10 ({result['infatuation_name']})")
                 break
-            time.sleep(0.5)  # Short delay between slug variants
+            time.sleep(VARIANT_DELAY)
 
         if result:
             cache[name] = result
             found += 1
+        elif throttled:
+            # Leave uncached so the next run retries. Writing "not reviewed"
+            # here would turn a temporary block into a permanent verdict.
+            skipped += 1
+            print(f"    Skipped — will retry on the next run")
         else:
             cache[name] = {"rating": None, "not_found": True}
             not_found += 1

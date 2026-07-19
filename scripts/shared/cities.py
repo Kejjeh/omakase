@@ -23,6 +23,8 @@ and lives in step2_fetch_ratings.SEARCH_CONFIG.
 """
 from __future__ import annotations
 
+import re
+import unicodedata
 from dataclasses import dataclass
 
 from scripts.shared import geo
@@ -43,6 +45,12 @@ class City:
     slug_suffixes: tuple[str, ...]
     #: Neighborhood boundaries, or None where we have no boundary set.
     region: geo.Region | None
+    #: How this city's shorthand neighborhood labels expand for a URL slug.
+    #: The Infatuation disambiguates same-named restaurants by neighborhood
+    #: ("kalaya-fishtown"), but our labels are abbreviated ("NoLibs") and the
+    #: abbreviations are local to a city. Keys are compared casefolded with
+    #: punctuation stripped; values are candidate slugs in preference order.
+    neighborhood_aliases: dict[str, tuple[str, ...]]
 
 
 NEW_YORK = City(
@@ -51,6 +59,21 @@ NEW_YORK = City(
     infatuation_slug="new-york",
     slug_suffixes=("nyc", "new-york"),
     region=geo.NYC,
+    neighborhood_aliases={
+        "ues": ("upper-east-side",),
+        "uws": ("upper-west-side",),
+        "les": ("lower-east-side",),
+        "fidi": ("financial-district",),
+        "nomad": ("nomad",),
+        "noho": ("noho",),
+        "soho": ("soho",),
+        "lower manh": ("lower-manhattan",),
+        "midtown east": ("midtown-east",),
+        "midtown west": ("midtown-west",),
+        "east village": ("east-village",),
+        "west village": ("west-village",),
+        "hells kitchen": ("hells-kitchen",),
+    },
 )
 
 PHILADELPHIA = City(
@@ -61,6 +84,14 @@ PHILADELPHIA = City(
     # No OpenDataPhilly boundary set registered yet, so Philadelphia cuisines
     # derive no neighborhood and keep their hand labels (ADR 0003).
     region=None,
+    neighborhood_aliases={
+        "nolibs": ("northern-liberties",),
+        "e kensington": ("kensington", "east-kensington"),
+        "olde kensington": ("kensington", "olde-kensington"),
+        "grad hospital": ("graduate-hospital",),
+        "washington sq": ("washington-square",),
+        "south philly": ("south-philadelphia",),
+    },
 )
 
 
@@ -82,6 +113,47 @@ def city_for(cuisine_name: str) -> City:
             f"CITY_BY_CUISINE in scripts/shared/cities.py — a default would "
             f"silently search the wrong city."
         ) from None
+
+
+def _key(label: str) -> str:
+    """Normalize a neighborhood label for alias lookup: 'E. Kensington' -> 'e kensington'.
+
+    Apostrophes are dropped rather than treated as separators, so "Hell's
+    Kitchen" keys as "hells kitchen" and slugs as "hells-kitchen" — splitting
+    on the apostrophe produced "hell-s-kitchen", which matches nothing.
+    """
+    folded = unicodedata.normalize("NFKD", label).encode("ascii", "ignore").decode()
+    folded = folded.replace("'", "").replace("’", "")
+    return re.sub(r"[^a-z0-9]+", " ", folded.lower()).strip()
+
+
+def neighborhood_slugs(label: str | None, city: City) -> list[str]:
+    """Candidate URL slugs for a neighborhood label, in preference order.
+
+    Labels are freeform and messy — "Manhattan (UES / Lower Manh.)" names a
+    borough and two neighborhoods, either of which might be the one The
+    Infatuation used. So: drop the borough prefix, split the alternatives, and
+    expand each through the city's aliases, falling back to a plain slugify.
+    """
+    if not label:
+        return []
+    # "Manhattan (Midtown East)" -> "Midtown East"; a bare label is left alone.
+    inner = re.search(r"\(([^)]*)\)", label)
+    body = inner.group(1) if inner else label
+    body = re.sub(r"^(Manhattan|Brooklyn|Queens|Bronx|Staten Island)\b[\s—-]*", "", body).strip()
+
+    out: list[str] = []
+    for part in re.split(r"[/,]", body):
+        key = _key(part)
+        if not key:
+            continue
+        out.extend(city.neighborhood_aliases.get(key, ()))
+        # Skip stubs like the "NJ" in "Jersey City, NJ" — a state code is never
+        # a neighborhood slug, and each candidate costs a request.
+        if len(key) >= 3:
+            out.append(key.replace(" ", "-"))
+    # Preserve order, drop repeats.
+    return list(dict.fromkeys(out))
 
 
 def region_for(cuisine_name: str) -> geo.Region | None:
