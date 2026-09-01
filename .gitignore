@@ -14,7 +14,9 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
-.claude/
+# Claude Code: local settings stay untracked; shared commands are committed
+.claude/*
+!.claude/commands
 
 # Original Excel (keep the generated one)
 # Omakase.xlsx

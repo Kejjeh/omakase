@@ -22,3 +22,4 @@ PRICE_EXPONENT = "auto"
 
 # Exclusion keywords (restaurants matching these are filtered out)
 EXCLUDE_KEYWORDS = ["closed", "excluded"]
+MAX_PRICE = 200
