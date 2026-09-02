@@ -36,6 +36,10 @@ Read `CLAUDE.md` first (commands, gotchas, model routing). This file is what's d
 3. Are `scripts/build_top12.js`, `build_top15.js`, and `final_docs/*.docx` still wanted? They're one-off docx generators with hardcoded data, stale relative to current scores. Left untouched.
 4. The Google Places API key in the gitignored `scripts/config.py` — verified never committed to git history. Consider restricting/rotating it anyway since it predates this audit.
 
+## Housekeeping
+
+- The GitHub repo was renamed to `Kejjeh/omakase`; old remote URLs redirect. The local folder is being renamed from `Projects\Project x Time` to `Projects\Omakase` to match (owner action, done outside a live session). If you find either name, they are the same working copy. After the rename, update the remote: `git remote set-url origin https://github.com/Kejjeh/omakase.git`.
+
 ## Tech debt (known, not urgent)
 
 - `name` as the universal join key; `place_id` is captured and nominated as successor (ADR 0004/0006).
