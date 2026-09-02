@@ -1,13 +1,5 @@
-## Agent skills
+# Agents
 
-### Issue tracker
+Read `CLAUDE.md` — it is the agent entry point for this repo (commands, architecture map, conventions, model routing). Current status: `HANDOFF.md`. Domain glossary: `CONTEXT.md`.
 
-Issues are tracked in GitHub Issues on `kejjeh/Omakase` via the `gh` CLI. See `docs/agents/issue-tracker.md`.
-
-### Triage labels
-
-Uses the default canonical label vocabulary (`needs-triage`, `needs-info`, `ready-for-agent`, `ready-for-human`, `wontfix`). See `docs/agents/triage-labels.md`.
-
-### Domain docs
-
-Single-context: one `CONTEXT.md` and `docs/adr/` at the repo root. See `docs/agents/domain.md`.
+Issue tracker, triage labels, and domain-doc conventions: `docs/agents/`.

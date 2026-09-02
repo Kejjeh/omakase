@@ -1,0 +1,13 @@
+# Files agents should never load into context.
+# Large, generated, or binary — inspect with python/jq instead of reading.
+scripts/data/geo/nyc_nta_2020.geojson
+scripts/data/*/scored_restaurants.json
+scripts/data/*/restaurants.json
+scripts/data/*/ratings_cache.json
+docs/*/data.json
+research_input/italian/discovery.json
+research_input/italian/raw_research.md
+*.xlsx
+final_docs/
+__pycache__/
+.pytest_cache/
