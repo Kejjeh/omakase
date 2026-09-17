@@ -5,10 +5,10 @@ Read `CLAUDE.md` first (commands, gotchas, model routing). This file is what's d
 ## Done and working
 
 - Full pipeline for all 4 cuisines: `python scripts/run.py --all` completes in seconds; regenerates scored JSON, dashboard `data.json`, and root Excel files. Verified 2026-09-01.
-- Test suite: `python -m pytest tests/ -q` → **182 passed, 4 skipped, ~0.3s** (skips are data-conditional: philly/kensington have no override/closure files). Verified 2026-09-17.
+- Test suite: `python -m pytest tests/ -q` → **196 passed, 4 skipped, ~0.6s** (skips are data-conditional: philly/kensington have no override/closure files). Verified 2026-09-17.
 - Omakase (201 rows) and Italian (154 rows) dashboards: `docs/omakase/`, `docs/italian/`, linked from the `docs/index.html` landing page, served via GitHub Pages.
 - Neighborhood derivation (NYC), trust-gated closure logic, place_id pinning (17 omakase pins, 2 italian), collision reporting — all covered by ADRs 0003–0006 and tests.
-- **Trust-gated Readings (ADR 0007, 2026-09-17).** An untrusted Google match no longer contributes its rating to the Composite rating. Was known bug 2 below; now fixed, tested and documented. Test suite is **182 passed, 4 skipped**.
+- **Trust-gated Readings (ADR 0007, 2026-09-17).** An untrusted Google match no longer contributes its rating to the Composite rating. Was known bug 2 below; now fixed, tested and documented. Test suite is **196 passed, 4 skipped**.
 
 ## In progress / half-finished
 
@@ -57,6 +57,15 @@ Fields that changed anywhere in `scored_restaurants.json`: `composite_rating`, `
 | Niku X NYC (omakase) | NIKU X \| Limitless Wagyu BBQ & Seafood | 0.32 | #7 → unrated |
 
 (Genuinely wrong matches in the same set, for contrast: Olmo → OLIO E PIÙ (0.26), Bar Tulia → Tarallucci e Vino (0.36), ROKI → RokuNana (0.50), Omakase by Teisui → Omakase By Tento (0.76).)
+
+## Review corrections on top of ADR 0007 (2026-09-17)
+
+Two defects found in independent review of the trust-gating branch, both in the dashboards only — no scoring, threshold, pin, row or weight changed, and `run.py --all` reproduced the committed JSON byte-for-byte (only the usual `.xlsx` timestamp churn).
+
+- **"Best Value" could name an unrated restaurant.** `updateStats()` reduced over every filtered row with `(r.value_score||0)`, so a row whose Reading was withheld — value score `null`, treated as `0` — won by default whenever the filter left nothing corroborated. With the "Incl. unrated" filter on omakase it printed a restaurant name next to an average rating of `-`. The reduce now runs over rows that have both a Composite rating and a value score, keeps the existing corroborated-source preference among those, and shows `-` when the filter leaves none. A row with no price has no value score either, so it is not a candidate.
+- **The badge legend overclaimed.** It read "Google match is a different business". A name mismatch, a place_id collision or a missing id is evidence the match *cannot be verified*, not proof it is wrong — the table above lists seven exclusions that look correct. It now reads "Google match could not be verified — rating withheld". The per-row hover text was already factual (it names the listing Places returned and the similarity score) and was left alone.
+
+New tests: `tests/dashboard/test_dashboard_stats.py` lifts `updateStats()` out of the shipped `index.html` and runs it under `node` (no JS runner, no new dependency; skips if `node` is absent), covering all-unrated, mixed rated/unrated, null-price, corroborated-vs-bargain, the single-source fallback, empty filter, and average-rating-ignores-unrated — parametrized over both dashboards. Verified failing against the pre-fix file. Browser check with only-unrated rows: `avg -`, `best -`, no console errors on either dashboard.
 
 ## Open questions (owner input needed)
 
