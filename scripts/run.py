@@ -39,8 +39,24 @@ def run(cuisine_name: str, steps: list[str], strict: bool = False) -> None:
 
     scored: dict = {}
     if "score" in steps:
+        # An untrusted Places match's rating belongs to another business, so it
+        # is withheld from the blend (ADR 0007). Report it every run for the
+        # same reason collisions are reported: a silent exclusion is as hard to
+        # notice as the silent wrong rating it replaced.
+        excluded = pipeline.excluded_readings(cuisine, restaurants)
         scored = pipeline.score_step(cuisine, restaurants)
         print(f"  scored: {len(scored)} restaurants")
+        if excluded:
+            by_reason: dict[str, int] = {}
+            for reason in excluded.values():
+                by_reason[reason] = by_reason.get(reason, 0) + 1
+            breakdown = ", ".join(f"{n} {r}" for r, n in sorted(by_reason.items()))
+            unrated = sorted(n for n in excluded if n not in scored)
+            print(f"  excluded: {len(excluded)} untrusted Google reading(s) "
+                  f"({breakdown})")
+            if unrated:
+                print(f"  no trusted source left for {len(unrated)}: "
+                      + ", ".join(unrated))
 
     if "output" in steps:
         user_state = pipeline.load_user_state(cuisine)

@@ -29,8 +29,12 @@ The hand-typed label from the Master sheet (or an Italian research file), preser
 _Avoid_: the neighborhood, the real neighborhood.
 
 **Trusted match**:
-Whether a Restaurant's Google Places result actually describes that Restaurant (`scripts/shared/places.py`). Places substitutes a similarly-named operating business when a Restaurant has closed, so an untrusted match's fields — status, coordinates, rating — belong to someone else. Requires a `place_id`, no `place_id` collision with another Restaurant, and a name similarity ≥ 0.80. Nothing is derived from an untrusted match.
+Whether a Restaurant's Google Places result actually describes that Restaurant (`scripts/shared/places.py`). Places substitutes a similarly-named operating business when a Restaurant has closed, so an untrusted match's fields — status, coordinates, rating — belong to someone else. Requires a `place_id`, no `place_id` collision with another Restaurant, and a name similarity ≥ 0.80. Nothing is derived from an untrusted match — including its Reading, which is withheld from the Composite rating rather than blended at a reduced weight (ADR 0007).
 _Avoid_: good match, valid match, verified.
+
+**Excluded reading**:
+A Reading withheld from the Composite rating because its Rating source's match is not a Trusted match. Distinct from a *missing* Reading, which the source simply never had: an Excluded reading has a stated reason (`no_place_id`, `place_id_collision`, `name_mismatch`) and is reported on the Restaurant's record, in the run log, on the Dashboard and in the Excel file. Both renormalize identically — the Scorer cannot tell them apart, and a reader always can. A Restaurant whose every Reading is excluded has no Composite rating at all, which is not a Composite rating of zero. See ADR 0007.
+_Avoid_: dropped rating, ignored source, penalised.
 
 **Override**:
 A deliberate hand assertion that beats a derived value — `closed_override`, and a pinned `place_id`. Distinct from an absent value: `None` means nobody has ruled, which is what a defaulted `closed: False` always really meant. Overrides exist so external data can be overruled without arguing with the pipeline — see ADR 0005 and ADR 0006.
@@ -49,7 +53,7 @@ What a single Rating source returns for a single Restaurant — at minimum a rat
 _Avoid_: data point, record, score (score means something else).
 
 **Composite rating**:
-A weighted blend of adjusted Readings, on a 1–5 scale. Weights: Google 0.35, Yelp 0.45, Infatuation 0.20, renormalized when a source has no Reading. "Adjusted" means: Google ratings are bias-corrected (×0.97) and then Wilson-lower-bounded; Yelp ratings are Wilson-lower-bounded; Infatuation 1–10 editorial ratings are linearly rescaled to 1–5.
+A weighted blend of adjusted Readings from Trusted matches, on a 1–5 scale. Weights: Google 0.35, Yelp 0.45, Infatuation 0.20, renormalized when a source has no Reading. "Adjusted" means: Google ratings are bias-corrected (×0.97) and then Wilson-lower-bounded; Yelp ratings are Wilson-lower-bounded; Infatuation 1–10 editorial ratings are linearly rescaled to 1–5.
 _Avoid_: average rating, mean rating, blended score.
 
 **Value score**:
@@ -77,6 +81,10 @@ _Avoid_: page, site, report.
 > **Dev**: What if a Restaurant has no Reading from Infatuation?
 >
 > **Domain**: Then the Composite rating renormalizes over Google and Yelp only — Infatuation's 0.20 weight gets redistributed. We never drop a Restaurant just because Infatuation hasn't covered it.
+>
+> **Dev**: And if Google matched the wrong business entirely?
+>
+> **Domain**: Then that's an Excluded reading, and it renormalizes exactly like a missing one — Google's 0.35 is redistributed over Yelp and Infatuation. What it must never do is get blended in anyway, or come back as a zero. If Google was the only Reading, the Restaurant has no Composite rating and isn't ranked.
 >
 > **Dev**: And wagyu availability? That's not a Reading?
 >

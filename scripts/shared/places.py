@@ -10,6 +10,11 @@ business. Deriving "is it open" from it would flip a genuinely-closed restaurant
 back to open on the strength of its replacement's status. So anything derived
 from a Places field has to be gated on whether the match can be trusted.
 
+The *rating* is such a field. It is the substitute's rating, its review count
+and its reputation, and blending it into a Composite rating ranks our restaurant
+on someone else's reviews — which is how a Naples, Florida concept with no NYC
+presence reached #15 on the Italian dashboard. See ADR 0007.
+
 Two signals, in order of reliability:
 
 1. Two restaurants sharing one `place_id` — at least one is wrong, and it is
@@ -66,13 +71,59 @@ def colliding_place_ids(cache: dict, names: set[str] | None = None) -> set[str]:
     return {n for claimants in by_id.values() if len(claimants) > 1 for n in claimants}
 
 
+# Why a Places match cannot be trusted. `None` means it can be.
+#
+# NO_MATCH is deliberately distinct from the other three: it says Places was
+# never asked or never answered, so there is no evidence either way and nothing
+# to exclude. The other three say evidence exists and it is against the match.
+NO_MATCH = "no_match"
+NO_PLACE_ID = "no_place_id"
+PLACE_ID_COLLISION = "place_id_collision"
+NAME_MISMATCH = "name_mismatch"
+
+
+def trust_reason(name: str, entry: dict | None, colliding: set[str] = frozenset()) -> str | None:
+    """Why this Places match cannot be trusted, or None when it can be.
+
+    Checked strongest-evidence-first, so the reason reported is the most
+    defensible one: a collision is proof, a name gap is only inference.
+    """
+    if not entry:
+        return NO_MATCH
+    if not entry.get("place_id"):
+        return NO_PLACE_ID
+    if name in colliding:
+        return PLACE_ID_COLLISION
+    if name_similarity(name, entry.get("google_name")) < SIMILARITY_THRESHOLD:
+        return NAME_MISMATCH
+    return None
+
+
 def is_trustworthy(name: str, entry: dict | None, colliding: set[str] = frozenset()) -> bool:
     """Whether this Places match is solid enough to derive facts from."""
-    if not entry or not entry.get("place_id"):
-        return False
-    if name in colliding:
-        return False
-    return name_similarity(name, entry.get("google_name")) >= SIMILARITY_THRESHOLD
+    return trust_reason(name, entry, colliding) is None
+
+
+def describe_trust_reason(name: str, entry: dict | None, reason: str | None) -> str:
+    """One sentence a reader of the dashboard or the Excel file can act on."""
+    if reason is None:
+        return ""
+    if reason == NO_MATCH:
+        return "Google Places has no cached match for this restaurant"
+    if reason == NO_PLACE_ID:
+        return "no Google Places listing is attached to this restaurant"
+    if reason == PLACE_ID_COLLISION:
+        matched = (entry or {}).get("google_name") or "one listing"
+        return (
+            f"its Google place_id is claimed by another restaurant "
+            f"(both resolve to {matched!r}), so at least one match is wrong"
+        )
+    matched = (entry or {}).get("google_name")
+    score = name_similarity(name, matched)
+    return (
+        f"Google returned {matched!r}, whose name similarity to {name!r} is "
+        f"{score:.2f} \u2014 below the {SIMILARITY_THRESHOLD:.2f} trust threshold"
+    )
 
 
 def collision_groups(cache: dict, names: set[str] | None = None) -> list[list[str]]:

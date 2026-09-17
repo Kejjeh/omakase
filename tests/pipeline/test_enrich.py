@@ -3,6 +3,7 @@ import json
 import pytest
 
 from scripts.pipeline import enrich
+from scripts.shared.places import NAME_MISMATCH
 from scripts.shared.geo import Area
 from scripts.scoring import Scoring
 from scripts.sources import GoogleSource, InfatuationSource, YelpSource
@@ -61,7 +62,12 @@ def test_enrich_merges_score_fields_onto_restaurant_record():
 
 def test_enrich_writes_per_source_raw_and_adjusted_fields():
     restaurants = [{"name": "R1", "min_price": 50}]
-    google_cache = {"R1": {"rating": 5.0, "review_count": 200, "google_name": "R1 Google"}}
+    # place_id present and the name matches: a trusted match, so its Reading
+    # survives into the record. Exclusion is covered in test_trust_gating.py.
+    google_cache = {
+        "R1": {"rating": 5.0, "review_count": 200,
+               "google_name": "R1 Google", "place_id": "pid-r1"}
+    }
     yelp_cache = {"R1": {"yelp_rating": 4.5, "review_count": 100, "price_level": "$$$"}}
     infatuation_cache = {"R1": {"rating": 9.0}}
 
@@ -289,8 +295,9 @@ def _google(**fields):
 
 
 def _enrich_one(cuisine, restaurant, trusted=True):
+    reason = None if trusted else NAME_MISMATCH
     return enrich(cuisine, [restaurant], scored={}, user_state={},
-                  resolve_area=None, is_trusted=lambda name: trusted)[0]
+                  resolve_area=None, trust_reason=lambda name: reason)[0]
 
 
 def test_permanently_closed_on_google_closes_a_restaurant_nobody_had_marked():

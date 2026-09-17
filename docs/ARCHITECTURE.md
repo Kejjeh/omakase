@@ -15,11 +15,16 @@
  restaurants.json + caches
         │  scripts/cuisines/<cuisine>.py  (adapter: paths, sources, projection)
         ▼
+ pipeline.score_step()  withhold any Reading whose Places match is untrusted (ADR 0007)
+        │
+        ▼
  scoring.score()      Wilson-adjust readings, weighted blend G .35 / Y .45 / I .20
-        │             (renormalized when a source is missing), value score, percentiles
+        │             (renormalized when a source is missing OR excluded), value
+        │             score, percentiles; no trusted Reading -> no composite at all
         ▼
  pipeline.enrich()    merge: source fields -> scores -> specialties (research_input/)
-        │             -> user_state.json -> derived neighborhood (geo) -> closed logic
+        │             -> user_state.json -> derived neighborhood (geo)
+        │             -> exclusion notes (excluded_sources) -> closed logic
         ▼
  writes: scripts/data/<cuisine>/scored_restaurants.json   (full record, debugging)
          docs/<cuisine>/data.json                         (dashboard_fields() projection)
@@ -35,20 +40,20 @@
 
 - **Cuisine adapter** (`scripts/cuisines/*.py`, Protocol in `__init__.py`): owns where a cuisine's data lives, which sources it has, and which fields its dashboard gets. Adding a cuisine = new adapter + registry line + `cities.py` entry; the pipeline itself never changes.
 - **RatingSource** (`scripts/sources/`): reads a committed JSON cache and returns an `AdjustedReading` (already Wilson-bounded / rescaled). `refresh()` deliberately raises — refreshing lives in the standalone step scripts, so the pipeline stays offline and deterministic.
-- **Scorer** (`scripts/scoring/`): pure function over readings; no I/O. Price exponent is fit per cuisine by log-log regression, clamped to [0.1, 0.6], fallback 0.3.
+- **Scorer** (`scripts/scoring/`): pure function over readings; no I/O, and no knowledge of Places or trust — `score_step` withholds an untrusted Reading before the Scorer ever sees it, so exclusion and absence are the same event down here. Price exponent is fit per cuisine by log-log regression, clamped to [0.1, 0.6], fallback 0.3.
 - **enrich()** (`scripts/pipeline.py`): pure compose step. Trust and geo lookups are injected as callables so tests stub them. Merge order matters — derivation happens after specialties/user_state so overrides can win.
 - **City registry** (`scripts/shared/cities.py`): everything that varies by city (search phrasing, Infatuation slugs, neighborhood boundaries) in one table; a missing entry raises rather than defaulting (a silent NYC default once mis-fetched all of Kensington).
 
 ## Why it's shaped this way
 
-The repo grew from one omakase spreadsheet into four datasets. The recurring failure mode was *silent wrong joins*: name-based Google search substituting a different business, hand-typed neighborhoods disagreeing with coordinates, per-script city ternaries defaulting new cuisines to NYC. The structure exists to make every derivation explicit, gated on trust, and overridable by hand assertions (pins, `closed_override`). The 6 ADRs in `docs/adr/` each document one of these scars — read them before "simplifying" anything.
+The repo grew from one omakase spreadsheet into four datasets. The recurring failure mode was *silent wrong joins*: name-based Google search substituting a different business, hand-typed neighborhoods disagreeing with coordinates, per-script city ternaries defaulting new cuisines to NYC. The structure exists to make every derivation explicit, gated on trust, and overridable by hand assertions (pins, `closed_override`). The 7 ADRs in `docs/adr/` each document one of these scars — read them before "simplifying" anything.
 
 ## Boundaries a change is likely to cross
 
 - **Add/rename a dashboard field** → adapter `dashboard_fields()` + `pipeline.enrich`/merge helpers + `docs/<cuisine>/index.html` JS + possibly `_EXCEL_HEADERS`.
 - **New cuisine** → `scripts/cuisines/<name>.py`, registry in `cuisines/__init__.py`, `cities.CITY_BY_CUISINE`, `step2_fetch_ratings.SEARCH_TYPE_BY_CUISINE`, data dir under `scripts/data/<name>/`, dashboard dir under `docs/<name>/`.
 - **Scoring change** → `scripts/scoring/` + tests in `tests/scoring/` + rankings shift in every generated output (rerun `run.py --all`).
-- **Anything touching Google data** → check `shared/places.py` trust rules and the pin files first.
+- **Anything touching Google data** → check `shared/places.py` trust rules and the pin files first. `trust_reason()` is the single definition of trust; `is_trustworthy()` is its boolean face, and both `score_step` and `enrich` must be fed the *same* resolver or a record can claim an exclusion its composite ignored.
 
 ## Non-obvious dependencies
 
