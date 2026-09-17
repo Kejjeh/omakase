@@ -403,6 +403,38 @@ tbody tr:hover {
 
 .row-temp-closed { opacity: 0.7; }
 
+/* A Rating source withheld from the blend because its Google Places match
+   describes a different business. The badge carries the reason, because a
+   missing rating and a rejected one look identical otherwise. */
+.excluded-badge {
+  background: var(--bg-secondary);
+  color: var(--accent-orange);
+  border: 1px dashed var(--accent-orange);
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-left: 4px;
+  cursor: help;
+}
+
+/* No trusted Rating source left at all — rankable on nothing, so it is not
+   ranked. Shown rather than hidden, so the gap is visible and fixable. */
+.unrated-badge {
+  background: var(--text-dim);
+  color: var(--card-bg);
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-size: 0.6rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-left: 4px;
+  cursor: help;
+}
+
+.row-unrated { opacity: 0.6; }
+
 /* A closure asserted by hand rather than derived from Google. */
 .closed-badge[data-source="manual"] { outline: 1px dashed var(--text-dim); }
 
@@ -522,7 +554,7 @@ tbody tr:hover {
     <div class="filter-group"><label>Min Price ($pp)</label><input type="number" id="f-price-min" placeholder="0" min="0"></div>
     <div class="filter-group"><label>Max Price ($pp)</label><input type="number" id="f-price-max" placeholder="any" min="0"></div>
     <div class="filter-group"><label>Price Level</label><select id="f-price-level"><option value="">All</option><option value="$">$</option><option value="$$">$$</option><option value="$$$">$$$</option><option value="$$$$">$$$$</option></select></div>
-    <div class="filter-group"><label>Min Sources</label><select id="f-sources"><option value="1">1+</option><option value="2">2+</option><option value="3">3</option></select></div>
+    <div class="filter-group"><label>Min Sources</label><select id="f-sources"><option value="1">1+</option><option value="0">Incl. unrated</option><option value="2">2+</option><option value="3">3</option></select></div>
     <div class="filter-group"><label>Visited</label><select id="f-visited"><option value="">All</option><option value="yes">Visited Only</option><option value="no">Not Visited</option></select></div>
     <div class="filter-group"><label>Min Rating %ile</label><input type="number" id="f-pctl-min" placeholder="0" min="0" max="100"></div>
     <div class="filter-group"><label>Min Composite</label><input type="number" id="f-rating-min" placeholder="0" min="0" max="5" step="0.1"></div>
@@ -538,6 +570,8 @@ tbody tr:hover {
   <div class="legend-item"><div class="legend-dot" style="background:var(--accent-primary)"></div>3 sources</div>
   <div class="legend-item"><div class="legend-dot" style="background:var(--accent-secondary)"></div>2 sources</div>
   <div class="legend-item"><div class="legend-dot" style="background:var(--text-dim)"></div>1 source</div>
+  <div class="legend-item"><span class="excluded-badge">G EXCLUDED</span>Google match is a different business — rating withheld</div>
+  <div class="legend-item"><span class="unrated-badge">UNRATED</span>No trusted rating source — not ranked</div>
   <div class="legend-item"><div class="legend-dot" style="background:var(--accent-positive); border: 2px solid var(--accent-positive);"></div>Visited</div>
   <div class="legend-item"><span class="spec-badge spec-aw">★</span>1-Star+</div>
   <div class="legend-item"><span class="spec-badge spec-a">BIB</span>Bib Gourmand</div>
@@ -635,7 +669,8 @@ function applyFilters() {
   const pMin = parseFloat(document.getElementById('f-price-min').value) || 0;
   const pMax = parseFloat(document.getElementById('f-price-max').value) || 9999;
   const priceLevel = document.getElementById('f-price-level').value;
-  const minSrc = parseInt(document.getElementById('f-sources').value) || 1;
+  const rawMinSrc = parseInt(document.getElementById('f-sources').value);
+  const minSrc = isNaN(rawMinSrc) ? 1 : rawMinSrc;
   const visited = document.getElementById('f-visited').value;
   const pctlMin = parseFloat(document.getElementById('f-pctl-min').value) || 0;
   const ratingMin = parseFloat(document.getElementById('f-rating-min').value) || 0;
@@ -682,7 +717,10 @@ function updateStats() {
     document.getElementById('stat-best-value').textContent = '-';
     return;
   }
-  const avgR = filtered.reduce((s,r) => s + (r.composite_rating||0), 0) / filtered.length;
+  const rated = filtered.filter(r => r.composite_rating != null);
+  const avgR = rated.length
+    ? rated.reduce((s,r) => s + r.composite_rating, 0) / rated.length
+    : null;
   const withPrice = filtered.filter(r => r.min_price);
   const avgP = withPrice.length ? withPrice.reduce((s,r) => s + r.min_price, 0) / withPrice.length : 0;
   // Value score rewards cheap, so a single unverified rating can top the list
@@ -691,7 +729,7 @@ function updateStats() {
   const corroborated = filtered.filter(r => (r.n_sources||0) >= 2);
   const pool = corroborated.length ? corroborated : filtered;
   const best = pool.reduce((a,b) => (a.value_score||0) > (b.value_score||0) ? a : b);
-  document.getElementById('stat-avg-rating').textContent = avgR.toFixed(2);
+  document.getElementById('stat-avg-rating').textContent = avgR == null ? '-' : avgR.toFixed(2);
   document.getElementById('stat-avg-price').textContent = '$' + Math.round(avgP);
   document.getElementById('stat-best-value').textContent = best.name;
 }
@@ -709,17 +747,18 @@ function priceJitter(r) {
 function updateChart() {
   const accentPos = cssVar('--accent-positive');
   const cardBg = cssVar('--card-bg');
+  const plotted = filtered.filter(r => r.composite_rating != null);
   const datasets = [{
-    data: filtered.map(r => ({
+    data: plotted.map(r => ({
       x: priceJitter(r),
-      y: r.composite_rating || 0,
+      y: r.composite_rating,
       r: Math.max(4, Math.min(25, Math.sqrt(r.review_count || 50) * 1.5)),
       label: r.name,
       restaurant: r
     })),
-    backgroundColor: filtered.map(r => getColor(r)),
-    borderColor: filtered.map(r => r.visited ? accentPos : cardBg),
-    borderWidth: filtered.map(r => r.visited ? 2.5 : 1),
+    backgroundColor: plotted.map(r => getColor(r)),
+    borderColor: plotted.map(r => r.visited ? accentPos : cardBg),
+    borderWidth: plotted.map(r => r.visited ? 2.5 : 1),
   }];
 
   const gridColor = cssVar('--chart-grid');
@@ -765,6 +804,28 @@ function updateChart() {
   }
 }
 
+// An untrusted Places match's rating belongs to another business, so the
+// pipeline withholds it (ADR 0007). Say so on the row: an unexplained gap
+// between the Google column and the composite reads as a bug.
+function exclusionTags(r) {
+  const ex = r.excluded_sources || [];
+  let tags = ex.map(e => {
+    const code = (e.source || '?')[0].toUpperCase();
+    return ` <span class="excluded-badge" title="${escAttr(e.detail || '')}">${code} EXCLUDED</span>`;
+  }).join('');
+  if (r.composite_rating == null) {
+    const why = ex.length
+      ? ex.map(e => e.detail).join('; ')
+      : 'No rating source covers this restaurant.';
+    tags += ` <span class="unrated-badge" title="${escAttr('Not ranked \u2014 no trusted rating source. ' + why)}">UNRATED</span>`;
+  }
+  return tags;
+}
+
+function escAttr(s) {
+  return String(s).replace(/&/g, '&amp;').replace(/"/g, '&quot;').replace(/</g, '&lt;');
+}
+
 function updateTable() {
   const sorted = [...filtered].sort((a,b) => {
     let av = a[sortCol], bv = b[sortCol];
@@ -786,18 +847,18 @@ function updateTable() {
     const closedTag = r.closed
       ? ` <span class="closed-badge" data-source="${manualClose ? 'manual' : 'google'}" title="${manualClose ? 'Marked closed by hand' : 'Google reports permanently closed'}">CLOSED</span>`
       : (r.temporarily_closed ? ' <span class="temp-badge" title="Google reports temporarily closed">TEMP CLOSED</span>' : '');
-    const rowClass = r.closed ? ' class="row-closed"' : (r.temporarily_closed ? ' class="row-temp-closed"' : '');
+    const rowClass = r.closed ? ' class="row-closed"' : (r.temporarily_closed ? ' class="row-temp-closed"' : (r.composite_rating == null ? ' class="row-unrated"' : ''));
     return `<tr${rowClass}>
-      <td>${r.name}${r.visited ? ' <span class="visited-badge">✓</span>' : ''}${closedTag}</td>
+      <td>${r.name}${r.visited ? ' <span class="visited-badge">✓</span>' : ''}${closedTag}${exclusionTags(r)}</td>
       <td>${r._hood || ''}</td>
       <td>$${r.min_price || '?'}</td>
       <td><strong>${r.composite_rating ? r.composite_rating.toFixed(2) : '-'}</strong></td>
       <td>${r.google_wilson ? r.google_wilson.toFixed(2) : '-'}</td>
       <td>${r.yelp_wilson ? r.yelp_wilson.toFixed(2) : '-'}</td>
       <td>${r.infatuation_5 ? r.infatuation_5.toFixed(2) : '-'}</td>
-      <td><span class="src-badge ${srcClass}">${r.sources||'?'}</span></td>
-      <td>${(r.value_score||0).toFixed(2)}</td>
-      <td>${(r.rating_percentile||0).toFixed(0)}%</td>
+      <td><span class="src-badge ${srcClass}">${r.sources || 'none'}</span></td>
+      <td>${r.value_score != null ? r.value_score.toFixed(2) : '-'}</td>
+      <td>${r.rating_percentile != null ? r.rating_percentile.toFixed(0) + '%' : '-'}</td>
       <td>${r.subway_walk_min != null ? r.subway_walk_min + 'm' : '-'}</td>
       <td>${r.subtype || '-'}</td>
       <td>${michBadge || '-'}</td>
