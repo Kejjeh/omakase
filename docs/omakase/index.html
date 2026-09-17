@@ -713,12 +713,16 @@ function updateStats() {
   // on one source alone — which is how an AYCE BBQ place ended up as the
   // headline stat of an omakase report. Require corroboration; fall back to
   // the whole set only if the filters leave nothing corroborated.
-  const corroborated = filtered.filter(r => (r.n_sources||0) >= 2);
-  const pool = corroborated.length ? corroborated : filtered;
-  const best = pool.reduce((a,b) => (a.value_score||0) > (b.value_score||0) ? a : b);
+  // A row with no trusted rating has no value score either (ADR 0007), and a
+  // missing price leaves it unscored too. Neither is a candidate: reduce over
+  // rows that were actually measured, and say so when there are none.
+  const eligible = filtered.filter(r => r.composite_rating != null && r.value_score != null);
+  const corroborated = eligible.filter(r => (r.n_sources||0) >= 2);
+  const pool = corroborated.length ? corroborated : eligible;
+  const best = pool.length ? pool.reduce((a,b) => b.value_score > a.value_score ? b : a) : null;
   document.getElementById('stat-avg-rating').textContent = avgR == null ? '-' : avgR.toFixed(2);
   document.getElementById('stat-avg-price').textContent = '$' + Math.round(avgP);
-  document.getElementById('stat-best-value').textContent = best.name;
+  document.getElementById('stat-best-value').textContent = best ? best.name : '-';
 }
 
 function priceJitter(r) {
