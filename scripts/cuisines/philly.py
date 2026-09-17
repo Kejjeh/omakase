@@ -48,5 +48,6 @@ class PhillyCuisine:
             "yelp_rating", "yelp_wilson", "yelp_count",
             "infatuation_rating", "infatuation_5",
             "composite_rating", "n_sources", "sources",
+            "google_trusted", "excluded_sources",
             "visited",
         ]

@@ -52,6 +52,7 @@ class ItalianCuisine:
             "yelp_rating", "yelp_wilson", "yelp_count",
             "infatuation_rating", "infatuation_5",
             "composite_rating", "n_sources", "sources",
+            "google_trusted", "excluded_sources",
             "visited", "friend_suggested",
             "subway_walk_min", "nearest_456",
             "value_score", "rating_percentile", "value_percentile",

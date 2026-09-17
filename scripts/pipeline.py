@@ -35,14 +35,56 @@ def area_resolver(cuisine):
     return lambda lat, lng: geo.lookup(lat, lng, region)
 
 
-def score_step(cuisine, restaurants: list[dict], config: ScoringConfig | None = None) -> dict:
+# Only Google's Reading is gated on Places trust, because only Google's Reading
+# comes from Places. Yelp and Infatuation caches are keyed by *our* name and
+# were filled by a human researching that name, so a wrong Places match says
+# nothing about them; dropping them too would discard good data.
+TRUST_GATED_SOURCES = frozenset({"google"})
+
+
+def score_step(cuisine, restaurants: list[dict], config: ScoringConfig | None = None,
+               trust_reason=_DEFAULT_RESOLVER) -> dict:
+    """Blend each Restaurant's Readings, excluding any from an untrusted match.
+
+    An untrusted Places match's rating is the *substituted* business's rating.
+    Feeding it to the Scorer ranks our Restaurant on someone else's reviews, so
+    it is withheld here and the remaining sources renormalize exactly as they
+    do for a Restaurant the source never covered. A Restaurant left with no
+    trusted Reading gets no Composite rating at all — which is honest, and very
+    different from a Composite of zero. See ADR 0007.
+    """
     cfg = config or ScoringConfig()
-    adjusted = {
-        s.name: {r["name"]: s.read(r["name"]) for r in restaurants}
-        for s in cuisine.sources
-    }
+    reason_for = _resolve_trust(cuisine, restaurants, trust_reason)
+    adjusted = {}
+    for s in cuisine.sources:
+        gated = s.name in TRUST_GATED_SOURCES
+        adjusted[s.name] = {
+            r["name"]: (
+                None if gated and reason_for(r["name"]) is not None else s.read(r["name"])
+            )
+            for r in restaurants
+        }
     rows = [{"name": r["name"], "price": r.get("min_price")} for r in restaurants]
     return score(rows, adjusted, cfg)
+
+
+def excluded_readings(cuisine, restaurants: list[dict], trust_reason=_DEFAULT_RESOLVER) -> dict:
+    """{restaurant name: reason} for every Reading withheld as untrusted.
+
+    Only Restaurants that actually had a Reading to withhold appear — a
+    Restaurant Places never matched had nothing to exclude.
+    """
+    reason_for = _resolve_trust(cuisine, restaurants, trust_reason)
+    out: dict[str, str] = {}
+    for s in cuisine.sources:
+        if s.name not in TRUST_GATED_SOURCES:
+            continue
+        for r in restaurants:
+            name = r["name"]
+            reason = reason_for(name)
+            if reason is not None and reason != places.NO_MATCH and s.read(name) is not None:
+                out[name] = reason
+    return out
 
 
 def collision_report(cuisine, restaurants: list[dict]) -> str:
@@ -55,23 +97,36 @@ def collision_report(cuisine, restaurants: list[dict]) -> str:
     )
 
 
-def trust_resolver(cuisine, restaurants: list[dict]):
-    """Resolve a restaurant name to whether its Places match can be trusted.
+def trust_reason_resolver(cuisine, restaurants: list[dict]):
+    """Resolve a restaurant name to why its Places match cannot be trusted.
 
-    Returned as a callable for the same reason as area_resolver: enrich() stays
-    free of I/O and tests can substitute a stub.
+    Returns None for a trustworthy match. Returned as a callable for the same
+    reason as area_resolver: enrich() stays free of I/O and tests can
+    substitute a stub.
+
+    A cuisine with no Google source has no Places evidence at all, so every
+    name resolves to NO_MATCH — nothing to trust, and nothing to exclude.
     """
     google = next((s for s in cuisine.sources if s.name == "google"), None)
     if google is None:
-        return lambda name: False
+        return lambda name: places.NO_MATCH
     cache = google.entries()
     on_sheet = {r["name"] for r in restaurants}
     colliding = places.colliding_place_ids(cache, on_sheet)
-    return lambda name: places.is_trustworthy(name, cache.get(name), colliding)
+    return lambda name: places.trust_reason(name, cache.get(name), colliding)
+
+
+def _resolve_trust(cuisine, restaurants: list[dict], trust_reason):
+    """Normalise the injected trust callable. None means "trust nothing"."""
+    if trust_reason is _DEFAULT_RESOLVER:
+        return trust_reason_resolver(cuisine, restaurants)
+    if trust_reason is None:
+        return lambda name: places.NO_MATCH
+    return trust_reason
 
 
 def enrich(cuisine, restaurants: list[dict], scored: dict, user_state: dict,
-           resolve_area=_DEFAULT_RESOLVER, is_trusted=_DEFAULT_RESOLVER) -> list[dict]:
+           resolve_area=_DEFAULT_RESOLVER, trust_reason=_DEFAULT_RESOLVER) -> list[dict]:
     """Compose restaurant base records with per-source readings, composite scoring,
     free-form specialty data, and preserved user_state. Pure function -- no I/O.
 
@@ -79,27 +134,73 @@ def enrich(cuisine, restaurants: list[dict], scored: dict, user_state: dict,
     this free of I/O. Defaults to the cuisine's real region resolver. Passing
     None skips neighborhood derivation entirely.
 
-    is_trusted is a (name) -> bool callable gating anything derived from a
-    Places field. Passing None treats every match as untrusted, so nothing is
-    derived and hand values stand.
+    trust_reason is a (name) -> str | None callable saying why a Places match
+    cannot be trusted; None means it can be. It gates everything derived from a
+    Places field, and is the same callable score_step() blends with, so the
+    record's exclusion note and its Composite rating can never disagree.
+    Passing None treats every match as untrusted, so nothing is derived and
+    hand values stand.
     """
     specialties = cuisine.load_specialties()
     resolve = area_resolver(cuisine) if resolve_area is _DEFAULT_RESOLVER else resolve_area
-    trusted = (trust_resolver(cuisine, restaurants)
-               if is_trusted is _DEFAULT_RESOLVER else (is_trusted or (lambda name: False)))
+    reason_for = _resolve_trust(cuisine, restaurants, trust_reason)
+    gated = [s.name for s in cuisine.sources if s.name in TRUST_GATED_SOURCES]
     enriched: list[dict] = []
     for r in restaurants:
         name = r["name"]
         rec = dict(r)
+        reason = reason_for(name)
         _merge_source_fields(rec, name, cuisine.sources)
         _merge_scoring(rec, scored.get(name))
         rec.update(specialties.get(name, {}))
         _merge_user_state(rec, user_state.get(name, {}))
         _merge_geo(rec, resolve)
-        _merge_closed(rec, trusted(name))
+        _merge_trust(rec, name, reason, gated)
+        _merge_closed(rec, reason is None)
         _finalize_legacy_shape(rec)
         enriched.append(rec)
     return enriched
+
+
+_EXCLUDED_READING_FIELDS = {"google": ("raw_rating", "google_wilson")}
+
+
+def _merge_trust(rec: dict, name: str, reason: str | None, gated: list[str]) -> None:
+    """Record why a source was left out of the blend, and withdraw its Reading.
+
+    `google_trusted` is deliberately three-valued. True and False are verdicts;
+    None means no Places match exists to judge, which is not the same as
+    judging one and finding it wrong. Masuda Omakase (operating, no listing)
+    and a wrong-business match must not read the same to someone scanning the
+    dashboard.
+
+    The adjusted Reading is withdrawn along with the rating so nothing downstream
+    can quietly re-add it, but the raw rating, review count and `google_name`
+    stay: they are the evidence a human needs to rule on the match, and they are
+    displayed next to the exclusion note rather than in place of it.
+    """
+    if not gated:
+        rec["google_trusted"] = None
+        rec["excluded_sources"] = []
+        return
+
+    rec["google_trusted"] = None if reason == places.NO_MATCH else (reason is None)
+    excluded = []
+    for source in gated:
+        rating_field, adjusted_field = _EXCLUDED_READING_FIELDS[source]
+        adjusted = rec.get(adjusted_field)
+        if reason is None or reason == places.NO_MATCH or adjusted is None:
+            continue
+        entry = {"place_id": rec.get("place_id"), "google_name": rec.get("google_name")}
+        excluded.append({
+            "source": source,
+            "reason": reason,
+            "detail": places.describe_trust_reason(name, entry, reason),
+            "excluded_rating": rec.get(rating_field),
+            "excluded_adjusted": round(adjusted, 3),
+        })
+        rec[adjusted_field] = None
+    rec["excluded_sources"] = excluded
 
 
 def _merge_closed(rec: dict, match_trusted: bool) -> None:
@@ -262,7 +363,21 @@ _EXCEL_HEADERS = [
     ("Adj. Rating", 11), ("Rating Pctl", 10),
     ("Value Score", 11), ("Value Pctl", 10),
     ("Visited", 8), ("Google Maps Name", 35),
+    ("Excluded Sources", 60),
 ]
+
+
+def describe_exclusions(rec: dict) -> str:
+    """One cell / one tooltip: which sources were withheld from this row, and why.
+
+    Empty for the ordinary case. Worth a column of its own because the sheet
+    still prints the raw Google rating next to a Composite rating computed
+    without it, and an unexplained gap between the two reads as a bug.
+    """
+    return "; ".join(
+        f"{e['source'].capitalize()} rating {e['excluded_rating']} excluded — {e['detail']}"
+        for e in rec.get("excluded_sources") or []
+    )
 
 
 def write_excel(cuisine, enriched: list[dict], out_path: str | Path | None = None) -> Path:
@@ -295,6 +410,7 @@ def write_excel(cuisine, enriched: list[dict], out_path: str | Path | None = Non
             r.get("composite_rating"), r.get("rating_percentile"),
             r.get("value_score"), r.get("value_percentile"),
             "Yes" if r.get("visited") else "", r.get("google_name", ""),
+            describe_exclusions(r),
         ]
         for col, val in enumerate(row_data, 1):
             cell = ws.cell(row=i, column=col, value=val)
