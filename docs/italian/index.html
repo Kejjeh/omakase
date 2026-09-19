@@ -166,6 +166,10 @@ body {
 .filter-group {
   display: flex;
   flex-direction: column;
+  /* A <select> is as wide as its longest <option> unless told otherwise, and
+     "Brooklyn (Bath Beach)" is wider than a phone. Without this the grid track
+     stretches to fit it and drags the whole page into horizontal scroll. */
+  min-width: 0;
 }
 
 .filter-group label {
@@ -187,6 +191,8 @@ body {
   border-radius: 2px;
   transition: border-color 0.2s ease;
   font-family: inherit;
+  width: 100%;
+  min-width: 0;
 }
 
 .filter-group select:focus,
@@ -464,6 +470,37 @@ tbody tr:hover {
   color: var(--text-dim);
 }
 
+.stat-note {
+  margin-top: 6px;
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-dim);
+}
+
+.empty-row td {
+  padding: 36px 20px;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+  line-height: 1.6;
+}
+
+.chart-fallback {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  text-align: center;
+  color: var(--text-secondary);
+  font-size: 0.85rem;
+}
+
+#data-table th:focus-visible {
+  outline: 2px solid var(--accent-primary);
+  outline-offset: -2px;
+}
+
 @media (max-width: 768px) {
   .masthead-title {
     font-size: 2rem;
@@ -541,7 +578,7 @@ tbody tr:hover {
 <span class="section-label">The Leaderboard</span>
 <div class="stats-bar">
   <div class="stat-card"><div class="stat-value" id="stat-count">0</div><div class="stat-label">Restaurants</div></div>
-  <div class="stat-card"><div class="stat-value" id="stat-avg-rating">0.00</div><div class="stat-label">Avg Composite</div></div>
+  <div class="stat-card"><div class="stat-value" id="stat-avg-rating">0.00</div><div class="stat-label">Avg Composite</div><div class="stat-note" id="stat-rating-note"></div></div>
   <div class="stat-card"><div class="stat-value" id="stat-avg-price">$0</div><div class="stat-label">Avg Price</div></div>
   <div class="stat-card"><div class="stat-value" id="stat-best-value">-</div><div class="stat-label">Best Value</div></div>
 </div>
@@ -663,11 +700,21 @@ function populateNeighborhoods() {
 
 const MICH_ORDER = {'none':0,'recommended':1,'bib-gourmand':2,'1-star':3,'2-star':4,'3-star':5};
 
+// An empty box means "no bound"; a typed 0 means zero. Reading these with
+// `|| 0` / `|| 9999` made a Max Price of 0 mean "no maximum", so typing it
+// widened the results instead of emptying them.
+function priceBound(id) {
+  const raw = document.getElementById(id).value.trim();
+  if (raw === '') return null;
+  const n = parseFloat(raw);
+  return Number.isFinite(n) ? n : null;
+}
+
 function applyFilters() {
   const borough = document.getElementById('f-borough').value;
   const hood = document.getElementById('f-neighborhood').value;
-  const pMin = parseFloat(document.getElementById('f-price-min').value) || 0;
-  const pMax = parseFloat(document.getElementById('f-price-max').value) || 9999;
+  const pMin = priceBound('f-price-min');
+  const pMax = priceBound('f-price-max');
   const priceLevel = document.getElementById('f-price-level').value;
   const rawMinSrc = parseInt(document.getElementById('f-sources').value);
   const minSrc = isNaN(rawMinSrc) ? 1 : rawMinSrc;
@@ -684,8 +731,14 @@ function applyFilters() {
     if (hideClosed && r.closed) return false;
     if (borough && r.borough !== borough) return false;
     if (hood && r._hood !== hood) return false;
-    const price = r.min_price || 0;
-    if (price < pMin || price > pMax) return false;
+    // An unknown price is not a free one. A row with no price cannot be shown
+    // to sit inside a price range, so a bound excludes it — the same rule the
+    // walk-time filter below already applies to an unknown walk time.
+    if (pMin != null || pMax != null) {
+      if (r.min_price == null) return false;
+      if (pMin != null && r.min_price < pMin) return false;
+      if (pMax != null && r.min_price > pMax) return false;
+    }
     if (priceLevel && r.price_level !== priceLevel) return false;
     if ((r.n_sources || 0) < minSrc) return false;
     if (visited === 'yes' && !r.visited) return false;
@@ -705,8 +758,10 @@ function applyFilters() {
   });
 
   updateStats();
-  updateChart();
+  // The table is the report; the chart is decoration. Render the table first so
+  // a chart failure cannot take the restaurant list down with it.
   updateTable();
+  updateChart();
 }
 
 function updateStats() {
@@ -715,14 +770,15 @@ function updateStats() {
     document.getElementById('stat-avg-rating').textContent = '-';
     document.getElementById('stat-avg-price').textContent = '-';
     document.getElementById('stat-best-value').textContent = '-';
+    setRatingNote(0, 0);
     return;
   }
   const rated = filtered.filter(r => r.composite_rating != null);
   const avgR = rated.length
     ? rated.reduce((s,r) => s + r.composite_rating, 0) / rated.length
     : null;
-  const withPrice = filtered.filter(r => r.min_price);
-  const avgP = withPrice.length ? withPrice.reduce((s,r) => s + r.min_price, 0) / withPrice.length : 0;
+  const withPrice = filtered.filter(r => r.min_price != null);
+  const avgP = withPrice.length ? withPrice.reduce((s,r) => s + r.min_price, 0) / withPrice.length : null;
   // Value score rewards cheap, so a single unverified rating can top the list
   // on one source alone. Require corroboration; fall back to the whole set
   // only if the filters leave nothing corroborated.
@@ -734,8 +790,18 @@ function updateStats() {
   const pool = corroborated.length ? corroborated : eligible;
   const best = pool.length ? pool.reduce((a,b) => b.value_score > a.value_score ? b : a) : null;
   document.getElementById('stat-avg-rating').textContent = avgR == null ? '-' : avgR.toFixed(2);
-  document.getElementById('stat-avg-price').textContent = '$' + Math.round(avgP);
+  // No known price is not an average of zero.
+  document.getElementById('stat-avg-price').textContent = avgP == null ? '-' : '$' + Math.round(avgP);
+  // The count includes rows whose rating was withheld (ADR 0007); this average
+  // cannot. Say which of the two numbers it is over.
+  setRatingNote(rated.length, filtered.length);
   document.getElementById('stat-best-value').textContent = best ? best.name : '-';
+}
+
+function setRatingNote(ratedCount, total) {
+  const note = document.getElementById('stat-rating-note');
+  if (!note) return;
+  note.textContent = (total && ratedCount !== total) ? `over ${ratedCount} of ${total} rated` : '';
 }
 
 function priceJitter(r) {
@@ -748,7 +814,29 @@ function priceJitter(r) {
   return r.min_price + ((h % 1000) / 999 - 0.5) * 2 * width;
 }
 
+// Chart.js comes from a CDN. When it does not arrive — offline, a blocked
+// domain, a script blocker, a corporate proxy — `new Chart(...)` throws, and
+// that exception used to abort applyFilters() before updateTable() ran: the
+// page rendered its stat cards above a permanently empty restaurant list, a
+// dependency failure wearing the costume of an empty filter.
 function updateChart() {
+  if (typeof Chart === 'undefined') { chartUnavailable(); return; }
+  try {
+    drawChart();
+  } catch (err) {
+    console.error('Chart render failed:', err);
+    chartUnavailable();
+  }
+}
+
+function chartUnavailable() {
+  const box = document.querySelector('.chart-container');
+  if (!box || box.dataset.unavailable) return;
+  box.dataset.unavailable = '1';
+  box.innerHTML = '<p class="chart-fallback">Price vs rating chart unavailable — it needs Chart.js, which did not load. Every restaurant is still listed below.</p>';
+}
+
+function drawChart() {
   const accentPos = cssVar('--accent-positive');
   const cardBg = cssVar('--card-bg');
   const plotted = filtered.filter(r => r.composite_rating != null);
@@ -840,6 +928,13 @@ function updateTable() {
   });
 
   const tbody = document.querySelector('#data-table tbody');
+  if (!sorted.length) {
+    // An empty <tbody> under a full header row reads as a broken page. Say that
+    // the filters matched nothing, and name the ones most likely responsible.
+    const cols = document.querySelectorAll('#data-table thead th').length;
+    tbody.innerHTML = `<tr class="empty-row"><td colspan="${cols}">No restaurants match these filters.<br>Try widening the price range, lowering Min Sources, or setting Hide closed to &quot;Show all&quot;.</td></tr>`;
+    return;
+  }
   tbody.innerHTML = sorted.map(r => {
     const srcClass = r.n_sources >= 3 ? 'src-3' : r.n_sources >= 2 ? 'src-2' : 'src-1';
     let michBadge = '';
@@ -870,15 +965,29 @@ function updateTable() {
   }).join('');
 }
 
-// Sort on header click
+// Sort on header click — and on Enter/Space. A header that answers only a
+// mouse leaves a keyboard user with one fixed ordering and no way past it.
 document.querySelectorAll('#data-table th').forEach(th => {
-  th.addEventListener('click', () => {
+  th.tabIndex = 0;
+  th.setAttribute('aria-sort', 'none');
+  const sortByThisColumn = () => {
     const col = th.dataset.col;
     if (sortCol === col) sortAsc = !sortAsc;
     else { sortCol = col; sortAsc = false; }
-    document.querySelectorAll('#data-table th').forEach(t => t.classList.remove('sorted-asc','sorted-desc'));
+    document.querySelectorAll('#data-table th').forEach(t => {
+      t.classList.remove('sorted-asc','sorted-desc');
+      t.setAttribute('aria-sort', 'none');
+    });
     th.classList.add(sortAsc ? 'sorted-asc' : 'sorted-desc');
+    th.setAttribute('aria-sort', sortAsc ? 'ascending' : 'descending');
     updateTable();
+  };
+  th.addEventListener('click', sortByThisColumn);
+  th.addEventListener('keydown', e => {
+    if (e.key === 'Enter' || e.key === ' ' || e.key === 'Spacebar') {
+      e.preventDefault();
+      sortByThisColumn();
+    }
   });
 });
 
