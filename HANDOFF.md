@@ -107,6 +107,20 @@ Not fixed, deliberately: the chart's y-axis is hardcoded to 3.0–5.0. No curren
 row scores below 3.148, so nothing is clipped today — worth a look only if a
 lower-rated row ever lands.
 
+Checked and found sound, so left alone: back navigation (landing → dashboard →
+filter → back → forward restores the filter *and* the matching row count), the
+withheld-rating badges and their hover text, the UNRATED badge, the legend
+wording, and the empty-result stat cards, which already read `-`.
+
+Commits on `claude/epic-ramanujan-mojj88`, off `main` at 0ab4bd6:
+
+- `3075ce2` Repair seven dashboard defects found by driving the released pages
+- `2271bc9` Cover the filter, empty-state and chart-failure paths
+- `a2ec259` Record the dashboard usability pass
+
+Draft PR: https://github.com/Kejjeh/omakase/pull/2 — awaiting Astra's independent
+review. Not reviewed, not merged, not deployed.
+
 ## Open questions (owner input needed)
 
 1. May agents remove rows (Bar Tulia, Olmo, the 3 omakase duplicate groups)? ADR 0006 reserves row removal for a human; nothing records whether that means "owner does it" or "owner approves an agent doing it".
