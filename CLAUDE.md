@@ -8,7 +8,7 @@ A data pipeline that ranks restaurants per cuisine (`omakase`, `italian` in NYC;
 
 ```bash
 pip install -r requirements.txt          # pandas, openpyxl, requests, beautifulsoup4, pytest
-python -m pytest tests/ -q               # ~0.6s. Expect: 196 passed, 4 skipped
+python -m pytest tests/ -q               # ~1.8s. Expect: 232 passed, 4 skipped
 python scripts/run.py --all              # rebuild all cuisines (score + write json/dashboard/excel)
 python scripts/run.py --cuisine italian --steps score   # one cuisine, no file writes
 python -m http.server -d docs 8000       # view dashboards; file:// does NOT work (ADR 0002)
@@ -45,7 +45,7 @@ Yelp has no fetcher: refresh is manual, via a deep-research session using `Yelp_
 
 - **Restaurants are keyed by `name`** — the join key across every cache. A shared `place_id` between two rows means a wrong Google match; `run.py` warns on every run. **3 omakase collision groups (6 rows) are known duplicates awaiting a human decision — do not "fix" them** (see HANDOFF.md). Because of this, `--strict` currently fails on omakase; don't use it until those rows are resolved.
 - **Never hand-edit generated files**: `scored_restaurants.json`, `docs/*/data.json`, `*_Ratings.xlsx`.
-- **The dashboard JavaScript has tests.** `tests/dashboard/` lifts functions out of the shipped `docs/<cuisine>/index.html` and runs them under the `node` on PATH (no JS runner, no new dependency; the tests skip if `node` is missing). Editing that HTML can therefore fail pytest — which is the point.
+- **The dashboard JavaScript has tests.** `tests/dashboard/` lifts functions out of the shipped `docs/<cuisine>/index.html` and runs them under the `node` on PATH (no JS runner, no new dependency; the tests skip if `node` is missing). `jsharness.py` does the extracting; the two test modules cover the headline stats and the filter/empty-state/chart-failure paths. Editing that HTML can therefore fail pytest — which is the point.
 - **Inclusion source of truth differs by cuisine**: omakase = `scripts/data/omakase/master.xlsx` via step1; the other three = their `restaurants.json` directly (no master.xlsx exists for them).
 - **Pins**: `place_id_overrides.json` makes a Google lookup deterministic. Every pin needs a `note` (test-enforced). A `null` pin means "no Google listing exists; do not search" (Masa). See ADR 0006.
 - **An untrusted Google match contributes no rating.** Trust gating covers the Reading, not just the derived fields: a wrong-business match's rating is withheld from the composite and the remaining sources renormalize, with the reason carried onto the record (`excluded_sources`), the run log, the dashboards and the Excel file. 34 readings are excluded across the 4 cuisines today and 13 rows are left unrated as a result — that is expected output, not a regression. See ADR 0007.
@@ -57,7 +57,7 @@ Yelp has no fetcher: refresh is manual, via a deep-research session using `Yelp_
 
 ## Before you finish any task
 
-1. `python -m pytest tests/ -q` → `196 passed, 4 skipped` (more passed is fine if you added tests).
+1. `python -m pytest tests/ -q` → `232 passed, 4 skipped` (more passed is fine if you added tests).
 2. `python scripts/run.py --all` → completes; the ONLY expected warning is the known 3-group omakase collision report. The `excluded:` / `no trusted source left for` lines below it are normal output (ADR 0007) — check the counts didn't move unless you meant them to.
 3. `git diff --stat` → only files you meant to change, plus possible `.xlsx` churn.
 

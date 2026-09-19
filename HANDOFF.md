@@ -5,10 +5,10 @@ Read `CLAUDE.md` first (commands, gotchas, model routing). This file is what's d
 ## Done and working
 
 - Full pipeline for all 4 cuisines: `python scripts/run.py --all` completes in seconds; regenerates scored JSON, dashboard `data.json`, and root Excel files. Verified 2026-09-01.
-- Test suite: `python -m pytest tests/ -q` → **196 passed, 4 skipped, ~0.6s** (skips are data-conditional: philly/kensington have no override/closure files). Verified 2026-09-17.
+- Test suite: `python -m pytest tests/ -q` → **232 passed, 4 skipped, ~1.8s** (skips are data-conditional: philly/kensington have no override/closure files). Verified 2026-09-19.
 - Omakase (201 rows) and Italian (154 rows) dashboards: `docs/omakase/`, `docs/italian/`, linked from the `docs/index.html` landing page, served via GitHub Pages.
 - Neighborhood derivation (NYC), trust-gated closure logic, place_id pinning (17 omakase pins, 2 italian), collision reporting — all covered by ADRs 0003–0006 and tests.
-- **Trust-gated Readings (ADR 0007, 2026-09-17).** An untrusted Google match no longer contributes its rating to the Composite rating. Was known bug 2 below; now fixed, tested and documented. Test suite is **196 passed, 4 skipped**.
+- **Trust-gated Readings (ADR 0007, 2026-09-17).** An untrusted Google match no longer contributes its rating to the Composite rating. Was known bug 2 below; now fixed, tested and documented.
 
 ## In progress / half-finished
 
@@ -66,6 +66,46 @@ Two defects found in independent review of the trust-gating branch, both in the 
 - **The badge legend overclaimed.** It read "Google match is a different business". A name mismatch, a place_id collision or a missing id is evidence the match *cannot be verified*, not proof it is wrong — the table above lists seven exclusions that look correct. It now reads "Google match could not be verified — rating withheld". The per-row hover text was already factual (it names the listing Places returned and the similarity score) and was left alone.
 
 New tests: `tests/dashboard/test_dashboard_stats.py` lifts `updateStats()` out of the shipped `index.html` and runs it under `node` (no JS runner, no new dependency; skips if `node` is absent), covering all-unrated, mixed rated/unrated, null-price, corroborated-vs-bargain, the single-source fallback, empty filter, and average-rating-ignores-unrated — parametrized over both dashboards. Verified failing against the pre-fix file. Browser check with only-unrated rows: `avg -`, `best -`, no console errors on either dashboard.
+
+## Dashboard usability pass (2026-09-19)
+
+Seven defects reproduced in a real browser (Chromium via Playwright, both
+dashboards, desktop 1280px and phone 390px) and repaired. Presentation only:
+`docs/omakase/index.html` and `docs/italian/index.html` carry identical edits,
+and `run.py --all` reproduced every committed `data.json` and
+`scored_restaurants.json` byte-for-byte (only the usual `.xlsx` churn). No
+threshold, pin, row, weight or ranking order moved — the default view of both
+dashboards shows the same count, average, and Best Value as before.
+
+| # | Defect | Repair |
+|---|---|---|
+| 1 | **A failed Chart.js load emptied the whole report.** The library comes from a CDN; when it did not arrive, `new Chart(...)` threw inside `applyFilters()` *before* `updateTable()` ran. Measured with the CDN blocked: stat cards read "150 restaurants, 4.20 avg" above **0 table rows**, and every filter change kept it at 0. | `updateTable()` now runs before `updateChart()`, and `updateChart()` returns a placeholder instead of throwing. With Chart.js blocked both dashboards now render all 150/145 rows and zero page errors. |
+| 2 | **Filters matching nothing left a bare table.** Indistinguishable from defect 1 or a failed data load. | An empty result renders one full-width row: "No restaurants match these filters", naming the filters most likely responsible. |
+| 3 | **Max Price 0 meant "no maximum".** `parseFloat(v) \|\| 9999` turned a typed 0 falsy. Typing 0 on omakase *widened* the table from 150 to 163 rows. | An empty box means no bound; a typed 0 means zero. Max Price 0 now yields 0 rows. |
+| 4 | **An unknown price was treated as $0.** `r.min_price \|\| 0` let the two price-less omakase rows (ROKI, Tokyo Bar — `price_str: "Unlisted"`) pass *any* maximum: both appeared under "Max Price 30" showing `$?`. | A row with no price cannot be shown to sit inside a price range, so a price bound excludes it — the rule the walk-time filter already used for an unknown walk time. |
+| 5 | **"Avg Price" showed `$0` when nothing filtered had a price.** Reachable in two steps (neighborhood *Upper West Side (Central)* + Max Price 1 left only Tokyo Bar): the card read `$0`, i.e. free. | Reads `-`, like the other cards already did. |
+| 6 | **Sorting was mouse-only.** No `<th>` could take focus (Tab skipped the table entirely), so a keyboard user was stuck with the default ordering. | Headers are focusable, respond to Enter and Space, carry `aria-sort`, and show a focus ring. Verified: Enter sorts price descending ($195, $188, $180), Space ascending ($24, $30, $30). |
+| 7 | **The page scrolled sideways on a phone.** A `<select>` is as wide as its longest option ("Brooklyn (Bath Beach)"), which stretched the grid track: at 390px the document was 466px wide on omakase and 582px on italian. | `min-width: 0` on the filter groups. Both dashboards now measure exactly 390px at 390px. |
+
+One deliberate visibility addition, not a defect fix: the Avg Composite card
+gains a note reading "over 150 of 161 rated" whenever the filtered set holds
+rows whose rating was withheld (ADR 0007). The count card includes them and the
+average cannot, and nothing on the page said so.
+
+**Behavior change worth knowing:** with *Hide closed → Show all*, ROKI and Tokyo
+Bar no longer appear under omakase's default Max Price of 200, because their
+price is unknown and an unknown price no longer satisfies a bound. Clear the Max
+Price box to see them.
+
+Tests: `tests/dashboard/test_dashboard_filters.py` (30 cases) plus 6 added to
+`test_dashboard_stats.py`, with the node harness factored into
+`tests/dashboard/jsharness.py`. 28 of the 30 new filter cases fail against the
+pre-fix HTML; the 2 that pass either way are the must-not-regress guards.
+`232 passed, 4 skipped`.
+
+Not fixed, deliberately: the chart's y-axis is hardcoded to 3.0–5.0. No current
+row scores below 3.148, so nothing is clipped today — worth a look only if a
+lower-rated row ever lands.
 
 ## Open questions (owner input needed)
 
