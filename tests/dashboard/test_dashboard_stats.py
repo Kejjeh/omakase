@@ -7,57 +7,31 @@ that picks the winner has to be told what a candidate is.
 
 There is no JS test runner in this repo and the brief forbids adding one, so
 these tests lift the function out of the shipped HTML and run it under the
-node already on PATH. That keeps the assertion on the file that is actually
-served, not on a copy that can drift.
+node already on PATH (see jsharness.py). That keeps the assertion on the file
+that is actually served, not on a copy that can drift.
 """
 
 import json
-import pathlib
-import shutil
-import subprocess
 
 import pytest
-
-DOCS = pathlib.Path(__file__).resolve().parents[2] / "docs"
-DASHBOARDS = ["omakase", "italian"]  # the only two cuisines with an index.html
-
-
-def _extract(source: str, signature: str) -> str:
-    start = source.index(signature)
-    depth = 0
-    for i in range(source.index("{", start), len(source)):
-        if source[i] == "{":
-            depth += 1
-        elif source[i] == "}":
-            depth -= 1
-            if depth == 0:
-                return source[start : i + 1]
-    raise AssertionError(f"unbalanced braces after {signature!r}")
+from jsharness import DASHBOARDS, extract, run_node, source
 
 
 def run_update_stats(cuisine: str, rows: list[dict]) -> dict:
     """Return {element id: textContent} after updateStats() runs over `rows`."""
-    if not shutil.which("node"):
-        pytest.skip("node is not installed")
-    html = (DOCS / cuisine / "index.html").read_text(encoding="utf-8")
+    src = source(cuisine)
     harness = f"""
 const filtered = {json.dumps(rows)};
 const out = {{}};
 const document = {{
   getElementById: (id) => ({{ set textContent(v) {{ out[id] = String(v); }} }}),
 }};
-{_extract(html, "function updateStats()")}
+{extract(src, "function setRatingNote(")}
+{extract(src, "function updateStats()")}
 updateStats();
 console.log(JSON.stringify(out));
 """
-    proc = subprocess.run(
-        ["node", "--input-type=module", "-e", harness],
-        capture_output=True,
-        text=True,
-        timeout=30,
-    )
-    assert proc.returncode == 0, proc.stderr
-    return json.loads(proc.stdout)
+    return run_node(harness)
 
 
 def rated(name, rating, value, price, n_sources=2):
@@ -159,3 +133,29 @@ def test_average_rating_ignores_unrated_rows(cuisine):
         [rated("A", 4.0, 5.0, 40), rated("B", 4.5, 6.0, 40), unrated("C", 40)],
     )
     assert out["stat-avg-rating"] == "4.25"
+
+
+@pytest.mark.parametrize("cuisine", DASHBOARDS)
+def test_no_known_price_is_not_an_average_of_zero(cuisine):
+    """"Avg Price $0" read as free; these restaurants just have no price on file."""
+    out = run_update_stats(
+        cuisine,
+        [rated("Unlisted A", 4.0, None, None), rated("Unlisted B", 4.2, None, None)],
+    )
+    assert out["stat-avg-price"] == "-"
+
+
+@pytest.mark.parametrize("cuisine", DASHBOARDS)
+def test_note_says_how_many_rows_the_average_covers(cuisine):
+    """The count includes withheld rows (ADR 0007); the average cannot."""
+    out = run_update_stats(cuisine, [rated("A", 4.0, 5.0, 40), unrated("B", 40)])
+    assert out["stat-count"] == "2"
+    assert out["stat-rating-note"] == "over 1 of 2 rated"
+
+
+@pytest.mark.parametrize("cuisine", DASHBOARDS)
+def test_no_note_when_every_row_is_rated(cuisine):
+    out = run_update_stats(
+        cuisine, [rated("A", 4.0, 5.0, 40), rated("B", 4.2, 6.0, 40)]
+    )
+    assert out["stat-rating-note"] == ""
