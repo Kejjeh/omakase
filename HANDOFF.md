@@ -8,7 +8,7 @@ Read `CLAUDE.md` first (commands, gotchas, model routing). This file is what's d
 - Test suite: `python -m pytest tests/ -q` → **240 passed, 6 skipped, ~2.7s** (skips are data-conditional: philly/kensington have no override/closure files). Verified 2026-11-07.
 - Omakase (199 rows) and Italian (152 rows) dashboards: `docs/omakase/`, `docs/italian/`, linked from the `docs/index.html` landing page, served via GitHub Pages.
 - Neighborhood derivation (NYC), trust-gated closure logic, place_id pinning (17 omakase pins, 2 italian), collision reporting — all covered by ADRs 0003–0006 and tests.
-- **Trust-gated Readings (ADR 0007, 2026-09-17).** An untrusted Google match no longer contributes its rating to the Composite rating. Was known bug 2 below; now fixed, tested and documented. Test suite is **196 passed, 4 skipped**.
+- **Trust-gated Readings (ADR 0007, 2026-09-17).** An untrusted Google match no longer contributes its rating to the Composite rating. Was known bug 2 below; now fixed, tested and documented.
 
 ## In progress / half-finished
 
