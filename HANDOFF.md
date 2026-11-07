@@ -77,7 +77,8 @@ New tests: `tests/dashboard/test_dashboard_stats.py` lifts `updateStats()` out o
 
 ## Housekeeping
 
-- The GitHub repo was renamed to `Kejjeh/omakase`; old remote URLs redirect. The local folder is being renamed from `Projects\Project x Time` to `Projects\Omakase` to match (owner action, done outside a live session). If you find either name, they are the same working copy. After the rename, update the remote: `git remote set-url origin https://github.com/Kejjeh/omakase.git`.
+- The GitHub repo was renamed to `Kejjeh/omakase`; old remote URLs redirect. The local folder was renamed from `Projects\Project x Time` to `Projects\Omakase` to match, and the remote was repointed to `https://github.com/Kejjeh/omakase.git` — both done 2026-11-07. The old remote URL also had the owner/repo casing wrong (`kejjeh/Omakase`) and worked only via GitHub's redirect. Older notes, and Claude session history, may still say `Project x Time`: same working copy.
+- Tag `archive/omakase-experiments-20260504` preserves a four-commit experiment lineage from 2026-05-04 that is reachable from no branch: `a645460` (price exponent 0.05) → `c5f3a61` (Yelp 50/Google 30/Infatuation 20) → `6241e70` (4/5/6 subway proximity) → `14cf3f9` (initial pipeline). It was pushed to rescue those commits from stale local clones (`Desktop\Projects\Omakase` and five nested copies) before they were deleted on 2026-11-07. Nothing depends on the tag; the subway work is already in the current code, and the weighting and exponent values were deliberately superseded. Do not build on it — it exists only so the experiments stay recoverable.
 
 ## Tech debt (known, not urgent)
 
