@@ -56,6 +56,10 @@ _Avoid_: data point, record, score (score means something else).
 A weighted blend of adjusted Readings from Trusted matches, on a 1–5 scale. Weights: Google 0.35, Yelp 0.45, Infatuation 0.20, renormalized when a source has no Reading. "Adjusted" means: Google ratings are bias-corrected (×0.97) and then Wilson-lower-bounded; Yelp ratings are Wilson-lower-bounded; Infatuation 1–10 editorial ratings are linearly rescaled to 1–5.
 _Avoid_: average rating, mean rating, blended score.
 
+**Price point**:
+What a Restaurant costs per person, held in two fields that are not interchangeable. `min_price` is the curated number the pipeline computes with: the representative omakase, chosen by hand when a Restaurant lists several tiers, and the only price the Value score reads. `price_str` is the display string the dashboard shows and carries no arithmetic. They disagree on 26 omakase rows by design — `min_price` may name a later tier (Koete `$65 / $118` -> 118, the real omakase over a cheaper handroll set) or a figure `price_str` has not caught up with (Sugarfish `32` -> 76). `min_price` is authoritative: a disagreement means `price_str` is stale, not that `min_price` wants re-deriving. Despite the name it is not a minimum, and `parse_min_price()` — first number in `price_str` — only ever seeds a new row off the Master sheet.
+_Avoid_: price, cost, price tier (a tier is one option listed inside `price_str`).
+
 **Value score**:
 The Composite rating discounted by price: `composite × (100 / min_price) ** β`, where β is the price exponent (either fixed in config or fit empirically by log-log regression across the cuisine).
 _Avoid_: bang-for-buck, adjusted score.

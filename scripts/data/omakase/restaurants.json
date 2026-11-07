@@ -479,7 +479,7 @@
   {
     "name": "Sushi Seki",
     "neighborhood": "Manhattan (Chelsea / UES)",
-    "price_str": "$60 / $150",
+    "price_str": "$120 / $150 / $180",
     "min_price": 120,
     "pacing": "90",
     "vibe": "Michelin Recommended; lively, semi-private rooms.",
@@ -1271,7 +1271,7 @@
   {
     "name": "Sushi W",
     "neighborhood": "Manhattan (UWS/UES/East Vil.)",
-    "price_str": "$38 / $68",
+    "price_str": "$53 / $68",
     "min_price": 53,
     "pacing": "60",
     "vibe": "Casual, highly efficient; Strict no-tipping.",
@@ -1695,7 +1695,7 @@
     "name": "Wagyu Place",
     "neighborhood": "Queens (Flushing)",
     "price_str": "$69-$159 AYCE",
-    "min_price": 68,
+    "min_price": 69,
     "pacing": "varies (AYCE 90-120min)",
     "vibe": "AYCE wagyu yakiniku with complimentary omakase sushi set (A5 tier $159)",
     "format": "ayce_wagyu_hybrid"
