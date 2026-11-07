@@ -22,7 +22,7 @@
   },
   "Sushi Hayashi": {
     "place_id": "ChIJ2YbKoLdZwokRjrGy0WYGIS0",
-    "note": "225 Grand St, Williamsburg. This is the row to keep; 'Sushi Hayashi (Williamsburg)' is a duplicate of it."
+    "note": "225 Grand St, Williamsburg. This is the row to keep; the duplicate 'Sushi Hayashi (Williamsburg)' row was removed on 2026-11-07 by the owner's ruling. Pin retained so a name search cannot recreate the pair."
   },
   "Momoya": {
     "place_id": "ChIJ4Rw7sVhZwokRJuSZSI0jb4A",
@@ -31,6 +31,10 @@
   "Omakase by No Name": {
     "place_id": "ChIJN2PbiKZZwokRDOFfD66hznY",
     "note": "114 Eldridge St. 13-course $89 / 17-course $129 matches the row's $88/$128."
+  },
+  "Unique Omakase": {
+    "place_id": null,
+    "note": "120 1st Ave, East Village - NOT 114 Eldridge St, and NOT a duplicate of Omakase by No Name. Closed: Yelp's page is headed CLOSED (4.4 / 52 reviews, updated Oct 2025) and chef-owner Xin Cao has since taken over the counter at Kiwami, 141 Bridge Park Dr, DUMBO (Mann Publications, 1 May 2026). No Google listing survives under this name anywhere in NYC - a 20-result Places text search returns none - so the name search fell through to the neighbouring 'Omakase Sushi by No name', which Omakase by No Name legitimately owns. Detached deliberately; its own Yelp reading is kept and still scores."
   },
   "Yūgin": {
     "place_id": "ChIJ9wuzp1lZwokRMf_mNcelo0s",
@@ -50,7 +54,7 @@
   },
   "Gyu-Ichiro": {
     "place_id": "ChIJZ58XtZ1ZwokR5GvF-V5qUP0",
-    "note": "135 Bowery. Current name of the business formerly branded Hiyake Omakase; same phone (917) 596-2414. The 'Hiyake Omakase (Bowery)' row is that old name."
+    "note": "135 Bowery. Current name of the business formerly branded Hiyake Omakase; same phone (917) 596-2414. The 'Hiyake Omakase (Bowery)' row was that old name and was removed on 2026-11-07 by the owner's ruling. Pin retained so a name search cannot recreate the pair."
   },
 
   "Sushi by Bae": {

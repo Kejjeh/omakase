@@ -43,12 +43,12 @@ Yelp has no fetcher: refresh is manual, via a deep-research session using `Yelp_
 
 ## Conventions and gotchas
 
-- **Restaurants are keyed by `name`** — the join key across every cache. A shared `place_id` between two rows means a wrong Google match; `run.py` warns on every run. **3 omakase collision groups (6 rows) are known duplicates awaiting a human decision — do not "fix" them** (see HANDOFF.md). Because of this, `--strict` currently fails on omakase; don't use it until those rows are resolved.
+- **Restaurants are keyed by `name`** — the join key across every cache. A shared `place_id` between two rows means a wrong Google match; `run.py` warns on every run. **There are no collisions today and `--strict` exits 0** — use it as the standard check. The 3 long-standing omakase groups were resolved 2026-11-07 on the owner's ruling (see HANDOFF.md). Two were genuine duplicate rows and were deleted; the third was **not** a duplicate — "Unique Omakase" is a distinct, now-closed restaurant whose name search fell through to its neighbour, and it is now a null pin. If a new collision appears, diagnose each group before assuming duplication: a shared `place_id` proves one of the rows is mismatched, not that the rows are the same restaurant.
 - **Never hand-edit generated files**: `scored_restaurants.json`, `docs/*/data.json`, `*_Ratings.xlsx`.
 - **The dashboard JavaScript has tests.** `tests/dashboard/` lifts functions out of the shipped `docs/<cuisine>/index.html` and runs them under the `node` on PATH (no JS runner, no new dependency; the tests skip if `node` is missing). Editing that HTML can therefore fail pytest — which is the point.
 - **Inclusion source of truth differs by cuisine**: omakase = `scripts/data/omakase/master.xlsx` via step1; the other three = their `restaurants.json` directly (no master.xlsx exists for them).
 - **Pins**: `place_id_overrides.json` makes a Google lookup deterministic. Every pin needs a `note` (test-enforced). A `null` pin means "no Google listing exists; do not search" (Masa). See ADR 0006.
-- **An untrusted Google match contributes no rating.** Trust gating covers the Reading, not just the derived fields: a wrong-business match's rating is withheld from the composite and the remaining sources renormalize, with the reason carried onto the record (`excluded_sources`), the run log, the dashboards and the Excel file. 34 readings are excluded across the 4 cuisines today and 13 rows are left unrated as a result — that is expected output, not a regression. See ADR 0007.
+- **An untrusted Google match contributes no rating.** Trust gating covers the Reading, not just the derived fields: a wrong-business match's rating is withheld from the composite and the remaining sources renormalize, with the reason carried onto the record (`excluded_sources`), the run log, the dashboards and the Excel file. 28 readings are excluded across the 4 cuisines today and 9 rows are left with no trusted source as a result — that is expected output, not a regression. See ADR 0007.
 - **`closed_override` always beats Google's status**; fields from an untrusted Places match derive nothing. Deriving over an override reopened 7 genuinely closed restaurants once. See ADR 0005.
 - **Neighborhood is derived from coordinates**, never from the hand label (`neighborhood_raw`, display-only with an "(unverified)" marker). See ADR 0003.
 - Running the pipeline **always dirties the 4 root `.xlsx` files** even with no data change (openpyxl timestamp bytes). Expected; commit or ignore, don't investigate.
@@ -58,7 +58,7 @@ Yelp has no fetcher: refresh is manual, via a deep-research session using `Yelp_
 ## Before you finish any task
 
 1. `python -m pytest tests/ -q` → `203 passed, 6 skipped` (more passed is fine if you added tests).
-2. `python scripts/run.py --all` → completes; the ONLY expected warning is the known 3-group omakase collision report. The `excluded:` / `no trusted source left for` lines below it are normal output (ADR 0007) — check the counts didn't move unless you meant them to.
+2. `python scripts/run.py --all --strict` → exits 0 and prints **no** collision report. The `excluded:` / `no trusted source left for` lines are normal output (ADR 0007): expect `18 / 8 / 2 / 0` excluded and `7 / 1 / 1 / 0` with no trusted source, for omakase / italian / philly / kensington. Check the counts didn't move unless you meant them to.
 3. `git diff --stat` → only files you meant to change, plus possible `.xlsx` churn.
 
 ## Model routing

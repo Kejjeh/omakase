@@ -1245,14 +1245,14 @@
     "business_status": "CLOSED_PERMANENTLY"
   },
   "Unique Omakase": {
-    "rating": 4.8,
-    "review_count": 236,
-    "google_name": "Omakase Sushi by No name",
-    "address": "114 Eldridge St, New York, NY 10002, USA",
-    "lat": 40.7181287,
-    "lng": -73.9917449,
-    "place_id": "ChIJN2PbiKZZwokRDOFfD66hznY",
-    "business_status": "OPERATIONAL"
+    "rating": null,
+    "review_count": null,
+    "google_name": "",
+    "address": "",
+    "lat": null,
+    "lng": null,
+    "place_id": null,
+    "business_status": null
   },
   "Yokox Omakase": {
     "rating": 4.7,
@@ -1602,16 +1602,6 @@
     "lat": 40.7502645,
     "lng": -73.940704,
     "place_id": "ChIJ8Qoy8xVZwokRy22ts2j_PnE",
-    "business_status": "OPERATIONAL"
-  },
-  "Sushi Hayashi (Williamsburg)": {
-    "rating": 4.9,
-    "review_count": 59,
-    "google_name": "Sushi Hayashi Williamsburg",
-    "address": "225 Grand St, Brooklyn, NY 11211, USA",
-    "lat": 40.7138694,
-    "lng": -73.9594506,
-    "place_id": "ChIJ2YbKoLdZwokRjrGy0WYGIS0",
     "business_status": "OPERATIONAL"
   },
   "Toka Chef Kitchen": {
@@ -1998,16 +1988,6 @@
     "lng": -73.82913429999999,
     "place_id": "ChIJ1zxwQiJhwokRVvupwW88D6M",
     "business_status": "CLOSED_PERMANENTLY"
-  },
-  "Hiyake Omakase (Bowery)": {
-    "rating": 4,
-    "review_count": 359,
-    "google_name": "Gyu-Ichiro Japanese BBQ",
-    "address": "135 Bowery, New York, NY 10002, USA",
-    "lat": 40.718651,
-    "lng": -73.9942349,
-    "place_id": "ChIJZ58XtZ1ZwokR5GvF-V5qUP0",
-    "business_status": "OPERATIONAL"
   },
   "Hiyake Omakase (Williamsburg)": {
     "rating": 4.3,

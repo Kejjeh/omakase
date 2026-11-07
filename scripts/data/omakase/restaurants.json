@@ -1368,15 +1368,6 @@
     "format": "omakase"
   },
   {
-    "name": "Sushi Hayashi (Williamsburg)",
-    "neighborhood": "Brooklyn (Williamsburg)",
-    "price_str": "98",
-    "min_price": 98,
-    "pacing": "60-90",
-    "vibe": "$98/80min, 14-course omakase + 2 AYCE refill rounds (Williamsburg)",
-    "format": "omakase"
-  },
-  {
     "name": "Toka Chef Kitchen",
     "neighborhood": "Manhattan (Lower East Side)",
     "price_str": "58",
@@ -1752,15 +1743,6 @@
     "min_price": 68,
     "pacing": "varies (AYCE 90-120min)",
     "vibe": "A5 yakiniku + seafood shabu hybrid; AYCE BBQ + hotpot combo with sashimi rounds",
-    "format": "ayce_wagyu_hybrid"
-  },
-  {
-    "name": "Hiyake Omakase (Bowery)",
-    "neighborhood": "Manhattan (Lower East Side/Chinatown)",
-    "price_str": "$29-$49 AYCE / $88 omakase",
-    "min_price": 29,
-    "pacing": "varies (AYCE 90-120min)",
-    "vibe": "AYCE wagyu yakiniku with Uni Wagyu Handroll; despite the name, it's not counter omakase",
     "format": "ayce_wagyu_hybrid"
   },
   {

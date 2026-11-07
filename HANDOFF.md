@@ -6,26 +6,26 @@ Read `CLAUDE.md` first (commands, gotchas, model routing). This file is what's d
 
 - Full pipeline for all 4 cuisines: `python scripts/run.py --all` completes in seconds; regenerates scored JSON, dashboard `data.json`, and root Excel files. Verified 2026-09-01.
 - Test suite: `python -m pytest tests/ -q` → **196 passed, 4 skipped, ~0.6s** (skips are data-conditional: philly/kensington have no override/closure files). Verified 2026-09-17.
-- Omakase (201 rows) and Italian (154 rows) dashboards: `docs/omakase/`, `docs/italian/`, linked from the `docs/index.html` landing page, served via GitHub Pages.
+- Omakase (199 rows) and Italian (154 rows) dashboards: `docs/omakase/`, `docs/italian/`, linked from the `docs/index.html` landing page, served via GitHub Pages.
 - Neighborhood derivation (NYC), trust-gated closure logic, place_id pinning (17 omakase pins, 2 italian), collision reporting — all covered by ADRs 0003–0006 and tests.
 - **Trust-gated Readings (ADR 0007, 2026-09-17).** An untrusted Google match no longer contributes its rating to the Composite rating. Was known bug 2 below; now fixed, tested and documented. Test suite is **196 passed, 4 skipped**.
 
 ## In progress / half-finished
 
 - **Philly + Kensington cuisines are data-only.** They score and write `docs/<cuisine>/data.json` but have **no `index.html` dashboard** and are not linked from the landing page. Their `yelp_cache.json` files are empty (`{}`), so they score on Google + Infatuation only. No Philadelphia neighborhood boundary set is registered (`cities.PHILADELPHIA.region = None`), so their hand-typed neighborhoods pass through unverified.
-- **3 omakase place_id collision groups** (printed on every run, deliberately unresolved — ADR 0006 defers row removal to a human): Gyu-Ichiro + "Hiyake Omakase (Bowery)" (same place, renamed); Sushi Hayashi + "Sushi Hayashi (Williamsburg)" (duplicate row); "Omakase by No Name" + "Unique Omakase" (both resolve to "Omakase Sushi by No name"). Fixing means editing `scripts/data/omakase/master.xlsx` and re-running step1.
+- ~~**3 omakase place_id collision groups.**~~ **Resolved 2026-11-07** on the owner's ruling; `--strict` now exits 0. Only **two** were duplicates, and neither needed a master.xlsx edit — both were preserved extras living only in `restaurants.json`: "Hiyake Omakase (Bowery)" (the former name of Gyu-Ichiro, 135 Bowery) and "Sushi Hayashi (Williamsburg)" (the same 225 Grand St restaurant as Sushi Hayashi) were deleted, keeping the row the pin already named. The third was **not** a duplicate: "Unique Omakase" is a distinct restaurant that was at 120 1st Ave and has since closed, and Places had no listing for it, so a name search fell through to its neighbour "Omakase Sushi by No name" (which `Omakase by No Name` legitimately owns). It is now pinned `null` with an asserted closure, and still scores on its own Yelp reading.
 
 ## Known bugs
 
 1. **Two Italian rows still exist for businesses we don't want.** `Bar Tulia` (a Naples, FL concept with no NYC presence) and `Olmo` (the only NYC Olmo is a Mexican cantina) are still rows in `scripts/data/italian/restaurants.json`. They no longer *rank* on the wrong business's rating — ADR 0007 withheld those Readings, dropping Bar Tulia out of the ranking entirely and Olmo from #6 to #85 on Infatuation alone — but the rows themselves are still there. Correct fix per ADR 0006 is removing them (owner decision — see Open questions); do NOT pin them to the wrong business.
 2. ~~Untrusted Google matches still contribute their rating to the composite.~~ **Fixed 2026-09-17, ADR 0007.**
-3. `run.py --all --strict` exits non-zero — expected while the 3 collision groups above exist; not a regression. It was NOT weakened to accommodate ADR 0007.
+3. ~~`run.py --all --strict` exits non-zero.~~ **Fixed 2026-11-07** by resolving the 3 collision groups; it exits 0 and is now the standard check. It was never weakened to accommodate ADR 0007.
 4. ~~`scripts/data/omakase/master.xlsx` cannot be opened.~~ **Fixed 2026-11-07.** It was a truncated zip: valid local headers for all 12 members, but the central directory was cut off 24 bytes in and there was no end-of-central-directory record, so `openpyxl`, `pandas` and `unzip` all refused it and `step1_read_master.py` died with `BadZipFile`. The archive was rebuilt from its members (every CRC valid, no member data missing), so no content was reconstructed or guessed. It had been truncated in **every** commit since `fc2d1b7` (2026-05-04) — byte-identical throughout — which is why the omakase P0 below had never actually been runnable. Not a line-ending fault: CRLF mangling corrupts deflate streams and all CRCs passed. `.gitattributes` now marks `*.xlsx binary` so no eol filter can reach it. The sheet holds 164 rows / 162 named restaurants.
 
 ## Prioritized next steps (each ≈ one Sonnet session unless marked Opus)
 
 - **P0 — Resolve the bad Italian rows (blocked on Open question 1).** Once the owner rules, remove `Bar Tulia`/`Olmo` from `scripts/data/italian/restaurants.json` and their cache entries. Accept: rows gone from all italian JSON, `run.py --cuisine italian` clean, tests pass.
-- **P0 — Resolve the 3 omakase duplicate rows (blocked on Open question 1).** Edit master.xlsx, re-run step1 + pipeline. Accept: `run.py --all --strict` exits 0; document in CLAUDE.md that --strict is now the standard check. **Mechanically unblocked 2026-11-07** (master.xlsx is readable again; still blocked on Open question 1). Before running it, know that `step1` merges rather than replaces: a dry run on the repaired file reported `217 restaurants (156 from Excel, 61 preserved extras, 6 excluded)` against the 201 committed, so executing this will add ~16 rows and exclude 6 as well as resolving the duplicates. Review that delta; do not assume the only change is the three groups.
+- ~~**P0 — Resolve the 3 omakase duplicate rows.**~~ **Done 2026-11-07.** The owner ruled that agents may remove rows (Open question 1). `run.py --all --strict` exits 0. **The documented remedy turned out to be the wrong one** and was not used: neither duplicate row is on the master sheet (`master.xlsx` holds `Omakase by No Name`, `Unique Omakase` and `Sushi Hayashi`, but not `Hiyake Omakase (Bowery)`, `Gyu-Ichiro` or `Sushi Hayashi (Williamsburg)`), so editing the sheet and re-running step1 would have left both duplicates in place as preserved extras while adding ~16 unrelated rows. They were removed from `restaurants.json` and the Google/Infatuation caches directly. Side effect worth knowing: the 6 `place_id_collision` exclusions are gone, so Gyu-Ichiro (3.69) and Sushi Hayashi (4.39) now carry their trusted Google readings instead of being unrated, and Omakase by No Name gained Google alongside Yelp.
 - **P1 — Philly/Kensington dashboards.** Copy `docs/italian/index.html`, trim to their `dashboard_fields()` (see `scripts/cuisines/philly.py` — much smaller field set), add landing-page cards. Accept: both pages render rows over `python -m http.server -d docs`.
 - **P1 — Yelp coverage for philly/kensington.** Adapt `Yelp_Research_Prompt_italian.md` for each, run deep research, merge into their `yelp_cache.json` (match existing cache schema: `{name: {yelp_rating, review_count, ...}}`). Accept: scored output shows `Y` in `sources` for most rows.
 - **P2 — Philadelphia neighborhood boundaries (Opus).** Register an OpenDataPhilly GeoJSON as a `geo.Region`, wire into `cities.PHILADELPHIA`. Accept: philly/kensington rows gain structured borough/nta fields; hand labels demoted to `neighborhood_raw` (mirror ADR 0003).
@@ -42,6 +42,10 @@ Read `CLAUDE.md` first (commands, gotchas, model routing). This file is what's d
 | italian | 8 | 8 name_mismatch | 1 | Bar Tulia #15 → unrated; Olmo #6 → #85; Trattoria L'Incontro #40 → #128 |
 | philly | 2 | 2 name_mismatch | 1 | Bob & Barbara's #3 → unrated |
 | kensington | 0 | — | 0 | none (only the two new annotation fields appear) |
+
+> **Superseded 2026-11-07** for omakase only. Resolving the 3 collision groups removed all 6 `place_id_collision` exclusions, so the
+> totals are now **28** withheld Readings and **9** rows with no trusted source: omakase 18 (18 name_mismatch) / 7 unrated, italian and philly
+> unchanged. The table above is kept as the record of what ADR 0007 itself did.
 
 Fields that changed anywhere in `scored_restaurants.json`: `composite_rating`, `adjusted_rating`, `value_score`, `rating_percentile`, `value_percentile`, `sources`, `n_sources`, `google_wilson` (nulled when excluded), plus the new `google_trusted` and `excluded_sources`. Nothing else — `closed`, `closed_override`, `business_status`, coordinates, `neighborhood_raw`, `raw_rating`, `review_count` and `place_id` are all byte-identical.
 
@@ -70,7 +74,7 @@ New tests: `tests/dashboard/test_dashboard_stats.py` lifts `updateStats()` out o
 
 ## Open questions (owner input needed)
 
-1. May agents remove rows (Bar Tulia, Olmo, the 3 omakase duplicate groups)? ADR 0006 reserves row removal for a human; nothing records whether that means "owner does it" or "owner approves an agent doing it".
+1. ~~May agents remove rows?~~ **Answered 2026-11-07: yes, with the owner's explicit approval per removal.** It means "owner approves an agent doing it", not "owner does it". Exercised for the 2 omakase duplicate rows. **`Bar Tulia` and `Olmo` are still outstanding** — the ruling covered the omakase duplicates that were put to the owner, so put those two forward separately before deleting them.
 2. Are `philly`/`kensington` still active goals, or parked? (Chose conservatively to document them as in-progress, not dead.)
 3. Are `scripts/build_top12.js`, `build_top15.js`, and `final_docs/*.docx` still wanted? They're one-off docx generators with hardcoded data, stale relative to current scores. Left untouched.
 4. The Google Places API key in the gitignored `scripts/config.py` — verified never committed to git history. Consider restricting/rotating it anyway since it predates this audit.
