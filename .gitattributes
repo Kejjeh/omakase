@@ -1,0 +1,11 @@
+# Spreadsheets are zip containers: never apply end-of-line conversion to them.
+# core.autocrlf is true on this machine and there was no .gitattributes, so git
+# classified *.xlsx as "text: unspecified" and relied on content sniffing alone.
+*.xlsx binary
+*.xlsm binary
+*.xls  binary
+
+# Committed geodata and bundles are binary too.
+*.geojson -text
+*.bundle  binary
+*.parquet binary
