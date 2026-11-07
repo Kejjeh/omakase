@@ -8,7 +8,7 @@ A data pipeline that ranks restaurants per cuisine (`omakase`, `italian` in NYC;
 
 ```bash
 pip install -r requirements.txt          # pandas, openpyxl, requests, beautifulsoup4, pytest
-python -m pytest tests/ -q               # ~0.8s. Expect: 204 passed, 6 skipped
+python -m pytest tests/ -q               # ~2.7s. Expect: 240 passed, 6 skipped
 python scripts/run.py --all              # rebuild all cuisines (score + write json/dashboard/excel)
 python scripts/run.py --cuisine italian --steps score   # one cuisine, no file writes
 python -m http.server -d docs 8000       # view dashboards; file:// does NOT work (ADR 0002)
@@ -57,7 +57,7 @@ Yelp has no fetcher: refresh is manual, via a deep-research session using `Yelp_
 
 ## Before you finish any task
 
-1. `python -m pytest tests/ -q` → `204 passed, 6 skipped` (more passed is fine if you added tests).
+1. `python -m pytest tests/ -q` → `240 passed, 6 skipped` (more passed is fine if you added tests).
 2. `python scripts/run.py --all --strict` → exits 0 and prints **no** collision report. The `excluded:` / `no trusted source left for` lines are normal output (ADR 0007): expect `18 / 6 / 2 / 0` excluded and `7 / 0 / 1 / 0` with no trusted source, for omakase / italian / philly / kensington. Check the counts didn't move unless you meant them to.
 3. `git diff --stat` → only files you meant to change, plus possible `.xlsx` churn.
 
