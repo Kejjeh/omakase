@@ -267,14 +267,6 @@
     "rating": null,
     "not_found": true
   },
-  "Olmo": {
-    "rating": 7.8,
-    "infatuation_name": "Olmo",
-    "cuisine": [],
-    "neighborhood": null,
-    "url": "https://www.theinfatuation.com/new-york/reviews/olmo",
-    "slug_used": "olmo"
-  },
   "Locanda Verde": {
     "rating": 7.7,
     "infatuation_name": "Locanda Verde",
@@ -386,10 +378,6 @@
     "neighborhood": null,
     "url": "https://www.theinfatuation.com/new-york/reviews/ci-siamo",
     "slug_used": "ci-siamo"
-  },
-  "Bar Tulia": {
-    "rating": null,
-    "not_found": true
   },
   "Santi": {
     "rating": 8.4,

@@ -82,3 +82,24 @@ def test_masa_is_pinned_to_no_listing_and_never_marked_closed():
     closures = paths.research_dir("omakase") / "closures_verified.json"
     asserted = {r["name"] for r in json.loads(closures.read_text(encoding="utf-8"))}
     assert "Masa" not in asserted
+
+
+def test_rows_the_research_invented_stay_out_of_italian():
+    """Regression: a research pass produced two rows that are not New York
+    Italian restaurants. Bar Tulia exists only in Naples, Florida; the only
+    Olmo in New York is a Mexican restaurant in Bedford-Stuyvesant. Both
+    ranked on a wrong business's rating until ADR 0007 withheld the Readings,
+    and both were removed on 2026-11-07 by owner ruling.
+
+    import_italian_research.py rewrites restaurants.json wholesale, so a
+    re-import is the way they come back; it carries an EXCLUDED_NAMES set that
+    this test pins."""
+    invented = {"Bar Tulia", "Olmo"}
+    assert invented & _restaurant_names("italian") == set()
+
+    src = (
+        paths.restaurants_json("italian").parents[2]
+        / "import_italian_research.py"
+    ).read_text(encoding="utf-8")
+    for name in invented:
+        assert f'"{name}"' in src, f"{name} dropped out of EXCLUDED_NAMES"

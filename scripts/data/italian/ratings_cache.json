@@ -409,16 +409,6 @@
     "place_id": "ChIJk6_emFpbwokReeza0hzar2c",
     "business_status": "OPERATIONAL"
   },
-  "Olmo": {
-    "rating": 4.9,
-    "review_count": 240,
-    "google_name": "OLIO E PI\u00d9 East Village",
-    "address": "106 3rd Ave, New York, NY 10003, USA",
-    "lat": 40.7328144,
-    "lng": -73.987873,
-    "place_id": "ChIJE5K35jNZwokRtolxX8ryue8",
-    "business_status": "OPERATIONAL"
-  },
   "Locanda Verde": {
     "rating": 4.4,
     "review_count": 2364,
@@ -577,16 +567,6 @@
     "lat": 40.7526152,
     "lng": -73.9989141,
     "place_id": "ChIJ_ci7bvdZwokRsL4rlCOqsMk",
-    "business_status": "OPERATIONAL"
-  },
-  "Bar Tulia": {
-    "rating": 4.6,
-    "review_count": 448,
-    "google_name": "Tarallucci e Vino NoMad",
-    "address": "44 E 28th St, New York, NY 10016, USA",
-    "lat": 40.7434168,
-    "lng": -73.9847247,
-    "place_id": "ChIJ4zfZAKdZwokRrsYhDxNqGEo",
     "business_status": "OPERATIONAL"
   },
   "Santi": {

@@ -163,10 +163,6 @@
     "subway_walk_min": 7,
     "nearest_456": "Bleecker St (6)"
   },
-  "Olmo": {
-    "subway_walk_min": 7,
-    "nearest_456": "Bleecker St (6)"
-  },
   "Locanda Verde": {
     "subway_walk_min": 8,
     "nearest_456": "Union Sq (4/5/6)"
@@ -228,10 +224,6 @@
     "nearest_456": "Union Sq (4/5/6)"
   },
   "Ci Siamo": {
-    "subway_walk_min": 8,
-    "nearest_456": "Union Sq (4/5/6)"
-  },
-  "Bar Tulia": {
     "subway_walk_min": 8,
     "nearest_456": "Union Sq (4/5/6)"
   },

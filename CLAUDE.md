@@ -8,7 +8,7 @@ A data pipeline that ranks restaurants per cuisine (`omakase`, `italian` in NYC;
 
 ```bash
 pip install -r requirements.txt          # pandas, openpyxl, requests, beautifulsoup4, pytest
-python -m pytest tests/ -q               # ~0.6s. Expect: 203 passed, 6 skipped
+python -m pytest tests/ -q               # ~0.8s. Expect: 204 passed, 6 skipped
 python scripts/run.py --all              # rebuild all cuisines (score + write json/dashboard/excel)
 python scripts/run.py --cuisine italian --steps score   # one cuisine, no file writes
 python -m http.server -d docs 8000       # view dashboards; file:// does NOT work (ADR 0002)
@@ -48,7 +48,7 @@ Yelp has no fetcher: refresh is manual, via a deep-research session using `Yelp_
 - **The dashboard JavaScript has tests.** `tests/dashboard/` lifts functions out of the shipped `docs/<cuisine>/index.html` and runs them under the `node` on PATH (no JS runner, no new dependency; the tests skip if `node` is missing). Editing that HTML can therefore fail pytest — which is the point.
 - **Inclusion source of truth differs by cuisine**: omakase = `scripts/data/omakase/master.xlsx` via step1; the other three = their `restaurants.json` directly (no master.xlsx exists for them).
 - **Pins**: `place_id_overrides.json` makes a Google lookup deterministic. Every pin needs a `note` (test-enforced). A `null` pin means "no Google listing exists; do not search" (Masa). See ADR 0006.
-- **An untrusted Google match contributes no rating.** Trust gating covers the Reading, not just the derived fields: a wrong-business match's rating is withheld from the composite and the remaining sources renormalize, with the reason carried onto the record (`excluded_sources`), the run log, the dashboards and the Excel file. 28 readings are excluded across the 4 cuisines today and 9 rows are left with no trusted source as a result — that is expected output, not a regression. See ADR 0007.
+- **An untrusted Google match contributes no rating.** Trust gating covers the Reading, not just the derived fields: a wrong-business match's rating is withheld from the composite and the remaining sources renormalize, with the reason carried onto the record (`excluded_sources`), the run log, the dashboards and the Excel file. 26 readings are excluded across the 4 cuisines today and 8 rows are left with no trusted source as a result — that is expected output, not a regression. See ADR 0007.
 - **`closed_override` always beats Google's status**; fields from an untrusted Places match derive nothing. Deriving over an override reopened 7 genuinely closed restaurants once. See ADR 0005.
 - **Neighborhood is derived from coordinates**, never from the hand label (`neighborhood_raw`, display-only with an "(unverified)" marker). See ADR 0003.
 - Running the pipeline **always dirties the 4 root `.xlsx` files** even with no data change (openpyxl timestamp bytes). Expected; commit or ignore, don't investigate.
@@ -57,8 +57,8 @@ Yelp has no fetcher: refresh is manual, via a deep-research session using `Yelp_
 
 ## Before you finish any task
 
-1. `python -m pytest tests/ -q` → `203 passed, 6 skipped` (more passed is fine if you added tests).
-2. `python scripts/run.py --all --strict` → exits 0 and prints **no** collision report. The `excluded:` / `no trusted source left for` lines are normal output (ADR 0007): expect `18 / 8 / 2 / 0` excluded and `7 / 1 / 1 / 0` with no trusted source, for omakase / italian / philly / kensington. Check the counts didn't move unless you meant them to.
+1. `python -m pytest tests/ -q` → `204 passed, 6 skipped` (more passed is fine if you added tests).
+2. `python scripts/run.py --all --strict` → exits 0 and prints **no** collision report. The `excluded:` / `no trusted source left for` lines are normal output (ADR 0007): expect `18 / 6 / 2 / 0` excluded and `7 / 0 / 1 / 0` with no trusted source, for omakase / italian / philly / kensington. Check the counts didn't move unless you meant them to.
 3. `git diff --stat` → only files you meant to change, plus possible `.xlsx` churn.
 
 ## Model routing

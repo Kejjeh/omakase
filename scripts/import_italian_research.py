@@ -25,6 +25,21 @@ DASH_RE = re.compile(r"\s*[—–—–]\s*|\s+â\s+|\s+â€“\s+")
 
 PRICE_LEVEL_TO_MIN = {"$": 18, "$$": 40, "$$$": 75, "$$$$": 130}
 
+# Names the research pass produced that are not New York Italian restaurants.
+# This parser rewrites restaurants.json wholesale, so without this set a
+# re-import silently resurrects rows that were removed by owner ruling on
+# 2026-11-07 (ADR 0006). Both were verified before removal:
+#   Bar Tulia - two locations, both in Naples, Florida (462 5th Ave S and
+#     9118 Strada Pl); no NYC presence. The "305 W 39th St" the parser read off
+#     the markdown is not a Bar Tulia address, and Places matched the row to
+#     Tarallucci e Vino NoMad.
+#   Olmo - the only Olmo in New York is a Mexican restaurant at 103 Saratoga
+#     Ave, Bedford-Stuyvesant (Bib Gourmand). Places matched the row to OLIO E
+#     PIU East Village, and The Infatuation's 7.8 describes the Mexican Olmo,
+#     so the row ranked on a wrong business from every source it had.
+# Removing a name here is an owner decision, not a parser tweak.
+EXCLUDED_NAMES = {"Bar Tulia", "Olmo"}
+
 
 def detect_borough(line):
     m = re.match(r"^###\s+(MANHATTAN|BROOKLYN|QUEENS|BRONX)", line, re.IGNORECASE)
@@ -304,7 +319,7 @@ def main():
         entry_text = detect_entry(line)
         if entry_text:
             rec = parse_entry(entry_text, borough, neighborhood)
-            if rec and rec["name"] not in seen:
+            if rec and rec["name"] not in seen and rec["name"] not in EXCLUDED_NAMES:
                 records.append(rec)
                 seen.add(rec["name"])
 
