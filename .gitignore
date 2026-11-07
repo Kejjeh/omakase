@@ -14,6 +14,9 @@ Thumbs.db
 # IDE
 .vscode/
 .idea/
+
+# CodeGraph local index (rebuilt on demand, never shared)
+.codegraph/
 # Claude Code: local settings stay untracked; shared commands are committed
 .claude/*
 !.claude/commands

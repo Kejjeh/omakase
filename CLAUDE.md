@@ -8,7 +8,7 @@ A data pipeline that ranks restaurants per cuisine (`omakase`, `italian` in NYC;
 
 ```bash
 pip install -r requirements.txt          # pandas, openpyxl, requests, beautifulsoup4, pytest
-python -m pytest tests/ -q               # ~0.6s. Expect: 196 passed, 4 skipped
+python -m pytest tests/ -q               # ~0.6s. Expect: 203 passed, 6 skipped
 python scripts/run.py --all              # rebuild all cuisines (score + write json/dashboard/excel)
 python scripts/run.py --cuisine italian --steps score   # one cuisine, no file writes
 python -m http.server -d docs 8000       # view dashboards; file:// does NOT work (ADR 0002)
@@ -57,7 +57,7 @@ Yelp has no fetcher: refresh is manual, via a deep-research session using `Yelp_
 
 ## Before you finish any task
 
-1. `python -m pytest tests/ -q` → `196 passed, 4 skipped` (more passed is fine if you added tests).
+1. `python -m pytest tests/ -q` → `203 passed, 6 skipped` (more passed is fine if you added tests).
 2. `python scripts/run.py --all` → completes; the ONLY expected warning is the known 3-group omakase collision report. The `excluded:` / `no trusted source left for` lines below it are normal output (ADR 0007) — check the counts didn't move unless you meant them to.
 3. `git diff --stat` → only files you meant to change, plus possible `.xlsx` churn.
 
