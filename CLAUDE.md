@@ -74,6 +74,7 @@ Load these with the Skill tool when the situation comes up; the user does not ne
 ## Before you finish any task
 
 1. `python -m pytest tests/ -q` → `240 passed, 6 skipped` (more passed is fine if you added tests).
+   CI (`.github/workflows/tests.yml`) runs the same command on every push to `main` and every PR.
 2. `python scripts/run.py --all --strict` → exits 0 and prints **no** collision report. The `excluded:` / `no trusted source left for` lines are normal output (ADR 0007): expect `18 / 6 / 2 / 0` excluded and `7 / 0 / 1 / 0` with no trusted source, for omakase / italian / philly / kensington. Check the counts didn't move unless you meant them to.
 3. `git diff --stat` → only files you meant to change, plus possible `.xlsx` churn.
 

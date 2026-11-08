@@ -1,0 +1,34 @@
+name: tests
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: tests-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+          cache: pip
+      # tests/dashboard/ runs the shipped dashboard JS under `node`; it skips
+      # itself if node is missing, so pin one to make sure those tests run.
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: pip install -r requirements.txt
+      # Nothing is deselected: the suite is offline and reads only committed
+      # files. The 6 skips are the suite's own (data a cuisine does not have).
+      # No scripts/config.py and no API key: no fetcher runs here.
+      - run: python -m pytest tests/ -q
