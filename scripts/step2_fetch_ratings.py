@@ -1,7 +1,13 @@
 """
 Step 2: Fetch Google Maps ratings via Places API for a given cuisine's restaurants.
 
-Usage: python scripts/step2_fetch_ratings.py [--cuisine omakase] [--repair] [--dry-run]
+Usage: python scripts/step2_fetch_ratings.py [--cuisine omakase] [--repair] [--force] [--dry-run]
+
+--dry-run reports what a real run with the same flags would fetch and its
+estimated cost, without reading the API key or touching the network. An
+unknown argument is an error, raised before the key is read or anything is
+sent: hand-rolled sys.argv checks ignore flags they do not know, and in a
+sibling project that turned a mistyped dry run into a billed fetch.
 
 Uses a per-cuisine cache to avoid re-fetching.
 
@@ -15,6 +21,7 @@ just those. A repair re-fetch also refreshes the rating, which can move
 composite scores — run --dry-run first to see the blast radius.
 """
 
+import argparse
 import requests
 import json
 import time
@@ -22,22 +29,26 @@ import os
 import sys
 
 sys.path.insert(0, os.path.dirname(__file__))
-from config import GOOGLE_API_KEY
 from shared import paths
 
 sys.path.insert(0, os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from scripts.shared.cities import city_for
 
-CUISINE = paths.parse_cuisine_arg()
-RESTAURANTS_PATH = paths.restaurants_json(CUISINE)
-CACHE_PATH = paths.ratings_cache(CUISINE)
+# Set by configure() from the parsed arguments; nothing is read from sys.argv
+# at import time.
+CUISINE = None
+RESTAURANTS_PATH = None
+CACHE_PATH = None
+SEARCH_TYPE = None
+SEARCH_CITY = None
+REPAIR = False
+DRY_RUN = False
+FORCE = False
 
-REPAIR = "--repair" in sys.argv
-DRY_RUN = "--dry-run" in sys.argv
-# Re-fetch every restaurant even if fully cached. Needed when the search terms
-# themselves change, since the cached entry is well-formed but matched using
-# the wrong query and no per-entry check can spot that.
-FORCE = "--force" in sys.argv
+# Places legacy Text Search, US list price per 1,000 calls. Only used to print
+# the --dry-run estimate; every call (pinned Details lookups included) is
+# costed at this rate.
+TEXT_SEARCH_USD_PER_1000 = 32.0
 
 # Restaurant names carry macrons (Sushi Ōmakase) that the Windows console's
 # cp1252 default cannot encode — progress printing must never kill a paid run.
@@ -61,16 +72,53 @@ SEARCH_TYPE_BY_CUISINE = {
     "kensington": "restaurant",
 }
 
-if CUISINE not in SEARCH_TYPE_BY_CUISINE:
-    raise SystemExit(
-        f"No search type for cuisine '{CUISINE}'. Add an entry to "
-        f"SEARCH_TYPE_BY_CUISINE in {os.path.basename(__file__)} — a wrong "
-        f"default silently matches the wrong restaurants."
-    )
-SEARCH_TYPE = SEARCH_TYPE_BY_CUISINE[CUISINE]
-# The city comes from the shared table so it cannot disagree with the one the
-# Infatuation scraper and the geo lookup use.
-SEARCH_CITY = city_for(CUISINE).places_query
+
+
+def parse_args(argv=None):
+    """Strict: an unknown or mistyped argument exits 2 here, before the key is
+    read or a request is sent."""
+    ap = argparse.ArgumentParser(
+        prog="step2_fetch_ratings.py",
+        description="Fetch Google Places ratings for one cuisine (billed).")
+    ap.add_argument("--cuisine", "-c", choices=paths.CUISINES,
+                    default=paths.DEFAULT_CUISINE)
+    ap.add_argument("--repair", action="store_true",
+                    help="re-fetch cached entries missing location fields")
+    # Re-fetch every restaurant even if fully cached. Needed when the search
+    # terms themselves change, since the cached entry is well-formed but
+    # matched using the wrong query and no per-entry check can spot that.
+    ap.add_argument("--force", action="store_true",
+                    help="re-fetch every restaurant, cached or not")
+    ap.add_argument("--dry-run", action="store_true",
+                    help="report what would be fetched and its cost; "
+                         "no key, no network")
+    return ap.parse_args(argv)
+
+
+def configure(args):
+    global CUISINE, RESTAURANTS_PATH, CACHE_PATH, SEARCH_TYPE, SEARCH_CITY
+    global REPAIR, DRY_RUN, FORCE
+    CUISINE = args.cuisine
+    RESTAURANTS_PATH = paths.restaurants_json(CUISINE)
+    CACHE_PATH = paths.ratings_cache(CUISINE)
+    REPAIR, DRY_RUN, FORCE = args.repair, args.dry_run, args.force
+    if CUISINE not in SEARCH_TYPE_BY_CUISINE:
+        raise SystemExit(
+            f"No search type for cuisine '{CUISINE}'. Add an entry to "
+            f"SEARCH_TYPE_BY_CUISINE in {os.path.basename(__file__)} — a wrong "
+            f"default silently matches the wrong restaurants."
+        )
+    SEARCH_TYPE = SEARCH_TYPE_BY_CUISINE[CUISINE]
+    # The city comes from the shared table so it cannot disagree with the one
+    # the Infatuation scraper and the geo lookup use.
+    SEARCH_CITY = city_for(CUISINE).places_query
+
+
+def api_key():
+    """The Places key from the gitignored scripts/config.py. Read only on the
+    billed path, after argument parsing, so --dry-run needs no config file."""
+    from config import GOOGLE_API_KEY
+    return GOOGLE_API_KEY
 
 
 def load_cache():
@@ -179,7 +227,50 @@ def needs_geo_repair(entry):
     )
 
 
-def main():
+def action_for(entry, has_pin, pinned, force, repair):
+    """-> "cached" | "repair" | "fetch" for one restaurant.
+
+    The run loop and --dry-run both call this, so the dry run's count is the
+    real run's count rather than a reimplementation of it.
+    """
+    # A pin means the cached match was wrong, so it must be applied even
+    # when the cache looks complete — the stale entry is exactly the thing
+    # being corrected. That includes a null pin, which has to clear a
+    # wrongly-matched entry rather than leave it in place.
+    pin_pending = has_pin and entry and entry.get("place_id") != pinned
+    if entry and entry.get("rating") is not None and not force and not pin_pending:
+        if not (repair and needs_geo_repair(entry)):
+            return "cached"
+        return "repair"
+    return "fetch"
+
+
+def billed_plan(restaurants, cache, overrides, force, repair):
+    """-> (text_searches, details, detached): the calls a run would make.
+
+    A null pin detaches without any call, so it is free.
+    """
+    text = details = detached = 0
+    for r in restaurants:
+        name = r["name"]
+        has_pin = name in overrides
+        pinned = overrides.get(name)
+        if action_for(cache.get(name), has_pin, pinned, force, repair) == "cached":
+            continue
+        if has_pin and pinned is None:
+            detached += 1
+        elif pinned:
+            details += 1
+        else:
+            text += 1
+    return text, details, detached
+
+
+def main(argv=None):
+    configure(parse_args(argv))
+    # Read before anything else on the billed path, as the old import-time
+    # read was; never on the dry-run path.
+    key = None if DRY_RUN else api_key()
     with open(RESTAURANTS_PATH, encoding="utf-8") as f:
         restaurants = json.load(f)
 
@@ -207,6 +298,16 @@ def main():
         print("which can shift composite scores and rankings.")
         if stale:
             print(f"\nFirst 10 needing repair: {', '.join(stale[:10])}")
+        text, details, detached = billed_plan(restaurants, cache, overrides,
+                                              FORCE, REPAIR)
+        calls = text + details
+        flags = " ".join(f for f, on in (("--repair", REPAIR), ("--force", FORCE)) if on)
+        print(f"\nWith these flags{f' ({flags})' if flags else ''}: {calls} billed "
+              f"call(s) — {text} Text Search, {details} Details by pinned "
+              f"place_id; {detached} null pin(s) detached at no cost.")
+        print(f"Estimated cost: ${calls * TEXT_SEARCH_USD_PER_1000 / 1000:.2f} "
+              f"at ${TEXT_SEARCH_USD_PER_1000:.0f}/1000 calls. "
+              f"Dry run: no key read, nothing sent, nothing written.")
         return
 
     for i, r in enumerate(restaurants):
@@ -219,13 +320,9 @@ def main():
         has_pin = name in overrides
         pinned = overrides.get(name)
         entry = cache.get(name)
-        # A pin means the cached match was wrong, so it must be applied even
-        # when the cache looks complete — the stale entry is exactly the thing
-        # being corrected. That includes a null pin, which has to clear a
-        # wrongly-matched entry rather than leave it in place.
-        pin_pending = has_pin and entry and entry.get("place_id") != pinned
-        if entry and entry.get("rating") is not None and not FORCE and not pin_pending:
-            if not (REPAIR and needs_geo_repair(entry)):
+        action = action_for(entry, has_pin, pinned, FORCE, REPAIR)
+        if action != "fetch":
+            if action == "cached":
                 cached += 1
                 print(f"[{i+1}/{total}] {name} -> CACHED ({entry['rating']})")
                 continue
@@ -245,10 +342,10 @@ def main():
             continue
 
         if pinned:
-            result = fetch_by_place_id(pinned, GOOGLE_API_KEY)
+            result = fetch_by_place_id(pinned, key)
             pinned_used += 1
         else:
-            result = search_place(name, hood, GOOGLE_API_KEY)
+            result = search_place(name, hood, key)
         # A failed lookup must not clobber a good cached rating — unless the
         # entry is pinned, where replacing the wrong match is the whole point.
         if result["rating"] is None and entry and entry.get("rating") is not None and not has_pin:
