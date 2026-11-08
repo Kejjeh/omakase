@@ -1,6 +1,6 @@
 """`min_price` is hand-curated, so it needs guarding against rot.
 
-The two price fields are not interchangeable (see CONTEXT.md, "Price point"):
+The two price fields are not interchangeable (see GLOSSARY.md, "Price point"):
 `min_price` is the representative omakase the Value score reads, `price_str` is
 a display string. They disagree on 26 omakase rows *by design* — `min_price`
 often names a later tier than the cheapest one listed, or a figure `price_str`

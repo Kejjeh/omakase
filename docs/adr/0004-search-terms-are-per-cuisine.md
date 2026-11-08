@@ -17,4 +17,4 @@ Two things to keep in mind:
 
 **Three Italian restaurants are still mismatched** — Bar Tulia, Lodi, and Olmo. Lodi and Olmo both resolve to `OLIO E PIÙ East Village`, which is why duplicate `place_id` is the check worth running: it catches what name similarity cannot. Lodi's bogus match moved it from #136 to #2 on composite rating, so these are not cosmetic.
 
-The deeper issue is that Restaurant is keyed by `name` (see CONTEXT.md), and a name is not a stable identifier — it cannot distinguish Trattoria L'Incontro in Astoria from L'incontro by Rocco on the Upper East Side. `place_id` is now captured and is the better join key if this keeps biting.
+The deeper issue is that Restaurant is keyed by `name` (see GLOSSARY.md), and a name is not a stable identifier — it cannot distinguish Trattoria L'Incontro in Astoria from L'incontro by Rocco on the Upper East Side. `place_id` is now captured and is the better join key if this keeps biting.

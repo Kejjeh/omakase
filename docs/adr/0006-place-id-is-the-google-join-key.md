@@ -1,6 +1,6 @@
 # A Google match can be pinned by `place_id`, and a shared `place_id` fails loudly
 
-Restaurant is keyed by `name` (see CONTEXT.md), and the pipeline asked Google Places for a restaurant by searching that name. A name is not a stable identifier. When a restaurant closes, is renamed, or shares a name with a sibling location, Text Search does not return nothing — it quietly returns a *different, operating* business. The cached record then looks perfectly well-formed: a rating, a review count, coordinates, an address. It simply describes someone else.
+Restaurant is keyed by `name` (see GLOSSARY.md), and the pipeline asked Google Places for a restaurant by searching that name. A name is not a stable identifier. When a restaurant closes, is renamed, or shares a name with a sibling location, Text Search does not return nothing — it quietly returns a *different, operating* business. The cached record then looks perfectly well-formed: a rating, a review count, coordinates, an address. It simply describes someone else.
 
 Nine such matches were found in the omakase dataset and one in Italian, by noticing that two rows had ended up with the same `place_id`. That is proof rather than inference: one listing cannot be two restaurants. It is also a much better detector than name similarity, which fails in both directions — "Mario's" vs "Mario's Restaurant of Arthur Avenue" is a correct match that scores badly, while "Omakase by Teisui" vs "Omakase By Tento" is a wrong match that scores well.
 

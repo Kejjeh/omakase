@@ -21,6 +21,6 @@ Settled decisions. Do not re-litigate any of these without new evidence; each co
 - **Yelp is refreshed by human deep-research, not an API or scraper.** The research prompts (`Yelp_Research_Prompt*.md`) are the fetcher. Presumably chosen over the Yelp Fusion API for cost/robot-blocking reasons. (inferred)
 - **All caches and generated outputs are committed to git.** Makes the pipeline runnable offline and diffs reviewable; the price is xlsx binary churn. (inferred)
 - **No compiled geo stack** — hand-rolled ray casting over a vendored GeoJSON instead of shapely, ~30 lines for a few hundred points. (stated in `shared/geo.py`)
-- **`name` is the join key everywhere** despite its known weakness; `place_id` was captured as the escape hatch and ADR 0006 nominates it as the better key if name keeps biting. Not yet migrated. (stated in CONTEXT.md / ADR 0004)
+- **`name` is the join key everywhere** despite its known weakness; `place_id` was captured as the escape hatch and ADR 0006 nominates it as the better key if name keeps biting. Not yet migrated. (stated in GLOSSARY.md / ADR 0004)
 - **Refreshing is separated from scoring**: `RatingSource.refresh()` raises `NotImplementedError` on purpose; the step scripts own network I/O so `run.py` is always offline, fast, and deterministic. (stated in `pipeline.py` docstring)
 - **Duplicate master-sheet rows are surfaced, not auto-deleted.** Removing a row is a heavier act than pinning; the 3 omakase collision groups are left for a human. (stated in ADR 0006)

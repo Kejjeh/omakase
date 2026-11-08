@@ -2,7 +2,7 @@
 
 ## What this is
 
-A data pipeline that ranks restaurants per cuisine (`omakase`, `italian` in NYC; `philly`, `kensington` in Philadelphia) by blending Google/Yelp/Infatuation ratings — Wilson-lower-bounded, weighted 0.35/0.45/0.20 — plus a price-adjusted value score, publishing a static dashboard per cuisine (`docs/`, GitHub Pages) and an Excel file per cuisine at the repo root. Python 3.13, no database, no web framework: every input and cache is committed JSON. **Current state: working.** Read `HANDOFF.md` for what's in progress and what to do next. Read `CONTEXT.md` for the domain glossary — use its terms exactly.
+A data pipeline that ranks restaurants per cuisine (`omakase`, `italian` in NYC; `philly`, `kensington` in Philadelphia) by blending Google/Yelp/Infatuation ratings — Wilson-lower-bounded, weighted 0.35/0.45/0.20 — plus a price-adjusted value score, publishing a static dashboard per cuisine (`docs/`, GitHub Pages) and an Excel file per cuisine at the repo root. Python 3.13, no database, no web framework: every input and cache is committed JSON. **Current state: working.** Read `HANDOFF.md` for what's in progress and what to do next. Read `GLOSSARY.md` for the domain glossary — use its terms exactly.
 
 ## Commands (all verified from repo root)
 
@@ -55,6 +55,22 @@ Yelp has no fetcher: refresh is manual, via a deep-research session using `Yelp_
 - Set `PYTHONUTF8=1` when running fetchers on Windows (restaurant names carry macrons).
 - **Do not read these into context** (large, generated, or binary — see `.claudeignore`): `scripts/data/geo/nyc_nta_2020.geojson`, any `scored_restaurants.json` or `data.json`, `*.xlsx`, `final_docs/`, `research_input/italian/discovery.json`. Inspect them with `python -c` / jq instead.
 
+## Skills for this repo
+
+Load these with the Skill tool when the situation comes up; the user does not need to ask.
+
+| Situation in this repo | Skill |
+|---|---|
+| A ranking, score or excluded count looks wrong | `diagnosing-bugs` |
+| Writing or changing a fetcher, cache reader, match-trust check or `enrich` step | `sop-fail-loud` |
+| A change alters `scored_restaurants.json`, `docs/*/data.json` or a `*_Ratings.xlsx` | `sop-regenerate-outputs` |
+| A new place_id collision, "duplicate or distinct?", or whether a pin confers trust | `sop-owner-decision` |
+| Changing weights, Wilson bounds, the price exponent or the trust threshold | `sop-owner-decision` (and escalate to Opus) |
+| A data refresh that calls Google Places (billed) | ask the user first; then `/refresh-google` |
+| Building a fix or feature test-first (scorer, sources, geo) | `tdd` |
+| Changing a dashboard `index.html` | `/verify`, then serve `docs/` and check it in the browser (`verify`) |
+| Before merging anything that moves numbers | `code-review` |
+
 ## Before you finish any task
 
 1. `python -m pytest tests/ -q` → `240 passed, 6 skipped` (more passed is fine if you added tests).
@@ -70,4 +86,4 @@ Escalate to Opus: anything in `scripts/scoring/` (methodology — weights, Wilso
 ## Issue tracker & domain docs
 
 - Issues: GitHub Issues on `kejjeh/Omakase` via `gh` CLI — conventions in `docs/agents/issue-tracker.md`; labels in `docs/agents/triage-labels.md`.
-- Domain language: `CONTEXT.md` glossary + `docs/adr/` — usage rules in `docs/agents/domain.md`.
+- Domain language: `GLOSSARY.md` glossary + `docs/adr/` — usage rules in `docs/agents/domain.md`.

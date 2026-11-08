@@ -27,4 +27,4 @@ Refreshing source data needs a Google Places API key in `scripts/config.py` (cop
 
 ## Where things live
 
-For agents: **`CLAUDE.md` is the source of truth** (commands, conventions, gotchas), with current status in `HANDOFF.md`. For structure: `docs/ARCHITECTURE.md`. Domain vocabulary: `CONTEXT.md`. Settled decisions: `docs/DECISIONS.md` and `docs/adr/`.
+For agents: **`CLAUDE.md` is the source of truth** (commands, conventions, gotchas), with current status in `HANDOFF.md`. For structure: `docs/ARCHITECTURE.md`. Domain vocabulary: `GLOSSARY.md`. Settled decisions: `docs/DECISIONS.md` and `docs/adr/`.
